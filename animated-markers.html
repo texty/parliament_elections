@@ -77,18 +77,19 @@
 						var invScale = 0.5 / getScale();
 
 						if (event.type === 'add') {
-							// markers = markers.slice(0,10000);
-
 							markers.forEach(function(marker) {
-
+								// Костиль, тому, що в даних є пропущені координати
 								if (marker.Latitude != null) {
 
 
+									//Тут я рахую для Партії Регіонів і БЮТ. Їх треба замінити загальними результатами для проєвропейських та проросійських
 									var total = +marker['Партія регіонів'] + +marker['Блок Юлії Тимошенко'];
-									var region = +marker['Блок Юлії Тимошенко']/total * 100
+									var proEuropePercentage = +marker['Блок Юлії Тимошенко']/total * 100
 
-									var radians = Math.PI/100 * region
+									//Кут для проєвропейських
+									var radians = Math.PI/100 * proEuropePercentage
 
+									// змінити колір стрілки (замінити текстуру, якщо кут більший чи менший за половину)
 									if (radians < Math.PI/2) {
 										var markerSprite = new PIXI.Sprite(textures[1]);
 										markerSprite.textureIndex = 1;
@@ -100,9 +101,6 @@
 									}
 
 									var coords = project([marker.Latitude, marker.Longitude]);
-									// var index = Math.floor(Math.random() * textures.length);
-									// var markerSprite = new PIXI.Sprite(textures[index]);
-									// markerSprite.textureIndex = index;
 									markerSprite.x = coords.x;
 									markerSprite.y = coords.y;
 									markerSprite.anchor.set(0.5, 0.5);
@@ -111,8 +109,9 @@
 									markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
 									container.addChild(markerSprite);
 									markerSprites.push(markerSprite);
+
+									// Тут можна в спрайт упакувати ті дані, що потрібно
 									markerSprite.info = [marker['Блок Юлії Тимошенко'],marker['Партія регіонів'], marker['НУНС'],marker['Комуністична партія України']]
-									// markerSprite.legend = marker.city || marker.label;
 
 
 									markerSprite.rotation -= radians
@@ -132,6 +131,9 @@
 
 						if (event.type === 'redraw') {
 							var delta = event.delta;
+							//Раніше ця функція змушувала його плавно крутитися по колу, зараз вона тільки оновлює розмір стрілок на зумі.
+
+
 							// markerSprites.forEach(function(markerSprite) {
 							// 	markerSprite.rotation -= 0.03 * delta;
 							// });
@@ -156,18 +158,14 @@
 						}
 
 
+						//Функція яку можна запускати глобально, щоб повертати стрілочки. Поки вона їх повертає моментально. Ти даєш їй число і вона повертає на стільки.
 						Element.prototype.getMyId = function smth(number) {
 
-
-							// if (number == 1) {
-							// 	var delta = n
-							// }
-							// if (number == 2) {
-
-							// }
-
+							var delta = number;
+							// функція крутить rotate спрайт і змінює його текстуру (якщо він перейшов якщо підтримка одного блоку перевалила за середину)
 							markerSprites.forEach(function(markerSprite) {
 								markerSprite.rotation -=  delta;
+								//поки, що кожен раз коли ти запускаєш 
 								markerSprite.setTexture(textures[1])
 							});
 							if (zoomChangeTs !== null) {
@@ -190,7 +188,6 @@
 							}
 						}
 
-						// smth(10);
 
 						renderer.render(container);
 					}, pixiContainer, {
