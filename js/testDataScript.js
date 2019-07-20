@@ -34,7 +34,7 @@ loader
     .add('bicycle', 'img/right-arrow(1).png');
 
 
-var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 8);
+var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 5);
 
 L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
     subdomains: 'abcd',
@@ -98,8 +98,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             markerSprite.y = coords.y;
                             markerSprite.anchor.set(0.5, 0.5);
                             markerSprite.scale.set(invScale);
-                            // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
-                            // markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
+                            var tint = d3.color(colorScale(Math.random() * 100)).rgb();
+                            markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
                             container.addChild(markerSprite);
                             markerSprites.push(markerSprite);
 
@@ -113,12 +113,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     if (event.type === 'redraw') {
                         var delta = event.delta;
-                        //Раніше ця функція змушувала його плавно крутитися по колу, зараз вона тільки оновлює розмір стрілок на зумі.
-
-
-                        // markerSprites.forEach(function(markerSprite) {
-                        // 	markerSprite.rotation -= 0.03 * delta;
-                        // });
                         if (zoomChangeTs !== null) {
                             var duration = 17;
                             zoomChangeTs += delta;
@@ -197,26 +191,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
 
-        //draw();
-
-
         function changeData() {
                 markerSprites.forEach(function(p, i){
 
-                    // console.log(markerSprites[i].info);
-
                     var markerSprite = markerSprites[i];
 
-
                     var proEuropePercentage = markerSprite.info[3];
-
 
                     //Кут для проєвропейських
                     var radians = Math.PI / 100 * proEuropePercentage;
 
-                    console.log(radians);
-
-                    // змінити колір стрілки (замінити текстуру, якщо кут більший чи менший за половину)
                     if (radians < Math.PI / 2) {
                         markerSprite.setTexture(textures[1]);
                     }
@@ -225,29 +209,16 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
 
                     // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
-                    //
                     // markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
-
+                    var tint = d3.color(colorScale(Math.random() * 100)).rgb();
+                    markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
                     markerSprite.rotation =  0;
-                    setTimeout(function(){
-                        markerSprite.rotation -= radians;
-                    }, 100);
-
-
-                    // TweenMax.to(newDude,  1.5, { x: markerSprite.x, y: markerSprite.y  });
-                    // newDude.tint = p.z;
-
-
-
-
+                    markerSprite.rotation -= radians;
                 })
-
-
         }
 
 
         document.getElementById("change").addEventListener("click", function(){
-
             changeData()
         })
 
