@@ -8,8 +8,12 @@
 	<script src="js/example.min.js"></script>
 	<script src="js/bezier-easing.js"></script>
 	<script src="js/tools.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
 </head>
 <body style="height: 100%; margin: 0; overflow: hidden;">
+
+<button id="change" style="position:absolute; top:50px; left:50px; z-index:1000000; font-size:18px; background-color:red">Change data</button>
 <div id="map" style="height: 100%; width: 100%;" class="cartes">
 	<div class="legend geometry top center hide">
 		<div class="wrapper">
@@ -17,196 +21,12 @@
 		</div>
 	</div>
 </div>
-<script>
-	// this is used to simulate leaflet zoom animation timing:
-	var easing = BezierEasing(0, 0, 0.25, 1);
-
-	function getJSON(url, successHandler, errorHandler) {
-		var xhr = typeof XMLHttpRequest != 'undefined'
-			? new XMLHttpRequest()
-			: new ActiveXObject('Microsoft.XMLHTTP');
-		xhr.open('get', url, true);
-		xhr.onreadystatechange = function() {
-			var status;
-			var data;
-			if (xhr.readyState == 4) {
-				status = xhr.status;
-				if (status == 200) {
-					data = JSON.parse(xhr.responseText);
-					successHandler && successHandler(data);
-				} else {
-					errorHandler && errorHandler(status);
-				}
-			}
-		};
-		xhr.send();
-	}
-
-	var loader = new PIXI.loaders.Loader();
-	loader
-		.add('plane', 'img/right-arrow.png')
-		.add('bicycle', 'img/right-arrow(1).png');
-	document.addEventListener("DOMContentLoaded", function() {
-		loader.load(function(loader, resources) {
-			var textures = [resources.plane.texture, resources.bicycle.texture];
-			getJSON('data/2007.json', function(markers) {
-				var map = L.map('map').setView([50.49229399862877, 36.94335937500001], 4);
-
-				L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
-					subdomains: 'abcd',
-					attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-					minZoom: 4,
-					maxZoom: 18
-				}).addTo(map);
-				map.attributionControl.setPosition('bottomleft');
-				map.zoomControl.setPosition('bottomright');
-				var pixiContainer = new PIXI.Container();
-				var markerSprites = [];
-				var zoomChangeTs = null;
-				var pixiLayer = (function() {
-					var colorScale = d3.scaleLinear()
-						.domain([0, 50, 100])
-						.range(["#c6233c", "#ffd300", "#008000"]);
-					var doubleBuffering = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-					return L.pixiOverlay(function(utils, event) {
-						var zoom = utils.getMap().getZoom();
-						var container = utils.getContainer();
-						var renderer = utils.getRenderer();
-						var project = utils.latLngToLayerPoint;
-						var getScale = utils.getScale;
-						var invScale = 0.5 / getScale();
-
-						if (event.type === 'add') {
-							markers.forEach(function(marker) {
-								// Костиль, тому, що в даних є пропущені координати
-								if (marker.Latitude != null) {
+<!--<script src="js/petro_original.js"></script>-->
+<!--<script src="js/changeData.js"></script>-->
+<script src="js/testDataScript.js"></script>
 
 
-									//Тут я рахую для Партії Регіонів і БЮТ. Їх треба замінити загальними результатами для проєвропейських та проросійських
-									var total = +marker['Партія регіонів'] + +marker['Блок Юлії Тимошенко'];
-									var proEuropePercentage = +marker['Блок Юлії Тимошенко']/total * 100
-
-									//Кут для проєвропейських
-									var radians = Math.PI/100 * proEuropePercentage
-
-									// змінити колір стрілки (замінити текстуру, якщо кут більший чи менший за половину)
-									if (radians < Math.PI/2) {
-										var markerSprite = new PIXI.Sprite(textures[1]);
-										markerSprite.textureIndex = 1;
-									}
-									else {
-										var markerSprite = new PIXI.Sprite(textures[0]);
-										markerSprite.textureIndex = 0;
-
-									}
-
-									var coords = project([marker.Latitude, marker.Longitude]);
-									markerSprite.x = coords.x;
-									markerSprite.y = coords.y;
-									markerSprite.anchor.set(0.5, 0.5);
-									markerSprite.scale.set(invScale);
-									var tint = d3.color(colorScale(Math.random() * 100)).rgb();
-									markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
-									container.addChild(markerSprite);
-									markerSprites.push(markerSprite);
-
-									// Тут можна в спрайт упакувати ті дані, що потрібно
-									markerSprite.info = [marker['Блок Юлії Тимошенко'],marker['Партія регіонів'], marker['НУНС'],marker['Комуністична партія України']]
 
 
-									markerSprite.rotation -= radians
-								}
-							});
-						}
-
-						if (event.type === 'zoomanim') {
-							zoomChangeTs = 0;
-							var targetScale = 1 / getScale(event.zoom);
-							markerSprites.forEach(function(markerSprite) {
-								markerSprite.currentScale = markerSprite.scale.x;
-								markerSprite.targetScale = targetScale;
-							});
-							return;
-						}
-
-						if (event.type === 'redraw') {
-							var delta = event.delta;
-							//Раніше ця функція змушувала його плавно крутитися по колу, зараз вона тільки оновлює розмір стрілок на зумі.
-
-
-							// markerSprites.forEach(function(markerSprite) {
-							// 	markerSprite.rotation -= 0.03 * delta;
-							// });
-							if (zoomChangeTs !== null) {
-								var duration = 17;
-								zoomChangeTs += delta;
-								var lambda = zoomChangeTs / duration;
-							  if (lambda > 1) {
-							  	lambda = 1;
-							  	zoomChangeTs = null;
-							  }
-							  lambda = easing(lambda);
-							  markerSprites.forEach(function(markerSprite) {
-								  markerSprite.scale.set(markerSprite.currentScale + lambda * (markerSprite.targetScale - markerSprite.currentScale));
-								});
-							}
-							else {
-								markerSprites.forEach(function(markerSprite) {
-									markerSprite.scale.set(invScale);
-								});
-							}
-						}
-
-
-						//Функція яку можна запускати глобально, щоб повертати стрілочки. Поки вона їх повертає моментально. Ти даєш їй число і вона повертає на стільки.
-						Element.prototype.getMyId = function smth(number) {
-
-							var delta = number;
-							// функція крутить rotate спрайт і змінює його текстуру (якщо він перейшов якщо підтримка одного блоку перевалила за середину)
-							markerSprites.forEach(function(markerSprite) {
-								markerSprite.rotation -=  delta;
-								//поки, що кожен раз коли ти запускаєш 
-								markerSprite.setTexture(textures[1])
-							});
-							if (zoomChangeTs !== null) {
-								var duration = 17;
-								zoomChangeTs += delta;
-								var lambda = zoomChangeTs / duration;
-							  if (lambda > 1) {
-							  	lambda = 1;
-							  	zoomChangeTs = null;
-							  }
-							  lambda = easing(lambda);
-							  markerSprites.forEach(function(markerSprite) {
-								  markerSprite.scale.set(markerSprite.currentScale + lambda * (markerSprite.targetScale - markerSprite.currentScale));
-								});
-							}
-							else {
-								markerSprites.forEach(function(markerSprite) {
-									markerSprite.scale.set(invScale);
-								});
-							}
-						}
-
-
-						renderer.render(container);
-					}, pixiContainer, {
-						doubleBuffering: doubleBuffering,
-						destroyInteractionManager: true
-					});
-				})();
-
-				pixiLayer.addTo(map);
-
-				var ticker = new PIXI.ticker.Ticker();
-				ticker.add(function(delta) {
-					pixiLayer.redraw({type: 'redraw', delta: delta});
-				});
-				ticker.start();
-				map.on('zoomanim', pixiLayer.redraw, pixiLayer);
-			});
-		});
-	});
-</script>
 </body>
 </html>

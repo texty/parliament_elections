@@ -1,0 +1,9002 @@
+[
+  {
+    "Polling_station": 1,
+    "Latitude": "49.30636127",
+    "Longitude": "28.46846001",
+    "data14": 52.0678,
+    "data12": 30.6135,
+    "data07": 89.2892,
+    "data06": 6.0042
+  },
+  {
+    "Polling_station": 2,
+    "Latitude": "49.30805497",
+    "Longitude": "28.47184052",
+    "data14": 24.5198,
+    "data12": 43.5276,
+    "data07": 3.2476,
+    "data06": 26.0303
+  },
+  {
+    "Polling_station": 3,
+    "Latitude": "49.31060584",
+    "Longitude": "28.47266341",
+    "data14": 83.5278,
+    "data12": 65.1288,
+    "data07": 19.6158,
+    "data06": 49.0773
+  },
+  {
+    "Polling_station": 4,
+    "Latitude": "49.30428285",
+    "Longitude": "28.48287226",
+    "data14": 45.7823,
+    "data12": 53.2748,
+    "data07": 14.1622,
+    "data06": 48.7186
+  },
+  {
+    "Polling_station": 5,
+    "Latitude": "49.33171975",
+    "Longitude": "28.53302085",
+    "data14": 9.4661,
+    "data12": 82.3585,
+    "data07": 78.9447,
+    "data06": 61.013
+  },
+  {
+    "Polling_station": 6,
+    "Latitude": "49.18803738",
+    "Longitude": "28.37211259",
+    "data14": 17.073,
+    "data12": 61.699,
+    "data07": 88.561,
+    "data06": 4.215
+  },
+  {
+    "Polling_station": 7,
+    "Latitude": "49.16456142",
+    "Longitude": "28.3712315",
+    "data14": 33.4367,
+    "data12": 48.7353,
+    "data07": 29.1385,
+    "data06": 22.5286
+  },
+  {
+    "Polling_station": 8,
+    "Latitude": "49.36880817",
+    "Longitude": "28.51015828",
+    "data14": 34.1087,
+    "data12": 53.4952,
+    "data07": 44.5066,
+    "data06": 88.211
+  },
+  {
+    "Polling_station": 9,
+    "Latitude": "49.14291379",
+    "Longitude": "28.29281075",
+    "data14": 86.5006,
+    "data12": 67.7322,
+    "data07": 45.3971,
+    "data06": 76.037
+  },
+  {
+    "Polling_station": 10,
+    "Latitude": "49.26631005",
+    "Longitude": "28.33364778",
+    "data14": 34.6444,
+    "data12": 26.1668,
+    "data07": 34.9785,
+    "data06": 18.4378
+  },
+  {
+    "Polling_station": 11,
+    "Latitude": "49.34761368",
+    "Longitude": "28.46416161",
+    "data14": 73.5009,
+    "data12": 78.4274,
+    "data07": 60.4075,
+    "data06": 45.2194
+  },
+  {
+    "Polling_station": 12,
+    "Latitude": "49.37923781",
+    "Longitude": "28.46402919",
+    "data14": 52.8078,
+    "data12": 18.7898,
+    "data07": 24.0852,
+    "data06": 1.2829
+  },
+  {
+    "Polling_station": 13,
+    "Latitude": "49.23828187",
+    "Longitude": "28.26523574",
+    "data14": 81.1434,
+    "data12": 46.3799,
+    "data07": 31.0702,
+    "data06": 50.819
+  },
+  {
+    "Polling_station": 14,
+    "Latitude": "49.25435968",
+    "Longitude": "28.27469039",
+    "data14": 48.5419,
+    "data12": 57.0471,
+    "data07": 47.6549,
+    "data06": 55.4714
+  },
+  {
+    "Polling_station": 15,
+    "Latitude": "49.18167076",
+    "Longitude": "28.3066718",
+    "data14": 5.8038,
+    "data12": 11.4935,
+    "data07": 32.6619,
+    "data06": 84.5562
+  },
+  {
+    "Polling_station": 16,
+    "Latitude": "49.33786597",
+    "Longitude": "28.3661807",
+    "data14": 4.764,
+    "data12": 67.9865,
+    "data07": 30.206,
+    "data06": 78.7298
+  },
+  {
+    "Polling_station": 17,
+    "Latitude": "49.31680331",
+    "Longitude": "28.408539",
+    "data14": 82.0804,
+    "data12": 65.4627,
+    "data07": 32.3169,
+    "data06": 43.5698
+  },
+  {
+    "Polling_station": 18,
+    "Latitude": "49.20342254",
+    "Longitude": "28.22213554",
+    "data14": 62.3552,
+    "data12": 9.2007,
+    "data07": 10.126,
+    "data06": 10.1923
+  },
+  {
+    "Polling_station": 19,
+    "Latitude": "49.26067995",
+    "Longitude": "28.36200206",
+    "data14": 3.3706,
+    "data12": 36.367,
+    "data07": 85.6043,
+    "data06": 11.8425
+  },
+  {
+    "Polling_station": 20,
+    "Latitude": "49.25690155",
+    "Longitude": "28.36606112",
+    "data14": 86.0323,
+    "data12": 52.7932,
+    "data07": 28.4821,
+    "data06": 59.1381
+  },
+  {
+    "Polling_station": 21,
+    "Latitude": "49.24699034",
+    "Longitude": "28.37042151",
+    "data14": 5.8742,
+    "data12": 6.6412,
+    "data07": 62.5309,
+    "data06": 22.6841
+  },
+  {
+    "Polling_station": 22,
+    "Latitude": "49.25769788",
+    "Longitude": "28.38980707",
+    "data14": 27.3616,
+    "data12": 58.4501,
+    "data07": 25.6685,
+    "data06": 61.7124
+  },
+  {
+    "Polling_station": 23,
+    "Latitude": "49.22303857",
+    "Longitude": "28.34395499",
+    "data14": 58.3454,
+    "data12": 55.8196,
+    "data07": 11.641,
+    "data06": 42.8472
+  },
+  {
+    "Polling_station": 24,
+    "Latitude": "49.19224471",
+    "Longitude": "28.39319829",
+    "data14": 86.6316,
+    "data12": 24.4549,
+    "data07": 4.7984,
+    "data06": 76.1529
+  },
+  {
+    "Polling_station": 25,
+    "Latitude": "49.22399587",
+    "Longitude": "28.34400715",
+    "data14": 73.3645,
+    "data12": 7.4186,
+    "data07": 78.8061,
+    "data06": 62.1086
+  },
+  {
+    "Polling_station": 26,
+    "Latitude": "49.30827464",
+    "Longitude": "28.4676999",
+    "data14": 35.6935,
+    "data12": 50.3002,
+    "data07": 19.783,
+    "data06": 20.535
+  },
+  {
+    "Polling_station": 27,
+    "Latitude": "49.25091765",
+    "Longitude": "28.45688969",
+    "data14": 27.7352,
+    "data12": 61.4276,
+    "data07": 62.785,
+    "data06": 44.5257
+  },
+  {
+    "Polling_station": 28,
+    "Latitude": "49.24949828",
+    "Longitude": "28.46365414",
+    "data14": 12.1039,
+    "data12": 58.0595,
+    "data07": 71.0367,
+    "data06": 24.4336
+  },
+  {
+    "Polling_station": 29,
+    "Latitude": "49.23443784",
+    "Longitude": "28.46003741",
+    "data14": 60.566,
+    "data12": 45.4673,
+    "data07": 81.357,
+    "data06": 83.1143
+  },
+  {
+    "Polling_station": 30,
+    "Latitude": "49.23777329",
+    "Longitude": "28.46079868",
+    "data14": 20.5155,
+    "data12": 83.1452,
+    "data07": 17.0623,
+    "data06": 41.8013
+  },
+  {
+    "Polling_station": 31,
+    "Latitude": "49.23397001",
+    "Longitude": "28.44964378",
+    "data14": 31.6155,
+    "data12": 54.1696,
+    "data07": 24.66,
+    "data06": 75.1528
+  },
+  {
+    "Polling_station": 32,
+    "Latitude": "49.2347874",
+    "Longitude": "28.44056482",
+    "data14": 58.0666,
+    "data12": 83.8504,
+    "data07": 83.7128,
+    "data06": 26.454
+  },
+  {
+    "Polling_station": 33,
+    "Latitude": "49.23346931",
+    "Longitude": "28.42437208",
+    "data14": 15.4567,
+    "data12": 47.5836,
+    "data07": 27.0622,
+    "data06": 57.9197
+  },
+  {
+    "Polling_station": 34,
+    "Latitude": "49.23379314",
+    "Longitude": "28.43607381",
+    "data14": 35.5403,
+    "data12": 85.1399,
+    "data07": 46.8479,
+    "data06": 36.7913
+  },
+  {
+    "Polling_station": 35,
+    "Latitude": "49.23348253",
+    "Longitude": "28.43822889",
+    "data14": 76.33,
+    "data12": 37.9687,
+    "data07": 67.6562,
+    "data06": 88.2127
+  },
+  {
+    "Polling_station": 36,
+    "Latitude": "49.23364893",
+    "Longitude": "28.4394989",
+    "data14": 23.2114,
+    "data12": 88.5477,
+    "data07": 3.8777,
+    "data06": 11.358
+  },
+  {
+    "Polling_station": 37,
+    "Latitude": "49.22886929",
+    "Longitude": "28.44596771",
+    "data14": 76.553,
+    "data12": 20.8319,
+    "data07": 73.45,
+    "data06": 88.8122
+  },
+  {
+    "Polling_station": 38,
+    "Latitude": "49.22664044",
+    "Longitude": "28.44318806",
+    "data14": 65.2668,
+    "data12": 7.9544,
+    "data07": 85.4271,
+    "data06": 32.0893
+  },
+  {
+    "Polling_station": 39,
+    "Latitude": "49.23383678",
+    "Longitude": "28.41372607",
+    "data14": 23.3899,
+    "data12": 4.5547,
+    "data07": 24.7321,
+    "data06": 47.2112
+  },
+  {
+    "Polling_station": 40,
+    "Latitude": "49.23014675",
+    "Longitude": "28.4130156",
+    "data14": 89.1063,
+    "data12": 10.1631,
+    "data07": 86.8063,
+    "data06": 76.4894
+  },
+  {
+    "Polling_station": 41,
+    "Latitude": "49.22965928",
+    "Longitude": "28.41646816",
+    "data14": 75.8363,
+    "data12": 10.3264,
+    "data07": 61.6225,
+    "data06": 53.0114
+  },
+  {
+    "Polling_station": 42,
+    "Latitude": "49.2297522",
+    "Longitude": "28.41752075",
+    "data14": 41.3909,
+    "data12": 36.0581,
+    "data07": 39.3488,
+    "data06": 1.0718
+  },
+  {
+    "Polling_station": 43,
+    "Latitude": "49.23127619",
+    "Longitude": "28.42258665",
+    "data14": 39.1875,
+    "data12": 38.7532,
+    "data07": 36.5621,
+    "data06": 21.7188
+  },
+  {
+    "Polling_station": 44,
+    "Latitude": "49.23100333",
+    "Longitude": "28.42287883",
+    "data14": 19.3237,
+    "data12": 77.8084,
+    "data07": 60.5184,
+    "data06": 8.7524
+  },
+  {
+    "Polling_station": 45,
+    "Latitude": "49.23843492",
+    "Longitude": "28.41009349",
+    "data14": 78.2707,
+    "data12": 25.7368,
+    "data07": 43.9222,
+    "data06": 55.0925
+  },
+  {
+    "Polling_station": 46,
+    "Latitude": "49.23246348",
+    "Longitude": "28.4081213",
+    "data14": 21.393,
+    "data12": 79.3883,
+    "data07": 0.0562,
+    "data06": 88.8678
+  },
+  {
+    "Polling_station": 47,
+    "Latitude": "49.231217",
+    "Longitude": "28.40009315",
+    "data14": 1.5717,
+    "data12": 24.224,
+    "data07": 58.7348,
+    "data06": 76.1178
+  },
+  {
+    "Polling_station": 48,
+    "Latitude": "49.22978158",
+    "Longitude": "28.40706398",
+    "data14": 24.0905,
+    "data12": 78.9782,
+    "data07": 5.8639,
+    "data06": 45.7338
+  },
+  {
+    "Polling_station": 49,
+    "Latitude": "49.22857828",
+    "Longitude": "28.40668608",
+    "data14": 43.0842,
+    "data12": 9.6654,
+    "data07": 72.1261,
+    "data06": 3.3931
+  },
+  {
+    "Polling_station": 50,
+    "Latitude": "49.2347358",
+    "Longitude": "28.40187249",
+    "data14": 44.8086,
+    "data12": 52.9906,
+    "data07": 12.163,
+    "data06": 9.8443
+  },
+  {
+    "Polling_station": 51,
+    "Latitude": "49.23132234",
+    "Longitude": "28.39952991",
+    "data14": 37.7375,
+    "data12": 8.4459,
+    "data07": 11.0308,
+    "data06": 39.6653
+  },
+  {
+    "Polling_station": 52,
+    "Latitude": "49.230723",
+    "Longitude": "28.39973763",
+    "data14": 78.3,
+    "data12": 19.8798,
+    "data07": 59.8099,
+    "data06": 8.768
+  },
+  {
+    "Polling_station": 53,
+    "Latitude": "49.23045066",
+    "Longitude": "28.39966771",
+    "data14": 29.63,
+    "data12": 14.9612,
+    "data07": 24.819,
+    "data06": 30.3636
+  },
+  {
+    "Polling_station": 54,
+    "Latitude": "49.22706616",
+    "Longitude": "28.40710872",
+    "data14": 59.4346,
+    "data12": 38.8283,
+    "data07": 35.5951,
+    "data06": 13.0343
+  },
+  {
+    "Polling_station": 55,
+    "Latitude": "49.2268924",
+    "Longitude": "28.40850645",
+    "data14": 53.1674,
+    "data12": 19.0811,
+    "data07": 24.3888,
+    "data06": 52.0797
+  },
+  {
+    "Polling_station": 56,
+    "Latitude": "49.22440624",
+    "Longitude": "28.40728728",
+    "data14": 4.103,
+    "data12": 15.868,
+    "data07": 27.8615,
+    "data06": 87.6158
+  },
+  {
+    "Polling_station": 57,
+    "Latitude": "49.22435019",
+    "Longitude": "28.40508873",
+    "data14": 75.3536,
+    "data12": 54.2773,
+    "data07": 14.0236,
+    "data06": 64.7371
+  },
+  {
+    "Polling_station": 58,
+    "Latitude": "49.22753338",
+    "Longitude": "28.41176033",
+    "data14": 70.0419,
+    "data12": 65.2131,
+    "data07": 0.4838,
+    "data06": 29.8851
+  },
+  {
+    "Polling_station": 59,
+    "Latitude": "49.22919929",
+    "Longitude": "28.41244984",
+    "data14": 67.6793,
+    "data12": 36.7858,
+    "data07": 48.3125,
+    "data06": 32.2421
+  },
+  {
+    "Polling_station": 60,
+    "Latitude": "49.22673462",
+    "Longitude": "28.4179455",
+    "data14": 37.2745,
+    "data12": 20.226,
+    "data07": 25.0057,
+    "data06": 73.968
+  },
+  {
+    "Polling_station": 61,
+    "Latitude": "49.22388634",
+    "Longitude": "28.41544569",
+    "data14": 0.4039,
+    "data12": 72.9134,
+    "data07": 60.6159,
+    "data06": 8.3779
+  },
+  {
+    "Polling_station": 62,
+    "Latitude": "49.2204075",
+    "Longitude": "28.4150368",
+    "data14": 76.8191,
+    "data12": 27.1951,
+    "data07": 20.6276,
+    "data06": 5.7568
+  },
+  {
+    "Polling_station": 63,
+    "Latitude": "49.22038645",
+    "Longitude": "28.41577227",
+    "data14": 19.1896,
+    "data12": 59.351,
+    "data07": 8.8201,
+    "data06": 82.9168
+  },
+  {
+    "Polling_station": 64,
+    "Latitude": "49.22739701",
+    "Longitude": "28.42111571",
+    "data14": 43.978,
+    "data12": 47.6092,
+    "data07": 17.2988,
+    "data06": 37.4075
+  },
+  {
+    "Polling_station": 65,
+    "Latitude": "49.22565776",
+    "Longitude": "28.42368001",
+    "data14": 85.715,
+    "data12": 57.6,
+    "data07": 13.0223,
+    "data06": 82.8273
+  },
+  {
+    "Polling_station": 66,
+    "Latitude": "49.22566378",
+    "Longitude": "28.42312767",
+    "data14": 51.2801,
+    "data12": 70.9525,
+    "data07": 45.147,
+    "data06": 60.2643
+  },
+  {
+    "Polling_station": 67,
+    "Latitude": "49.22239032",
+    "Longitude": "28.42088217",
+    "data14": 24.5701,
+    "data12": 69.6291,
+    "data07": 11.4935,
+    "data06": 40.5772
+  },
+  {
+    "Polling_station": 68,
+    "Latitude": "49.21964785",
+    "Longitude": "28.42600462",
+    "data14": 57.8111,
+    "data12": 88.0383,
+    "data07": 45.4913,
+    "data06": 38.862
+  },
+  {
+    "Polling_station": 69,
+    "Latitude": "49.22576244",
+    "Longitude": "28.44218194",
+    "data14": 40.3294,
+    "data12": 37.3084,
+    "data07": 19.8761,
+    "data06": 39.8589
+  },
+  {
+    "Polling_station": 70,
+    "Latitude": "49.22161425",
+    "Longitude": "28.43401194",
+    "data14": 65.6081,
+    "data12": 78.9144,
+    "data07": 4.3086,
+    "data06": 58.5227
+  },
+  {
+    "Polling_station": 71,
+    "Latitude": "49.22367262",
+    "Longitude": "28.42689872",
+    "data14": 30.0139,
+    "data12": 28.1542,
+    "data07": 33.1733,
+    "data06": 65.5409
+  },
+  {
+    "Polling_station": 72,
+    "Latitude": "49.21990267",
+    "Longitude": "28.43718767",
+    "data14": 28.1593,
+    "data12": 48.2081,
+    "data07": 86.2845,
+    "data06": 58.5078
+  },
+  {
+    "Polling_station": 73,
+    "Latitude": "49.22781633",
+    "Longitude": "28.44631835",
+    "data14": 33.3962,
+    "data12": 5.0743,
+    "data07": 72.4009,
+    "data06": 74.8035
+  },
+  {
+    "Polling_station": 74,
+    "Latitude": "49.22809943",
+    "Longitude": "28.44925599",
+    "data14": 72.8593,
+    "data12": 23.8368,
+    "data07": 80.4105,
+    "data06": 55.3488
+  },
+  {
+    "Polling_station": 75,
+    "Latitude": "49.21569903",
+    "Longitude": "28.43329452",
+    "data14": 8.7095,
+    "data12": 25.3549,
+    "data07": 57.4259,
+    "data06": 2.5397
+  },
+  {
+    "Polling_station": 76,
+    "Latitude": "49.22354775",
+    "Longitude": "28.44744603",
+    "data14": 27.5366,
+    "data12": 48.249,
+    "data07": 23.8133,
+    "data06": 15.712
+  },
+  {
+    "Polling_station": 77,
+    "Latitude": "49.2213044",
+    "Longitude": "28.44501356",
+    "data14": 64.6944,
+    "data12": 34.8068,
+    "data07": 34.4065,
+    "data06": 62.821
+  },
+  {
+    "Polling_station": 78,
+    "Latitude": "49.22073476",
+    "Longitude": "28.45272705",
+    "data14": 25.414,
+    "data12": 15.8356,
+    "data07": 56.838,
+    "data06": 3.4539
+  },
+  {
+    "Polling_station": 79,
+    "Latitude": "49.21352829",
+    "Longitude": "28.43180656",
+    "data14": 28.2698,
+    "data12": 62.4721,
+    "data07": 84.7913,
+    "data06": 69.232
+  },
+  {
+    "Polling_station": 80,
+    "Latitude": "49.21324636",
+    "Longitude": "28.43732703",
+    "data14": 85.6163,
+    "data12": 37.1771,
+    "data07": 46.5011,
+    "data06": 64.2994
+  },
+  {
+    "Polling_station": 81,
+    "Latitude": "49.22219829",
+    "Longitude": "28.45130418",
+    "data14": 35.1768,
+    "data12": 69.7803,
+    "data07": 16.1167,
+    "data06": 22.1939
+  },
+  {
+    "Polling_station": 82,
+    "Latitude": "49.22217667",
+    "Longitude": "28.45475377",
+    "data14": 51.8977,
+    "data12": 68.7526,
+    "data07": 15.1702,
+    "data06": 48.2201
+  },
+  {
+    "Polling_station": 83,
+    "Latitude": "49.22203851",
+    "Longitude": "28.45489133",
+    "data14": 30.8908,
+    "data12": 47.2883,
+    "data07": 7.2367,
+    "data06": 23.1984
+  },
+  {
+    "Polling_station": 84,
+    "Latitude": "49.21886553",
+    "Longitude": "28.45891893",
+    "data14": 41.8386,
+    "data12": 70.8879,
+    "data07": 58.1079,
+    "data06": 0.9723
+  },
+  {
+    "Polling_station": 85,
+    "Latitude": "49.21975551",
+    "Longitude": "28.45498681",
+    "data14": 51.836,
+    "data12": 0.1221,
+    "data07": 10.647,
+    "data06": 80.1648
+  },
+  {
+    "Polling_station": 86,
+    "Latitude": "49.23320794",
+    "Longitude": "28.44466121",
+    "data14": 1.0283,
+    "data12": 87.6944,
+    "data07": 67.3661,
+    "data06": 83.4354
+  },
+  {
+    "Polling_station": 87,
+    "Latitude": "49.23216942",
+    "Longitude": "28.45021558",
+    "data14": 86.4841,
+    "data12": 89.8791,
+    "data07": 1.1272,
+    "data06": 6.5954
+  },
+  {
+    "Polling_station": 88,
+    "Latitude": "49.23125564",
+    "Longitude": "28.4598075",
+    "data14": 1.2639,
+    "data12": 17.9338,
+    "data07": 52.7141,
+    "data06": 15.6885
+  },
+  {
+    "Polling_station": 89,
+    "Latitude": "49.22876608",
+    "Longitude": "28.45513153",
+    "data14": 66.9583,
+    "data12": 51.3379,
+    "data07": 75.6056,
+    "data06": 24.8821
+  },
+  {
+    "Polling_station": 90,
+    "Latitude": "49.23374734",
+    "Longitude": "28.46251267",
+    "data14": 55.5415,
+    "data12": 25.4047,
+    "data07": 2.068,
+    "data06": 12.8846
+  },
+  {
+    "Polling_station": 91,
+    "Latitude": "49.23362718",
+    "Longitude": "28.46638655",
+    "data14": 63.5921,
+    "data12": 76.3505,
+    "data07": 22.8611,
+    "data06": 20.4832
+  },
+  {
+    "Polling_station": 92,
+    "Latitude": "49.23445481",
+    "Longitude": "28.4732021",
+    "data14": 55.7323,
+    "data12": 53.7487,
+    "data07": 11.2339,
+    "data06": 38.9002
+  },
+  {
+    "Polling_station": 93,
+    "Latitude": "49.23214673",
+    "Longitude": "28.47191058",
+    "data14": 88.9758,
+    "data12": 48.7482,
+    "data07": 13.6683,
+    "data06": 4.6151
+  },
+  {
+    "Polling_station": 94,
+    "Latitude": "49.21582056",
+    "Longitude": "28.39308143",
+    "data14": 37.7431,
+    "data12": 74.4995,
+    "data07": 54.4578,
+    "data06": 53.6416
+  },
+  {
+    "Polling_station": 95,
+    "Latitude": "49.20848982",
+    "Longitude": "28.40648472",
+    "data14": 44.7098,
+    "data12": 77.435,
+    "data07": 61.2081,
+    "data06": 37.2165
+  },
+  {
+    "Polling_station": 96,
+    "Latitude": "49.20856294",
+    "Longitude": "28.40636611",
+    "data14": 73.7574,
+    "data12": 5.5238,
+    "data07": 37.8644,
+    "data06": 84.3807
+  },
+  {
+    "Polling_station": 97,
+    "Latitude": "49.19384146",
+    "Longitude": "28.45755637",
+    "data14": 20.2991,
+    "data12": 0.1728,
+    "data07": 79.6318,
+    "data06": 11.141
+  },
+  {
+    "Polling_station": 98,
+    "Latitude": "49.24845047",
+    "Longitude": "28.45600605",
+    "data14": 58.0609,
+    "data12": 39.7516,
+    "data07": 54.616,
+    "data06": 56.8972
+  },
+  {
+    "Polling_station": 99,
+    "Latitude": "49.23563928",
+    "Longitude": "28.41290832",
+    "data14": 16.8068,
+    "data12": 88.866,
+    "data07": 76.7657,
+    "data06": 70.3837
+  },
+  {
+    "Polling_station": 100,
+    "Latitude": "49.23599701",
+    "Longitude": "28.41111095",
+    "data14": 69.4473,
+    "data12": 47.4327,
+    "data07": 89.3706,
+    "data06": 24.2041
+  },
+  {
+    "Polling_station": 101,
+    "Latitude": "49.23641687",
+    "Longitude": "28.40966821",
+    "data14": 74.2726,
+    "data12": 54.7511,
+    "data07": 53.5813,
+    "data06": 34.7059
+  },
+  {
+    "Polling_station": 102,
+    "Latitude": "49.23734856",
+    "Longitude": "28.41682434",
+    "data14": 5.5301,
+    "data12": 66.9622,
+    "data07": 47.6989,
+    "data06": 66.1231
+  },
+  {
+    "Polling_station": 103,
+    "Latitude": "49.2403629",
+    "Longitude": "28.41022045",
+    "data14": 49.5036,
+    "data12": 26.005,
+    "data07": 48.6022,
+    "data06": 47.788
+  },
+  {
+    "Polling_station": 104,
+    "Latitude": "49.21294103",
+    "Longitude": "28.44408037",
+    "data14": 46.1767,
+    "data12": 7.3296,
+    "data07": 81.5302,
+    "data06": 76.6162
+  },
+  {
+    "Polling_station": 105,
+    "Latitude": "49.21188014",
+    "Longitude": "28.4418321",
+    "data14": 54.8447,
+    "data12": 71.9709,
+    "data07": 7.7225,
+    "data06": 19.1207
+  },
+  {
+    "Polling_station": 106,
+    "Latitude": "49.21062721",
+    "Longitude": "28.4440434",
+    "data14": 12.4316,
+    "data12": 48.8001,
+    "data07": 76.3836,
+    "data06": 6.2753
+  },
+  {
+    "Polling_station": 107,
+    "Latitude": "49.22994099",
+    "Longitude": "28.45085563",
+    "data14": 7.9808,
+    "data12": 4.8036,
+    "data07": 74.3937,
+    "data06": 69.46
+  },
+  {
+    "Polling_station": 108,
+    "Latitude": "49.22949563",
+    "Longitude": "28.45879794",
+    "data14": 85.8415,
+    "data12": 54.6346,
+    "data07": 66.2194,
+    "data06": 27.0634
+  },
+  {
+    "Polling_station": 109,
+    "Latitude": "49.23654693",
+    "Longitude": "28.47223849",
+    "data14": 58.7306,
+    "data12": 79.7363,
+    "data07": 8.2395,
+    "data06": 68.7307
+  },
+  {
+    "Polling_station": 110,
+    "Latitude": "49.22172349",
+    "Longitude": "28.44639855",
+    "data14": 56.8299,
+    "data12": 43.5839,
+    "data07": 68.5481,
+    "data06": 35.4899
+  },
+  {
+    "Polling_station": 111,
+    "Latitude": "49.11186448",
+    "Longitude": "28.71024476",
+    "data14": 78.261,
+    "data12": 76.3486,
+    "data07": 34.4345,
+    "data06": 10.261
+  },
+  {
+    "Polling_station": 112,
+    "Latitude": "49.11694279",
+    "Longitude": "28.69250015",
+    "data14": 19.6288,
+    "data12": 57.9954,
+    "data07": 3.7894,
+    "data06": 85.7061
+  },
+  {
+    "Polling_station": 113,
+    "Latitude": "49.11084618",
+    "Longitude": "28.68167576",
+    "data14": 48.6271,
+    "data12": 16.3557,
+    "data07": 88.1867,
+    "data06": 81.3158
+  },
+  {
+    "Polling_station": 114,
+    "Latitude": "49.11166381",
+    "Longitude": "28.67532508",
+    "data14": 17.695,
+    "data12": 11.8728,
+    "data07": 77.8058,
+    "data06": 46.8839
+  },
+  {
+    "Polling_station": 115,
+    "Latitude": "49.28836169",
+    "Longitude": "28.54157925",
+    "data14": 71.5629,
+    "data12": 64.0236,
+    "data07": 89.6887,
+    "data06": 6.7704
+  },
+  {
+    "Polling_station": 116,
+    "Latitude": "49.23445265",
+    "Longitude": "28.72730907",
+    "data14": 6.582,
+    "data12": 35.4334,
+    "data07": 23.0587,
+    "data06": 30.3808
+  },
+  {
+    "Polling_station": 117,
+    "Latitude": "49.20478294",
+    "Longitude": "28.54611607",
+    "data14": 60.087,
+    "data12": 40.0613,
+    "data07": 61.463,
+    "data06": 40.5764
+  },
+  {
+    "Polling_station": 118,
+    "Latitude": "49.20349039",
+    "Longitude": "28.56493902",
+    "data14": 42.7402,
+    "data12": 1.0743,
+    "data07": 46.48,
+    "data06": 31.8165
+  },
+  {
+    "Polling_station": 119,
+    "Latitude": "49.21168173",
+    "Longitude": "28.55409248",
+    "data14": 88.2549,
+    "data12": 51.5041,
+    "data07": 49.9292,
+    "data06": 62.2618
+  },
+  {
+    "Polling_station": 120,
+    "Latitude": "49.24529584",
+    "Longitude": "28.63537402",
+    "data14": 70.9958,
+    "data12": 33.5867,
+    "data07": 85.6392,
+    "data06": 83.3887
+  },
+  {
+    "Polling_station": 121,
+    "Latitude": "49.19284462",
+    "Longitude": "28.70393744",
+    "data14": 76.7322,
+    "data12": 32.9484,
+    "data07": 72.1566,
+    "data06": 77.2656
+  },
+  {
+    "Polling_station": 122,
+    "Latitude": "49.19501917",
+    "Longitude": "28.72469881",
+    "data14": 7.8059,
+    "data12": 15.4326,
+    "data07": 59.6942,
+    "data06": 33.8383
+  },
+  {
+    "Polling_station": 123,
+    "Latitude": "49.19041716",
+    "Longitude": "28.77506081",
+    "data14": 18.2383,
+    "data12": 53.4031,
+    "data07": 74.9579,
+    "data06": 51.218
+  },
+  {
+    "Polling_station": 124,
+    "Latitude": "49.11187899",
+    "Longitude": "28.49566463",
+    "data14": 20.6747,
+    "data12": 0.1043,
+    "data07": 23.9996,
+    "data06": 74.4127
+  },
+  {
+    "Polling_station": 125,
+    "Latitude": "49.12122919",
+    "Longitude": "28.54833175",
+    "data14": 86.5345,
+    "data12": 5.2373,
+    "data07": 16.4658,
+    "data06": 50.4403
+  },
+  {
+    "Polling_station": 126,
+    "Latitude": "49.15189616",
+    "Longitude": "28.31190312",
+    "data14": 30.9075,
+    "data12": 70.7117,
+    "data07": 84.5412,
+    "data06": 40.5139
+  },
+  {
+    "Polling_station": 127,
+    "Latitude": "49.12753114",
+    "Longitude": "28.32618316",
+    "data14": 29.3566,
+    "data12": 49.1433,
+    "data07": 85.8695,
+    "data06": 85.7911
+  },
+  {
+    "Polling_station": 128,
+    "Latitude": "49.14088351",
+    "Longitude": "28.67451537",
+    "data14": 88.0601,
+    "data12": 45.3309,
+    "data07": 8.153,
+    "data06": 11.0983
+  },
+  {
+    "Polling_station": 129,
+    "Latitude": "49.25847403",
+    "Longitude": "28.30220552",
+    "data14": 61.5073,
+    "data12": 0.9467,
+    "data07": 9.3062,
+    "data06": 8.4597
+  },
+  {
+    "Polling_station": 130,
+    "Latitude": "49.16854045",
+    "Longitude": "28.49132263",
+    "data14": 64.0914,
+    "data12": 62.7097,
+    "data07": 76.1634,
+    "data06": 28.1967
+  },
+  {
+    "Polling_station": 131,
+    "Latitude": "49.17683454",
+    "Longitude": "28.50424356",
+    "data14": 12.9721,
+    "data12": 37.3278,
+    "data07": 33.7096,
+    "data06": 10.9091
+  },
+  {
+    "Polling_station": 132,
+    "Latitude": "49.19133194",
+    "Longitude": "28.42027049",
+    "data14": 0.541,
+    "data12": 20.7717,
+    "data07": 7.7593,
+    "data06": 43.9605
+  },
+  {
+    "Polling_station": 133,
+    "Latitude": "49.17406807",
+    "Longitude": "28.44575518",
+    "data14": 7.767,
+    "data12": 52.4142,
+    "data07": 68.5869,
+    "data06": 27.1672
+  },
+  {
+    "Polling_station": 134,
+    "Latitude": "49.24928155",
+    "Longitude": "28.67159042",
+    "data14": 45.513,
+    "data12": 37.3408,
+    "data07": 56.6071,
+    "data06": 13.6677
+  },
+  {
+    "Polling_station": 135,
+    "Latitude": "49.2123084",
+    "Longitude": "28.78707745",
+    "data14": 21.647,
+    "data12": 17.0462,
+    "data07": 38.2011,
+    "data06": 78.8132
+  },
+  {
+    "Polling_station": 136,
+    "Latitude": "49.20430633",
+    "Longitude": "28.81803017",
+    "data14": 22.2293,
+    "data12": 50.0763,
+    "data07": 17.733,
+    "data06": 70.5284
+  },
+  {
+    "Polling_station": 137,
+    "Latitude": "49.16867158",
+    "Longitude": "28.52778321",
+    "data14": 64.0222,
+    "data12": 6.6824,
+    "data07": 58.4083,
+    "data06": 89.3504
+  },
+  {
+    "Polling_station": 138,
+    "Latitude": "49.18796627",
+    "Longitude": "28.5337182",
+    "data14": 85.9406,
+    "data12": 2.5775,
+    "data07": 66.3113,
+    "data06": 89.3024
+  },
+  {
+    "Polling_station": 139,
+    "Latitude": "49.17183981",
+    "Longitude": "28.57253192",
+    "data14": 52.6291,
+    "data12": 34.1124,
+    "data07": 49.2764,
+    "data06": 82.5637
+  },
+  {
+    "Polling_station": 140,
+    "Latitude": "49.19580022",
+    "Longitude": "28.60444539",
+    "data14": 1.6264,
+    "data12": 79.0875,
+    "data07": 73.813,
+    "data06": 41.1921
+  },
+  {
+    "Polling_station": 141,
+    "Latitude": "49.19692589",
+    "Longitude": "28.58586957",
+    "data14": 69.9455,
+    "data12": 85.3619,
+    "data07": 64.0868,
+    "data06": 7.4585
+  },
+  {
+    "Polling_station": 142,
+    "Latitude": "49.11040491",
+    "Longitude": "28.77604039",
+    "data14": 53.0397,
+    "data12": 60.1581,
+    "data07": 7.178,
+    "data06": 89.5242
+  },
+  {
+    "Polling_station": 143,
+    "Latitude": "49.0888661",
+    "Longitude": "28.76196823",
+    "data14": 38.0802,
+    "data12": 9.4419,
+    "data07": 58.6286,
+    "data06": 60.053
+  },
+  {
+    "Polling_station": 144,
+    "Latitude": "49.18390365",
+    "Longitude": "28.18919067",
+    "data14": 62.0374,
+    "data12": 70.7855,
+    "data07": 26.9305,
+    "data06": 27.0382
+  },
+  {
+    "Polling_station": 145,
+    "Latitude": "49.18868621",
+    "Longitude": "28.1542368",
+    "data14": 43.7581,
+    "data12": 62.4937,
+    "data07": 76.991,
+    "data06": 33.9931
+  },
+  {
+    "Polling_station": 146,
+    "Latitude": "49.19283999",
+    "Longitude": "28.13307226",
+    "data14": 45.5046,
+    "data12": 36.1767,
+    "data07": 42.072,
+    "data06": 59.8683
+  },
+  {
+    "Polling_station": 147,
+    "Latitude": "49.16857888",
+    "Longitude": "28.60035783",
+    "data14": 72.8177,
+    "data12": 28.7123,
+    "data07": 58.0239,
+    "data06": 27.2991
+  },
+  {
+    "Polling_station": 148,
+    "Latitude": "49.33372791",
+    "Longitude": "28.5740312",
+    "data14": 57.669,
+    "data12": 18.1738,
+    "data07": 72.0061,
+    "data06": 77.8933
+  },
+  {
+    "Polling_station": 149,
+    "Latitude": "49.28144639",
+    "Longitude": "28.60167962",
+    "data14": 10.7161,
+    "data12": 37.4361,
+    "data07": 37.8821,
+    "data06": 59.3371
+  },
+  {
+    "Polling_station": 150,
+    "Latitude": "49.12577492",
+    "Longitude": "28.76737315",
+    "data14": 85.2865,
+    "data12": 41.3812,
+    "data07": 14.5791,
+    "data06": 33.3141
+  },
+  {
+    "Polling_station": 151,
+    "Latitude": "49.16527862",
+    "Longitude": "28.24341846",
+    "data14": 46.2182,
+    "data12": 37.6747,
+    "data07": 24.3095,
+    "data06": 26.5597
+  },
+  {
+    "Polling_station": 152,
+    "Latitude": "49.2393204",
+    "Longitude": "28.48011302",
+    "data14": 34.0746,
+    "data12": 26.4167,
+    "data07": 83.9936,
+    "data06": 30.0655
+  },
+  {
+    "Polling_station": 153,
+    "Latitude": "49.24394322",
+    "Longitude": "28.48512296",
+    "data14": 76.7284,
+    "data12": 40.6053,
+    "data07": 25.2519,
+    "data06": 66.212
+  },
+  {
+    "Polling_station": 154,
+    "Latitude": "49.24321299",
+    "Longitude": "28.48901559",
+    "data14": 64.1165,
+    "data12": 17.7323,
+    "data07": 27.2262,
+    "data06": 65.1205
+  },
+  {
+    "Polling_station": 155,
+    "Latitude": "49.24177524",
+    "Longitude": "28.4887918",
+    "data14": 22.3101,
+    "data12": 66.3997,
+    "data07": 71.9054,
+    "data06": 30.5538
+  },
+  {
+    "Polling_station": 156,
+    "Latitude": "49.23874257",
+    "Longitude": "28.49187791",
+    "data14": 37.4372,
+    "data12": 34.9592,
+    "data07": 2.3944,
+    "data06": 86.0007
+  },
+  {
+    "Polling_station": 157,
+    "Latitude": "49.24537231",
+    "Longitude": "28.47474396",
+    "data14": 57.0332,
+    "data12": 79.9262,
+    "data07": 13.9496,
+    "data06": 1.6823
+  },
+  {
+    "Polling_station": 158,
+    "Latitude": "49.24512016",
+    "Longitude": "28.47416997",
+    "data14": 89.7372,
+    "data12": 54.7036,
+    "data07": 68.2888,
+    "data06": 67.7099
+  },
+  {
+    "Polling_station": 159,
+    "Latitude": "49.24523573",
+    "Longitude": "28.48106861",
+    "data14": 66.9158,
+    "data12": 16.9285,
+    "data07": 87.526,
+    "data06": 42.3084
+  },
+  {
+    "Polling_station": 160,
+    "Latitude": "49.24473844",
+    "Longitude": "28.48272085",
+    "data14": 22.8542,
+    "data12": 56.9753,
+    "data07": 27.7044,
+    "data06": 70.7191
+  },
+  {
+    "Polling_station": 161,
+    "Latitude": "49.24489253",
+    "Longitude": "28.4830749",
+    "data14": 32.9807,
+    "data12": 30.6274,
+    "data07": 20.5241,
+    "data06": 47.7383
+  },
+  {
+    "Polling_station": 162,
+    "Latitude": "49.24651645",
+    "Longitude": "28.48624347",
+    "data14": 71.146,
+    "data12": 88.3759,
+    "data07": 59.6724,
+    "data06": 62.459
+  },
+  {
+    "Polling_station": 163,
+    "Latitude": "49.24822286",
+    "Longitude": "28.49194765",
+    "data14": 40.0374,
+    "data12": 52.347,
+    "data07": 82.4008,
+    "data06": 88.2002
+  },
+  {
+    "Polling_station": 164,
+    "Latitude": "49.26121742",
+    "Longitude": "28.47216769",
+    "data14": 81.7604,
+    "data12": 31.2026,
+    "data07": 32.5701,
+    "data06": 72.6816
+  },
+  {
+    "Polling_station": 165,
+    "Latitude": "49.26154776",
+    "Longitude": "28.47163341",
+    "data14": 54.8923,
+    "data12": 22.6734,
+    "data07": 5.5414,
+    "data06": 31.0894
+  },
+  {
+    "Polling_station": 166,
+    "Latitude": "49.26046014",
+    "Longitude": "28.4736228",
+    "data14": 50.4112,
+    "data12": 40.9293,
+    "data07": 46.9014,
+    "data06": 6.5449
+  },
+  {
+    "Polling_station": 167,
+    "Latitude": "49.25269054",
+    "Longitude": "28.47427769",
+    "data14": 48.1906,
+    "data12": 73.2945,
+    "data07": 61.6727,
+    "data06": 47.6207
+  },
+  {
+    "Polling_station": 168,
+    "Latitude": "49.24624314",
+    "Longitude": "28.47426408",
+    "data14": 89.866,
+    "data12": 54.3058,
+    "data07": 86.1111,
+    "data06": 5.9948
+  },
+  {
+    "Polling_station": 169,
+    "Latitude": "49.24847148",
+    "Longitude": "28.50111544",
+    "data14": 21.3566,
+    "data12": 12.6279,
+    "data07": 28.7885,
+    "data06": 47.0323
+  },
+  {
+    "Polling_station": 170,
+    "Latitude": "49.24718574",
+    "Longitude": "28.50927289",
+    "data14": 10.8753,
+    "data12": 7.8584,
+    "data07": 78.8396,
+    "data06": 57.8543
+  },
+  {
+    "Polling_station": 171,
+    "Latitude": "49.24244805",
+    "Longitude": "28.49765539",
+    "data14": 89.6292,
+    "data12": 35.8329,
+    "data07": 39.0849,
+    "data06": 5.084
+  },
+  {
+    "Polling_station": 172,
+    "Latitude": "49.24151295",
+    "Longitude": "28.49640012",
+    "data14": 85.8069,
+    "data12": 37.5567,
+    "data07": 29.4211,
+    "data06": 60.9581
+  },
+  {
+    "Polling_station": 173,
+    "Latitude": "49.24275974",
+    "Longitude": "28.49851906",
+    "data14": 47.7551,
+    "data12": 39.7253,
+    "data07": 67.3565,
+    "data06": 3.2256
+  },
+  {
+    "Polling_station": 174,
+    "Latitude": "49.24157774",
+    "Longitude": "28.49878192",
+    "data14": 26.5398,
+    "data12": 36.404,
+    "data07": 16.5703,
+    "data06": 65.0348
+  },
+  {
+    "Polling_station": 175,
+    "Latitude": "49.2419805",
+    "Longitude": "28.49953026",
+    "data14": 59.9052,
+    "data12": 1.9227,
+    "data07": 49.1301,
+    "data06": 53.3903
+  },
+  {
+    "Polling_station": 176,
+    "Latitude": "49.26196351",
+    "Longitude": "28.47202632",
+    "data14": 6.3912,
+    "data12": 82.7123,
+    "data07": 78.6516,
+    "data06": 56.5817
+  },
+  {
+    "Polling_station": 177,
+    "Latitude": "49.26016059",
+    "Longitude": "28.47352025",
+    "data14": 11.3651,
+    "data12": 15.4623,
+    "data07": 46.3526,
+    "data06": 77.7437
+  },
+  {
+    "Polling_station": 178,
+    "Latitude": "49.27019527",
+    "Longitude": "28.50766003",
+    "data14": 38.5104,
+    "data12": 11.7759,
+    "data07": 32.437,
+    "data06": 39.2268
+  },
+  {
+    "Polling_station": 179,
+    "Latitude": "49.27009949",
+    "Longitude": "28.50947539",
+    "data14": 71.7968,
+    "data12": 12.2984,
+    "data07": 71.0107,
+    "data06": 64.4964
+  },
+  {
+    "Polling_station": 180,
+    "Latitude": "49.26377801",
+    "Longitude": "28.51878886",
+    "data14": 49.3694,
+    "data12": 54.2514,
+    "data07": 38.9311,
+    "data06": 54.6788
+  },
+  {
+    "Polling_station": 181,
+    "Latitude": "49.261682",
+    "Longitude": "28.51069398",
+    "data14": 10.9295,
+    "data12": 34.6836,
+    "data07": 65.3916,
+    "data06": 38.525
+  },
+  {
+    "Polling_station": 182,
+    "Latitude": "49.23501579",
+    "Longitude": "28.51694584",
+    "data14": 48.6789,
+    "data12": 5.7899,
+    "data07": 45.2071,
+    "data06": 18.1631
+  },
+  {
+    "Polling_station": 183,
+    "Latitude": "49.23475659",
+    "Longitude": "28.51688147",
+    "data14": 0.2257,
+    "data12": 63.583,
+    "data07": 33.4007,
+    "data06": 70.9011
+  },
+  {
+    "Polling_station": 184,
+    "Latitude": "49.23355163",
+    "Longitude": "28.51670444",
+    "data14": 47.7672,
+    "data12": 50.718,
+    "data07": 51.5357,
+    "data06": 38.2373
+  },
+  {
+    "Polling_station": 185,
+    "Latitude": "49.23293512",
+    "Longitude": "28.51643085",
+    "data14": 75.849,
+    "data12": 40.2906,
+    "data07": 73.0127,
+    "data06": 19.6129
+  },
+  {
+    "Polling_station": 186,
+    "Latitude": "49.23404903",
+    "Longitude": "28.53042126",
+    "data14": 18.9259,
+    "data12": 50.0067,
+    "data07": 68.3559,
+    "data06": 27.3708
+  },
+  {
+    "Polling_station": 187,
+    "Latitude": "49.23096238",
+    "Longitude": "28.53246385",
+    "data14": 68.4922,
+    "data12": 26.0025,
+    "data07": 31.1486,
+    "data06": 37.9408
+  },
+  {
+    "Polling_station": 188,
+    "Latitude": "49.25052699",
+    "Longitude": "28.54275942",
+    "data14": 79.6445,
+    "data12": 80.3305,
+    "data07": 21.6307,
+    "data06": 86.7751
+  },
+  {
+    "Polling_station": 189,
+    "Latitude": "49.24728787",
+    "Longitude": "28.53393495",
+    "data14": 52.074,
+    "data12": 51.687,
+    "data07": 75.7912,
+    "data06": 8.671
+  },
+  {
+    "Polling_station": 190,
+    "Latitude": "49.24725635",
+    "Longitude": "28.53469133",
+    "data14": 72.0467,
+    "data12": 83.9318,
+    "data07": 3.2617,
+    "data06": 59.8946
+  },
+  {
+    "Polling_station": 191,
+    "Latitude": "49.24554741",
+    "Longitude": "28.53974998",
+    "data14": 20.897,
+    "data12": 11.6076,
+    "data07": 27.2032,
+    "data06": 56.6413
+  },
+  {
+    "Polling_station": 192,
+    "Latitude": "49.24592212",
+    "Longitude": "28.53954881",
+    "data14": 50.7256,
+    "data12": 79.0267,
+    "data07": 66.1493,
+    "data06": 81.6761
+  },
+  {
+    "Polling_station": 193,
+    "Latitude": "49.23812613",
+    "Longitude": "28.51144731",
+    "data14": 12.8892,
+    "data12": 23.6284,
+    "data07": 51.7219,
+    "data06": 83.0038
+  },
+  {
+    "Polling_station": 194,
+    "Latitude": "49.22681817",
+    "Longitude": "28.48979917",
+    "data14": 74.6777,
+    "data12": 23.7388,
+    "data07": 70.4728,
+    "data06": 79.7284
+  },
+  {
+    "Polling_station": 195,
+    "Latitude": "49.22007046",
+    "Longitude": "28.4730862",
+    "data14": 29.8148,
+    "data12": 52.0449,
+    "data07": 15.2083,
+    "data06": 43.4169
+  },
+  {
+    "Polling_station": 196,
+    "Latitude": "49.21053785",
+    "Longitude": "28.45622331",
+    "data14": 22.0124,
+    "data12": 49.3348,
+    "data07": 85.5102,
+    "data06": 3.8011
+  },
+  {
+    "Polling_station": 197,
+    "Latitude": "49.21074461",
+    "Longitude": "28.45587462",
+    "data14": 78.1137,
+    "data12": 61.8448,
+    "data07": 1.4665,
+    "data06": 27.7963
+  },
+  {
+    "Polling_station": 198,
+    "Latitude": "49.21332364",
+    "Longitude": "28.46983131",
+    "data14": 67.5879,
+    "data12": 6.1093,
+    "data07": 16.8177,
+    "data06": 17.104
+  },
+  {
+    "Polling_station": 199,
+    "Latitude": "49.2125336",
+    "Longitude": "28.4860146",
+    "data14": 51.1413,
+    "data12": 61.6246,
+    "data07": 34.6391,
+    "data06": 62.8624
+  },
+  {
+    "Polling_station": 200,
+    "Latitude": "49.21184062",
+    "Longitude": "28.48636786",
+    "data14": 78.3887,
+    "data12": 80.4353,
+    "data07": 22.692,
+    "data06": 38.8785
+  },
+  {
+    "Polling_station": 201,
+    "Latitude": "49.2121306",
+    "Longitude": "28.48611116",
+    "data14": 44.7312,
+    "data12": 89.8551,
+    "data07": 31.7612,
+    "data06": 63.821
+  },
+  {
+    "Polling_station": 202,
+    "Latitude": "49.23293606",
+    "Longitude": "28.48911468",
+    "data14": 25.8263,
+    "data12": 11.0662,
+    "data07": 4.8289,
+    "data06": 28.5413
+  },
+  {
+    "Polling_station": 203,
+    "Latitude": "49.22678192",
+    "Longitude": "28.48980258",
+    "data14": 87.1793,
+    "data12": 56.5968,
+    "data07": 83.5605,
+    "data06": 7.4692
+  },
+  {
+    "Polling_station": 204,
+    "Latitude": "49.22833912",
+    "Longitude": "28.49964023",
+    "data14": 76.7595,
+    "data12": 74.8166,
+    "data07": 44.4691,
+    "data06": 13.8722
+  },
+  {
+    "Polling_station": 205,
+    "Latitude": "49.21814449",
+    "Longitude": "28.49170843",
+    "data14": 4.4689,
+    "data12": 31.026,
+    "data07": 4.4357,
+    "data06": 22.1132
+  },
+  {
+    "Polling_station": 206,
+    "Latitude": "49.21790847",
+    "Longitude": "28.49453217",
+    "data14": 42.291,
+    "data12": 46.4605,
+    "data07": 74.375,
+    "data06": 22.8117
+  },
+  {
+    "Polling_station": 207,
+    "Latitude": "49.2288611",
+    "Longitude": "28.52075458",
+    "data14": 38.4673,
+    "data12": 37.9598,
+    "data07": 55.1137,
+    "data06": 11.4358
+  },
+  {
+    "Polling_station": 208,
+    "Latitude": "49.22754725",
+    "Longitude": "28.5352592",
+    "data14": 3.421,
+    "data12": 33.4778,
+    "data07": 3.5726,
+    "data06": 59.4969
+  },
+  {
+    "Polling_station": 209,
+    "Latitude": "49.21349538",
+    "Longitude": "28.52232272",
+    "data14": 27.8865,
+    "data12": 78.8708,
+    "data07": 80.6019,
+    "data06": 77.9219
+  },
+  {
+    "Polling_station": 210,
+    "Latitude": "49.21361399",
+    "Longitude": "28.52260551",
+    "data14": 17.9475,
+    "data12": 2.9421,
+    "data07": 9.2573,
+    "data06": 74.0805
+  },
+  {
+    "Polling_station": 211,
+    "Latitude": "49.21361703",
+    "Longitude": "28.52195276",
+    "data14": 26.5736,
+    "data12": 84.3786,
+    "data07": 76.4946,
+    "data06": 89.1701
+  },
+  {
+    "Polling_station": 212,
+    "Latitude": "49.2357087",
+    "Longitude": "28.48707766",
+    "data14": 73.4597,
+    "data12": 56.8763,
+    "data07": 26.8353,
+    "data06": 34.7694
+  },
+  {
+    "Polling_station": 213,
+    "Latitude": "49.23412611",
+    "Longitude": "28.49475874",
+    "data14": 33.7845,
+    "data12": 84.2473,
+    "data07": 61.3448,
+    "data06": 66.3457
+  },
+  {
+    "Polling_station": 214,
+    "Latitude": "49.23631729",
+    "Longitude": "28.49725874",
+    "data14": 37.1259,
+    "data12": 24.0295,
+    "data07": 46.3448,
+    "data06": 52.1378
+  },
+  {
+    "Polling_station": 215,
+    "Latitude": "49.24139918",
+    "Longitude": "28.49979654",
+    "data14": 14.21,
+    "data12": 66.5461,
+    "data07": 69.2887,
+    "data06": 50.2214
+  },
+  {
+    "Polling_station": 216,
+    "Latitude": "49.23047216",
+    "Longitude": "28.51065613",
+    "data14": 63.4025,
+    "data12": 83.8801,
+    "data07": 2.1841,
+    "data06": 59.6662
+  },
+  {
+    "Polling_station": 217,
+    "Latitude": "49.24936093",
+    "Longitude": "28.47761393",
+    "data14": 36.5223,
+    "data12": 73.7655,
+    "data07": 16.8767,
+    "data06": 13.1431
+  },
+  {
+    "Polling_station": 218,
+    "Latitude": "49.23948905",
+    "Longitude": "28.49501044",
+    "data14": 86.3151,
+    "data12": 68.7911,
+    "data07": 62.9392,
+    "data06": 68.5201
+  },
+  {
+    "Polling_station": 219,
+    "Latitude": "49.23982178",
+    "Longitude": "28.50480319",
+    "data14": 64.1703,
+    "data12": 36.7572,
+    "data07": 68.3273,
+    "data06": 65.8526
+  },
+  {
+    "Polling_station": 220,
+    "Latitude": "49.2126747",
+    "Longitude": "28.46964182",
+    "data14": 8.6127,
+    "data12": 53.1047,
+    "data07": 35.8108,
+    "data06": 0.3601
+  },
+  {
+    "Polling_station": 221,
+    "Latitude": "49.21284641",
+    "Longitude": "28.4687406",
+    "data14": 49.7927,
+    "data12": 65.2423,
+    "data07": 46.2484,
+    "data06": 51.0502
+  },
+  {
+    "Polling_station": 222,
+    "Latitude": "49.23201385",
+    "Longitude": "28.50309491",
+    "data14": 40.7073,
+    "data12": 59.9724,
+    "data07": 88.7249,
+    "data06": 70.4856
+  },
+  {
+    "Polling_station": 223,
+    "Latitude": "49.23485467",
+    "Longitude": "28.50365281",
+    "data14": 8.2169,
+    "data12": 32.9447,
+    "data07": 49.0871,
+    "data06": 79.5099
+  },
+  {
+    "Polling_station": 224,
+    "Latitude": "49.24564196",
+    "Longitude": "28.53925645",
+    "data14": 41.0278,
+    "data12": 60.1468,
+    "data07": 73.1405,
+    "data06": 11.3703
+  },
+  {
+    "Polling_station": 225,
+    "Latitude": "49.50010883",
+    "Longitude": "28.40529062",
+    "data14": 42.3467,
+    "data12": 27.0229,
+    "data07": 58.7623,
+    "data06": 30.9199
+  },
+  {
+    "Polling_station": 226,
+    "Latitude": "49.50972032",
+    "Longitude": "28.42795773",
+    "data14": 7.6591,
+    "data12": 72.4465,
+    "data07": 13.6753,
+    "data06": 43.273
+  },
+  {
+    "Polling_station": 227,
+    "Latitude": "49.57729539",
+    "Longitude": "28.46563172",
+    "data14": 84.01,
+    "data12": 17.6849,
+    "data07": 13.0852,
+    "data06": 2.2514
+  },
+  {
+    "Polling_station": 228,
+    "Latitude": "49.59619652",
+    "Longitude": "28.42424394",
+    "data14": 7.8671,
+    "data12": 63.1837,
+    "data07": 42.1358,
+    "data06": 71.6913
+  },
+  {
+    "Polling_station": 229,
+    "Latitude": "49.55381859",
+    "Longitude": "28.73777765",
+    "data14": 43.8355,
+    "data12": 80.9359,
+    "data07": 17.8191,
+    "data06": 77.9093
+  },
+  {
+    "Polling_station": 230,
+    "Latitude": "49.5642893",
+    "Longitude": "28.70903248",
+    "data14": 57.3056,
+    "data12": 69.095,
+    "data07": 59.7029,
+    "data06": 54.0466
+  },
+  {
+    "Polling_station": 231,
+    "Latitude": "49.45097413",
+    "Longitude": "28.35435088",
+    "data14": 55.6393,
+    "data12": 17.0765,
+    "data07": 52.623,
+    "data06": 52.9022
+  },
+  {
+    "Polling_station": 232,
+    "Latitude": "49.45621467",
+    "Longitude": "28.27950228",
+    "data14": 29.773,
+    "data12": 64.6136,
+    "data07": 63.0885,
+    "data06": 28.4236
+  },
+  {
+    "Polling_station": 233,
+    "Latitude": "49.46245056",
+    "Longitude": "28.60692006",
+    "data14": 74.5709,
+    "data12": 53.85,
+    "data07": 65.0491,
+    "data06": 37.7865
+  },
+  {
+    "Polling_station": 234,
+    "Latitude": "49.46248052",
+    "Longitude": "28.81305809",
+    "data14": 84.1839,
+    "data12": 75.2712,
+    "data07": 61.1343,
+    "data06": 52.8105
+  },
+  {
+    "Polling_station": 235,
+    "Latitude": "49.53823595",
+    "Longitude": "28.31665704",
+    "data14": 16.0884,
+    "data12": 84.1405,
+    "data07": 41.1632,
+    "data06": 45.7779
+  },
+  {
+    "Polling_station": 236,
+    "Latitude": "49.56707343",
+    "Longitude": "28.66101078",
+    "data14": 78.6717,
+    "data12": 25.4063,
+    "data07": 16.4857,
+    "data06": 79.5963
+  },
+  {
+    "Polling_station": 237,
+    "Latitude": "49.49061095",
+    "Longitude": "28.34663456",
+    "data14": 47.9184,
+    "data12": 11.1274,
+    "data07": 18.3015,
+    "data06": 58.8293
+  },
+  {
+    "Polling_station": 238,
+    "Latitude": "49.49331189",
+    "Longitude": "28.3343906",
+    "data14": 55.8433,
+    "data12": 5.0548,
+    "data07": 43.5992,
+    "data06": 45.1618
+  },
+  {
+    "Polling_station": 239,
+    "Latitude": "49.48870245",
+    "Longitude": "28.2946765",
+    "data14": 76.1257,
+    "data12": 15.0932,
+    "data07": 78.8867,
+    "data06": 81.2768
+  },
+  {
+    "Polling_station": 240,
+    "Latitude": "49.45792671",
+    "Longitude": "28.72470314",
+    "data14": 33.0873,
+    "data12": 48.9868,
+    "data07": 66.7267,
+    "data06": 41.9218
+  },
+  {
+    "Polling_station": 241,
+    "Latitude": "49.45376197",
+    "Longitude": "28.67940044",
+    "data14": 34.2379,
+    "data12": 62.5673,
+    "data07": 57.63,
+    "data06": 41.0656
+  },
+  {
+    "Polling_station": 242,
+    "Latitude": "49.43771355",
+    "Longitude": "28.73699222",
+    "data14": 3.3513,
+    "data12": 62.7486,
+    "data07": 82.2971,
+    "data06": 89.5616
+  },
+  {
+    "Polling_station": 243,
+    "Latitude": "49.52426158",
+    "Longitude": "28.53766299",
+    "data14": 7.9752,
+    "data12": 84.128,
+    "data07": 11.967,
+    "data06": 37.8928
+  },
+  {
+    "Polling_station": 244,
+    "Latitude": "49.54291184",
+    "Longitude": "28.54775462",
+    "data14": 74.2848,
+    "data12": 38.9349,
+    "data07": 52.9593,
+    "data06": 31.1162
+  },
+  {
+    "Polling_station": 245,
+    "Latitude": "49.53606856",
+    "Longitude": "28.49665995",
+    "data14": 61.7953,
+    "data12": 65.507,
+    "data07": 28.5649,
+    "data06": 65.1715
+  },
+  {
+    "Polling_station": 246,
+    "Latitude": "49.48161488",
+    "Longitude": "28.62786981",
+    "data14": 50.031,
+    "data12": 70.4217,
+    "data07": 15.5807,
+    "data06": 16.7101
+  },
+  {
+    "Polling_station": 247,
+    "Latitude": "49.48570022",
+    "Longitude": "28.59151301",
+    "data14": 67.2615,
+    "data12": 71.0568,
+    "data07": 35.4996,
+    "data06": 70.8727
+  },
+  {
+    "Polling_station": 248,
+    "Latitude": "49.65929776",
+    "Longitude": "28.46153577",
+    "data14": 83.5593,
+    "data12": 31.4713,
+    "data07": 35.1725,
+    "data06": 1.2523
+  },
+  {
+    "Polling_station": 249,
+    "Latitude": "49.64843669",
+    "Longitude": "28.49605993",
+    "data14": 46.0617,
+    "data12": 28.3149,
+    "data07": 25.6104,
+    "data06": 10.1715
+  },
+  {
+    "Polling_station": 250,
+    "Latitude": "49.64291462",
+    "Longitude": "28.40703801",
+    "data14": 17.5243,
+    "data12": 75.9421,
+    "data07": 39.4688,
+    "data06": 81.6771
+  },
+  {
+    "Polling_station": 251,
+    "Latitude": "49.3640277",
+    "Longitude": "28.62267206",
+    "data14": 86.9319,
+    "data12": 43.1454,
+    "data07": 35.7305,
+    "data06": 86.1747
+  },
+  {
+    "Polling_station": 252,
+    "Latitude": "49.62386889",
+    "Longitude": "28.46506585",
+    "data14": 6.7902,
+    "data12": 26.3692,
+    "data07": 12.9164,
+    "data06": 83.1779
+  },
+  {
+    "Polling_station": 253,
+    "Latitude": "49.39465536",
+    "Longitude": "28.38153851",
+    "data14": 31.133,
+    "data12": 56.1905,
+    "data07": 12.6181,
+    "data06": 2.8312
+  },
+  {
+    "Polling_station": 254,
+    "Latitude": "49.40351219",
+    "Longitude": "28.39951788",
+    "data14": 64.9279,
+    "data12": 58.0698,
+    "data07": 42.9696,
+    "data06": 39.1267
+  },
+  {
+    "Polling_station": 255,
+    "Latitude": "49.61045226",
+    "Longitude": "28.55744634",
+    "data14": 30.4722,
+    "data12": 83.5919,
+    "data07": 43.7742,
+    "data06": 6.9721
+  },
+  {
+    "Polling_station": 256,
+    "Latitude": "49.61097796",
+    "Longitude": "28.59369386",
+    "data14": 64.6538,
+    "data12": 9.7654,
+    "data07": 30.3809,
+    "data06": 31.4798
+  },
+  {
+    "Polling_station": 257,
+    "Latitude": "49.46398355",
+    "Longitude": "28.76867819",
+    "data14": 11.9216,
+    "data12": 87.7619,
+    "data07": 13.5964,
+    "data06": 68.2714
+  },
+  {
+    "Polling_station": 258,
+    "Latitude": "49.56328542",
+    "Longitude": "28.30334982",
+    "data14": 64.8278,
+    "data12": 89.0071,
+    "data07": 3.8635,
+    "data06": 41.558
+  },
+  {
+    "Polling_station": 259,
+    "Latitude": "49.56418813",
+    "Longitude": "28.26894657",
+    "data14": 56.4134,
+    "data12": 8.8398,
+    "data07": 88.7695,
+    "data06": 9.3183
+  },
+  {
+    "Polling_station": 260,
+    "Latitude": "49.58979756",
+    "Longitude": "28.25830775",
+    "data14": 5.911,
+    "data12": 86.9834,
+    "data07": 24.6178,
+    "data06": 35.5106
+  },
+  {
+    "Polling_station": 261,
+    "Latitude": "49.44089798",
+    "Longitude": "28.47540349",
+    "data14": 49.6049,
+    "data12": 52.2155,
+    "data07": 82.1551,
+    "data06": 7.5197
+  },
+  {
+    "Polling_station": 262,
+    "Latitude": "49.44590105",
+    "Longitude": "28.45510157",
+    "data14": 50.5956,
+    "data12": 17.7475,
+    "data07": 13.757,
+    "data06": 75.4337
+  },
+  {
+    "Polling_station": 263,
+    "Latitude": "49.52701713",
+    "Longitude": "28.47534415",
+    "data14": 33.2404,
+    "data12": 7.0033,
+    "data07": 22.3109,
+    "data06": 53.4545
+  },
+  {
+    "Polling_station": 264,
+    "Latitude": "49.58607609",
+    "Longitude": "28.54794555",
+    "data14": 72.4619,
+    "data12": 4.9286,
+    "data07": 82.9408,
+    "data06": 13.3478
+  },
+  {
+    "Polling_station": 265,
+    "Latitude": "49.40532154",
+    "Longitude": "28.54843916",
+    "data14": 58.3519,
+    "data12": 5.6042,
+    "data07": 72.9816,
+    "data06": 28.7213
+  },
+  {
+    "Polling_station": 266,
+    "Latitude": "49.58672963",
+    "Longitude": "28.38213829",
+    "data14": 21.3177,
+    "data12": 83.5608,
+    "data07": 15.2751,
+    "data06": 34.5135
+  },
+  {
+    "Polling_station": 267,
+    "Latitude": "49.61039529",
+    "Longitude": "28.39495836",
+    "data14": 68.0706,
+    "data12": 60.0823,
+    "data07": 63.9878,
+    "data06": 35.4269
+  },
+  {
+    "Polling_station": 268,
+    "Latitude": "49.61278269",
+    "Longitude": "28.35258366",
+    "data14": 81.2671,
+    "data12": 46.8937,
+    "data07": 26.4374,
+    "data06": 12.5321
+  },
+  {
+    "Polling_station": 269,
+    "Latitude": "49.54064177",
+    "Longitude": "28.43502922",
+    "data14": 76.6255,
+    "data12": 40.8596,
+    "data07": 4.6594,
+    "data06": 25.8916
+  },
+  {
+    "Polling_station": 270,
+    "Latitude": "49.50954631",
+    "Longitude": "28.71224638",
+    "data14": 56.1373,
+    "data12": 20.0347,
+    "data07": 30.1716,
+    "data06": 50.4011
+  },
+  {
+    "Polling_station": 271,
+    "Latitude": "49.50471697",
+    "Longitude": "28.7304878",
+    "data14": 82.0736,
+    "data12": 13.4655,
+    "data07": 85.2084,
+    "data06": 34.8805
+  },
+  {
+    "Polling_station": 272,
+    "Latitude": "49.53279445",
+    "Longitude": "28.59956794",
+    "data14": 61.8504,
+    "data12": 59.838,
+    "data07": 31.2331,
+    "data06": 84.9037
+  },
+  {
+    "Polling_station": 273,
+    "Latitude": "49.47809771",
+    "Longitude": "28.52016697",
+    "data14": 75.4257,
+    "data12": 63.6783,
+    "data07": 1.3746,
+    "data06": 67.9553
+  },
+  {
+    "Polling_station": 274,
+    "Latitude": "49.44599423",
+    "Longitude": "28.52352631",
+    "data14": 53.2258,
+    "data12": 50.3639,
+    "data07": 66.3031,
+    "data06": 17.3231
+  },
+  {
+    "Polling_station": 275,
+    "Latitude": "49.44876343",
+    "Longitude": "28.5155461",
+    "data14": 60.358,
+    "data12": 36.6451,
+    "data07": 25.4775,
+    "data06": 65.9689
+  },
+  {
+    "Polling_station": 276,
+    "Latitude": "49.45248748",
+    "Longitude": "28.51789899",
+    "data14": 27.4058,
+    "data12": 78.2828,
+    "data07": 71.9631,
+    "data06": 49.4524
+  },
+  {
+    "Polling_station": 277,
+    "Latitude": "49.43213964",
+    "Longitude": "28.52466691",
+    "data14": 27.1655,
+    "data12": 9.5391,
+    "data07": 47.9234,
+    "data06": 35.4824
+  },
+  {
+    "Polling_station": 278,
+    "Latitude": "49.46557375",
+    "Longitude": "28.53278313",
+    "data14": 9.6456,
+    "data12": 51.9008,
+    "data07": 32.2903,
+    "data06": 23.7142
+  },
+  {
+    "Polling_station": 279,
+    "Latitude": "49.4175975",
+    "Longitude": "28.52073475",
+    "data14": 28.2962,
+    "data12": 43.3477,
+    "data07": 5.7037,
+    "data06": 54.4516
+  },
+  {
+    "Polling_station": 280,
+    "Latitude": "49.45884915",
+    "Longitude": "28.47527261",
+    "data14": 61.0617,
+    "data12": 16.4507,
+    "data07": 22.7678,
+    "data06": 84.7634
+  },
+  {
+    "Polling_station": 281,
+    "Latitude": "49.43461094",
+    "Longitude": "28.59193263",
+    "data14": 62.5131,
+    "data12": 20.0645,
+    "data07": 88.0681,
+    "data06": 26.9869
+  },
+  {
+    "Polling_station": 282,
+    "Latitude": "49.45592988",
+    "Longitude": "28.52077035",
+    "data14": 39.8137,
+    "data12": 56.784,
+    "data07": 51.0758,
+    "data06": 1.0265
+  },
+  {
+    "Polling_station": 283,
+    "Latitude": "49.45613254",
+    "Longitude": "28.51192474",
+    "data14": 41.8065,
+    "data12": 10.8148,
+    "data07": 16.8943,
+    "data06": 73.4044
+  },
+  {
+    "Polling_station": 284,
+    "Latitude": "49.69738822",
+    "Longitude": "28.55238225",
+    "data14": 8.3425,
+    "data12": 43.0407,
+    "data07": 53.3937,
+    "data06": 74.7278
+  },
+  {
+    "Polling_station": 285,
+    "Latitude": "49.68763274",
+    "Longitude": "28.49289201",
+    "data14": 64.5664,
+    "data12": 63.2784,
+    "data07": 9.685,
+    "data06": 57.4394
+  },
+  {
+    "Polling_station": 286,
+    "Latitude": "49.7126155",
+    "Longitude": "28.52953386",
+    "data14": 22.3743,
+    "data12": 76.6144,
+    "data07": 76.9935,
+    "data06": 38.9235
+  },
+  {
+    "Polling_station": 287,
+    "Latitude": "49.67020967",
+    "Longitude": "28.54996978",
+    "data14": 13.9592,
+    "data12": 87.1008,
+    "data07": 33.7504,
+    "data06": 85.4128
+  },
+  {
+    "Polling_station": 288,
+    "Latitude": "49.71868806",
+    "Longitude": "28.56766791",
+    "data14": 10.3992,
+    "data12": 68.8338,
+    "data07": 71.6296,
+    "data06": 65.1799
+  },
+  {
+    "Polling_station": 289,
+    "Latitude": "49.8438125",
+    "Longitude": "28.8724657",
+    "data14": 89.9878,
+    "data12": 12.4475,
+    "data07": 3.3378,
+    "data06": 24.0782
+  },
+  {
+    "Polling_station": 290,
+    "Latitude": "49.83310762",
+    "Longitude": "28.91786909",
+    "data14": 73.2342,
+    "data12": 80.2599,
+    "data07": 38.2961,
+    "data06": 37.1545
+  },
+  {
+    "Polling_station": 291,
+    "Latitude": "49.75999404",
+    "Longitude": "28.61809667",
+    "data14": 14.86,
+    "data12": 52.6072,
+    "data07": 70.9348,
+    "data06": 50.6927
+  },
+  {
+    "Polling_station": 292,
+    "Latitude": "49.76388045",
+    "Longitude": "28.65133532",
+    "data14": 17.9002,
+    "data12": 83.8012,
+    "data07": 59.5743,
+    "data06": 50.1737
+  },
+  {
+    "Polling_station": 293,
+    "Latitude": "49.78682938",
+    "Longitude": "28.89043746",
+    "data14": 82.6398,
+    "data12": 44.0553,
+    "data07": 17.1264,
+    "data06": 9.9766
+  },
+  {
+    "Polling_station": 294,
+    "Latitude": "49.79554955",
+    "Longitude": "28.93366752",
+    "data14": 75.4966,
+    "data12": 2.5731,
+    "data07": 18.5174,
+    "data06": 36.7733
+  },
+  {
+    "Polling_station": 295,
+    "Latitude": "49.80154996",
+    "Longitude": "28.86035808",
+    "data14": 18.7584,
+    "data12": 87.5393,
+    "data07": 22.3823,
+    "data06": 47.7559
+  },
+  {
+    "Polling_station": 296,
+    "Latitude": "49.74856244",
+    "Longitude": "28.56142192",
+    "data14": 27.7395,
+    "data12": 53.3826,
+    "data07": 7.4203,
+    "data06": 14.7118
+  },
+  {
+    "Polling_station": 297,
+    "Latitude": "49.77213487",
+    "Longitude": "28.72865171",
+    "data14": 45.7019,
+    "data12": 11.9377,
+    "data07": 51.8043,
+    "data06": 44.7854
+  },
+  {
+    "Polling_station": 298,
+    "Latitude": "49.7727372",
+    "Longitude": "28.72852049",
+    "data14": 15.7176,
+    "data12": 49.5254,
+    "data07": 68.7416,
+    "data06": 59.5379
+  },
+  {
+    "Polling_station": 299,
+    "Latitude": "49.78485541",
+    "Longitude": "28.65674073",
+    "data14": 82.6872,
+    "data12": 42.0276,
+    "data07": 51.415,
+    "data06": 44.2567
+  },
+  {
+    "Polling_station": 300,
+    "Latitude": "49.86673417",
+    "Longitude": "28.89234033",
+    "data14": 79.8593,
+    "data12": 55.7454,
+    "data07": 46.0295,
+    "data06": 31.9606
+  },
+  {
+    "Polling_station": 301,
+    "Latitude": "49.72112596",
+    "Longitude": "28.67037929",
+    "data14": 72.5594,
+    "data12": 85.6437,
+    "data07": 18.378,
+    "data06": 45.837
+  },
+  {
+    "Polling_station": 302,
+    "Latitude": "49.720774",
+    "Longitude": "28.66845304",
+    "data14": 25.7794,
+    "data12": 62.696,
+    "data07": 43.8048,
+    "data06": 66.4372
+  },
+  {
+    "Polling_station": 303,
+    "Latitude": "49.71010096",
+    "Longitude": "28.66489662",
+    "data14": 8.0948,
+    "data12": 84.9622,
+    "data07": 7.833,
+    "data06": 55.2442
+  },
+  {
+    "Polling_station": 304,
+    "Latitude": "49.68820975",
+    "Longitude": "28.63842058",
+    "data14": 4.6474,
+    "data12": 79.5475,
+    "data07": 44.8956,
+    "data06": 87.492
+  },
+  {
+    "Polling_station": 305,
+    "Latitude": "49.74946618",
+    "Longitude": "28.66887014",
+    "data14": 68.546,
+    "data12": 73.8417,
+    "data07": 49.8228,
+    "data06": 23.9728
+  },
+  {
+    "Polling_station": 306,
+    "Latitude": "49.68082559",
+    "Longitude": "28.67142859",
+    "data14": 78.2968,
+    "data12": 48.4314,
+    "data07": 14.0065,
+    "data06": 45.8451
+  },
+  {
+    "Polling_station": 307,
+    "Latitude": "49.71762292",
+    "Longitude": "28.72295008",
+    "data14": 1.5301,
+    "data12": 78.7096,
+    "data07": 76.389,
+    "data06": 24.2567
+  },
+  {
+    "Polling_station": 308,
+    "Latitude": "49.77973862",
+    "Longitude": "28.80694381",
+    "data14": 8.355,
+    "data12": 59.2522,
+    "data07": 88.8874,
+    "data06": 71.3512
+  },
+  {
+    "Polling_station": 309,
+    "Latitude": "49.79673203",
+    "Longitude": "28.77466648",
+    "data14": 37.8347,
+    "data12": 23.4889,
+    "data07": 84.7589,
+    "data06": 14.4286
+  },
+  {
+    "Polling_station": 310,
+    "Latitude": "49.66397969",
+    "Longitude": "28.64344436",
+    "data14": 41.7499,
+    "data12": 41.2427,
+    "data07": 36.7425,
+    "data06": 49.0696
+  },
+  {
+    "Polling_station": 311,
+    "Latitude": "49.64608193",
+    "Longitude": "28.57929355",
+    "data14": 65.1147,
+    "data12": 71.17,
+    "data07": 27.2713,
+    "data06": 55.0045
+  },
+  {
+    "Polling_station": 312,
+    "Latitude": "49.73557391",
+    "Longitude": "28.73342876",
+    "data14": 78.6167,
+    "data12": 63.3814,
+    "data07": 5.2527,
+    "data06": 18.2194
+  },
+  {
+    "Polling_station": 313,
+    "Latitude": "49.79804675",
+    "Longitude": "28.51880739",
+    "data14": 14.3138,
+    "data12": 54.1669,
+    "data07": 28.0305,
+    "data06": 41.4045
+  },
+  {
+    "Polling_station": 314,
+    "Latitude": "49.79525655",
+    "Longitude": "28.4752298",
+    "data14": 1.3695,
+    "data12": 53.6186,
+    "data07": 88.2298,
+    "data06": 5.8311
+  },
+  {
+    "Polling_station": 315,
+    "Latitude": "49.82452052",
+    "Longitude": "28.7714844",
+    "data14": 62.0534,
+    "data12": 39.595,
+    "data07": 52.0677,
+    "data06": 17.5914
+  },
+  {
+    "Polling_station": 316,
+    "Latitude": "49.81346237",
+    "Longitude": "28.81700408",
+    "data14": 4.1109,
+    "data12": 12.4295,
+    "data07": 2.8356,
+    "data06": 44.9356
+  },
+  {
+    "Polling_station": 317,
+    "Latitude": "49.83841901",
+    "Longitude": "28.7996249",
+    "data14": 43.1306,
+    "data12": 69.1253,
+    "data07": 12.5685,
+    "data06": 4.3785
+  },
+  {
+    "Polling_station": 318,
+    "Latitude": "49.80040665",
+    "Longitude": "28.43926139",
+    "data14": 19.1287,
+    "data12": 13.5604,
+    "data07": 15.9356,
+    "data06": 44.6674
+  },
+  {
+    "Polling_station": 319,
+    "Latitude": "49.75267806",
+    "Longitude": "28.47045371",
+    "data14": 63.4097,
+    "data12": 59.1992,
+    "data07": 82.2939,
+    "data06": 32.2839
+  },
+  {
+    "Polling_station": 320,
+    "Latitude": "49.75796408",
+    "Longitude": "28.41848683",
+    "data14": 5.0019,
+    "data12": 41.0033,
+    "data07": 27.019,
+    "data06": 82.6707
+  },
+  {
+    "Polling_station": 321,
+    "Latitude": "49.46881646",
+    "Longitude": "28.92680042",
+    "data14": 71.6199,
+    "data12": 61.5583,
+    "data07": 10.2566,
+    "data06": 22.3832
+  },
+  {
+    "Polling_station": 322,
+    "Latitude": "49.53494132",
+    "Longitude": "28.97552425",
+    "data14": 57.7226,
+    "data12": 83.9515,
+    "data07": 22.9163,
+    "data06": 78.2404
+  },
+  {
+    "Polling_station": 323,
+    "Latitude": "49.62816932",
+    "Longitude": "28.96087348",
+    "data14": 60.8502,
+    "data12": 85.2399,
+    "data07": 26.4099,
+    "data06": 24.8122
+  },
+  {
+    "Polling_station": 324,
+    "Latitude": "49.60938391",
+    "Longitude": "28.95614208",
+    "data14": 56.5235,
+    "data12": 17.1411,
+    "data07": 58.5215,
+    "data06": 9.628
+  },
+  {
+    "Polling_station": 325,
+    "Latitude": "49.65414196",
+    "Longitude": "28.95066872",
+    "data14": 56.925,
+    "data12": 57.7788,
+    "data07": 48.2593,
+    "data06": 30.8063
+  },
+  {
+    "Polling_station": 326,
+    "Latitude": "49.49710429",
+    "Longitude": "28.85915826",
+    "data14": 18.1148,
+    "data12": 6.2626,
+    "data07": 33.7172,
+    "data06": 56.1729
+  },
+  {
+    "Polling_station": 327,
+    "Latitude": "49.57052138",
+    "Longitude": "28.92045621",
+    "data14": 71.8239,
+    "data12": 44.4082,
+    "data07": 78.2708,
+    "data06": 13.6479
+  },
+  {
+    "Polling_station": 328,
+    "Latitude": "49.5588788",
+    "Longitude": "28.89129828",
+    "data14": 88.5228,
+    "data12": 56.9411,
+    "data07": 68.339,
+    "data06": 35.0358
+  },
+  {
+    "Polling_station": 329,
+    "Latitude": "49.59938737",
+    "Longitude": "28.86188266",
+    "data14": 72.5568,
+    "data12": 57.9761,
+    "data07": 41.8386,
+    "data06": 27.2611
+  },
+  {
+    "Polling_station": 330,
+    "Latitude": "49.72808598",
+    "Longitude": "28.84009101",
+    "data14": 50.6069,
+    "data12": 58.3778,
+    "data07": 45.2075,
+    "data06": 22.0322
+  },
+  {
+    "Polling_station": 331,
+    "Latitude": "49.73157573",
+    "Longitude": "28.85087333",
+    "data14": 82.3932,
+    "data12": 85.4163,
+    "data07": 81.4418,
+    "data06": 46.2621
+  },
+  {
+    "Polling_station": 332,
+    "Latitude": "49.75660815",
+    "Longitude": "28.85243476",
+    "data14": 8.9613,
+    "data12": 58.0032,
+    "data07": 34.391,
+    "data06": 13.5379
+  },
+  {
+    "Polling_station": 333,
+    "Latitude": "49.6563593",
+    "Longitude": "28.85465141",
+    "data14": 16.9501,
+    "data12": 78.6791,
+    "data07": 0.0224,
+    "data06": 5.5798
+  },
+  {
+    "Polling_station": 334,
+    "Latitude": "49.65102753",
+    "Longitude": "28.88906952",
+    "data14": 87.5845,
+    "data12": 12.5241,
+    "data07": 26.2128,
+    "data06": 42.0421
+  },
+  {
+    "Polling_station": 335,
+    "Latitude": "49.64967112",
+    "Longitude": "28.70618878",
+    "data14": 39.0927,
+    "data12": 62.6233,
+    "data07": 15.7383,
+    "data06": 10.9119
+  },
+  {
+    "Polling_station": 336,
+    "Latitude": "49.63907043",
+    "Longitude": "28.66794644",
+    "data14": 4.6821,
+    "data12": 30.4574,
+    "data07": 31.7041,
+    "data06": 62.0065
+  },
+  {
+    "Polling_station": 337,
+    "Latitude": "49.70502985",
+    "Longitude": "28.94219904",
+    "data14": 72.738,
+    "data12": 51.3967,
+    "data07": 70.6017,
+    "data06": 65.063
+  },
+  {
+    "Polling_station": 338,
+    "Latitude": "49.71131281",
+    "Longitude": "28.91882705",
+    "data14": 87.5741,
+    "data12": 64.3037,
+    "data07": 50.4904,
+    "data06": 26.9639
+  },
+  {
+    "Polling_station": 339,
+    "Latitude": "49.60172142",
+    "Longitude": "28.75011206",
+    "data14": 32.566,
+    "data12": 21.7354,
+    "data07": 89.4497,
+    "data06": 0.6878
+  },
+  {
+    "Polling_station": 340,
+    "Latitude": "49.61590283",
+    "Longitude": "28.72628059",
+    "data14": 54.7255,
+    "data12": 78.0192,
+    "data07": 5.8351,
+    "data06": 27.9419
+  },
+  {
+    "Polling_station": 341,
+    "Latitude": "49.56735439",
+    "Longitude": "28.76111636",
+    "data14": 77.6905,
+    "data12": 54.7055,
+    "data07": 19.2261,
+    "data06": 66.6625
+  },
+  {
+    "Polling_station": 342,
+    "Latitude": "49.58874181",
+    "Longitude": "28.79241371",
+    "data14": 56.7201,
+    "data12": 43.4016,
+    "data07": 68.6765,
+    "data06": 33.6495
+  },
+  {
+    "Polling_station": 343,
+    "Latitude": "49.57475426",
+    "Longitude": "28.83308084",
+    "data14": 71.3361,
+    "data12": 57.2794,
+    "data07": 52.8606,
+    "data06": 11.46
+  },
+  {
+    "Polling_station": 344,
+    "Latitude": "49.67640085",
+    "Longitude": "28.75616418",
+    "data14": 68.7137,
+    "data12": 42.3282,
+    "data07": 69.1352,
+    "data06": 16.1104
+  },
+  {
+    "Polling_station": 345,
+    "Latitude": "49.68049598",
+    "Longitude": "28.72066232",
+    "data14": 74.9764,
+    "data12": 26.9655,
+    "data07": 15.2925,
+    "data06": 86.6524
+  },
+  {
+    "Polling_station": 346,
+    "Latitude": "49.5337696",
+    "Longitude": "28.83985405",
+    "data14": 69.5127,
+    "data12": 50.418,
+    "data07": 0.5675,
+    "data06": 9.8068
+  },
+  {
+    "Polling_station": 347,
+    "Latitude": "49.51048149",
+    "Longitude": "28.92754388",
+    "data14": 66.1869,
+    "data12": 55.5742,
+    "data07": 84.8365,
+    "data06": 79.7225
+  },
+  {
+    "Polling_station": 348,
+    "Latitude": "49.52340755",
+    "Longitude": "28.79115477",
+    "data14": 57.2398,
+    "data12": 51.2969,
+    "data07": 18.1334,
+    "data06": 82.794
+  },
+  {
+    "Polling_station": 349,
+    "Latitude": "49.49731959",
+    "Longitude": "28.824139",
+    "data14": 52.6721,
+    "data12": 4.9014,
+    "data07": 25.4341,
+    "data06": 18.1698
+  },
+  {
+    "Polling_station": 350,
+    "Latitude": "49.73715986",
+    "Longitude": "28.94267879",
+    "data14": 40.6071,
+    "data12": 23.0047,
+    "data07": 74.3109,
+    "data06": 4.5062
+  },
+  {
+    "Polling_station": 351,
+    "Latitude": "49.68563899",
+    "Longitude": "28.88018268",
+    "data14": 16.5361,
+    "data12": 80.8977,
+    "data07": 27.2478,
+    "data06": 46.3204
+  },
+  {
+    "Polling_station": 352,
+    "Latitude": "49.67919544",
+    "Longitude": "28.80585822",
+    "data14": 34.0209,
+    "data12": 76.3708,
+    "data07": 82.3179,
+    "data06": 69.142
+  },
+  {
+    "Polling_station": 353,
+    "Latitude": "49.67382463",
+    "Longitude": "28.83230016",
+    "data14": 8.8343,
+    "data12": 38.6103,
+    "data07": 19.2471,
+    "data06": 46.3379
+  },
+  {
+    "Polling_station": 354,
+    "Latitude": "49.62650309",
+    "Longitude": "28.79456302",
+    "data14": 81.6787,
+    "data12": 27.5775,
+    "data07": 73.204,
+    "data06": 67.079
+  },
+  {
+    "Polling_station": 355,
+    "Latitude": "49.66189054",
+    "Longitude": "28.78246961",
+    "data14": 52.15,
+    "data12": 78.4256,
+    "data07": 19.9039,
+    "data06": 23.0168
+  },
+  {
+    "Polling_station": 356,
+    "Latitude": "49.73722639",
+    "Longitude": "28.89114887",
+    "data14": 76.4314,
+    "data12": 81.2901,
+    "data07": 16.4872,
+    "data06": 70.6429
+  },
+  {
+    "Polling_station": 357,
+    "Latitude": "49.5581098",
+    "Longitude": "27.84986208",
+    "data14": 7.6109,
+    "data12": 35.7408,
+    "data07": 11.6446,
+    "data06": 26.2775
+  },
+  {
+    "Polling_station": 358,
+    "Latitude": "49.57497046",
+    "Longitude": "27.81918359",
+    "data14": 88.4676,
+    "data12": 73.0011,
+    "data07": 15.9123,
+    "data06": 22.3209
+  },
+  {
+    "Polling_station": 359,
+    "Latitude": "49.55248659",
+    "Longitude": "27.81603098",
+    "data14": 27.9825,
+    "data12": 88.44,
+    "data07": 1.5907,
+    "data06": 28.5135
+  },
+  {
+    "Polling_station": 360,
+    "Latitude": "49.59068394",
+    "Longitude": "28.00895691",
+    "data14": 85.0287,
+    "data12": 23.9751,
+    "data07": 78.2059,
+    "data06": 73.3829
+  },
+  {
+    "Polling_station": 361,
+    "Latitude": "49.58151673",
+    "Longitude": "28.0419381",
+    "data14": 15.8661,
+    "data12": 63.553,
+    "data07": 3.9927,
+    "data06": 30.3214
+  },
+  {
+    "Polling_station": 362,
+    "Latitude": "49.58105242",
+    "Longitude": "27.9922568",
+    "data14": 80.4282,
+    "data12": 21.7321,
+    "data07": 61.2022,
+    "data06": 32.1309
+  },
+  {
+    "Polling_station": 363,
+    "Latitude": "49.63078774",
+    "Longitude": "27.9775309",
+    "data14": 8.4893,
+    "data12": 10.6563,
+    "data07": 3.3143,
+    "data06": 4.1877
+  },
+  {
+    "Polling_station": 364,
+    "Latitude": "49.70626872",
+    "Longitude": "28.28128283",
+    "data14": 66.932,
+    "data12": 20.9759,
+    "data07": 77.1919,
+    "data06": 40.5686
+  },
+  {
+    "Polling_station": 365,
+    "Latitude": "49.71889989",
+    "Longitude": "28.36599814",
+    "data14": 80.5225,
+    "data12": 72.3356,
+    "data07": 78.8128,
+    "data06": 26.4944
+  },
+  {
+    "Polling_station": 366,
+    "Latitude": "49.68810933",
+    "Longitude": "28.31789887",
+    "data14": 71.1217,
+    "data12": 23.153,
+    "data07": 33.3607,
+    "data06": 60.9871
+  },
+  {
+    "Polling_station": 367,
+    "Latitude": "49.52476263",
+    "Longitude": "27.97290802",
+    "data14": 3.9534,
+    "data12": 68.5071,
+    "data07": 16.6645,
+    "data06": 26.7019
+  },
+  {
+    "Polling_station": 368,
+    "Latitude": "49.49754488",
+    "Longitude": "27.95136326",
+    "data14": 28.2402,
+    "data12": 7.7137,
+    "data07": 65.8606,
+    "data06": 35.5417
+  },
+  {
+    "Polling_station": 369,
+    "Latitude": "49.62027501",
+    "Longitude": "27.90184021",
+    "data14": 81.4583,
+    "data12": 29.7658,
+    "data07": 36.6579,
+    "data06": 44.8083
+  },
+  {
+    "Polling_station": 370,
+    "Latitude": "49.58532169",
+    "Longitude": "27.92730333",
+    "data14": 70.0296,
+    "data12": 71.5051,
+    "data07": 47.1417,
+    "data06": 21.0741
+  },
+  {
+    "Polling_station": 371,
+    "Latitude": "49.63773482",
+    "Longitude": "27.89964864",
+    "data14": 62.7308,
+    "data12": 60.9596,
+    "data07": 11.7199,
+    "data06": 86.0123
+  },
+  {
+    "Polling_station": 372,
+    "Latitude": "49.65929643",
+    "Longitude": "27.9143919",
+    "data14": 24.9509,
+    "data12": 40.5074,
+    "data07": 9.3004,
+    "data06": 31.2388
+  },
+  {
+    "Polling_station": 373,
+    "Latitude": "49.59786163",
+    "Longitude": "28.20530714",
+    "data14": 81.6729,
+    "data12": 34.81,
+    "data07": 9.8589,
+    "data06": 17.8507
+  },
+  {
+    "Polling_station": 374,
+    "Latitude": "49.55997965",
+    "Longitude": "28.19890484",
+    "data14": 22.0035,
+    "data12": 47.9292,
+    "data07": 89.0964,
+    "data06": 83.9032
+  },
+  {
+    "Polling_station": 375,
+    "Latitude": "49.70786756",
+    "Longitude": "28.42405634",
+    "data14": 17.1896,
+    "data12": 30.7038,
+    "data07": 50.2314,
+    "data06": 17.0644
+  },
+  {
+    "Polling_station": 376,
+    "Latitude": "49.70895141",
+    "Longitude": "28.40068906",
+    "data14": 30.9443,
+    "data12": 46.6332,
+    "data07": 33.456,
+    "data06": 68.8939
+  },
+  {
+    "Polling_station": 377,
+    "Latitude": "49.71419271",
+    "Longitude": "28.44171533",
+    "data14": 42.6952,
+    "data12": 28.7037,
+    "data07": 67.9172,
+    "data06": 11.4818
+  },
+  {
+    "Polling_station": 378,
+    "Latitude": "49.76646835",
+    "Longitude": "28.30477891",
+    "data14": 15.7727,
+    "data12": 72.1373,
+    "data07": 47.9993,
+    "data06": 79.9959
+  },
+  {
+    "Polling_station": 379,
+    "Latitude": "49.74385057",
+    "Longitude": "28.29061373",
+    "data14": 84.0221,
+    "data12": 69.6221,
+    "data07": 56.6308,
+    "data06": 38.7009
+  },
+  {
+    "Polling_station": 380,
+    "Latitude": "49.7789618",
+    "Longitude": "28.34764",
+    "data14": 11.1716,
+    "data12": 29.1095,
+    "data07": 30.1132,
+    "data06": 20.171
+  },
+  {
+    "Polling_station": 381,
+    "Latitude": "49.59790289",
+    "Longitude": "27.80860327",
+    "data14": 24.6209,
+    "data12": 43.8204,
+    "data07": 8.8997,
+    "data06": 58.9777
+  },
+  {
+    "Polling_station": 382,
+    "Latitude": "49.64248627",
+    "Longitude": "28.3647018",
+    "data14": 12.6229,
+    "data12": 28.6477,
+    "data07": 77.8083,
+    "data06": 60.4358
+  },
+  {
+    "Polling_station": 383,
+    "Latitude": "49.62530772",
+    "Longitude": "28.30903121",
+    "data14": 68.5376,
+    "data12": 42.5535,
+    "data07": 71.3646,
+    "data06": 40.6098
+  },
+  {
+    "Polling_station": 384,
+    "Latitude": "49.5494718",
+    "Longitude": "27.89534926",
+    "data14": 63.4299,
+    "data12": 8.9287,
+    "data07": 28.6841,
+    "data06": 37.7754
+  },
+  {
+    "Polling_station": 385,
+    "Latitude": "49.74910133",
+    "Longitude": "28.08963415",
+    "data14": 89.2997,
+    "data12": 52.215,
+    "data07": 68.04,
+    "data06": 46.4774
+  },
+  {
+    "Polling_station": 386,
+    "Latitude": "49.75082154",
+    "Longitude": "28.12540627",
+    "data14": 9.2284,
+    "data12": 41.9857,
+    "data07": 63.937,
+    "data06": 20.0455
+  },
+  {
+    "Polling_station": 387,
+    "Latitude": "49.71398438",
+    "Longitude": "28.09999299",
+    "data14": 8.4886,
+    "data12": 42.6851,
+    "data07": 26.0658,
+    "data06": 76.0379
+  },
+  {
+    "Polling_station": 388,
+    "Latitude": "49.51559639",
+    "Longitude": "27.83879996",
+    "data14": 59.149,
+    "data12": 43.3526,
+    "data07": 54.3862,
+    "data06": 68.3288
+  },
+  {
+    "Polling_station": 389,
+    "Latitude": "49.52095558",
+    "Longitude": "27.8876234",
+    "data14": 39.1465,
+    "data12": 48.5037,
+    "data07": 45.9445,
+    "data06": 60.5425
+  },
+  {
+    "Polling_station": 390,
+    "Latitude": "49.49820812",
+    "Longitude": "27.84736026",
+    "data14": 70.4646,
+    "data12": 49.3498,
+    "data07": 35.712,
+    "data06": 70.461
+  },
+  {
+    "Polling_station": 391,
+    "Latitude": "49.52178323",
+    "Longitude": "27.79621011",
+    "data14": 66.9685,
+    "data12": 82.7667,
+    "data07": 77.7467,
+    "data06": 69.9754
+  },
+  {
+    "Polling_station": 392,
+    "Latitude": "49.65405389",
+    "Longitude": "28.23171665",
+    "data14": 38.7593,
+    "data12": 1.7638,
+    "data07": 61.3812,
+    "data06": 66.599
+  },
+  {
+    "Polling_station": 393,
+    "Latitude": "49.62226979",
+    "Longitude": "28.19079333",
+    "data14": 72.4868,
+    "data12": 26.5261,
+    "data07": 77.9649,
+    "data06": 7.9096
+  },
+  {
+    "Polling_station": 394,
+    "Latitude": "49.67627666",
+    "Longitude": "28.02577306",
+    "data14": 83.774,
+    "data12": 56.8063,
+    "data07": 15.6858,
+    "data06": 9.4273
+  },
+  {
+    "Polling_station": 395,
+    "Latitude": "49.67459495",
+    "Longitude": "27.96273339",
+    "data14": 23.886,
+    "data12": 33.9273,
+    "data07": 24.006,
+    "data06": 57.7491
+  },
+  {
+    "Polling_station": 396,
+    "Latitude": "49.73408524",
+    "Longitude": "27.89011587",
+    "data14": 80.6199,
+    "data12": 53.9074,
+    "data07": 34.2078,
+    "data06": 88.1681
+  },
+  {
+    "Polling_station": 397,
+    "Latitude": "49.76079832",
+    "Longitude": "27.9008919",
+    "data14": 88.8389,
+    "data12": 66.0427,
+    "data07": 9.1896,
+    "data06": 27.5445
+  },
+  {
+    "Polling_station": 398,
+    "Latitude": "49.73149123",
+    "Longitude": "27.83721484",
+    "data14": 6.8562,
+    "data12": 8.5238,
+    "data07": 73.5101,
+    "data06": 12.743
+  },
+  {
+    "Polling_station": 399,
+    "Latitude": "49.75456881",
+    "Longitude": "28.19875869",
+    "data14": 20.6517,
+    "data12": 36.142,
+    "data07": 21.3596,
+    "data06": 32.2704
+  },
+  {
+    "Polling_station": 400,
+    "Latitude": "49.79359598",
+    "Longitude": "28.26105087",
+    "data14": 1.4746,
+    "data12": 55.2566,
+    "data07": 88.3367,
+    "data06": 60.4872
+  },
+  {
+    "Polling_station": 401,
+    "Latitude": "49.77740189",
+    "Longitude": "28.16146289",
+    "data14": 0.5014,
+    "data12": 4.9459,
+    "data07": 59.8691,
+    "data06": 51.7521
+  },
+  {
+    "Polling_station": 402,
+    "Latitude": "49.51513463",
+    "Longitude": "28.100618",
+    "data14": 83.987,
+    "data12": 72.5756,
+    "data07": 9.7919,
+    "data06": 83.6039
+  },
+  {
+    "Polling_station": 403,
+    "Latitude": "49.51255516",
+    "Longitude": "28.12655991",
+    "data14": 50.326,
+    "data12": 52.5016,
+    "data07": 65.7175,
+    "data06": 77.0251
+  },
+  {
+    "Polling_station": 404,
+    "Latitude": "49.50152005",
+    "Longitude": "28.07907469",
+    "data14": 89.2117,
+    "data12": 64.8523,
+    "data07": 50.2262,
+    "data06": 61.6694
+  },
+  {
+    "Polling_station": 405,
+    "Latitude": "49.54637949",
+    "Longitude": "28.11955299",
+    "data14": 36.6785,
+    "data12": 30.3258,
+    "data07": 50.8762,
+    "data06": 56.8977
+  },
+  {
+    "Polling_station": 406,
+    "Latitude": "49.63981273",
+    "Longitude": "28.10143866",
+    "data14": 70.2223,
+    "data12": 62.6194,
+    "data07": 9.801,
+    "data06": 17.3814
+  },
+  {
+    "Polling_station": 407,
+    "Latitude": "49.64445738",
+    "Longitude": "28.06800842",
+    "data14": 37.1341,
+    "data12": 46.6277,
+    "data07": 4.5406,
+    "data06": 2.7918
+  },
+  {
+    "Polling_station": 408,
+    "Latitude": "49.63760239",
+    "Longitude": "28.16798776",
+    "data14": 62.96,
+    "data12": 83.8792,
+    "data07": 88.3836,
+    "data06": 5.7503
+  },
+  {
+    "Polling_station": 409,
+    "Latitude": "49.68796161",
+    "Longitude": "28.07553757",
+    "data14": 67.6673,
+    "data12": 81.0626,
+    "data07": 7.4138,
+    "data06": 30.8412
+  },
+  {
+    "Polling_station": 410,
+    "Latitude": "49.69539982",
+    "Longitude": "28.08443943",
+    "data14": 12.4516,
+    "data12": 68.8978,
+    "data07": 66.812,
+    "data06": 78.5437
+  },
+  {
+    "Polling_station": 411,
+    "Latitude": "49.73921645",
+    "Longitude": "28.03381663",
+    "data14": 69.0196,
+    "data12": 73.8769,
+    "data07": 56.2539,
+    "data06": 85.9508
+  },
+  {
+    "Polling_station": 412,
+    "Latitude": "49.73437149",
+    "Longitude": "28.01281996",
+    "data14": 43.0582,
+    "data12": 56.0514,
+    "data07": 73.8932,
+    "data06": 3.452
+  },
+  {
+    "Polling_station": 413,
+    "Latitude": "49.76954116",
+    "Longitude": "28.00711674",
+    "data14": 52.3577,
+    "data12": 67.7339,
+    "data07": 44.5115,
+    "data06": 9.0166
+  },
+  {
+    "Polling_station": 414,
+    "Latitude": "49.70616802",
+    "Longitude": "27.93890176",
+    "data14": 85.9137,
+    "data12": 3.1665,
+    "data07": 33.2808,
+    "data06": 6.0507
+  },
+  {
+    "Polling_station": 415,
+    "Latitude": "49.56826663",
+    "Longitude": "27.89723326",
+    "data14": 19.6335,
+    "data12": 50.6358,
+    "data07": 0.6855,
+    "data06": 74.9561
+  },
+  {
+    "Polling_station": 416,
+    "Latitude": "49.69570713",
+    "Longitude": "27.87116413",
+    "data14": 17.2001,
+    "data12": 15.9855,
+    "data07": 67.8225,
+    "data06": 59.0786
+  },
+  {
+    "Polling_station": 417,
+    "Latitude": "49.69480616",
+    "Longitude": "27.92044109",
+    "data14": 36.3386,
+    "data12": 31.5695,
+    "data07": 64.9216,
+    "data06": 65.2879
+  },
+  {
+    "Polling_station": 418,
+    "Latitude": "49.61245332",
+    "Longitude": "28.15404302",
+    "data14": 89.474,
+    "data12": 32.758,
+    "data07": 37.7716,
+    "data06": 72.2675
+  },
+  {
+    "Polling_station": 419,
+    "Latitude": "49.59167757",
+    "Longitude": "28.12689646",
+    "data14": 71.9482,
+    "data12": 76.6441,
+    "data07": 20.5612,
+    "data06": 34.4751
+  },
+  {
+    "Polling_station": 420,
+    "Latitude": "49.6034738",
+    "Longitude": "28.09603459",
+    "data14": 83.6515,
+    "data12": 75.5564,
+    "data07": 46.5293,
+    "data06": 58.9997
+  },
+  {
+    "Polling_station": 421,
+    "Latitude": "49.68462582",
+    "Longitude": "27.79066179",
+    "data14": 48.3914,
+    "data12": 64.8205,
+    "data07": 16.5239,
+    "data06": 40.0806
+  },
+  {
+    "Polling_station": 422,
+    "Latitude": "49.69202121",
+    "Longitude": "28.13218155",
+    "data14": 32.8243,
+    "data12": 33.3025,
+    "data07": 28.564,
+    "data06": 50.1029
+  },
+  {
+    "Polling_station": 423,
+    "Latitude": "49.69857062",
+    "Longitude": "28.11463432",
+    "data14": 50.7913,
+    "data12": 38.1327,
+    "data07": 1.0512,
+    "data06": 57.8262
+  },
+  {
+    "Polling_station": 424,
+    "Latitude": "49.66940543",
+    "Longitude": "28.17237854",
+    "data14": 80.4484,
+    "data12": 75.6291,
+    "data07": 33.3111,
+    "data06": 85.2225
+  },
+  {
+    "Polling_station": 425,
+    "Latitude": "49.69703903",
+    "Longitude": "28.18041894",
+    "data14": 24.3234,
+    "data12": 37.94,
+    "data07": 3.8319,
+    "data06": 62.7572
+  },
+  {
+    "Polling_station": 426,
+    "Latitude": "49.70244801",
+    "Longitude": "28.23028579",
+    "data14": 13.9474,
+    "data12": 79.5046,
+    "data07": 51.2885,
+    "data06": 54.3627
+  },
+  {
+    "Polling_station": 427,
+    "Latitude": "49.72600323",
+    "Longitude": "28.2336705",
+    "data14": 20.0093,
+    "data12": 40.8012,
+    "data07": 25.9528,
+    "data06": 19.8637
+  },
+  {
+    "Polling_station": 428,
+    "Latitude": "49.52708189",
+    "Longitude": "28.01445792",
+    "data14": 44.6273,
+    "data12": 5.8294,
+    "data07": 39.4983,
+    "data06": 83.5591
+  },
+  {
+    "Polling_station": 429,
+    "Latitude": "49.51487594",
+    "Longitude": "28.03267336",
+    "data14": 30.9601,
+    "data12": 19.6932,
+    "data07": 61.8204,
+    "data06": 61.3731
+  },
+  {
+    "Polling_station": 430,
+    "Latitude": "49.69397982",
+    "Longitude": "28.12530041",
+    "data14": 70.9081,
+    "data12": 81.9496,
+    "data07": 65.3651,
+    "data06": 37.4415
+  },
+  {
+    "Polling_station": 431,
+    "Latitude": "49.71599137",
+    "Longitude": "28.84030785",
+    "data14": 47.9501,
+    "data12": 29.8721,
+    "data07": 24.5741,
+    "data06": 31.1071
+  },
+  {
+    "Polling_station": 432,
+    "Latitude": "49.71669633",
+    "Longitude": "28.84024137",
+    "data14": 0.5424,
+    "data12": 87.376,
+    "data07": 70.6741,
+    "data06": 43.094
+  },
+  {
+    "Polling_station": 433,
+    "Latitude": "49.71943883",
+    "Longitude": "28.83456923",
+    "data14": 67.7384,
+    "data12": 24.1711,
+    "data07": 5.066,
+    "data06": 67.2604
+  },
+  {
+    "Polling_station": 434,
+    "Latitude": "49.71824125",
+    "Longitude": "28.82749645",
+    "data14": 23.3457,
+    "data12": 38.6214,
+    "data07": 22.0944,
+    "data06": 59.8984
+  },
+  {
+    "Polling_station": 435,
+    "Latitude": "49.71214006",
+    "Longitude": "28.83248002",
+    "data14": 9.0771,
+    "data12": 8.6495,
+    "data07": 85.6234,
+    "data06": 82.3032
+  },
+  {
+    "Polling_station": 436,
+    "Latitude": "49.74797878",
+    "Longitude": "28.78875849",
+    "data14": 76.6998,
+    "data12": 2.3115,
+    "data07": 29.3633,
+    "data06": 67.4438
+  },
+  {
+    "Polling_station": 437,
+    "Latitude": "49.70092382",
+    "Longitude": "28.82323514",
+    "data14": 68.4952,
+    "data12": 52.441,
+    "data07": 85.7773,
+    "data06": 16.3191
+  },
+  {
+    "Polling_station": 438,
+    "Latitude": "49.70025998",
+    "Longitude": "28.83134178",
+    "data14": 67.9113,
+    "data12": 14.2033,
+    "data07": 39.9128,
+    "data06": 43.8189
+  },
+  {
+    "Polling_station": 439,
+    "Latitude": "49.70958766",
+    "Longitude": "28.83554617",
+    "data14": 43.4884,
+    "data12": 46.9771,
+    "data07": 36.6158,
+    "data06": 72.8411
+  },
+  {
+    "Polling_station": 440,
+    "Latitude": "49.7110391",
+    "Longitude": "28.83760844",
+    "data14": 51.6334,
+    "data12": 32.2827,
+    "data07": 8.7723,
+    "data06": 16.1384
+  },
+  {
+    "Polling_station": 441,
+    "Latitude": "49.7156031",
+    "Longitude": "28.85251695",
+    "data14": 29.7833,
+    "data12": 50.9369,
+    "data07": 43.7821,
+    "data06": 79.9872
+  },
+  {
+    "Polling_station": 442,
+    "Latitude": "49.71839882",
+    "Longitude": "28.81627662",
+    "data14": 49.8014,
+    "data12": 57.837,
+    "data07": 17.3659,
+    "data06": 64.5013
+  },
+  {
+    "Polling_station": 443,
+    "Latitude": "49.70741968",
+    "Longitude": "28.81635975",
+    "data14": 74.1306,
+    "data12": 4.0295,
+    "data07": 32.9522,
+    "data06": 79.9587
+  },
+  {
+    "Polling_station": 444,
+    "Latitude": "49.70299484",
+    "Longitude": "28.82818858",
+    "data14": 7.9655,
+    "data12": 67.178,
+    "data07": 16.3699,
+    "data06": 11.0857
+  },
+  {
+    "Polling_station": 445,
+    "Latitude": "49.72060105",
+    "Longitude": "28.83604959",
+    "data14": 12.5611,
+    "data12": 82.3797,
+    "data07": 62.9378,
+    "data06": 62.5894
+  },
+  {
+    "Polling_station": 446,
+    "Latitude": "49.71279501",
+    "Longitude": "28.83373737",
+    "data14": 61.8187,
+    "data12": 76.9387,
+    "data07": 19.4713,
+    "data06": 13.8687
+  },
+  {
+    "Polling_station": 447,
+    "Latitude": "49.55888882",
+    "Longitude": "27.97430813",
+    "data14": 16.4241,
+    "data12": 67.4184,
+    "data07": 20.1727,
+    "data06": 72.3539
+  },
+  {
+    "Polling_station": 448,
+    "Latitude": "49.55882357",
+    "Longitude": "27.96178222",
+    "data14": 5.2499,
+    "data12": 31.268,
+    "data07": 38.7859,
+    "data06": 46.6358
+  },
+  {
+    "Polling_station": 449,
+    "Latitude": "49.56047641",
+    "Longitude": "27.95730829",
+    "data14": 52.2979,
+    "data12": 84.5024,
+    "data07": 6.4983,
+    "data06": 71.2746
+  },
+  {
+    "Polling_station": 450,
+    "Latitude": "49.56355228",
+    "Longitude": "27.95574188",
+    "data14": 47.9764,
+    "data12": 15.3211,
+    "data07": 48.3661,
+    "data06": 56.6318
+  },
+  {
+    "Polling_station": 451,
+    "Latitude": "49.55728203",
+    "Longitude": "27.95051426",
+    "data14": 81.0017,
+    "data12": 22.4977,
+    "data07": 25.6404,
+    "data06": 82.2967
+  },
+  {
+    "Polling_station": 452,
+    "Latitude": "49.55527761",
+    "Longitude": "27.95241594",
+    "data14": 86.3464,
+    "data12": 70.0299,
+    "data07": 25.2942,
+    "data06": 77.9407
+  },
+  {
+    "Polling_station": 453,
+    "Latitude": "49.55072501",
+    "Longitude": "27.93770106",
+    "data14": 81.3257,
+    "data12": 58.7372,
+    "data07": 86.598,
+    "data06": 36.5306
+  },
+  {
+    "Polling_station": 454,
+    "Latitude": "49.54764195",
+    "Longitude": "27.94062495",
+    "data14": 24.1799,
+    "data12": 3.7567,
+    "data07": 5.1956,
+    "data06": 63.045
+  },
+  {
+    "Polling_station": 455,
+    "Latitude": "49.5464777",
+    "Longitude": "27.9353182",
+    "data14": 50.5597,
+    "data12": 24.9034,
+    "data07": 16.0421,
+    "data06": 89.0733
+  },
+  {
+    "Polling_station": 456,
+    "Latitude": "49.53898252",
+    "Longitude": "27.94369608",
+    "data14": 64.5856,
+    "data12": 86.2837,
+    "data07": 53.9501,
+    "data06": 8.7061
+  },
+  {
+    "Polling_station": 457,
+    "Latitude": "49.52676221",
+    "Longitude": "27.93789715",
+    "data14": 76.7251,
+    "data12": 1.5789,
+    "data07": 21.9787,
+    "data06": 0.7088
+  },
+  {
+    "Polling_station": 458,
+    "Latitude": "49.55241698",
+    "Longitude": "27.94930458",
+    "data14": 29.5593,
+    "data12": 57.98,
+    "data07": 48.8601,
+    "data06": 12.6718
+  },
+  {
+    "Polling_station": 459,
+    "Latitude": "49.53460915",
+    "Longitude": "27.94413328",
+    "data14": 56.9881,
+    "data12": 72.5487,
+    "data07": 55.9466,
+    "data06": 84.5703
+  },
+  {
+    "Polling_station": 460,
+    "Latitude": "49.07263818",
+    "Longitude": "27.67361499",
+    "data14": 31.6052,
+    "data12": 49.7943,
+    "data07": 37.4607,
+    "data06": 43.0074
+  },
+  {
+    "Polling_station": 461,
+    "Latitude": "49.07567396",
+    "Longitude": "27.6721454",
+    "data14": 25.4433,
+    "data12": 16.95,
+    "data07": 24.7257,
+    "data06": 41.7767
+  },
+  {
+    "Polling_station": 462,
+    "Latitude": "49.07734022",
+    "Longitude": "27.67875601",
+    "data14": 52.1893,
+    "data12": 72.4975,
+    "data07": 83.2882,
+    "data06": 42.0016
+  },
+  {
+    "Polling_station": 463,
+    "Latitude": "49.07647666",
+    "Longitude": "27.6784977",
+    "data14": 24.6416,
+    "data12": 0.1295,
+    "data07": 78.6455,
+    "data06": 12.183
+  },
+  {
+    "Polling_station": 464,
+    "Latitude": "49.07034501",
+    "Longitude": "27.6872919",
+    "data14": 82.0266,
+    "data12": 62.9806,
+    "data07": 65.2205,
+    "data06": 30.635
+  },
+  {
+    "Polling_station": 465,
+    "Latitude": "49.07212671",
+    "Longitude": "27.67316474",
+    "data14": 34.2643,
+    "data12": 42.2039,
+    "data07": 36.7845,
+    "data06": 63.4528
+  },
+  {
+    "Polling_station": 466,
+    "Latitude": "49.07992414",
+    "Longitude": "27.67530528",
+    "data14": 35.5998,
+    "data12": 36.7519,
+    "data07": 55.8868,
+    "data06": 30.1253
+  },
+  {
+    "Polling_station": 467,
+    "Latitude": "49.05974258",
+    "Longitude": "27.67463967",
+    "data14": 64.9751,
+    "data12": 14.1377,
+    "data07": 13.5061,
+    "data06": 28.7914
+  },
+  {
+    "Polling_station": 468,
+    "Latitude": "49.048833",
+    "Longitude": "27.64741742",
+    "data14": 47.5142,
+    "data12": 71.5014,
+    "data07": 15.973,
+    "data06": 14.5887
+  },
+  {
+    "Polling_station": 469,
+    "Latitude": "49.04668518",
+    "Longitude": "27.58356232",
+    "data14": 78.9333,
+    "data12": 15.6926,
+    "data07": 65.6621,
+    "data06": 59.9805
+  },
+  {
+    "Polling_station": 470,
+    "Latitude": "49.07107948",
+    "Longitude": "27.61215904",
+    "data14": 30.8655,
+    "data12": 72.8766,
+    "data07": 21.0967,
+    "data06": 54.8813
+  },
+  {
+    "Polling_station": 471,
+    "Latitude": "49.02866609",
+    "Longitude": "27.45452876",
+    "data14": 69.678,
+    "data12": 68.68,
+    "data07": 66.4966,
+    "data06": 7.0753
+  },
+  {
+    "Polling_station": 472,
+    "Latitude": "49.03411804",
+    "Longitude": "27.43150145",
+    "data14": 61.5599,
+    "data12": 75.701,
+    "data07": 3.217,
+    "data06": 15.1719
+  },
+  {
+    "Polling_station": 473,
+    "Latitude": "48.97982425",
+    "Longitude": "27.46526386",
+    "data14": 66.1228,
+    "data12": 59.1932,
+    "data07": 81.2158,
+    "data06": 57.6415
+  },
+  {
+    "Polling_station": 474,
+    "Latitude": "49.00421381",
+    "Longitude": "27.40624858",
+    "data14": 83.1828,
+    "data12": 60.8539,
+    "data07": 78.3711,
+    "data06": 8.4446
+  },
+  {
+    "Polling_station": 475,
+    "Latitude": "49.02786514",
+    "Longitude": "27.54284229",
+    "data14": 48.6254,
+    "data12": 50.8387,
+    "data07": 29.0099,
+    "data06": 47.3675
+  },
+  {
+    "Polling_station": 476,
+    "Latitude": "49.06298252",
+    "Longitude": "27.49958225",
+    "data14": 89.108,
+    "data12": 20.8418,
+    "data07": 34.6685,
+    "data06": 22.355
+  },
+  {
+    "Polling_station": 477,
+    "Latitude": "48.98889799",
+    "Longitude": "27.51338654",
+    "data14": 67.7394,
+    "data12": 71.3261,
+    "data07": 2.5933,
+    "data06": 89.3024
+  },
+  {
+    "Polling_station": 478,
+    "Latitude": "48.98902622",
+    "Longitude": "27.51378808",
+    "data14": 72.3243,
+    "data12": 4.7685,
+    "data07": 87.392,
+    "data06": 52.4239
+  },
+  {
+    "Polling_station": 479,
+    "Latitude": "48.97814876",
+    "Longitude": "27.51191146",
+    "data14": 69.5353,
+    "data12": 89.6262,
+    "data07": 68.3439,
+    "data06": 53.8866
+  },
+  {
+    "Polling_station": 480,
+    "Latitude": "48.9523705",
+    "Longitude": "27.50277516",
+    "data14": 9.0116,
+    "data12": 87.3715,
+    "data07": 69.2359,
+    "data06": 54.5714
+  },
+  {
+    "Polling_station": 481,
+    "Latitude": "49.1094357",
+    "Longitude": "27.54419425",
+    "data14": 52.6836,
+    "data12": 34.1421,
+    "data07": 68.5267,
+    "data06": 49.4648
+  },
+  {
+    "Polling_station": 482,
+    "Latitude": "48.8602702",
+    "Longitude": "27.79280956",
+    "data14": 41.0998,
+    "data12": 15.5384,
+    "data07": 17.3922,
+    "data06": 5.376
+  },
+  {
+    "Polling_station": 483,
+    "Latitude": "48.87551124",
+    "Longitude": "27.78527777",
+    "data14": 65.4517,
+    "data12": 86.0354,
+    "data07": 2.8995,
+    "data06": 47.161
+  },
+  {
+    "Polling_station": 484,
+    "Latitude": "48.8734526",
+    "Longitude": "27.8322469",
+    "data14": 35.5369,
+    "data12": 20.439,
+    "data07": 31.5941,
+    "data06": 66.4467
+  },
+  {
+    "Polling_station": 485,
+    "Latitude": "48.81855558",
+    "Longitude": "27.83474409",
+    "data14": 27.9377,
+    "data12": 32.6033,
+    "data07": 6.7202,
+    "data06": 16.804
+  },
+  {
+    "Polling_station": 486,
+    "Latitude": "48.88292295",
+    "Longitude": "27.75737571",
+    "data14": 78.1465,
+    "data12": 52.5091,
+    "data07": 29.4593,
+    "data06": 2.3168
+  },
+  {
+    "Polling_station": 487,
+    "Latitude": "49.08587244",
+    "Longitude": "27.78043076",
+    "data14": 12.6601,
+    "data12": 8.3129,
+    "data07": 44.8741,
+    "data06": 78.6166
+  },
+  {
+    "Polling_station": 488,
+    "Latitude": "49.07082704",
+    "Longitude": "27.78028128",
+    "data14": 28.3861,
+    "data12": 27.8116,
+    "data07": 19.9968,
+    "data06": 14.7454
+  },
+  {
+    "Polling_station": 489,
+    "Latitude": "48.90072923",
+    "Longitude": "27.65266717",
+    "data14": 9.3711,
+    "data12": 21.7048,
+    "data07": 12.9347,
+    "data06": 2.0794
+  },
+  {
+    "Polling_station": 490,
+    "Latitude": "49.03792022",
+    "Longitude": "27.71847128",
+    "data14": 52.5749,
+    "data12": 50.2969,
+    "data07": 36.8506,
+    "data06": 3.2833
+  },
+  {
+    "Polling_station": 491,
+    "Latitude": "49.0322503",
+    "Longitude": "27.68993548",
+    "data14": 11.8248,
+    "data12": 76.9432,
+    "data07": 4.4143,
+    "data06": 64.2601
+  },
+  {
+    "Polling_station": 492,
+    "Latitude": "49.04301643",
+    "Longitude": "27.7389177",
+    "data14": 42.1581,
+    "data12": 2.9388,
+    "data07": 75.3948,
+    "data06": 33.3819
+  },
+  {
+    "Polling_station": 493,
+    "Latitude": "49.03802514",
+    "Longitude": "27.71891572",
+    "data14": 52.4781,
+    "data12": 44.7551,
+    "data07": 41.7894,
+    "data06": 87.9809
+  },
+  {
+    "Polling_station": 494,
+    "Latitude": "48.85864952",
+    "Longitude": "27.73944988",
+    "data14": 79.1343,
+    "data12": 28.627,
+    "data07": 79.9576,
+    "data06": 7.0749
+  },
+  {
+    "Polling_station": 495,
+    "Latitude": "48.87613994",
+    "Longitude": "27.68768585",
+    "data14": 56.4288,
+    "data12": 52.0468,
+    "data07": 6.4991,
+    "data06": 81.6306
+  },
+  {
+    "Polling_station": 496,
+    "Latitude": "49.1065376",
+    "Longitude": "27.63170775",
+    "data14": 87.7628,
+    "data12": 49.0854,
+    "data07": 11.8886,
+    "data06": 24.3748
+  },
+  {
+    "Polling_station": 497,
+    "Latitude": "49.12000618",
+    "Longitude": "27.59863133",
+    "data14": 0.8497,
+    "data12": 64.8413,
+    "data07": 38.7502,
+    "data06": 82.0398
+  },
+  {
+    "Polling_station": 498,
+    "Latitude": "49.10922697",
+    "Longitude": "27.66826209",
+    "data14": 43.145,
+    "data12": 9.4034,
+    "data07": 0.3032,
+    "data06": 30.4306
+  },
+  {
+    "Polling_station": 499,
+    "Latitude": "49.01378922",
+    "Longitude": "27.57825863",
+    "data14": 30.5338,
+    "data12": 89.2052,
+    "data07": 47.1446,
+    "data06": 87.7312
+  },
+  {
+    "Polling_station": 500,
+    "Latitude": "48.98111764",
+    "Longitude": "27.608064",
+    "data14": 82.1812,
+    "data12": 72.4975,
+    "data07": 54.1029,
+    "data06": 32.3661
+  },
+  {
+    "Polling_station": 501,
+    "Latitude": "48.96492563",
+    "Longitude": "27.6289089",
+    "data14": 24.8775,
+    "data12": 77.0348,
+    "data07": 16.5552,
+    "data06": 39.3681
+  },
+  {
+    "Polling_station": 502,
+    "Latitude": "48.94904898",
+    "Longitude": "27.57417064",
+    "data14": 18.1277,
+    "data12": 13.7811,
+    "data07": 4.2184,
+    "data06": 34.5793
+  },
+  {
+    "Polling_station": 503,
+    "Latitude": "49.10375985",
+    "Longitude": "27.71918914",
+    "data14": 76.8434,
+    "data12": 0.9053,
+    "data07": 2.6863,
+    "data06": 50.2688
+  },
+  {
+    "Polling_station": 504,
+    "Latitude": "48.82304135",
+    "Longitude": "27.90203701",
+    "data14": 7.3396,
+    "data12": 15.9441,
+    "data07": 48.2414,
+    "data06": 32.9726
+  },
+  {
+    "Polling_station": 505,
+    "Latitude": "48.85970781",
+    "Longitude": "27.89273455",
+    "data14": 63.8548,
+    "data12": 21.391,
+    "data07": 59.154,
+    "data06": 49.9961
+  },
+  {
+    "Polling_station": 506,
+    "Latitude": "49.13843955",
+    "Longitude": "27.63600954",
+    "data14": 70.8827,
+    "data12": 25.3685,
+    "data07": 1.5036,
+    "data06": 20.4593
+  },
+  {
+    "Polling_station": 507,
+    "Latitude": "48.96144522",
+    "Longitude": "27.67950591",
+    "data14": 33.6678,
+    "data12": 9.0633,
+    "data07": 24.2495,
+    "data06": 17.5364
+  },
+  {
+    "Polling_station": 508,
+    "Latitude": "48.94870209",
+    "Longitude": "27.72991792",
+    "data14": 27.5278,
+    "data12": 4.4612,
+    "data07": 48.6262,
+    "data06": 74.5887
+  },
+  {
+    "Polling_station": 509,
+    "Latitude": "48.98508948",
+    "Longitude": "27.66825827",
+    "data14": 70.8063,
+    "data12": 25.4362,
+    "data07": 47.1861,
+    "data06": 30.9495
+  },
+  {
+    "Polling_station": 510,
+    "Latitude": "48.82743481",
+    "Longitude": "27.74559718",
+    "data14": 29.8876,
+    "data12": 55.5639,
+    "data07": 36.2866,
+    "data06": 53.2425
+  },
+  {
+    "Polling_station": 511,
+    "Latitude": "48.82550751",
+    "Longitude": "27.69199202",
+    "data14": 28.8176,
+    "data12": 64.9805,
+    "data07": 14.8759,
+    "data06": 47.4507
+  },
+  {
+    "Polling_station": 512,
+    "Latitude": "49.1549148",
+    "Longitude": "27.80225774",
+    "data14": 71.5656,
+    "data12": 59.6003,
+    "data07": 36.3806,
+    "data06": 34.7845
+  },
+  {
+    "Polling_station": 513,
+    "Latitude": "49.14046432",
+    "Longitude": "27.77875824",
+    "data14": 41.4348,
+    "data12": 5.7794,
+    "data07": 15.5008,
+    "data06": 61.7873
+  },
+  {
+    "Polling_station": 514,
+    "Latitude": "48.99866271",
+    "Longitude": "27.77334777",
+    "data14": 85.5933,
+    "data12": 20.5182,
+    "data07": 54.7854,
+    "data06": 35.3099
+  },
+  {
+    "Polling_station": 515,
+    "Latitude": "49.01879492",
+    "Longitude": "27.84592905",
+    "data14": 16.4267,
+    "data12": 34.9641,
+    "data07": 25.2411,
+    "data06": 3.341
+  },
+  {
+    "Polling_station": 516,
+    "Latitude": "49.05796473",
+    "Longitude": "27.82452136",
+    "data14": 88.118,
+    "data12": 38.0895,
+    "data07": 66.6981,
+    "data06": 24.7336
+  },
+  {
+    "Polling_station": 517,
+    "Latitude": "48.97243459",
+    "Longitude": "27.80673684",
+    "data14": 86.8682,
+    "data12": 26.3289,
+    "data07": 38.7186,
+    "data06": 57.6089
+  },
+  {
+    "Polling_station": 518,
+    "Latitude": "48.95011845",
+    "Longitude": "27.86550318",
+    "data14": 73.4504,
+    "data12": 48.7521,
+    "data07": 61.8926,
+    "data06": 13.8854
+  },
+  {
+    "Polling_station": 519,
+    "Latitude": "48.97922128",
+    "Longitude": "27.7513386",
+    "data14": 75.7564,
+    "data12": 50.288,
+    "data07": 35.4022,
+    "data06": 21.8196
+  },
+  {
+    "Polling_station": 520,
+    "Latitude": "48.98766517",
+    "Longitude": "27.714868",
+    "data14": 86.0074,
+    "data12": 59.1942,
+    "data07": 31.7705,
+    "data06": 36.0914
+  },
+  {
+    "Polling_station": 521,
+    "Latitude": "48.92895015",
+    "Longitude": "27.55285249",
+    "data14": 88.2838,
+    "data12": 72.2093,
+    "data07": 55.2285,
+    "data06": 22.0481
+  },
+  {
+    "Polling_station": 522,
+    "Latitude": "48.90093056",
+    "Longitude": "27.83422765",
+    "data14": 53.7017,
+    "data12": 21.3234,
+    "data07": 58.8868,
+    "data06": 66.7274
+  },
+  {
+    "Polling_station": 523,
+    "Latitude": "48.91770227",
+    "Longitude": "27.79758274",
+    "data14": 24.4117,
+    "data12": 7.8387,
+    "data07": 37.6279,
+    "data06": 84.6165
+  },
+  {
+    "Polling_station": 524,
+    "Latitude": "48.84385981",
+    "Longitude": "27.64420142",
+    "data14": 69.1077,
+    "data12": 9.2397,
+    "data07": 8.5734,
+    "data06": 64.9184
+  },
+  {
+    "Polling_station": 525,
+    "Latitude": "49.02008444",
+    "Longitude": "27.61448475",
+    "data14": 86.7561,
+    "data12": 88.2573,
+    "data07": 24.5445,
+    "data06": 60.7808
+  },
+  {
+    "Polling_station": 526,
+    "Latitude": "49.01702628",
+    "Longitude": "27.63171363",
+    "data14": 76.5101,
+    "data12": 50.4045,
+    "data07": 14.0668,
+    "data06": 61.8219
+  },
+  {
+    "Polling_station": 527,
+    "Latitude": "49.00100378",
+    "Longitude": "27.64475179",
+    "data14": 48.3523,
+    "data12": 60.0131,
+    "data07": 87.3682,
+    "data06": 17.3037
+  },
+  {
+    "Polling_station": 528,
+    "Latitude": "48.92315573",
+    "Longitude": "27.43074611",
+    "data14": 70.1357,
+    "data12": 25.7154,
+    "data07": 86.1817,
+    "data06": 53.6292
+  },
+  {
+    "Polling_station": 529,
+    "Latitude": "48.9377864",
+    "Longitude": "27.44453776",
+    "data14": 21.5833,
+    "data12": 67.2577,
+    "data07": 35.411,
+    "data06": 45.5723
+  },
+  {
+    "Polling_station": 530,
+    "Latitude": "49.07745021",
+    "Longitude": "27.68536448",
+    "data14": 31.8609,
+    "data12": 25.6024,
+    "data07": 68.8639,
+    "data06": 2.2449
+  },
+  {
+    "Polling_station": 531,
+    "Latitude": "49.10297056",
+    "Longitude": "28.16540106",
+    "data14": 34.6994,
+    "data12": 64.2791,
+    "data07": 18.953,
+    "data06": 22.4275
+  },
+  {
+    "Polling_station": 532,
+    "Latitude": "49.10759935",
+    "Longitude": "28.15322009",
+    "data14": 51.7311,
+    "data12": 71.752,
+    "data07": 7.9687,
+    "data06": 81.7692
+  },
+  {
+    "Polling_station": 533,
+    "Latitude": "49.11588872",
+    "Longitude": "28.13655705",
+    "data14": 42.1854,
+    "data12": 67.9047,
+    "data07": 12.9447,
+    "data06": 87.5468
+  },
+  {
+    "Polling_station": 534,
+    "Latitude": "49.08517595",
+    "Longitude": "28.13154596",
+    "data14": 80.2604,
+    "data12": 62.7648,
+    "data07": 21.693,
+    "data06": 79.2435
+  },
+  {
+    "Polling_station": 535,
+    "Latitude": "49.11258771",
+    "Longitude": "28.09530089",
+    "data14": 79.8809,
+    "data12": 63.9163,
+    "data07": 16.4575,
+    "data06": 22.4686
+  },
+  {
+    "Polling_station": 536,
+    "Latitude": "49.12266447",
+    "Longitude": "28.03215445",
+    "data14": 32.2782,
+    "data12": 64.066,
+    "data07": 29.1958,
+    "data06": 67.4452
+  },
+  {
+    "Polling_station": 537,
+    "Latitude": "49.1203492",
+    "Longitude": "27.96925409",
+    "data14": 53.5417,
+    "data12": 54.2062,
+    "data07": 46.6083,
+    "data06": 25.3003
+  },
+  {
+    "Polling_station": 538,
+    "Latitude": "49.08532707",
+    "Longitude": "28.01582294",
+    "data14": 66.6019,
+    "data12": 40.4074,
+    "data07": 71.6437,
+    "data06": 28.9952
+  },
+  {
+    "Polling_station": 539,
+    "Latitude": "49.11489153",
+    "Longitude": "28.25261711",
+    "data14": 33.8889,
+    "data12": 82.9919,
+    "data07": 29.5508,
+    "data06": 33.6674
+  },
+  {
+    "Polling_station": 540,
+    "Latitude": "49.08920931",
+    "Longitude": "28.29254094",
+    "data14": 60.9461,
+    "data12": 38.0876,
+    "data07": 28.184,
+    "data06": 74.8824
+  },
+  {
+    "Polling_station": 541,
+    "Latitude": "49.20596222",
+    "Longitude": "27.91789322",
+    "data14": 17.3342,
+    "data12": 55.941,
+    "data07": 22.6463,
+    "data06": 21.6813
+  },
+  {
+    "Polling_station": 542,
+    "Latitude": "49.01110309",
+    "Longitude": "28.18859874",
+    "data14": 43.165,
+    "data12": 9.3403,
+    "data07": 85.643,
+    "data06": 39.1227
+  },
+  {
+    "Polling_station": 543,
+    "Latitude": "49.03456087",
+    "Longitude": "28.16279482",
+    "data14": 2.1665,
+    "data12": 6.9951,
+    "data07": 39.7631,
+    "data06": 68.0339
+  },
+  {
+    "Polling_station": 544,
+    "Latitude": "48.96308961",
+    "Longitude": "28.24646059",
+    "data14": 62.6961,
+    "data12": 69.7474,
+    "data07": 37.3447,
+    "data06": 85.6706
+  },
+  {
+    "Polling_station": 545,
+    "Latitude": "48.9431634",
+    "Longitude": "28.23867058",
+    "data14": 84.8082,
+    "data12": 51.3442,
+    "data07": 49.2688,
+    "data06": 55.25
+  },
+  {
+    "Polling_station": 546,
+    "Latitude": "48.91801775",
+    "Longitude": "28.10710111",
+    "data14": 71.7495,
+    "data12": 13.2489,
+    "data07": 13.4956,
+    "data06": 81.0697
+  },
+  {
+    "Polling_station": 547,
+    "Latitude": "48.95775145",
+    "Longitude": "28.06022436",
+    "data14": 58.5432,
+    "data12": 25.974,
+    "data07": 69.0644,
+    "data06": 78.3545
+  },
+  {
+    "Polling_station": 548,
+    "Latitude": "49.15366494",
+    "Longitude": "27.95006408",
+    "data14": 24.3582,
+    "data12": 12.0076,
+    "data07": 40.2754,
+    "data06": 17.621
+  },
+  {
+    "Polling_station": 549,
+    "Latitude": "49.17361311",
+    "Longitude": "27.9073799",
+    "data14": 83.0594,
+    "data12": 35.099,
+    "data07": 59.4676,
+    "data06": 43.2825
+  },
+  {
+    "Polling_station": 550,
+    "Latitude": "48.90344546",
+    "Longitude": "27.93907147",
+    "data14": 30.8017,
+    "data12": 70.1555,
+    "data07": 74.9248,
+    "data06": 22.434
+  },
+  {
+    "Polling_station": 551,
+    "Latitude": "49.02809497",
+    "Longitude": "28.03305405",
+    "data14": 41.47,
+    "data12": 33.9623,
+    "data07": 82.4395,
+    "data06": 24.6728
+  },
+  {
+    "Polling_station": 552,
+    "Latitude": "48.9749976",
+    "Longitude": "27.9987164",
+    "data14": 87.6033,
+    "data12": 83.9005,
+    "data07": 59.1451,
+    "data06": 44.245
+  },
+  {
+    "Polling_station": 553,
+    "Latitude": "49.03028006",
+    "Longitude": "28.00587021",
+    "data14": 72.8119,
+    "data12": 20.787,
+    "data07": 41.4178,
+    "data06": 20.0797
+  },
+  {
+    "Polling_station": 554,
+    "Latitude": "49.16735684",
+    "Longitude": "27.99128037",
+    "data14": 44.2045,
+    "data12": 15.5383,
+    "data07": 31.9133,
+    "data06": 52.7865
+  },
+  {
+    "Polling_station": 555,
+    "Latitude": "49.17032418",
+    "Longitude": "28.04229311",
+    "data14": 12.5656,
+    "data12": 54.3701,
+    "data07": 52.4198,
+    "data06": 78.6516
+  },
+  {
+    "Polling_station": 556,
+    "Latitude": "49.06720893",
+    "Longitude": "28.12758742",
+    "data14": 8.2391,
+    "data12": 39.9276,
+    "data07": 27.3826,
+    "data06": 57.602
+  },
+  {
+    "Polling_station": 557,
+    "Latitude": "49.00542832",
+    "Longitude": "28.10768168",
+    "data14": 26.3109,
+    "data12": 50.1494,
+    "data07": 67.9948,
+    "data06": 55.3995
+  },
+  {
+    "Polling_station": 558,
+    "Latitude": "49.05440794",
+    "Longitude": "28.0712947",
+    "data14": 83.6909,
+    "data12": 33.2868,
+    "data07": 4.5469,
+    "data06": 24.3752
+  },
+  {
+    "Polling_station": 559,
+    "Latitude": "49.07968881",
+    "Longitude": "28.09094662",
+    "data14": 81.6981,
+    "data12": 33.6825,
+    "data07": 57.2047,
+    "data06": 61.8127
+  },
+  {
+    "Polling_station": 560,
+    "Latitude": "49.23502541",
+    "Longitude": "27.97959265",
+    "data14": 34.543,
+    "data12": 84.7509,
+    "data07": 19.5111,
+    "data06": 43.2219
+  },
+  {
+    "Polling_station": 561,
+    "Latitude": "49.15093756",
+    "Longitude": "28.11771432",
+    "data14": 32.2505,
+    "data12": 65.4581,
+    "data07": 7.7957,
+    "data06": 17.0737
+  },
+  {
+    "Polling_station": 562,
+    "Latitude": "48.86093829",
+    "Longitude": "27.96657066",
+    "data14": 7.982,
+    "data12": 25.6823,
+    "data07": 4.8524,
+    "data06": 53.264
+  },
+  {
+    "Polling_station": 563,
+    "Latitude": "48.83825192",
+    "Longitude": "27.98598981",
+    "data14": 12.5677,
+    "data12": 79.0389,
+    "data07": 61.9263,
+    "data06": 58.9566
+  },
+  {
+    "Polling_station": 564,
+    "Latitude": "48.87538143",
+    "Longitude": "28.0209982",
+    "data14": 71.4998,
+    "data12": 76.4699,
+    "data07": 87.6673,
+    "data06": 57.5875
+  },
+  {
+    "Polling_station": 565,
+    "Latitude": "48.9581356",
+    "Longitude": "27.97864133",
+    "data14": 37.9167,
+    "data12": 39.4225,
+    "data07": 9.1318,
+    "data06": 82.2193
+  },
+  {
+    "Polling_station": 566,
+    "Latitude": "48.98709466",
+    "Longitude": "27.92993037",
+    "data14": 65.2417,
+    "data12": 64.8649,
+    "data07": 61.0348,
+    "data06": 48.5136
+  },
+  {
+    "Polling_station": 567,
+    "Latitude": "48.98254756",
+    "Longitude": "27.8726475",
+    "data14": 24.6273,
+    "data12": 57.3003,
+    "data07": 4.1822,
+    "data06": 81.7284
+  },
+  {
+    "Polling_station": 568,
+    "Latitude": "49.03598322",
+    "Longitude": "28.22598055",
+    "data14": 22.8005,
+    "data12": 2.2808,
+    "data07": 54.5939,
+    "data06": 63.6628
+  },
+  {
+    "Polling_station": 569,
+    "Latitude": "49.02973064",
+    "Longitude": "28.29228339",
+    "data14": 79.8123,
+    "data12": 51.7257,
+    "data07": 78.9254,
+    "data06": 87.0329
+  },
+  {
+    "Polling_station": 570,
+    "Latitude": "49.21565494",
+    "Longitude": "28.04248162",
+    "data14": 22.0028,
+    "data12": 10.9436,
+    "data07": 39.8765,
+    "data06": 79.0846
+  },
+  {
+    "Polling_station": 571,
+    "Latitude": "49.24102721",
+    "Longitude": "28.02644002",
+    "data14": 54.0263,
+    "data12": 86.0161,
+    "data07": 63.9263,
+    "data06": 77.5047
+  },
+  {
+    "Polling_station": 572,
+    "Latitude": "49.08235219",
+    "Longitude": "28.05108367",
+    "data14": 89.8498,
+    "data12": 38.7345,
+    "data07": 49.4394,
+    "data06": 89.7469
+  },
+  {
+    "Polling_station": 573,
+    "Latitude": "49.07918273",
+    "Longitude": "27.99680532",
+    "data14": 67.9731,
+    "data12": 60.0529,
+    "data07": 47.3907,
+    "data06": 58.2986
+  },
+  {
+    "Polling_station": 574,
+    "Latitude": "49.04926914",
+    "Longitude": "27.94683607",
+    "data14": 3.3597,
+    "data12": 35.7898,
+    "data07": 29.4034,
+    "data06": 28.9734
+  },
+  {
+    "Polling_station": 575,
+    "Latitude": "49.01517753",
+    "Longitude": "27.95753518",
+    "data14": 40.5194,
+    "data12": 43.45,
+    "data07": 41.7019,
+    "data06": 35.2883
+  },
+  {
+    "Polling_station": 576,
+    "Latitude": "49.09152121",
+    "Longitude": "27.91937839",
+    "data14": 78.215,
+    "data12": 75.7596,
+    "data07": 72.7669,
+    "data06": 30.8538
+  },
+  {
+    "Polling_station": 577,
+    "Latitude": "49.11014144",
+    "Longitude": "27.89581868",
+    "data14": 4.0799,
+    "data12": 82.3193,
+    "data07": 76.7524,
+    "data06": 37.5821
+  },
+  {
+    "Polling_station": 578,
+    "Latitude": "48.9725552",
+    "Longitude": "28.11092377",
+    "data14": 0.9487,
+    "data12": 85.1777,
+    "data07": 67.9322,
+    "data06": 24.9492
+  },
+  {
+    "Polling_station": 579,
+    "Latitude": "48.97114313",
+    "Longitude": "28.10970604",
+    "data14": 24.5702,
+    "data12": 76.4441,
+    "data07": 56.5755,
+    "data06": 20.4729
+  },
+  {
+    "Polling_station": 580,
+    "Latitude": "49.10645815",
+    "Longitude": "27.8271561",
+    "data14": 77.8527,
+    "data12": 60.0285,
+    "data07": 38.6175,
+    "data06": 75.8869
+  },
+  {
+    "Polling_station": 581,
+    "Latitude": "49.13044152",
+    "Longitude": "27.85099558",
+    "data14": 48.4384,
+    "data12": 72.5865,
+    "data07": 24.4637,
+    "data06": 35.7231
+  },
+  {
+    "Polling_station": 582,
+    "Latitude": "48.90898783",
+    "Longitude": "28.16377096",
+    "data14": 56.7157,
+    "data12": 86.4273,
+    "data07": 51.1455,
+    "data06": 29.8583
+  },
+  {
+    "Polling_station": 583,
+    "Latitude": "48.95691903",
+    "Longitude": "28.19782204",
+    "data14": 52.2732,
+    "data12": 12.9871,
+    "data07": 88.222,
+    "data06": 43.9324
+  },
+  {
+    "Polling_station": 584,
+    "Latitude": "48.8989967",
+    "Longitude": "28.21308963",
+    "data14": 8.7871,
+    "data12": 77.1989,
+    "data07": 68.2134,
+    "data06": 0.3064
+  },
+  {
+    "Polling_station": 585,
+    "Latitude": "48.91419949",
+    "Longitude": "27.99956343",
+    "data14": 11.4204,
+    "data12": 30.1265,
+    "data07": 87.3079,
+    "data06": 30.1589
+  },
+  {
+    "Polling_station": 586,
+    "Latitude": "49.04761695",
+    "Longitude": "27.91503856",
+    "data14": 21.1644,
+    "data12": 1.295,
+    "data07": 0.5588,
+    "data06": 39.5006
+  },
+  {
+    "Polling_station": 587,
+    "Latitude": "49.02652584",
+    "Longitude": "27.88104625",
+    "data14": 0.0612,
+    "data12": 85.8122,
+    "data07": 40.2388,
+    "data06": 0.761
+  },
+  {
+    "Polling_station": 588,
+    "Latitude": "49.06500578",
+    "Longitude": "27.86674482",
+    "data14": 86.8349,
+    "data12": 25.3255,
+    "data07": 51.2291,
+    "data06": 50.1852
+  },
+  {
+    "Polling_station": 589,
+    "Latitude": "49.33216618",
+    "Longitude": "28.07455388",
+    "data14": 68.1431,
+    "data12": 51.5414,
+    "data07": 18.3019,
+    "data06": 9.5641
+  },
+  {
+    "Polling_station": 590,
+    "Latitude": "49.32876612",
+    "Longitude": "28.08342254",
+    "data14": 6.651,
+    "data12": 9.3466,
+    "data07": 70.7512,
+    "data06": 71.6306
+  },
+  {
+    "Polling_station": 591,
+    "Latitude": "49.31191802",
+    "Longitude": "28.0872345",
+    "data14": 50.6098,
+    "data12": 25.1827,
+    "data07": 18.9168,
+    "data06": 21.2687
+  },
+  {
+    "Polling_station": 592,
+    "Latitude": "49.30302046",
+    "Longitude": "27.9384939",
+    "data14": 29.7214,
+    "data12": 12.1607,
+    "data07": 68.258,
+    "data06": 15.7882
+  },
+  {
+    "Polling_station": 593,
+    "Latitude": "49.28351751",
+    "Longitude": "27.90995277",
+    "data14": 36.2243,
+    "data12": 72.2071,
+    "data07": 73.9898,
+    "data06": 52.2295
+  },
+  {
+    "Polling_station": 594,
+    "Latitude": "49.31059716",
+    "Longitude": "27.87104328",
+    "data14": 79.8005,
+    "data12": 37.5961,
+    "data07": 88.5196,
+    "data06": 26.16
+  },
+  {
+    "Polling_station": 595,
+    "Latitude": "49.28600844",
+    "Longitude": "28.074685",
+    "data14": 67.5391,
+    "data12": 25.781,
+    "data07": 80.6545,
+    "data06": 70.8597
+  },
+  {
+    "Polling_station": 596,
+    "Latitude": "49.26601457",
+    "Longitude": "28.03673553",
+    "data14": 60.6986,
+    "data12": 38.2959,
+    "data07": 67.9836,
+    "data06": 9.7587
+  },
+  {
+    "Polling_station": 597,
+    "Latitude": "49.41416851",
+    "Longitude": "28.19552323",
+    "data14": 59.0729,
+    "data12": 65.5435,
+    "data07": 22.4311,
+    "data06": 87.1603
+  },
+  {
+    "Polling_station": 598,
+    "Latitude": "49.41074042",
+    "Longitude": "28.15399613",
+    "data14": 61.6849,
+    "data12": 32.522,
+    "data07": 78.74,
+    "data06": 3.0757
+  },
+  {
+    "Polling_station": 599,
+    "Latitude": "49.385837",
+    "Longitude": "28.18018913",
+    "data14": 89.4825,
+    "data12": 73.7923,
+    "data07": 47.7641,
+    "data06": 5.4402
+  },
+  {
+    "Polling_station": 600,
+    "Latitude": "49.2558345",
+    "Longitude": "27.92488979",
+    "data14": 63.8701,
+    "data12": 47.807,
+    "data07": 22.48,
+    "data06": 0.4382
+  },
+  {
+    "Polling_station": 601,
+    "Latitude": "49.23706983",
+    "Longitude": "27.8865525",
+    "data14": 19.9006,
+    "data12": 86.8917,
+    "data07": 24.2734,
+    "data06": 4.8257
+  },
+  {
+    "Polling_station": 602,
+    "Latitude": "49.26914455",
+    "Longitude": "27.86432783",
+    "data14": 48.0925,
+    "data12": 54.3356,
+    "data07": 7.67,
+    "data06": 21.5094
+  },
+  {
+    "Polling_station": 603,
+    "Latitude": "49.37879575",
+    "Longitude": "27.94449694",
+    "data14": 0.2403,
+    "data12": 52.3513,
+    "data07": 48.1076,
+    "data06": 23.9108
+  },
+  {
+    "Polling_station": 604,
+    "Latitude": "49.40678663",
+    "Longitude": "27.92650713",
+    "data14": 21.1724,
+    "data12": 51.5168,
+    "data07": 16.2035,
+    "data06": 56.5192
+  },
+  {
+    "Polling_station": 605,
+    "Latitude": "49.30369066",
+    "Longitude": "28.26093496",
+    "data14": 11.6142,
+    "data12": 53.1645,
+    "data07": 54.4073,
+    "data06": 77.4468
+  },
+  {
+    "Polling_station": 606,
+    "Latitude": "49.30424626",
+    "Longitude": "28.26055846",
+    "data14": 46.9496,
+    "data12": 89.1023,
+    "data07": 67.8328,
+    "data06": 1.2423
+  },
+  {
+    "Polling_station": 607,
+    "Latitude": "49.33230869",
+    "Longitude": "28.24681728",
+    "data14": 79.151,
+    "data12": 38.9656,
+    "data07": 79.6898,
+    "data06": 84.9592
+  },
+  {
+    "Polling_station": 608,
+    "Latitude": "49.27893735",
+    "Longitude": "28.25218837",
+    "data14": 59.4352,
+    "data12": 33.2468,
+    "data07": 21.0631,
+    "data06": 21.3302
+  },
+  {
+    "Polling_station": 609,
+    "Latitude": "49.39258776",
+    "Longitude": "27.86879318",
+    "data14": 33.4722,
+    "data12": 76.8898,
+    "data07": 45.9226,
+    "data06": 28.1082
+  },
+  {
+    "Polling_station": 610,
+    "Latitude": "49.36480863",
+    "Longitude": "27.82328136",
+    "data14": 4.3858,
+    "data12": 81.9418,
+    "data07": 52.5819,
+    "data06": 9.672
+  },
+  {
+    "Polling_station": 611,
+    "Latitude": "49.50707335",
+    "Longitude": "28.17659555",
+    "data14": 32.8763,
+    "data12": 76.0098,
+    "data07": 42.6539,
+    "data06": 83.8669
+  },
+  {
+    "Polling_station": 612,
+    "Latitude": "49.49465042",
+    "Longitude": "28.16052179",
+    "data14": 55.0353,
+    "data12": 59.7923,
+    "data07": 79.8916,
+    "data06": 50.3688
+  },
+  {
+    "Polling_station": 613,
+    "Latitude": "49.41109555",
+    "Longitude": "28.0456733",
+    "data14": 1.2577,
+    "data12": 73.3161,
+    "data07": 72.4137,
+    "data06": 11.2143
+  },
+  {
+    "Polling_station": 614,
+    "Latitude": "49.43484625",
+    "Longitude": "28.02296354",
+    "data14": 56.0223,
+    "data12": 48.1724,
+    "data07": 65.5725,
+    "data06": 40.2665
+  },
+  {
+    "Polling_station": 615,
+    "Latitude": "49.45729354",
+    "Longitude": "27.93139166",
+    "data14": 27.5224,
+    "data12": 23.9625,
+    "data07": 51.7465,
+    "data06": 9.5874
+  },
+  {
+    "Polling_station": 616,
+    "Latitude": "49.43024853",
+    "Longitude": "27.98470015",
+    "data14": 60.9172,
+    "data12": 65.2659,
+    "data07": 34.6302,
+    "data06": 52.7949
+  },
+  {
+    "Polling_station": 617,
+    "Latitude": "49.33466359",
+    "Longitude": "28.00225531",
+    "data14": 87.5323,
+    "data12": 18.8801,
+    "data07": 61.387,
+    "data06": 43.7934
+  },
+  {
+    "Polling_station": 618,
+    "Latitude": "49.29576363",
+    "Longitude": "28.01607283",
+    "data14": 43.576,
+    "data12": 88.2869,
+    "data07": 53.3975,
+    "data06": 72.7701
+  },
+  {
+    "Polling_station": 619,
+    "Latitude": "49.35672483",
+    "Longitude": "27.9215374",
+    "data14": 25.0712,
+    "data12": 23.3373,
+    "data07": 13.5396,
+    "data06": 75.9287
+  },
+  {
+    "Polling_station": 620,
+    "Latitude": "49.3444753",
+    "Longitude": "27.86830841",
+    "data14": 21.203,
+    "data12": 69.4331,
+    "data07": 82.2009,
+    "data06": 8.6931
+  },
+  {
+    "Polling_station": 621,
+    "Latitude": "49.32541301",
+    "Longitude": "28.17514938",
+    "data14": 40.6213,
+    "data12": 73.493,
+    "data07": 3.3521,
+    "data06": 27.3047
+  },
+  {
+    "Polling_station": 622,
+    "Latitude": "49.35078902",
+    "Longitude": "28.19092078",
+    "data14": 79.5576,
+    "data12": 5.4868,
+    "data07": 24.2034,
+    "data06": 62.1531
+  },
+  {
+    "Polling_station": 623,
+    "Latitude": "49.35415456",
+    "Longitude": "28.16013764",
+    "data14": 14.9902,
+    "data12": 41.5218,
+    "data07": 82.2956,
+    "data06": 36.2746
+  },
+  {
+    "Polling_station": 624,
+    "Latitude": "49.28743693",
+    "Longitude": "28.19333017",
+    "data14": 22.5819,
+    "data12": 45.7512,
+    "data07": 24.6106,
+    "data06": 22.2577
+  },
+  {
+    "Polling_station": 625,
+    "Latitude": "49.25796122",
+    "Longitude": "28.15206531",
+    "data14": 43.7687,
+    "data12": 6.9433,
+    "data07": 49.9308,
+    "data06": 32.9319
+  },
+  {
+    "Polling_station": 626,
+    "Latitude": "49.23758413",
+    "Longitude": "28.15417831",
+    "data14": 56.966,
+    "data12": 13.7182,
+    "data07": 72.2764,
+    "data06": 84.0794
+  },
+  {
+    "Polling_station": 627,
+    "Latitude": "49.41826579",
+    "Longitude": "28.11339435",
+    "data14": 72.1653,
+    "data12": 26.2546,
+    "data07": 87.9876,
+    "data06": 43.962
+  },
+  {
+    "Polling_station": 628,
+    "Latitude": "49.44411756",
+    "Longitude": "28.08987721",
+    "data14": 55.4299,
+    "data12": 78.2832,
+    "data07": 89.2549,
+    "data06": 86.3578
+  },
+  {
+    "Polling_station": 629,
+    "Latitude": "49.43970521",
+    "Longitude": "28.13247327",
+    "data14": 88.5518,
+    "data12": 9.8921,
+    "data07": 50.8294,
+    "data06": 5.7464
+  },
+  {
+    "Polling_station": 630,
+    "Latitude": "49.3719094",
+    "Longitude": "28.26658598",
+    "data14": 79.9487,
+    "data12": 65.2452,
+    "data07": 12.2244,
+    "data06": 34.7445
+  },
+  {
+    "Polling_station": 631,
+    "Latitude": "49.38858143",
+    "Longitude": "28.24455067",
+    "data14": 23.0836,
+    "data12": 72.9271,
+    "data07": 33.949,
+    "data06": 5.1189
+  },
+  {
+    "Polling_station": 632,
+    "Latitude": "49.35528482",
+    "Longitude": "28.31999983",
+    "data14": 59.4015,
+    "data12": 11.1289,
+    "data07": 26.0396,
+    "data06": 15.1368
+  },
+  {
+    "Polling_station": 633,
+    "Latitude": "49.38879569",
+    "Longitude": "28.30769592",
+    "data14": 78.8927,
+    "data12": 79.1343,
+    "data07": 8.6665,
+    "data06": 20.9341
+  },
+  {
+    "Polling_station": 634,
+    "Latitude": "49.32299937",
+    "Longitude": "28.11597542",
+    "data14": 0.0136,
+    "data12": 17.2607,
+    "data07": 4.8008,
+    "data06": 43.6505
+  },
+  {
+    "Polling_station": 635,
+    "Latitude": "49.3155264",
+    "Longitude": "28.14213623",
+    "data14": 58.347,
+    "data12": 60.954,
+    "data07": 81.2496,
+    "data06": 64.0796
+  },
+  {
+    "Polling_station": 636,
+    "Latitude": "49.3552943",
+    "Longitude": "28.07484418",
+    "data14": 8.4001,
+    "data12": 75.437,
+    "data07": 0.3842,
+    "data06": 16.0966
+  },
+  {
+    "Polling_station": 637,
+    "Latitude": "49.37540815",
+    "Longitude": "28.1109329",
+    "data14": 42.351,
+    "data12": 71.6251,
+    "data07": 38.3494,
+    "data06": 79.1709
+  },
+  {
+    "Polling_station": 638,
+    "Latitude": "49.34283662",
+    "Longitude": "28.05586586",
+    "data14": 2.2632,
+    "data12": 21.5933,
+    "data07": 83.9924,
+    "data06": 84.4305
+  },
+  {
+    "Polling_station": 639,
+    "Latitude": "49.46804783",
+    "Longitude": "27.77720328",
+    "data14": 49.3002,
+    "data12": 68.5376,
+    "data07": 43.8223,
+    "data06": 85.4477
+  },
+  {
+    "Polling_station": 640,
+    "Latitude": "49.46342806",
+    "Longitude": "27.81920722",
+    "data14": 0.4385,
+    "data12": 88.9903,
+    "data07": 33.5811,
+    "data06": 76.8804
+  },
+  {
+    "Polling_station": 641,
+    "Latitude": "49.44014331",
+    "Longitude": "27.80790365",
+    "data14": 59.6072,
+    "data12": 53.2368,
+    "data07": 81.5565,
+    "data06": 84.8824
+  },
+  {
+    "Polling_station": 642,
+    "Latitude": "49.45329523",
+    "Longitude": "27.76501986",
+    "data14": 44.68,
+    "data12": 62.0091,
+    "data07": 72.3489,
+    "data06": 6.161
+  },
+  {
+    "Polling_station": 643,
+    "Latitude": "49.50122572",
+    "Longitude": "28.21513013",
+    "data14": 39.2049,
+    "data12": 31.5627,
+    "data07": 69.0511,
+    "data06": 28.0143
+  },
+  {
+    "Polling_station": 644,
+    "Latitude": "49.5027182",
+    "Longitude": "28.22880326",
+    "data14": 5.2084,
+    "data12": 3.019,
+    "data07": 63.1483,
+    "data06": 48.2837
+  },
+  {
+    "Polling_station": 645,
+    "Latitude": "49.48636842",
+    "Longitude": "28.2244797",
+    "data14": 18.8802,
+    "data12": 56.0778,
+    "data07": 67.7407,
+    "data06": 38.6605
+  },
+  {
+    "Polling_station": 646,
+    "Latitude": "49.47256556",
+    "Longitude": "28.24298738",
+    "data14": 74.2591,
+    "data12": 51.9102,
+    "data07": 75.9349,
+    "data06": 21.0967
+  },
+  {
+    "Polling_station": 647,
+    "Latitude": "49.48008389",
+    "Longitude": "28.20797415",
+    "data14": 76.2068,
+    "data12": 81.3384,
+    "data07": 22.969,
+    "data06": 63.544
+  },
+  {
+    "Polling_station": 648,
+    "Latitude": "49.45614122",
+    "Longitude": "28.16608245",
+    "data14": 68.7998,
+    "data12": 11.3802,
+    "data07": 1.5562,
+    "data06": 24.0492
+  },
+  {
+    "Polling_station": 649,
+    "Latitude": "49.43851251",
+    "Longitude": "28.22058284",
+    "data14": 30.1816,
+    "data12": 89.363,
+    "data07": 51.0525,
+    "data06": 16.6177
+  },
+  {
+    "Polling_station": 650,
+    "Latitude": "49.45015242",
+    "Longitude": "27.87468441",
+    "data14": 36.95,
+    "data12": 36.7077,
+    "data07": 33.8123,
+    "data06": 66.5805
+  },
+  {
+    "Polling_station": 651,
+    "Latitude": "49.32955516",
+    "Longitude": "28.07240725",
+    "data14": 34.2205,
+    "data12": 10.6142,
+    "data07": 61.6553,
+    "data06": 40.3037
+  },
+  {
+    "Polling_station": 652,
+    "Latitude": "49.33306505",
+    "Longitude": "28.05736542",
+    "data14": 19.3749,
+    "data12": 76.0245,
+    "data07": 0.9532,
+    "data06": 32.0253
+  },
+  {
+    "Polling_station": 653,
+    "Latitude": "49.07711192",
+    "Longitude": "28.35682647",
+    "data14": 39.5334,
+    "data12": 5.2152,
+    "data07": 37.2155,
+    "data06": 16.6
+  },
+  {
+    "Polling_station": 654,
+    "Latitude": "49.08333586",
+    "Longitude": "28.34558443",
+    "data14": 64.2968,
+    "data12": 78.0598,
+    "data07": 27.9244,
+    "data06": 20.7934
+  },
+  {
+    "Polling_station": 655,
+    "Latitude": "49.09177965",
+    "Longitude": "28.3367427",
+    "data14": 25.3079,
+    "data12": 46.1974,
+    "data07": 51.8393,
+    "data06": 73.6543
+  },
+  {
+    "Polling_station": 656,
+    "Latitude": "49.09111963",
+    "Longitude": "28.34370576",
+    "data14": 48.5486,
+    "data12": 69.9003,
+    "data07": 72.5496,
+    "data06": 46.0101
+  },
+  {
+    "Polling_station": 657,
+    "Latitude": "49.09224838",
+    "Longitude": "28.35034339",
+    "data14": 30.6638,
+    "data12": 1.6989,
+    "data07": 81.9686,
+    "data06": 23.8661
+  },
+  {
+    "Polling_station": 658,
+    "Latitude": "49.09871772",
+    "Longitude": "28.33440506",
+    "data14": 55.3734,
+    "data12": 33.5835,
+    "data07": 50.1732,
+    "data06": 31.9557
+  },
+  {
+    "Polling_station": 659,
+    "Latitude": "49.10837772",
+    "Longitude": "28.33306108",
+    "data14": 37.3268,
+    "data12": 88.8786,
+    "data07": 23.8336,
+    "data06": 56.1615
+  },
+  {
+    "Polling_station": 660,
+    "Latitude": "49.10204902",
+    "Longitude": "28.36292961",
+    "data14": 55.0804,
+    "data12": 78.1077,
+    "data07": 30.165,
+    "data06": 78.0332
+  },
+  {
+    "Polling_station": 661,
+    "Latitude": "49.08972169",
+    "Longitude": "28.39761001",
+    "data14": 6.6539,
+    "data12": 20.4866,
+    "data07": 73.0854,
+    "data06": 76.9324
+  },
+  {
+    "Polling_station": 662,
+    "Latitude": "49.03815734",
+    "Longitude": "28.43580142",
+    "data14": 32.8054,
+    "data12": 5.194,
+    "data07": 19.568,
+    "data06": 1.5863
+  },
+  {
+    "Polling_station": 663,
+    "Latitude": "49.03972491",
+    "Longitude": "28.41874908",
+    "data14": 60.5238,
+    "data12": 20.4753,
+    "data07": 15.3357,
+    "data06": 36.6307
+  },
+  {
+    "Polling_station": 664,
+    "Latitude": "49.03872645",
+    "Longitude": "28.41033205",
+    "data14": 52.6022,
+    "data12": 3.3609,
+    "data07": 34.7258,
+    "data06": 73.182
+  },
+  {
+    "Polling_station": 665,
+    "Latitude": "49.04103649",
+    "Longitude": "28.41841269",
+    "data14": 62.373,
+    "data12": 43.576,
+    "data07": 81.8235,
+    "data06": 63.6019
+  },
+  {
+    "Polling_station": 666,
+    "Latitude": "49.0134349",
+    "Longitude": "28.50219023",
+    "data14": 13.9016,
+    "data12": 35.5905,
+    "data07": 19.208,
+    "data06": 74.8008
+  },
+  {
+    "Polling_station": 667,
+    "Latitude": "49.0140019",
+    "Longitude": "28.50815571",
+    "data14": 62.7542,
+    "data12": 86.0281,
+    "data07": 11.0446,
+    "data06": 13.9981
+  },
+  {
+    "Polling_station": 668,
+    "Latitude": "49.01517167",
+    "Longitude": "28.50685564",
+    "data14": 3.7575,
+    "data12": 89.6999,
+    "data07": 73.0881,
+    "data06": 73.0675
+  },
+  {
+    "Polling_station": 669,
+    "Latitude": "49.01583095",
+    "Longitude": "28.48875046",
+    "data14": 3.5789,
+    "data12": 87.901,
+    "data07": 39.5668,
+    "data06": 14.2251
+  },
+  {
+    "Polling_station": 670,
+    "Latitude": "48.83306571",
+    "Longitude": "28.46213379",
+    "data14": 19.0087,
+    "data12": 88.6957,
+    "data07": 60.8365,
+    "data06": 6.5556
+  },
+  {
+    "Polling_station": 671,
+    "Latitude": "48.98475073",
+    "Longitude": "28.44084058",
+    "data14": 69.6328,
+    "data12": 82.8038,
+    "data07": 64.9962,
+    "data06": 81.2236
+  },
+  {
+    "Polling_station": 672,
+    "Latitude": "48.99103879",
+    "Longitude": "28.41666122",
+    "data14": 46.8227,
+    "data12": 69.6078,
+    "data07": 57.5202,
+    "data06": 61.1152
+  },
+  {
+    "Polling_station": 673,
+    "Latitude": "48.85706472",
+    "Longitude": "28.59412025",
+    "data14": 4.2277,
+    "data12": 71.4983,
+    "data07": 27.2279,
+    "data06": 5.0435
+  },
+  {
+    "Polling_station": 674,
+    "Latitude": "48.85810559",
+    "Longitude": "28.57059015",
+    "data14": 23.8011,
+    "data12": 35.1002,
+    "data07": 7.6863,
+    "data06": 87.7214
+  },
+  {
+    "Polling_station": 675,
+    "Latitude": "49.04223294",
+    "Longitude": "28.33225865",
+    "data14": 62.5966,
+    "data12": 10.01,
+    "data07": 41.9475,
+    "data06": 43.2789
+  },
+  {
+    "Polling_station": 676,
+    "Latitude": "49.0252211",
+    "Longitude": "28.38310218",
+    "data14": 86.7251,
+    "data12": 46.0269,
+    "data07": 62.9662,
+    "data06": 72.9496
+  },
+  {
+    "Polling_station": 677,
+    "Latitude": "49.01304193",
+    "Longitude": "28.32729432",
+    "data14": 9.3462,
+    "data12": 42.4893,
+    "data07": 70.1802,
+    "data06": 60.5794
+  },
+  {
+    "Polling_station": 678,
+    "Latitude": "48.9501473",
+    "Longitude": "28.33860385",
+    "data14": 84.4478,
+    "data12": 17.0534,
+    "data07": 46.7002,
+    "data06": 35.3314
+  },
+  {
+    "Polling_station": 679,
+    "Latitude": "48.93669982",
+    "Longitude": "28.30361537",
+    "data14": 25.1711,
+    "data12": 19.3978,
+    "data07": 18.1496,
+    "data06": 45.0367
+  },
+  {
+    "Polling_station": 680,
+    "Latitude": "48.99170992",
+    "Longitude": "28.56398085",
+    "data14": 49.6147,
+    "data12": 65.1178,
+    "data07": 77.4428,
+    "data06": 55.9139
+  },
+  {
+    "Polling_station": 681,
+    "Latitude": "49.02873862",
+    "Longitude": "28.53764808",
+    "data14": 56.7699,
+    "data12": 16.1659,
+    "data07": 79.176,
+    "data06": 6.8028
+  },
+  {
+    "Polling_station": 682,
+    "Latitude": "48.93340448",
+    "Longitude": "28.57048825",
+    "data14": 75.48,
+    "data12": 85.3843,
+    "data07": 31.3976,
+    "data06": 75.0536
+  },
+  {
+    "Polling_station": 683,
+    "Latitude": "48.90637551",
+    "Longitude": "28.58469337",
+    "data14": 37.7196,
+    "data12": 18.0017,
+    "data07": 2.4769,
+    "data06": 8.2613
+  },
+  {
+    "Polling_station": 684,
+    "Latitude": "48.94496663",
+    "Longitude": "28.53655764",
+    "data14": 69.1686,
+    "data12": 45.7989,
+    "data07": 2.012,
+    "data06": 50.833
+  },
+  {
+    "Polling_station": 685,
+    "Latitude": "48.95871597",
+    "Longitude": "28.38364467",
+    "data14": 9.3747,
+    "data12": 61.2863,
+    "data07": 74.4441,
+    "data06": 26.3066
+  },
+  {
+    "Polling_station": 686,
+    "Latitude": "48.98955806",
+    "Longitude": "28.63241476",
+    "data14": 68.296,
+    "data12": 38.008,
+    "data07": 35.0157,
+    "data06": 73.1645
+  },
+  {
+    "Polling_station": 687,
+    "Latitude": "48.97415687",
+    "Longitude": "28.65528932",
+    "data14": 64.8324,
+    "data12": 10.3832,
+    "data07": 76.7753,
+    "data06": 9.7704
+  },
+  {
+    "Polling_station": 688,
+    "Latitude": "49.00537607",
+    "Longitude": "28.59705833",
+    "data14": 45.9435,
+    "data12": 76.7455,
+    "data07": 71.4012,
+    "data06": 85.5659
+  },
+  {
+    "Polling_station": 689,
+    "Latitude": "48.862828",
+    "Longitude": "28.33823347",
+    "data14": 84.1957,
+    "data12": 66.8312,
+    "data07": 62.1339,
+    "data06": 85.5453
+  },
+  {
+    "Polling_station": 690,
+    "Latitude": "48.86316184",
+    "Longitude": "28.62825717",
+    "data14": 85.6514,
+    "data12": 25.3228,
+    "data07": 35.6612,
+    "data06": 75.7512
+  },
+  {
+    "Polling_station": 691,
+    "Latitude": "48.88514168",
+    "Longitude": "28.63149636",
+    "data14": 40.6579,
+    "data12": 7.9675,
+    "data07": 58.342,
+    "data06": 39.102
+  },
+  {
+    "Polling_station": 692,
+    "Latitude": "49.07343976",
+    "Longitude": "28.61288633",
+    "data14": 76.0685,
+    "data12": 4.989,
+    "data07": 20.9265,
+    "data06": 19.7975
+  },
+  {
+    "Polling_station": 693,
+    "Latitude": "49.08192365",
+    "Longitude": "28.63835188",
+    "data14": 65.8416,
+    "data12": 21.6108,
+    "data07": 19.0638,
+    "data06": 80.3736
+  },
+  {
+    "Polling_station": 694,
+    "Latitude": "49.05937032",
+    "Longitude": "28.61586796",
+    "data14": 49.1485,
+    "data12": 30.5184,
+    "data07": 57.3769,
+    "data06": 36.8681
+  },
+  {
+    "Polling_station": 695,
+    "Latitude": "48.90108067",
+    "Longitude": "28.39211359",
+    "data14": 16.9129,
+    "data12": 10.821,
+    "data07": 71.5438,
+    "data06": 17.7295
+  },
+  {
+    "Polling_station": 696,
+    "Latitude": "48.91475613",
+    "Longitude": "28.40059343",
+    "data14": 62.7028,
+    "data12": 13.0756,
+    "data07": 30.749,
+    "data06": 2.6724
+  },
+  {
+    "Polling_station": 697,
+    "Latitude": "49.07026998",
+    "Longitude": "28.52502216",
+    "data14": 24.8092,
+    "data12": 8.2374,
+    "data07": 19.276,
+    "data06": 50.5415
+  },
+  {
+    "Polling_station": 698,
+    "Latitude": "48.90951294",
+    "Longitude": "28.51436045",
+    "data14": 61.8608,
+    "data12": 5.7426,
+    "data07": 25.7831,
+    "data06": 21.4924
+  },
+  {
+    "Polling_station": 699,
+    "Latitude": "48.90753017",
+    "Longitude": "28.47961619",
+    "data14": 7.6704,
+    "data12": 8.722,
+    "data07": 20.7629,
+    "data06": 47.1987
+  },
+  {
+    "Polling_station": 700,
+    "Latitude": "49.12528208",
+    "Longitude": "28.35849792",
+    "data14": 69.5178,
+    "data12": 74.2954,
+    "data07": 10.3128,
+    "data06": 18.0487
+  },
+  {
+    "Polling_station": 701,
+    "Latitude": "49.14436224",
+    "Longitude": "28.38493725",
+    "data14": 63.7371,
+    "data12": 71.5385,
+    "data07": 0.2988,
+    "data06": 12.1081
+  },
+  {
+    "Polling_station": 702,
+    "Latitude": "48.81512562",
+    "Longitude": "28.52093493",
+    "data14": 83.3661,
+    "data12": 22.1369,
+    "data07": 22.5826,
+    "data06": 45.0008
+  },
+  {
+    "Polling_station": 703,
+    "Latitude": "48.90768481",
+    "Longitude": "28.30156202",
+    "data14": 70.9472,
+    "data12": 6.7791,
+    "data07": 54.1245,
+    "data06": 8.3684
+  },
+  {
+    "Polling_station": 704,
+    "Latitude": "49.11882218",
+    "Longitude": "28.60622966",
+    "data14": 50.3824,
+    "data12": 74.8612,
+    "data07": 59.3719,
+    "data06": 36.9812
+  },
+  {
+    "Polling_station": 705,
+    "Latitude": "49.09046256",
+    "Longitude": "28.61155012",
+    "data14": 36.8454,
+    "data12": 55.0259,
+    "data07": 14.3985,
+    "data06": 41.9998
+  },
+  {
+    "Polling_station": 706,
+    "Latitude": "48.86369351",
+    "Longitude": "28.47807002",
+    "data14": 76.4028,
+    "data12": 50.0709,
+    "data07": 44.7928,
+    "data06": 3.0075
+  },
+  {
+    "Polling_station": 707,
+    "Latitude": "48.95061126",
+    "Longitude": "28.42105318",
+    "data14": 57.7424,
+    "data12": 87.4058,
+    "data07": 34.8041,
+    "data06": 17.3993
+  },
+  {
+    "Polling_station": 708,
+    "Latitude": "49.05088431",
+    "Longitude": "28.64390404",
+    "data14": 52.8385,
+    "data12": 35.4807,
+    "data07": 39.9938,
+    "data06": 10.9812
+  },
+  {
+    "Polling_station": 709,
+    "Latitude": "49.0227669",
+    "Longitude": "28.42937306",
+    "data14": 43.9469,
+    "data12": 29.2905,
+    "data07": 38.8932,
+    "data06": 1.2155
+  },
+  {
+    "Polling_station": 710,
+    "Latitude": "49.11858792",
+    "Longitude": "28.45974201",
+    "data14": 4.2636,
+    "data12": 58.8142,
+    "data07": 25.4027,
+    "data06": 63.51
+  },
+  {
+    "Polling_station": 711,
+    "Latitude": "49.15527761",
+    "Longitude": "28.40221373",
+    "data14": 89.5772,
+    "data12": 40.7978,
+    "data07": 43.4309,
+    "data06": 1.0757
+  },
+  {
+    "Polling_station": 712,
+    "Latitude": "49.04844505",
+    "Longitude": "28.10070992",
+    "data14": 34.3908,
+    "data12": 73.6202,
+    "data07": 26.9517,
+    "data06": 74.9076
+  },
+  {
+    "Polling_station": 713,
+    "Latitude": "49.04028737",
+    "Longitude": "28.10015202",
+    "data14": 77.9941,
+    "data12": 80.029,
+    "data07": 14.6924,
+    "data06": 6.7389
+  },
+  {
+    "Polling_station": 714,
+    "Latitude": "49.04763675",
+    "Longitude": "28.0918101",
+    "data14": 73.9355,
+    "data12": 24.9303,
+    "data07": 64.5631,
+    "data06": 80.2361
+  },
+  {
+    "Polling_station": 715,
+    "Latitude": "49.03336637",
+    "Longitude": "28.06818008",
+    "data14": 66.6339,
+    "data12": 10.6885,
+    "data07": 30.1999,
+    "data06": 48.2662
+  },
+  {
+    "Polling_station": 716,
+    "Latitude": "49.03314128",
+    "Longitude": "28.0883503",
+    "data14": 55.3885,
+    "data12": 77.6157,
+    "data07": 30.1637,
+    "data06": 16.9314
+  },
+  {
+    "Polling_station": 717,
+    "Latitude": "49.03174671",
+    "Longitude": "28.10479809",
+    "data14": 48.5389,
+    "data12": 46.5986,
+    "data07": 40.922,
+    "data06": 3.331
+  },
+  {
+    "Polling_station": 718,
+    "Latitude": "49.03398536",
+    "Longitude": "28.11358452",
+    "data14": 4.1575,
+    "data12": 53.1453,
+    "data07": 67.2103,
+    "data06": 86.7811
+  },
+  {
+    "Polling_station": 719,
+    "Latitude": "49.02439013",
+    "Longitude": "28.11777949",
+    "data14": 84.8481,
+    "data12": 65.0078,
+    "data07": 15.7928,
+    "data06": 14.5435
+  },
+  {
+    "Polling_station": 720,
+    "Latitude": "49.02595337",
+    "Longitude": "28.13385017",
+    "data14": 85.5039,
+    "data12": 84.2279,
+    "data07": 61.6228,
+    "data06": 17.9062
+  },
+  {
+    "Polling_station": 721,
+    "Latitude": "49.03286164",
+    "Longitude": "28.12066984",
+    "data14": 53.9234,
+    "data12": 4.4556,
+    "data07": 30.6864,
+    "data06": 23.8305
+  },
+  {
+    "Polling_station": 722,
+    "Latitude": "49.03473799",
+    "Longitude": "28.11412096",
+    "data14": 5.3214,
+    "data12": 36.4723,
+    "data07": 67.7123,
+    "data06": 42.4597
+  },
+  {
+    "Polling_station": 723,
+    "Latitude": "49.04003418",
+    "Longitude": "28.11392784",
+    "data14": 11.8432,
+    "data12": 44.7461,
+    "data07": 38.5983,
+    "data06": 44.8379
+  },
+  {
+    "Polling_station": 724,
+    "Latitude": "49.03613574",
+    "Longitude": "28.11048378",
+    "data14": 53.6526,
+    "data12": 9.5779,
+    "data07": 32.1268,
+    "data06": 62.5662
+  },
+  {
+    "Polling_station": 725,
+    "Latitude": "49.03950828",
+    "Longitude": "28.10736149",
+    "data14": 18.6519,
+    "data12": 81.3897,
+    "data07": 86.7131,
+    "data06": 34.9236
+  },
+  {
+    "Polling_station": 726,
+    "Latitude": "49.05741695",
+    "Longitude": "28.11424971",
+    "data14": 17.7305,
+    "data12": 53.8158,
+    "data07": 4.4152,
+    "data06": 9.7004
+  },
+  {
+    "Polling_station": 727,
+    "Latitude": "49.04917636",
+    "Longitude": "28.11757565",
+    "data14": 8.7013,
+    "data12": 87.7022,
+    "data07": 37.7155,
+    "data06": 4.8745
+  },
+  {
+    "Polling_station": 728,
+    "Latitude": "49.0608759",
+    "Longitude": "28.11916351",
+    "data14": 39.9989,
+    "data12": 87.6672,
+    "data07": 85.7759,
+    "data06": 87.6314
+  },
+  {
+    "Polling_station": 729,
+    "Latitude": "48.81142594",
+    "Longitude": "27.48254905",
+    "data14": 71.227,
+    "data12": 46.0881,
+    "data07": 6.2394,
+    "data06": 74.9649
+  },
+  {
+    "Polling_station": 730,
+    "Latitude": "48.80887938",
+    "Longitude": "27.46681961",
+    "data14": 32.4867,
+    "data12": 63.771,
+    "data07": 89.2308,
+    "data06": 50.1628
+  },
+  {
+    "Polling_station": 731,
+    "Latitude": "48.83489482",
+    "Longitude": "27.43313799",
+    "data14": 83.8111,
+    "data12": 35.9429,
+    "data07": 65.9572,
+    "data06": 41.5057
+  },
+  {
+    "Polling_station": 732,
+    "Latitude": "48.82102257",
+    "Longitude": "27.46642906",
+    "data14": 31.282,
+    "data12": 82.2542,
+    "data07": 34.5568,
+    "data06": 75.7534
+  },
+  {
+    "Polling_station": 733,
+    "Latitude": "48.71883236",
+    "Longitude": "27.43160328",
+    "data14": 55.8698,
+    "data12": 62.4567,
+    "data07": 0.6442,
+    "data06": 52.4421
+  },
+  {
+    "Polling_station": 734,
+    "Latitude": "48.6898437",
+    "Longitude": "27.4531457",
+    "data14": 81.8623,
+    "data12": 17.1279,
+    "data07": 54.9263,
+    "data06": 78.7405
+  },
+  {
+    "Polling_station": 735,
+    "Latitude": "48.72057181",
+    "Longitude": "27.68531225",
+    "data14": 1.7037,
+    "data12": 62.8433,
+    "data07": 66.9508,
+    "data06": 50.3923
+  },
+  {
+    "Polling_station": 736,
+    "Latitude": "48.7287811",
+    "Longitude": "27.69252595",
+    "data14": 33.1651,
+    "data12": 9.5249,
+    "data07": 37.3062,
+    "data06": 45.8269
+  },
+  {
+    "Polling_station": 737,
+    "Latitude": "48.65627953",
+    "Longitude": "27.46683063",
+    "data14": 16.207,
+    "data12": 51.1236,
+    "data07": 46.8948,
+    "data06": 17.1577
+  },
+  {
+    "Polling_station": 738,
+    "Latitude": "48.68111178",
+    "Longitude": "27.49157206",
+    "data14": 36.5575,
+    "data12": 26.7584,
+    "data07": 5.133,
+    "data06": 57.7638
+  },
+  {
+    "Polling_station": 739,
+    "Latitude": "48.77465895",
+    "Longitude": "27.51730652",
+    "data14": 26.6351,
+    "data12": 23.5818,
+    "data07": 79.1628,
+    "data06": 71.3254
+  },
+  {
+    "Polling_station": 740,
+    "Latitude": "48.82567692",
+    "Longitude": "27.58314553",
+    "data14": 33.2865,
+    "data12": 85.3434,
+    "data07": 68.2255,
+    "data06": 29.4824
+  },
+  {
+    "Polling_station": 741,
+    "Latitude": "48.80427564",
+    "Longitude": "27.56258015",
+    "data14": 41.3221,
+    "data12": 52.9363,
+    "data07": 25.8678,
+    "data06": 41.5196
+  },
+  {
+    "Polling_station": 742,
+    "Latitude": "48.60876202",
+    "Longitude": "27.48342386",
+    "data14": 76.3566,
+    "data12": 77.0888,
+    "data07": 39.6397,
+    "data06": 25.0544
+  },
+  {
+    "Polling_station": 743,
+    "Latitude": "48.87944968",
+    "Longitude": "27.49267666",
+    "data14": 14.6194,
+    "data12": 23.1266,
+    "data07": 84.8805,
+    "data06": 36.536
+  },
+  {
+    "Polling_station": 744,
+    "Latitude": "48.86684779",
+    "Longitude": "27.48431789",
+    "data14": 16.4554,
+    "data12": 56.089,
+    "data07": 48.3494,
+    "data06": 5.9617
+  },
+  {
+    "Polling_station": 745,
+    "Latitude": "48.84922638",
+    "Longitude": "27.44779121",
+    "data14": 77.6788,
+    "data12": 7.6964,
+    "data07": 8.278,
+    "data06": 28.2486
+  },
+  {
+    "Polling_station": 746,
+    "Latitude": "48.77327702",
+    "Longitude": "27.7001275",
+    "data14": 20.1332,
+    "data12": 5.7925,
+    "data07": 34.7334,
+    "data06": 80.6985
+  },
+  {
+    "Polling_station": 747,
+    "Latitude": "48.77366681",
+    "Longitude": "27.59818197",
+    "data14": 47.3211,
+    "data12": 57.7108,
+    "data07": 27.5133,
+    "data06": 25.4295
+  },
+  {
+    "Polling_station": 748,
+    "Latitude": "48.75692025",
+    "Longitude": "27.56218645",
+    "data14": 75.2608,
+    "data12": 46.4157,
+    "data07": 29.9208,
+    "data06": 74.2845
+  },
+  {
+    "Polling_station": 749,
+    "Latitude": "48.70771631",
+    "Longitude": "27.8270337",
+    "data14": 46.0286,
+    "data12": 80.1386,
+    "data07": 23.9351,
+    "data06": 55.5686
+  },
+  {
+    "Polling_station": 750,
+    "Latitude": "48.70080251",
+    "Longitude": "27.80707759",
+    "data14": 4.6989,
+    "data12": 12.9077,
+    "data07": 33.0322,
+    "data06": 58.42
+  },
+  {
+    "Polling_station": 751,
+    "Latitude": "48.8712942",
+    "Longitude": "27.521042",
+    "data14": 65.9187,
+    "data12": 39.1075,
+    "data07": 86.8015,
+    "data06": 1.3214
+  },
+  {
+    "Polling_station": 752,
+    "Latitude": "48.75359845",
+    "Longitude": "27.63504382",
+    "data14": 82.9425,
+    "data12": 67.7257,
+    "data07": 76.852,
+    "data06": 79.1133
+  },
+  {
+    "Polling_station": 753,
+    "Latitude": "48.71900052",
+    "Longitude": "27.5274744",
+    "data14": 52.0828,
+    "data12": 14.3946,
+    "data07": 30.5843,
+    "data06": 58.8696
+  },
+  {
+    "Polling_station": 754,
+    "Latitude": "48.71651446",
+    "Longitude": "27.53170987",
+    "data14": 20.6361,
+    "data12": 43.8066,
+    "data07": 36.7777,
+    "data06": 4.0981
+  },
+  {
+    "Polling_station": 755,
+    "Latitude": "48.71233999",
+    "Longitude": "27.52958805",
+    "data14": 63.1144,
+    "data12": 54.2826,
+    "data07": 67.1438,
+    "data06": 19.7131
+  },
+  {
+    "Polling_station": 756,
+    "Latitude": "48.64118884",
+    "Longitude": "27.41797158",
+    "data14": 9.6495,
+    "data12": 56.8149,
+    "data07": 64.8067,
+    "data06": 79.3032
+  },
+  {
+    "Polling_station": 757,
+    "Latitude": "48.6716648",
+    "Longitude": "27.72666428",
+    "data14": 88.4941,
+    "data12": 41.7534,
+    "data07": 14.1714,
+    "data06": 81.6446
+  },
+  {
+    "Polling_station": 758,
+    "Latitude": "48.69650886",
+    "Longitude": "27.69761852",
+    "data14": 59.1319,
+    "data12": 60.851,
+    "data07": 67.5415,
+    "data06": 22.5333
+  },
+  {
+    "Polling_station": 759,
+    "Latitude": "48.79061581",
+    "Longitude": "27.76167672",
+    "data14": 64.0026,
+    "data12": 38.8641,
+    "data07": 44.4632,
+    "data06": 8.6918
+  },
+  {
+    "Polling_station": 760,
+    "Latitude": "48.81552746",
+    "Longitude": "27.78080818",
+    "data14": 7.6758,
+    "data12": 7.2088,
+    "data07": 70.9212,
+    "data06": 38.1687
+  },
+  {
+    "Polling_station": 761,
+    "Latitude": "48.79464148",
+    "Longitude": "27.81352976",
+    "data14": 65.701,
+    "data12": 20.3852,
+    "data07": 51.2574,
+    "data06": 7.3823
+  },
+  {
+    "Polling_station": 762,
+    "Latitude": "48.76998867",
+    "Longitude": "27.46380696",
+    "data14": 6.5425,
+    "data12": 3.3738,
+    "data07": 59.2469,
+    "data06": 49.1947
+  },
+  {
+    "Polling_station": 763,
+    "Latitude": "48.7513531",
+    "Longitude": "27.46018127",
+    "data14": 64.3428,
+    "data12": 77.5445,
+    "data07": 25.7739,
+    "data06": 15.7651
+  },
+  {
+    "Polling_station": 764,
+    "Latitude": "48.77671815",
+    "Longitude": "27.42973244",
+    "data14": 77.2852,
+    "data12": 30.1309,
+    "data07": 89.567,
+    "data06": 54.5389
+  },
+  {
+    "Polling_station": 765,
+    "Latitude": "48.69384938",
+    "Longitude": "27.83632348",
+    "data14": 11.8503,
+    "data12": 35.4265,
+    "data07": 64.1373,
+    "data06": 26.112
+  },
+  {
+    "Polling_station": 766,
+    "Latitude": "48.67490768",
+    "Longitude": "27.84942052",
+    "data14": 12.0558,
+    "data12": 41.772,
+    "data07": 72.3033,
+    "data06": 58.5142
+  },
+  {
+    "Polling_station": 767,
+    "Latitude": "48.68119512",
+    "Longitude": "27.66100205",
+    "data14": 74.8717,
+    "data12": 84.4578,
+    "data07": 14.5836,
+    "data06": 59.5259
+  },
+  {
+    "Polling_station": 768,
+    "Latitude": "48.70085088",
+    "Longitude": "27.62313674",
+    "data14": 19.4037,
+    "data12": 27.2223,
+    "data07": 37.0165,
+    "data06": 41.5398
+  },
+  {
+    "Polling_station": 769,
+    "Latitude": "48.62888958",
+    "Longitude": "27.56918329",
+    "data14": 65.1528,
+    "data12": 67.9415,
+    "data07": 36.1558,
+    "data06": 62.0049
+  },
+  {
+    "Polling_station": 770,
+    "Latitude": "48.59903072",
+    "Longitude": "27.54566248",
+    "data14": 62.9382,
+    "data12": 42.3843,
+    "data07": 38.3908,
+    "data06": 19.0314
+  },
+  {
+    "Polling_station": 771,
+    "Latitude": "48.71734063",
+    "Longitude": "27.56701254",
+    "data14": 2.1891,
+    "data12": 16.8547,
+    "data07": 81.0583,
+    "data06": 70.4352
+  },
+  {
+    "Polling_station": 772,
+    "Latitude": "48.64948619",
+    "Longitude": "27.58229396",
+    "data14": 74.149,
+    "data12": 74.8173,
+    "data07": 5.487,
+    "data06": 22.5159
+  },
+  {
+    "Polling_station": 773,
+    "Latitude": "48.71319612",
+    "Longitude": "27.60992266",
+    "data14": 57.6907,
+    "data12": 77.0537,
+    "data07": 1.0017,
+    "data06": 28.591
+  },
+  {
+    "Polling_station": 774,
+    "Latitude": "48.80746147",
+    "Longitude": "27.63555775",
+    "data14": 39.7036,
+    "data12": 22.7399,
+    "data07": 43.4948,
+    "data06": 76.8852
+  },
+  {
+    "Polling_station": 775,
+    "Latitude": "48.77513315",
+    "Longitude": "27.85366161",
+    "data14": 0.0415,
+    "data12": 79.3444,
+    "data07": 87.5342,
+    "data06": 77.859
+  },
+  {
+    "Polling_station": 776,
+    "Latitude": "48.76044993",
+    "Longitude": "27.82193685",
+    "data14": 4.0227,
+    "data12": 52.4559,
+    "data07": 12.2224,
+    "data06": 24.5546
+  },
+  {
+    "Polling_station": 777,
+    "Latitude": "48.70101274",
+    "Longitude": "27.53639996",
+    "data14": 17.9556,
+    "data12": 47.0263,
+    "data07": 89.9674,
+    "data06": 65.336
+  },
+  {
+    "Polling_station": 778,
+    "Latitude": "48.53479452",
+    "Longitude": "28.52325439",
+    "data14": 33.5359,
+    "data12": 31.8975,
+    "data07": 28.6372,
+    "data06": 56.7187
+  },
+  {
+    "Polling_station": 779,
+    "Latitude": "48.5412488",
+    "Longitude": "28.51655687",
+    "data14": 8.1967,
+    "data12": 38.2695,
+    "data07": 29.5631,
+    "data06": 83.5442
+  },
+  {
+    "Polling_station": 780,
+    "Latitude": "48.5504783",
+    "Longitude": "28.5187912",
+    "data14": 25.6078,
+    "data12": 24.4414,
+    "data07": 31.231,
+    "data06": 88.4915
+  },
+  {
+    "Polling_station": 781,
+    "Latitude": "48.53091336",
+    "Longitude": "28.76116122",
+    "data14": 34.0662,
+    "data12": 11.9912,
+    "data07": 43.7918,
+    "data06": 24.5769
+  },
+  {
+    "Polling_station": 782,
+    "Latitude": "48.53295493",
+    "Longitude": "28.74857698",
+    "data14": 43.2511,
+    "data12": 78.6235,
+    "data07": 77.1843,
+    "data06": 30.2889
+  },
+  {
+    "Polling_station": 783,
+    "Latitude": "48.53182658",
+    "Longitude": "28.73156867",
+    "data14": 2.1774,
+    "data12": 8.3114,
+    "data07": 17.3268,
+    "data06": 17.4413
+  },
+  {
+    "Polling_station": 784,
+    "Latitude": "48.54275823",
+    "Longitude": "28.71303848",
+    "data14": 66.4301,
+    "data12": 23.3327,
+    "data07": 53.9998,
+    "data06": 39.8378
+  },
+  {
+    "Polling_station": 785,
+    "Latitude": "48.53884142",
+    "Longitude": "28.43244453",
+    "data14": 42.0761,
+    "data12": 46.7356,
+    "data07": 4.592,
+    "data06": 16.4914
+  },
+  {
+    "Polling_station": 786,
+    "Latitude": "48.6099638",
+    "Longitude": "28.45032789",
+    "data14": 24.4383,
+    "data12": 21.9712,
+    "data07": 11.6501,
+    "data06": 36.0049
+  },
+  {
+    "Polling_station": 787,
+    "Latitude": "48.50563786",
+    "Longitude": "28.74495716",
+    "data14": 52.849,
+    "data12": 16.8213,
+    "data07": 78.5912,
+    "data06": 43.0149
+  },
+  {
+    "Polling_station": 788,
+    "Latitude": "48.49816806",
+    "Longitude": "28.43845071",
+    "data14": 8.1842,
+    "data12": 39.3804,
+    "data07": 64.9525,
+    "data06": 22.0127
+  },
+  {
+    "Polling_station": 789,
+    "Latitude": "48.48614074",
+    "Longitude": "28.79367832",
+    "data14": 20.1616,
+    "data12": 76.8142,
+    "data07": 75.3539,
+    "data06": 66.3011
+  },
+  {
+    "Polling_station": 790,
+    "Latitude": "48.45181712",
+    "Longitude": "28.4831488",
+    "data14": 69.1926,
+    "data12": 19.3587,
+    "data07": 87.0793,
+    "data06": 67.7295
+  },
+  {
+    "Polling_station": 791,
+    "Latitude": "48.64107616",
+    "Longitude": "28.61440659",
+    "data14": 63.7463,
+    "data12": 23.9641,
+    "data07": 43.4503,
+    "data06": 33.8892
+  },
+  {
+    "Polling_station": 792,
+    "Latitude": "48.59567704",
+    "Longitude": "28.6075133",
+    "data14": 14.1019,
+    "data12": 37.6029,
+    "data07": 67.1143,
+    "data06": 10.2015
+  },
+  {
+    "Polling_station": 793,
+    "Latitude": "48.54691083",
+    "Longitude": "28.67196864",
+    "data14": 22.6421,
+    "data12": 55.9486,
+    "data07": 76.2906,
+    "data06": 44.9641
+  },
+  {
+    "Polling_station": 794,
+    "Latitude": "48.52388023",
+    "Longitude": "28.72395409",
+    "data14": 9.3714,
+    "data12": 63.1828,
+    "data07": 15.4104,
+    "data06": 26.3713
+  },
+  {
+    "Polling_station": 795,
+    "Latitude": "48.53574327",
+    "Longitude": "28.61774442",
+    "data14": 5.1503,
+    "data12": 42.4157,
+    "data07": 49.8616,
+    "data06": 9.8946
+  },
+  {
+    "Polling_station": 796,
+    "Latitude": "48.52634565",
+    "Longitude": "28.571254",
+    "data14": 50.1517,
+    "data12": 80.1569,
+    "data07": 33.4893,
+    "data06": 79.1566
+  },
+  {
+    "Polling_station": 797,
+    "Latitude": "48.5295854",
+    "Longitude": "28.53869302",
+    "data14": 45.0894,
+    "data12": 20.7032,
+    "data07": 25.39,
+    "data06": 86.3662
+  },
+  {
+    "Polling_station": 798,
+    "Latitude": "48.46309852",
+    "Longitude": "28.71334101",
+    "data14": 82.3473,
+    "data12": 62.4908,
+    "data07": 57.2595,
+    "data06": 17.6649
+  },
+  {
+    "Polling_station": 799,
+    "Latitude": "48.46706083",
+    "Longitude": "28.68374136",
+    "data14": 38.2166,
+    "data12": 54.4279,
+    "data07": 85.2535,
+    "data06": 48.3249
+  },
+  {
+    "Polling_station": 800,
+    "Latitude": "48.40942937",
+    "Longitude": "28.54283475",
+    "data14": 67.345,
+    "data12": 36.1293,
+    "data07": 10.6272,
+    "data06": 22.845
+  },
+  {
+    "Polling_station": 801,
+    "Latitude": "48.62711961",
+    "Longitude": "28.51146299",
+    "data14": 6.0789,
+    "data12": 3.8294,
+    "data07": 76.7921,
+    "data06": 87.4852
+  },
+  {
+    "Polling_station": 802,
+    "Latitude": "48.60042768",
+    "Longitude": "28.65437752",
+    "data14": 28.8284,
+    "data12": 68.0398,
+    "data07": 82.9532,
+    "data06": 4.4112
+  },
+  {
+    "Polling_station": 803,
+    "Latitude": "48.58865742",
+    "Longitude": "28.67379661",
+    "data14": 22.1592,
+    "data12": 35.6861,
+    "data07": 20.9858,
+    "data06": 8.3589
+  },
+  {
+    "Polling_station": 804,
+    "Latitude": "48.58097557",
+    "Longitude": "28.42269131",
+    "data14": 77.618,
+    "data12": 43.9089,
+    "data07": 0.419,
+    "data06": 15.4593
+  },
+  {
+    "Polling_station": 805,
+    "Latitude": "48.50326451",
+    "Longitude": "28.34478928",
+    "data14": 8.7836,
+    "data12": 29.8601,
+    "data07": 76.7758,
+    "data06": 45.6488
+  },
+  {
+    "Polling_station": 806,
+    "Latitude": "48.50736747",
+    "Longitude": "28.3716511",
+    "data14": 68.4785,
+    "data12": 29.5651,
+    "data07": 20.6774,
+    "data06": 56.1807
+  },
+  {
+    "Polling_station": 807,
+    "Latitude": "48.51237288",
+    "Longitude": "28.4847854",
+    "data14": 13.5939,
+    "data12": 10.3978,
+    "data07": 62.7641,
+    "data06": 88.2666
+  },
+  {
+    "Polling_station": 808,
+    "Latitude": "48.56617656",
+    "Longitude": "28.34953748",
+    "data14": 46.5256,
+    "data12": 19.2612,
+    "data07": 57.1632,
+    "data06": 19.5049
+  },
+  {
+    "Polling_station": 809,
+    "Latitude": "48.45516822",
+    "Longitude": "28.41834488",
+    "data14": 89.5367,
+    "data12": 52.6751,
+    "data07": 84.3441,
+    "data06": 72.9474
+  },
+  {
+    "Polling_station": 810,
+    "Latitude": "48.36959329",
+    "Longitude": "28.50780487",
+    "data14": 5.9406,
+    "data12": 40.559,
+    "data07": 44.1373,
+    "data06": 71.1582
+  },
+  {
+    "Polling_station": 811,
+    "Latitude": "48.55502342",
+    "Longitude": "28.51673126",
+    "data14": 72.5392,
+    "data12": 84.3344,
+    "data07": 25.3952,
+    "data06": 12.678
+  },
+  {
+    "Polling_station": 812,
+    "Latitude": "48.671717",
+    "Longitude": "28.86412463",
+    "data14": 6.393,
+    "data12": 73.1345,
+    "data07": 87.2215,
+    "data06": 70.1274
+  },
+  {
+    "Polling_station": 813,
+    "Latitude": "48.67514451",
+    "Longitude": "28.85227166",
+    "data14": 32.7868,
+    "data12": 84.5681,
+    "data07": 66.8897,
+    "data06": 37.8495
+  },
+  {
+    "Polling_station": 814,
+    "Latitude": "48.67285492",
+    "Longitude": "28.8544316",
+    "data14": 70.9263,
+    "data12": 63.7993,
+    "data07": 87.9246,
+    "data06": 10.6428
+  },
+  {
+    "Polling_station": 815,
+    "Latitude": "48.67304191",
+    "Longitude": "28.84904616",
+    "data14": 36.9084,
+    "data12": 39.2463,
+    "data07": 74.6404,
+    "data06": 36.7353
+  },
+  {
+    "Polling_station": 816,
+    "Latitude": "48.67390334",
+    "Longitude": "28.83808892",
+    "data14": 43.9554,
+    "data12": 74.735,
+    "data07": 21.6977,
+    "data06": 35.2657
+  },
+  {
+    "Polling_station": 817,
+    "Latitude": "48.67448864",
+    "Longitude": "28.82821574",
+    "data14": 30.9774,
+    "data12": 20.216,
+    "data07": 84.8793,
+    "data06": 87.2608
+  },
+  {
+    "Polling_station": 818,
+    "Latitude": "48.59732317",
+    "Longitude": "28.97380259",
+    "data14": 21.3685,
+    "data12": 24.2648,
+    "data07": 25.2091,
+    "data06": 12.4805
+  },
+  {
+    "Polling_station": 819,
+    "Latitude": "48.59187219",
+    "Longitude": "28.97928697",
+    "data14": 55.6617,
+    "data12": 27.5244,
+    "data07": 48.4434,
+    "data06": 47.5257
+  },
+  {
+    "Polling_station": 820,
+    "Latitude": "48.59653434",
+    "Longitude": "29.00770944",
+    "data14": 5.088,
+    "data12": 73.4742,
+    "data07": 54.0324,
+    "data06": 23.777
+  },
+  {
+    "Polling_station": 821,
+    "Latitude": "48.78206823",
+    "Longitude": "28.56500598",
+    "data14": 15.9165,
+    "data12": 9.6943,
+    "data07": 25.793,
+    "data06": 75.5822
+  },
+  {
+    "Polling_station": 822,
+    "Latitude": "48.78378267",
+    "Longitude": "28.56261142",
+    "data14": 18.4225,
+    "data12": 68.7564,
+    "data07": 85.4869,
+    "data06": 39.8508
+  },
+  {
+    "Polling_station": 823,
+    "Latitude": "48.66132886",
+    "Longitude": "29.13438734",
+    "data14": 78.7856,
+    "data12": 81.2285,
+    "data07": 46.4132,
+    "data06": 67.2694
+  },
+  {
+    "Polling_station": 824,
+    "Latitude": "48.64591772",
+    "Longitude": "29.11300938",
+    "data14": 49.4847,
+    "data12": 11.5039,
+    "data07": 63.3025,
+    "data06": 9.3841
+  },
+  {
+    "Polling_station": 825,
+    "Latitude": "48.79233644",
+    "Longitude": "28.7905075",
+    "data14": 58.6278,
+    "data12": 43.9935,
+    "data07": 32.0054,
+    "data06": 13.7096
+  },
+  {
+    "Polling_station": 826,
+    "Latitude": "48.63273945",
+    "Longitude": "28.94953942",
+    "data14": 64.4416,
+    "data12": 74.6549,
+    "data07": 38.294,
+    "data06": 80.005
+  },
+  {
+    "Polling_station": 827,
+    "Latitude": "48.58518448",
+    "Longitude": "28.86934399",
+    "data14": 74.197,
+    "data12": 6.6457,
+    "data07": 49.5042,
+    "data06": 78.5635
+  },
+  {
+    "Polling_station": 828,
+    "Latitude": "48.58551086",
+    "Longitude": "28.90233318",
+    "data14": 52.2619,
+    "data12": 85.4666,
+    "data07": 85.4443,
+    "data06": 7.3765
+  },
+  {
+    "Polling_station": 829,
+    "Latitude": "48.64028736",
+    "Longitude": "28.7265605",
+    "data14": 79.5759,
+    "data12": 25.9916,
+    "data07": 55.7588,
+    "data06": 14.0017
+  },
+  {
+    "Polling_station": 830,
+    "Latitude": "48.59903471",
+    "Longitude": "28.72096897",
+    "data14": 21.3539,
+    "data12": 82.0387,
+    "data07": 25.3106,
+    "data06": 83.0197
+  },
+  {
+    "Polling_station": 831,
+    "Latitude": "48.68888923",
+    "Longitude": "29.15443082",
+    "data14": 0.3896,
+    "data12": 85.6879,
+    "data07": 75.4682,
+    "data06": 51.1376
+  },
+  {
+    "Polling_station": 832,
+    "Latitude": "48.70220445",
+    "Longitude": "29.1104113",
+    "data14": 5.7145,
+    "data12": 45.7361,
+    "data07": 15.6647,
+    "data06": 15.4588
+  },
+  {
+    "Polling_station": 833,
+    "Latitude": "48.69716626",
+    "Longitude": "28.79346444",
+    "data14": 34.0194,
+    "data12": 89.0331,
+    "data07": 10.7165,
+    "data06": 6.8338
+  },
+  {
+    "Polling_station": 834,
+    "Latitude": "48.66968415",
+    "Longitude": "28.90271872",
+    "data14": 6.2645,
+    "data12": 76.4246,
+    "data07": 46.364,
+    "data06": 69.6836
+  },
+  {
+    "Polling_station": 835,
+    "Latitude": "48.66722327",
+    "Longitude": "28.82094163",
+    "data14": 43.0339,
+    "data12": 25.0029,
+    "data07": 53.1044,
+    "data06": 6.274
+  },
+  {
+    "Polling_station": 836,
+    "Latitude": "48.6842893",
+    "Longitude": "28.8585565",
+    "data14": 76.9507,
+    "data12": 50.5105,
+    "data07": 86.6326,
+    "data06": 28.5994
+  },
+  {
+    "Polling_station": 837,
+    "Latitude": "48.66300664",
+    "Longitude": "29.01513162",
+    "data14": 50.4379,
+    "data12": 54.1542,
+    "data07": 36.4377,
+    "data06": 58.2171
+  },
+  {
+    "Polling_station": 838,
+    "Latitude": "48.67339979",
+    "Longitude": "29.0887175",
+    "data14": 69.5515,
+    "data12": 28.3738,
+    "data07": 72.6736,
+    "data06": 65.1149
+  },
+  {
+    "Polling_station": 839,
+    "Latitude": "48.70982303",
+    "Longitude": "28.72265065",
+    "data14": 33.118,
+    "data12": 85.3376,
+    "data07": 82.7049,
+    "data06": 49.4469
+  },
+  {
+    "Polling_station": 840,
+    "Latitude": "48.72842975",
+    "Longitude": "28.91453182",
+    "data14": 66.8176,
+    "data12": 52.9875,
+    "data07": 70.8667,
+    "data06": 49.1632
+  },
+  {
+    "Polling_station": 841,
+    "Latitude": "48.74736202",
+    "Longitude": "28.5374802",
+    "data14": 9.6497,
+    "data12": 59.5928,
+    "data07": 44.264,
+    "data06": 55.5316
+  },
+  {
+    "Polling_station": 842,
+    "Latitude": "48.72398573",
+    "Longitude": "29.03289844",
+    "data14": 4.4324,
+    "data12": 76.6974,
+    "data07": 54.426,
+    "data06": 87.0017
+  },
+  {
+    "Polling_station": 843,
+    "Latitude": "48.72306622",
+    "Longitude": "29.10262374",
+    "data14": 89.5046,
+    "data12": 80.7268,
+    "data07": 65.9337,
+    "data06": 84.9391
+  },
+  {
+    "Polling_station": 844,
+    "Latitude": "48.85629824",
+    "Longitude": "28.71173689",
+    "data14": 40.8278,
+    "data12": 81.8781,
+    "data07": 1.1733,
+    "data06": 41.9207
+  },
+  {
+    "Polling_station": 845,
+    "Latitude": "48.83256359",
+    "Longitude": "28.73028133",
+    "data14": 68.8652,
+    "data12": 38.8304,
+    "data07": 60.1177,
+    "data06": 87.9341
+  },
+  {
+    "Polling_station": 846,
+    "Latitude": "48.8033817",
+    "Longitude": "28.66951531",
+    "data14": 84.8526,
+    "data12": 47.8654,
+    "data07": 25.9069,
+    "data06": 28.1371
+  },
+  {
+    "Polling_station": 847,
+    "Latitude": "48.7264972",
+    "Longitude": "28.64715689",
+    "data14": 37.9375,
+    "data12": 23.9336,
+    "data07": 47.8831,
+    "data06": 85.7265
+  },
+  {
+    "Polling_station": 848,
+    "Latitude": "48.62822393",
+    "Longitude": "28.81226318",
+    "data14": 49.8106,
+    "data12": 57.9103,
+    "data07": 65.8191,
+    "data06": 32.4315
+  },
+  {
+    "Polling_station": 849,
+    "Latitude": "48.62894198",
+    "Longitude": "28.84543949",
+    "data14": 32.6854,
+    "data12": 37.4334,
+    "data07": 62.6676,
+    "data06": 6.5131
+  },
+  {
+    "Polling_station": 850,
+    "Latitude": "48.73507225",
+    "Longitude": "28.84304052",
+    "data14": 75.1508,
+    "data12": 67.243,
+    "data07": 44.6345,
+    "data06": 56.018
+  },
+  {
+    "Polling_station": 851,
+    "Latitude": "48.57603952",
+    "Longitude": "28.84098123",
+    "data14": 56.9552,
+    "data12": 50.4638,
+    "data07": 57.7824,
+    "data06": 18.4218
+  },
+  {
+    "Polling_station": 852,
+    "Latitude": "48.5636332",
+    "Longitude": "28.8283744",
+    "data14": 29.7631,
+    "data12": 3.1598,
+    "data07": 43.6278,
+    "data06": 40.4086
+  },
+  {
+    "Polling_station": 853,
+    "Latitude": "48.76828123",
+    "Longitude": "28.69149691",
+    "data14": 62.4875,
+    "data12": 67.7135,
+    "data07": 34.8705,
+    "data06": 49.9511
+  },
+  {
+    "Polling_station": 854,
+    "Latitude": "48.70692873",
+    "Longitude": "28.97582313",
+    "data14": 2.0046,
+    "data12": 24.6743,
+    "data07": 11.8876,
+    "data06": 20.2467
+  },
+  {
+    "Polling_station": 855,
+    "Latitude": "48.68275601",
+    "Longitude": "28.65734894",
+    "data14": 29.5046,
+    "data12": 75.777,
+    "data07": 68.7254,
+    "data06": 57.418
+  },
+  {
+    "Polling_station": 856,
+    "Latitude": "48.6868911",
+    "Longitude": "28.58220768",
+    "data14": 11.743,
+    "data12": 0.9547,
+    "data07": 10.68,
+    "data06": 37.0998
+  },
+  {
+    "Polling_station": 857,
+    "Latitude": "48.53995752",
+    "Longitude": "28.12429799",
+    "data14": 27.2595,
+    "data12": 63.9716,
+    "data07": 74.2535,
+    "data06": 58.9101
+  },
+  {
+    "Polling_station": 858,
+    "Latitude": "48.5482738",
+    "Longitude": "28.10658936",
+    "data14": 21.3369,
+    "data12": 89.1476,
+    "data07": 2.8123,
+    "data06": 34.3745
+  },
+  {
+    "Polling_station": 859,
+    "Latitude": "48.52213687",
+    "Longitude": "28.06975088",
+    "data14": 34.5484,
+    "data12": 22.9535,
+    "data07": 15.0826,
+    "data06": 70.8892
+  },
+  {
+    "Polling_station": 860,
+    "Latitude": "48.40488984",
+    "Longitude": "28.13699511",
+    "data14": 17.6747,
+    "data12": 23.4962,
+    "data07": 52.4591,
+    "data06": 47.3823
+  },
+  {
+    "Polling_station": 861,
+    "Latitude": "48.41307694",
+    "Longitude": "28.16075994",
+    "data14": 89.393,
+    "data12": 61.6931,
+    "data07": 56.3682,
+    "data06": 84.2572
+  },
+  {
+    "Polling_station": 862,
+    "Latitude": "48.4323199",
+    "Longitude": "28.20088686",
+    "data14": 17.0116,
+    "data12": 19.2716,
+    "data07": 42.6573,
+    "data06": 74.5967
+  },
+  {
+    "Polling_station": 863,
+    "Latitude": "48.46650213",
+    "Longitude": "28.14892499",
+    "data14": 49.7916,
+    "data12": 16.1601,
+    "data07": 27.1943,
+    "data06": 58.15
+  },
+  {
+    "Polling_station": 864,
+    "Latitude": "48.373091",
+    "Longitude": "28.17293607",
+    "data14": 24.024,
+    "data12": 19.8869,
+    "data07": 65.5945,
+    "data06": 44.1764
+  },
+  {
+    "Polling_station": 865,
+    "Latitude": "48.60137873",
+    "Longitude": "28.11225542",
+    "data14": 2.5401,
+    "data12": 48.7263,
+    "data07": 50.7626,
+    "data06": 70.0162
+  },
+  {
+    "Polling_station": 866,
+    "Latitude": "48.60073454",
+    "Longitude": "28.1051882",
+    "data14": 7.8337,
+    "data12": 0.322,
+    "data07": 20.4295,
+    "data06": 2.0988
+  },
+  {
+    "Polling_station": 867,
+    "Latitude": "48.58209488",
+    "Longitude": "28.10983922",
+    "data14": 86.5004,
+    "data12": 50.4564,
+    "data07": 53.4679,
+    "data06": 43.3899
+  },
+  {
+    "Polling_station": 868,
+    "Latitude": "48.63385472",
+    "Longitude": "28.00972272",
+    "data14": 87.7778,
+    "data12": 65.3417,
+    "data07": 10.9554,
+    "data06": 47.4103
+  },
+  {
+    "Polling_station": 869,
+    "Latitude": "48.61575257",
+    "Longitude": "28.01454334",
+    "data14": 16.3342,
+    "data12": 80.7702,
+    "data07": 30.5563,
+    "data06": 4.6556
+  },
+  {
+    "Polling_station": 870,
+    "Latitude": "48.50777967",
+    "Longitude": "28.25871293",
+    "data14": 32.1212,
+    "data12": 50.5287,
+    "data07": 32.1149,
+    "data06": 24.9987
+  },
+  {
+    "Polling_station": 871,
+    "Latitude": "48.49533461",
+    "Longitude": "28.24530085",
+    "data14": 47.4582,
+    "data12": 51.3437,
+    "data07": 57.287,
+    "data06": 62.7218
+  },
+  {
+    "Polling_station": 872,
+    "Latitude": "48.53079152",
+    "Longitude": "28.25804225",
+    "data14": 10.3936,
+    "data12": 38.9138,
+    "data07": 35.9839,
+    "data06": 35.7529
+  },
+  {
+    "Polling_station": 873,
+    "Latitude": "48.44507732",
+    "Longitude": "28.03649638",
+    "data14": 36.1133,
+    "data12": 57.1698,
+    "data07": 20.3757,
+    "data06": 81.2012
+  },
+  {
+    "Polling_station": 874,
+    "Latitude": "48.42138865",
+    "Longitude": "28.02748693",
+    "data14": 48.472,
+    "data12": 24.488,
+    "data07": 68.7233,
+    "data06": 30.2549
+  },
+  {
+    "Polling_station": 875,
+    "Latitude": "48.57569446",
+    "Longitude": "28.21799116",
+    "data14": 12.1929,
+    "data12": 30.5178,
+    "data07": 83.4727,
+    "data06": 28.353
+  },
+  {
+    "Polling_station": 876,
+    "Latitude": "48.55286802",
+    "Longitude": "28.27000569",
+    "data14": 23.5429,
+    "data12": 63.4961,
+    "data07": 27.8104,
+    "data06": 53.3066
+  },
+  {
+    "Polling_station": 877,
+    "Latitude": "48.54033614",
+    "Longitude": "28.01658309",
+    "data14": 52.9485,
+    "data12": 33.3971,
+    "data07": 43.5613,
+    "data06": 13.0635
+  },
+  {
+    "Polling_station": 878,
+    "Latitude": "48.52133805",
+    "Longitude": "27.96451468",
+    "data14": 63.5693,
+    "data12": 58.2342,
+    "data07": 18.5286,
+    "data06": 18.0643
+  },
+  {
+    "Polling_station": 879,
+    "Latitude": "48.50405318",
+    "Longitude": "28.02453622",
+    "data14": 41.5061,
+    "data12": 88.3978,
+    "data07": 36.6057,
+    "data06": 24.1859
+  },
+  {
+    "Polling_station": 880,
+    "Latitude": "48.46955151",
+    "Longitude": "28.01718862",
+    "data14": 28.2033,
+    "data12": 30.592,
+    "data07": 11.1242,
+    "data06": 28.1665
+  },
+  {
+    "Polling_station": 881,
+    "Latitude": "48.49376338",
+    "Longitude": "28.05646853",
+    "data14": 71.164,
+    "data12": 27.1209,
+    "data07": 23.5394,
+    "data06": 39.5663
+  },
+  {
+    "Polling_station": 882,
+    "Latitude": "48.53752679",
+    "Longitude": "28.14188156",
+    "data14": 23.214,
+    "data12": 80.1897,
+    "data07": 80.1533,
+    "data06": 18.4104
+  },
+  {
+    "Polling_station": 883,
+    "Latitude": "48.53416638",
+    "Longitude": "28.1191281",
+    "data14": 28.3657,
+    "data12": 21.3482,
+    "data07": 89.9039,
+    "data06": 73.3376
+  },
+  {
+    "Polling_station": 884,
+    "Latitude": "48.5143639",
+    "Longitude": "28.10915673",
+    "data14": 86.491,
+    "data12": 76.0173,
+    "data07": 35.9228,
+    "data06": 84.3206
+  },
+  {
+    "Polling_station": 885,
+    "Latitude": "48.47626043",
+    "Longitude": "28.10259101",
+    "data14": 79.6195,
+    "data12": 52.5133,
+    "data07": 50.4342,
+    "data06": 39.2115
+  },
+  {
+    "Polling_station": 886,
+    "Latitude": "48.46011244",
+    "Longitude": "28.2186732",
+    "data14": 20.0337,
+    "data12": 0.9089,
+    "data07": 86.4911,
+    "data06": 63.7788
+  },
+  {
+    "Polling_station": 887,
+    "Latitude": "48.54877955",
+    "Longitude": "28.19614145",
+    "data14": 43.2535,
+    "data12": 87.4565,
+    "data07": 63.096,
+    "data06": 48.9173
+  },
+  {
+    "Polling_station": 888,
+    "Latitude": "48.4830053",
+    "Longitude": "28.16009275",
+    "data14": 10.8084,
+    "data12": 43.0755,
+    "data07": 64.0248,
+    "data06": 68.7993
+  },
+  {
+    "Polling_station": 889,
+    "Latitude": "48.56996277",
+    "Longitude": "28.01737107",
+    "data14": 16.0921,
+    "data12": 36.4714,
+    "data07": 10.4108,
+    "data06": 37.433
+  },
+  {
+    "Polling_station": 890,
+    "Latitude": "48.56735592",
+    "Longitude": "28.03748296",
+    "data14": 52.2131,
+    "data12": 44.3111,
+    "data07": 7.4302,
+    "data06": 72.9939
+  },
+  {
+    "Polling_station": 891,
+    "Latitude": "48.54655781",
+    "Longitude": "28.12341213",
+    "data14": 11.5812,
+    "data12": 85.4542,
+    "data07": 44.623,
+    "data06": 17.9176
+  },
+  {
+    "Polling_station": 892,
+    "Latitude": "48.7299698",
+    "Longitude": "28.09523266",
+    "data14": 26.9838,
+    "data12": 56.0373,
+    "data07": 61.3399,
+    "data06": 49.2635
+  },
+  {
+    "Polling_station": 893,
+    "Latitude": "48.71765709",
+    "Longitude": "28.1333689",
+    "data14": 89.9527,
+    "data12": 69.7359,
+    "data07": 16.0808,
+    "data06": 55.9316
+  },
+  {
+    "Polling_station": 894,
+    "Latitude": "48.66871424",
+    "Longitude": "28.38986056",
+    "data14": 67.0108,
+    "data12": 88.9305,
+    "data07": 42.0071,
+    "data06": 48.4931
+  },
+  {
+    "Polling_station": 895,
+    "Latitude": "48.76316821",
+    "Longitude": "28.34444383",
+    "data14": 21.2213,
+    "data12": 10.6173,
+    "data07": 40.4428,
+    "data06": 32.3673
+  },
+  {
+    "Polling_station": 896,
+    "Latitude": "48.7582506",
+    "Longitude": "28.3311488",
+    "data14": 56.4446,
+    "data12": 18.8939,
+    "data07": 26.8623,
+    "data06": 34.2001
+  },
+  {
+    "Polling_station": 897,
+    "Latitude": "48.73120735",
+    "Longitude": "28.29796164",
+    "data14": 27.0293,
+    "data12": 21.9943,
+    "data07": 71.8488,
+    "data06": 41.8139
+  },
+  {
+    "Polling_station": 898,
+    "Latitude": "48.79686892",
+    "Longitude": "28.34233962",
+    "data14": 36.5762,
+    "data12": 15.2232,
+    "data07": 29.6238,
+    "data06": 84.1267
+  },
+  {
+    "Polling_station": 899,
+    "Latitude": "48.70038473",
+    "Longitude": "28.35878724",
+    "data14": 4.4181,
+    "data12": 32.0107,
+    "data07": 52.1267,
+    "data06": 5.2419
+  },
+  {
+    "Polling_station": 900,
+    "Latitude": "48.67970742",
+    "Longitude": "28.28824138",
+    "data14": 28.6886,
+    "data12": 9.0541,
+    "data07": 4.1711,
+    "data06": 67.0809
+  },
+  {
+    "Polling_station": 901,
+    "Latitude": "48.68094439",
+    "Longitude": "28.28281067",
+    "data14": 77.924,
+    "data12": 31.218,
+    "data07": 21.5355,
+    "data06": 26.8612
+  },
+  {
+    "Polling_station": 902,
+    "Latitude": "48.70983721",
+    "Longitude": "28.40346777",
+    "data14": 4.3356,
+    "data12": 33.8418,
+    "data07": 24.2796,
+    "data06": 78.2967
+  },
+  {
+    "Polling_station": 903,
+    "Latitude": "48.74565384",
+    "Longitude": "27.95672442",
+    "data14": 52.7994,
+    "data12": 32.0456,
+    "data07": 43.2928,
+    "data06": 8.372
+  },
+  {
+    "Polling_station": 904,
+    "Latitude": "48.62866804",
+    "Longitude": "28.25801687",
+    "data14": 15.2047,
+    "data12": 24.6304,
+    "data07": 54.7811,
+    "data06": 80.8978
+  },
+  {
+    "Polling_station": 905,
+    "Latitude": "48.63825584",
+    "Longitude": "28.26575509",
+    "data14": 72.4013,
+    "data12": 47.2396,
+    "data07": 66.6525,
+    "data06": 63.9448
+  },
+  {
+    "Polling_station": 906,
+    "Latitude": "48.7815411",
+    "Longitude": "28.13560763",
+    "data14": 76.7121,
+    "data12": 76.6062,
+    "data07": 62.2136,
+    "data06": 27.7656
+  },
+  {
+    "Polling_station": 907,
+    "Latitude": "48.71381083",
+    "Longitude": "27.94734307",
+    "data14": 7.9632,
+    "data12": 35.0548,
+    "data07": 82.2942,
+    "data06": 68.5134
+  },
+  {
+    "Polling_station": 908,
+    "Latitude": "48.84799898",
+    "Longitude": "28.14079285",
+    "data14": 15.7255,
+    "data12": 52.5981,
+    "data07": 17.2129,
+    "data06": 67.4442
+  },
+  {
+    "Polling_station": 909,
+    "Latitude": "48.81871106",
+    "Longitude": "28.19019892",
+    "data14": 80.3776,
+    "data12": 42.887,
+    "data07": 37.6526,
+    "data06": 83.9012
+  },
+  {
+    "Polling_station": 910,
+    "Latitude": "48.79253529",
+    "Longitude": "28.2440803",
+    "data14": 54.3124,
+    "data12": 45.5908,
+    "data07": 51.5127,
+    "data06": 75.9006
+  },
+  {
+    "Polling_station": 911,
+    "Latitude": "48.67120871",
+    "Longitude": "28.01310602",
+    "data14": 25.5715,
+    "data12": 28.8821,
+    "data07": 89.2428,
+    "data06": 87.5964
+  },
+  {
+    "Polling_station": 912,
+    "Latitude": "48.67303458",
+    "Longitude": "28.05556311",
+    "data14": 29.9502,
+    "data12": 54.1055,
+    "data07": 49.9827,
+    "data06": 81.2863
+  },
+  {
+    "Polling_station": 913,
+    "Latitude": "48.77244002",
+    "Longitude": "28.21924493",
+    "data14": 87.2342,
+    "data12": 0.7869,
+    "data07": 0.2308,
+    "data06": 78.618
+  },
+  {
+    "Polling_station": 914,
+    "Latitude": "48.73702285",
+    "Longitude": "28.2277957",
+    "data14": 29.2614,
+    "data12": 70.8472,
+    "data07": 21.6891,
+    "data06": 81.7787
+  },
+  {
+    "Polling_station": 915,
+    "Latitude": "48.81087303",
+    "Longitude": "28.29333202",
+    "data14": 43.9078,
+    "data12": 19.6742,
+    "data07": 63.0223,
+    "data06": 80.265
+  },
+  {
+    "Polling_station": 916,
+    "Latitude": "48.80997128",
+    "Longitude": "28.05468898",
+    "data14": 32.1651,
+    "data12": 77.9221,
+    "data07": 37.0694,
+    "data06": 60.4509
+  },
+  {
+    "Polling_station": 917,
+    "Latitude": "48.84016957",
+    "Longitude": "28.04515628",
+    "data14": 48.4161,
+    "data12": 0.7316,
+    "data07": 47.7481,
+    "data06": 64.8758
+  },
+  {
+    "Polling_station": 918,
+    "Latitude": "48.87628413",
+    "Longitude": "28.08446758",
+    "data14": 14.8165,
+    "data12": 56.7984,
+    "data07": 41.5695,
+    "data06": 39.1735
+  },
+  {
+    "Polling_station": 919,
+    "Latitude": "48.89271509",
+    "Longitude": "28.25968356",
+    "data14": 18.9946,
+    "data12": 6.4933,
+    "data07": 61.0958,
+    "data06": 74.9262
+  },
+  {
+    "Polling_station": 920,
+    "Latitude": "48.90951776",
+    "Longitude": "28.24148635",
+    "data14": 56.2063,
+    "data12": 28.1964,
+    "data07": 12.9545,
+    "data06": 30.3144
+  },
+  {
+    "Polling_station": 921,
+    "Latitude": "48.83059983",
+    "Longitude": "27.94437116",
+    "data14": 19.7542,
+    "data12": 50.2864,
+    "data07": 38.4401,
+    "data06": 81.5525
+  },
+  {
+    "Polling_station": 922,
+    "Latitude": "48.67356691",
+    "Longitude": "28.12948245",
+    "data14": 34.2206,
+    "data12": 28.0152,
+    "data07": 78.0622,
+    "data06": 39.0675
+  },
+  {
+    "Polling_station": 923,
+    "Latitude": "48.79633289",
+    "Longitude": "28.01471583",
+    "data14": 65.5312,
+    "data12": 10.2441,
+    "data07": 41.0132,
+    "data06": 72.2314
+  },
+  {
+    "Polling_station": 924,
+    "Latitude": "48.7497921",
+    "Longitude": "28.02816863",
+    "data14": 43.6269,
+    "data12": 17.198,
+    "data07": 2.0428,
+    "data06": 69.1432
+  },
+  {
+    "Polling_station": 925,
+    "Latitude": "48.63828279",
+    "Longitude": "28.1308364",
+    "data14": 43.804,
+    "data12": 27.8782,
+    "data07": 82.6479,
+    "data06": 81.1031
+  },
+  {
+    "Polling_station": 926,
+    "Latitude": "48.77950695",
+    "Longitude": "27.93273322",
+    "data14": 25.9613,
+    "data12": 32.0446,
+    "data07": 7.922,
+    "data06": 40.6742
+  },
+  {
+    "Polling_station": 927,
+    "Latitude": "48.78381133",
+    "Longitude": "28.48229092",
+    "data14": 82.129,
+    "data12": 33.3201,
+    "data07": 16.193,
+    "data06": 1.6753
+  },
+  {
+    "Polling_station": 928,
+    "Latitude": "48.78023388",
+    "Longitude": "28.47826869",
+    "data14": 66.6635,
+    "data12": 58.4051,
+    "data07": 53.8233,
+    "data06": 24.9855
+  },
+  {
+    "Polling_station": 929,
+    "Latitude": "48.62935808",
+    "Longitude": "28.23173295",
+    "data14": 89.0686,
+    "data12": 11.6912,
+    "data07": 52.3213,
+    "data06": 72.5202
+  },
+  {
+    "Polling_station": 930,
+    "Latitude": "48.63681211",
+    "Longitude": "28.30127399",
+    "data14": 84.5561,
+    "data12": 26.7206,
+    "data07": 69.6088,
+    "data06": 19.6445
+  },
+  {
+    "Polling_station": 931,
+    "Latitude": "48.7343032",
+    "Longitude": "28.06013259",
+    "data14": 49.1131,
+    "data12": 1.5676,
+    "data07": 35.4485,
+    "data06": 23.8122
+  },
+  {
+    "Polling_station": 932,
+    "Latitude": "48.71912813",
+    "Longitude": "28.01538883",
+    "data14": 57.456,
+    "data12": 11.6032,
+    "data07": 65.5383,
+    "data06": 20.6896
+  },
+  {
+    "Polling_station": 933,
+    "Latitude": "48.78933753",
+    "Longitude": "28.40933181",
+    "data14": 2.6302,
+    "data12": 37.785,
+    "data07": 51.7321,
+    "data06": 47.3516
+  },
+  {
+    "Polling_station": 934,
+    "Latitude": "48.81292105",
+    "Longitude": "28.36862008",
+    "data14": 6.3834,
+    "data12": 48.3452,
+    "data07": 33.0191,
+    "data06": 3.5406
+  },
+  {
+    "Polling_station": 935,
+    "Latitude": "48.86987922",
+    "Longitude": "28.18620885",
+    "data14": 38.3693,
+    "data12": 19.6436,
+    "data07": 36.659,
+    "data06": 67.7178
+  },
+  {
+    "Polling_station": 936,
+    "Latitude": "48.6945465",
+    "Longitude": "28.22627056",
+    "data14": 22.4648,
+    "data12": 43.7337,
+    "data07": 87.3729,
+    "data06": 50.6444
+  },
+  {
+    "Polling_station": 937,
+    "Latitude": "48.72337944",
+    "Longitude": "28.48044178",
+    "data14": 32.7703,
+    "data12": 6.0799,
+    "data07": 67.0163,
+    "data06": 88.7333
+  },
+  {
+    "Polling_station": 938,
+    "Latitude": "48.68819614",
+    "Longitude": "28.50833102",
+    "data14": 62.4504,
+    "data12": 53.1522,
+    "data07": 87.404,
+    "data06": 45.5769
+  },
+  {
+    "Polling_station": 939,
+    "Latitude": "48.84317128",
+    "Longitude": "28.25415916",
+    "data14": 22.984,
+    "data12": 71.9103,
+    "data07": 17.1588,
+    "data06": 40.0963
+  },
+  {
+    "Polling_station": 940,
+    "Latitude": "48.74343097",
+    "Longitude": "28.08150296",
+    "data14": 5.7344,
+    "data12": 78.4517,
+    "data07": 40.6536,
+    "data06": 45.1512
+  },
+  {
+    "Polling_station": 941,
+    "Latitude": "48.7476775",
+    "Longitude": "28.07986093",
+    "data14": 73.319,
+    "data12": 25.0291,
+    "data07": 85.0323,
+    "data06": 21.918
+  },
+  {
+    "Polling_station": 942,
+    "Latitude": "48.77054374",
+    "Longitude": "28.07632363",
+    "data14": 1.4358,
+    "data12": 85.4263,
+    "data07": 6.2045,
+    "data06": 26.2617
+  },
+  {
+    "Polling_station": 943,
+    "Latitude": "48.74144617",
+    "Longitude": "28.0746603",
+    "data14": 84.7894,
+    "data12": 13.5981,
+    "data07": 36.0852,
+    "data06": 60.2642
+  },
+  {
+    "Polling_station": 944,
+    "Latitude": "48.39828207",
+    "Longitude": "28.69581968",
+    "data14": 22.1112,
+    "data12": 3.0446,
+    "data07": 23.5158,
+    "data06": 60.4984
+  },
+  {
+    "Polling_station": 945,
+    "Latitude": "48.41154185",
+    "Longitude": "28.74401054",
+    "data14": 83.3884,
+    "data12": 81.3583,
+    "data07": 38.2811,
+    "data06": 75.8019
+  },
+  {
+    "Polling_station": 946,
+    "Latitude": "48.29042837",
+    "Longitude": "28.5697274",
+    "data14": 82.7407,
+    "data12": 27.5378,
+    "data07": 36.8881,
+    "data06": 6.4697
+  },
+  {
+    "Polling_station": 947,
+    "Latitude": "48.2558049",
+    "Longitude": "28.62964791",
+    "data14": 30.086,
+    "data12": 55.0599,
+    "data07": 64.7381,
+    "data06": 22.2407
+  },
+  {
+    "Polling_station": 948,
+    "Latitude": "48.34096156",
+    "Longitude": "28.76907349",
+    "data14": 10.0019,
+    "data12": 63.6227,
+    "data07": 81.9642,
+    "data06": 39.5051
+  },
+  {
+    "Polling_station": 949,
+    "Latitude": "48.37123546",
+    "Longitude": "28.84380317",
+    "data14": 46.7792,
+    "data12": 49.556,
+    "data07": 11.037,
+    "data06": 15.24
+  },
+  {
+    "Polling_station": 950,
+    "Latitude": "48.42760857",
+    "Longitude": "28.80965433",
+    "data14": 69.473,
+    "data12": 58.1079,
+    "data07": 6.8554,
+    "data06": 37.968
+  },
+  {
+    "Polling_station": 951,
+    "Latitude": "48.3785268",
+    "Longitude": "28.69381965",
+    "data14": 7.4198,
+    "data12": 60.3658,
+    "data07": 58.1908,
+    "data06": 83.6372
+  },
+  {
+    "Polling_station": 952,
+    "Latitude": "48.36606994",
+    "Longitude": "28.69636437",
+    "data14": 79.4005,
+    "data12": 62.8587,
+    "data07": 70.8033,
+    "data06": 61.0458
+  },
+  {
+    "Polling_station": 953,
+    "Latitude": "48.38585546",
+    "Longitude": "28.67639519",
+    "data14": 52.792,
+    "data12": 48.0974,
+    "data07": 27.8004,
+    "data06": 20.8553
+  },
+  {
+    "Polling_station": 954,
+    "Latitude": "48.39596072",
+    "Longitude": "28.57366645",
+    "data14": 79.2359,
+    "data12": 11.2333,
+    "data07": 44.8153,
+    "data06": 3.7095
+  },
+  {
+    "Polling_station": 955,
+    "Latitude": "48.40467205",
+    "Longitude": "28.61740666",
+    "data14": 71.9757,
+    "data12": 41.024,
+    "data07": 57.1291,
+    "data06": 41.5118
+  },
+  {
+    "Polling_station": 956,
+    "Latitude": "48.34227979",
+    "Longitude": "28.64043238",
+    "data14": 5.3911,
+    "data12": 79.7873,
+    "data07": 53.6166,
+    "data06": 36.3237
+  },
+  {
+    "Polling_station": 957,
+    "Latitude": "48.32583222",
+    "Longitude": "28.63118461",
+    "data14": 9.0937,
+    "data12": 77.2416,
+    "data07": 85.9803,
+    "data06": 74.8746
+  },
+  {
+    "Polling_station": 958,
+    "Latitude": "48.33710332",
+    "Longitude": "28.58518124",
+    "data14": 67.242,
+    "data12": 88.0386,
+    "data07": 28.659,
+    "data06": 39.2614
+  },
+  {
+    "Polling_station": 959,
+    "Latitude": "48.3815789",
+    "Longitude": "29.00087082",
+    "data14": 55.4504,
+    "data12": 79.8169,
+    "data07": 86.1028,
+    "data06": 4.2745
+  },
+  {
+    "Polling_station": 960,
+    "Latitude": "48.43104425",
+    "Longitude": "28.90396137",
+    "data14": 49.9065,
+    "data12": 47.6253,
+    "data07": 22.0563,
+    "data06": 15.1713
+  },
+  {
+    "Polling_station": 961,
+    "Latitude": "48.43211041",
+    "Longitude": "28.73290878",
+    "data14": 59.4288,
+    "data12": 40.7406,
+    "data07": 50.7871,
+    "data06": 8.4112
+  },
+  {
+    "Polling_station": 962,
+    "Latitude": "48.34023905",
+    "Longitude": "28.83460239",
+    "data14": 58.6263,
+    "data12": 32.0174,
+    "data07": 66.0854,
+    "data06": 15.3198
+  },
+  {
+    "Polling_station": 963,
+    "Latitude": "48.34338975",
+    "Longitude": "28.87614111",
+    "data14": 88.3097,
+    "data12": 60.9741,
+    "data07": 55.3333,
+    "data06": 56.4474
+  },
+  {
+    "Polling_station": 964,
+    "Latitude": "48.32402638",
+    "Longitude": "28.9784306",
+    "data14": 82.122,
+    "data12": 66.0656,
+    "data07": 26.6886,
+    "data06": 59.2197
+  },
+  {
+    "Polling_station": 965,
+    "Latitude": "48.33636007",
+    "Longitude": "28.93402347",
+    "data14": 46.8863,
+    "data12": 51.7526,
+    "data07": 89.5265,
+    "data06": 41.9697
+  },
+  {
+    "Polling_station": 966,
+    "Latitude": "48.48797402",
+    "Longitude": "28.96959883",
+    "data14": 67.5199,
+    "data12": 17.017,
+    "data07": 31.4549,
+    "data06": 29.5371
+  },
+  {
+    "Polling_station": 967,
+    "Latitude": "48.32578364",
+    "Longitude": "29.05832291",
+    "data14": 18.8699,
+    "data12": 52.5121,
+    "data07": 66.7423,
+    "data06": 65.1352
+  },
+  {
+    "Polling_station": 968,
+    "Latitude": "48.43118682",
+    "Longitude": "28.61406077",
+    "data14": 59.9801,
+    "data12": 45.7945,
+    "data07": 39.0818,
+    "data06": 60.9472
+  },
+  {
+    "Polling_station": 969,
+    "Latitude": "48.44158985",
+    "Longitude": "29.02759485",
+    "data14": 61.7512,
+    "data12": 1.5484,
+    "data07": 47.3274,
+    "data06": 55.8844
+  },
+  {
+    "Polling_station": 970,
+    "Latitude": "48.44485327",
+    "Longitude": "28.99538068",
+    "data14": 87.3089,
+    "data12": 17.3801,
+    "data07": 70.6559,
+    "data06": 33.0217
+  },
+  {
+    "Polling_station": 971,
+    "Latitude": "48.4391149",
+    "Longitude": "29.05824212",
+    "data14": 23.6383,
+    "data12": 37.5726,
+    "data07": 66.0418,
+    "data06": 42.7929
+  },
+  {
+    "Polling_station": 972,
+    "Latitude": "48.39547054",
+    "Longitude": "28.90344559",
+    "data14": 56.924,
+    "data12": 56.2686,
+    "data07": 27.6305,
+    "data06": 42.3221
+  },
+  {
+    "Polling_station": 973,
+    "Latitude": "48.39368459",
+    "Longitude": "28.86680396",
+    "data14": 59.2744,
+    "data12": 74.5127,
+    "data07": 47.118,
+    "data06": 43.5161
+  },
+  {
+    "Polling_station": 974,
+    "Latitude": "48.49510879",
+    "Longitude": "28.86692047",
+    "data14": 23.7651,
+    "data12": 78.8182,
+    "data07": 29.2179,
+    "data06": 69.5936
+  },
+  {
+    "Polling_station": 975,
+    "Latitude": "48.48806052",
+    "Longitude": "28.91016558",
+    "data14": 88.204,
+    "data12": 86.251,
+    "data07": 38.2689,
+    "data06": 87.8695
+  },
+  {
+    "Polling_station": 976,
+    "Latitude": "48.37974528",
+    "Longitude": "28.86667371",
+    "data14": 44.9953,
+    "data12": 64.315,
+    "data07": 53.207,
+    "data06": 8.1833
+  },
+  {
+    "Polling_station": 977,
+    "Latitude": "48.38248072",
+    "Longitude": "28.86779346",
+    "data14": 37.3698,
+    "data12": 80.8055,
+    "data07": 56.7064,
+    "data06": 7.494
+  },
+  {
+    "Polling_station": 978,
+    "Latitude": "48.37833793",
+    "Longitude": "28.86754583",
+    "data14": 83.7002,
+    "data12": 80.7169,
+    "data07": 40.0453,
+    "data06": 57.4532
+  },
+  {
+    "Polling_station": 979,
+    "Latitude": "48.36349186",
+    "Longitude": "28.70907784",
+    "data14": 76.316,
+    "data12": 32.917,
+    "data07": 34.0649,
+    "data06": 70.3577
+  },
+  {
+    "Polling_station": 980,
+    "Latitude": "48.61422752",
+    "Longitude": "27.79414185",
+    "data14": 43.6389,
+    "data12": 9.5967,
+    "data07": 34.3656,
+    "data06": 67.2585
+  },
+  {
+    "Polling_station": 981,
+    "Latitude": "48.61749556",
+    "Longitude": "27.79302373",
+    "data14": 31.7723,
+    "data12": 56.2971,
+    "data07": 60.7239,
+    "data06": 54.1747
+  },
+  {
+    "Polling_station": 982,
+    "Latitude": "48.61681284",
+    "Longitude": "27.77515922",
+    "data14": 57.8182,
+    "data12": 19.6345,
+    "data07": 54.9726,
+    "data06": 42.8879
+  },
+  {
+    "Polling_station": 983,
+    "Latitude": "48.55497669",
+    "Longitude": "27.83374872",
+    "data14": 34.275,
+    "data12": 47.4362,
+    "data07": 59.1627,
+    "data06": 22.3654
+  },
+  {
+    "Polling_station": 984,
+    "Latitude": "48.57463124",
+    "Longitude": "27.47993606",
+    "data14": 59.1572,
+    "data12": 54.2435,
+    "data07": 16.2459,
+    "data06": 4.0818
+  },
+  {
+    "Polling_station": 985,
+    "Latitude": "48.40846448",
+    "Longitude": "28.00084895",
+    "data14": 11.2385,
+    "data12": 10.2446,
+    "data07": 48.1589,
+    "data06": 83.8827
+  },
+  {
+    "Polling_station": 986,
+    "Latitude": "48.4041585",
+    "Longitude": "27.88913676",
+    "data14": 86.0944,
+    "data12": 55.3182,
+    "data07": 11.0308,
+    "data06": 46.1158
+  },
+  {
+    "Polling_station": 987,
+    "Latitude": "48.42724251",
+    "Longitude": "27.92457292",
+    "data14": 82.9037,
+    "data12": 13.7929,
+    "data07": 61.8369,
+    "data06": 20.0464
+  },
+  {
+    "Polling_station": 988,
+    "Latitude": "48.38411786",
+    "Longitude": "27.98489502",
+    "data14": 38.821,
+    "data12": 14.4508,
+    "data07": 8.9913,
+    "data06": 28.1617
+  },
+  {
+    "Polling_station": 989,
+    "Latitude": "48.44812444",
+    "Longitude": "27.98463112",
+    "data14": 3.7639,
+    "data12": 42.9478,
+    "data07": 65.6612,
+    "data06": 21.4761
+  },
+  {
+    "Polling_station": 990,
+    "Latitude": "48.47494526",
+    "Longitude": "27.9991405",
+    "data14": 1.104,
+    "data12": 44.5504,
+    "data07": 81.2286,
+    "data06": 26.401
+  },
+  {
+    "Polling_station": 991,
+    "Latitude": "48.46138674",
+    "Longitude": "27.95513729",
+    "data14": 48.0151,
+    "data12": 12.9091,
+    "data07": 24.0619,
+    "data06": 48.0913
+  },
+  {
+    "Polling_station": 992,
+    "Latitude": "48.59895684",
+    "Longitude": "27.63630403",
+    "data14": 6.2464,
+    "data12": 13.8261,
+    "data07": 38.3392,
+    "data06": 9.7509
+  },
+  {
+    "Polling_station": 993,
+    "Latitude": "48.62168926",
+    "Longitude": "27.6417321",
+    "data14": 53.6412,
+    "data12": 19.4762,
+    "data07": 82.7094,
+    "data06": 19.8317
+  },
+  {
+    "Polling_station": 994,
+    "Latitude": "48.47868908",
+    "Longitude": "27.85043384",
+    "data14": 34.2948,
+    "data12": 11.9975,
+    "data07": 77.5548,
+    "data06": 9.3245
+  },
+  {
+    "Polling_station": 995,
+    "Latitude": "48.47622114",
+    "Longitude": "27.51322602",
+    "data14": 0.2811,
+    "data12": 41.6778,
+    "data07": 84.4872,
+    "data06": 35.9872
+  },
+  {
+    "Polling_station": 996,
+    "Latitude": "48.52653917",
+    "Longitude": "27.48748242",
+    "data14": 5.9886,
+    "data12": 52.7093,
+    "data07": 71.2705,
+    "data06": 58.2573
+  },
+  {
+    "Polling_station": 997,
+    "Latitude": "48.49769867",
+    "Longitude": "27.57533768",
+    "data14": 77.8586,
+    "data12": 31.2085,
+    "data07": 69.1709,
+    "data06": 9.5554
+  },
+  {
+    "Polling_station": 998,
+    "Latitude": "48.54874134",
+    "Longitude": "27.87214255",
+    "data14": 80.8813,
+    "data12": 77.3629,
+    "data07": 17.6437,
+    "data06": 26.1745
+  },
+  {
+    "Polling_station": 999,
+    "Latitude": "48.53025444",
+    "Longitude": "27.91282043",
+    "data14": 1.1181,
+    "data12": 82.7355,
+    "data07": 69.0131,
+    "data06": 9.6883
+  },
+  {
+    "Polling_station": 1000,
+    "Latitude": "48.46325582",
+    "Longitude": "27.60448939",
+    "data14": 32.7904,
+    "data12": 32.1359,
+    "data07": 43.966,
+    "data06": 55.9686
+  }
+]
