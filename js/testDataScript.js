@@ -30,15 +30,15 @@ function getJSON(url, successHandler, errorHandler) {
 var loader = new PIXI.loaders.Loader();
 
 loader
-    .add('plane', 'img/right-arrow.png')
-    .add('bicycle', 'img/right-arrow(1).png');
+    .add('blue', 'img/right-arrow.png')
+    .add('red', 'img/right-arrow(1).png');
 
 
-var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 5);
+var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 9);
 
-L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
     subdomains: 'abcd',
-    minZoom: 4,
+    minZoom: 5,
     maxZoom: 18
 }).addTo(map);
 
@@ -59,9 +59,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     loader.load(function(loader, resources) {
 
-        var textures = [resources.plane.texture, resources.bicycle.texture];
+        var textures = [resources.blue.texture, resources.red.texture];
 
-        getJSON('data/testData.json', function (markers) {
+        getJSON('data/fucking_end.json', function (markers) {
+
+            markers.forEach(function(d){
+                d.Latitude = +d.Latitude;
+                d.Longitude = +d.Longitude
+            });
+
             //function draw() {
 
             var pixiLayer = function () {
@@ -76,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     if (event.type === 'add') {
                         markers.forEach(function (marker) {
-                            var proEuropePercentage = +marker['data14'];
+                            var proEuropePercentage = +marker['data06'];
 
                             //Кут для проєвропейських
                             var radians = Math.PI / 100 * proEuropePercentage;
@@ -104,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             markerSprites.push(markerSprite);
 
                             // Тут можна в спрайт упакувати ті дані, що потрібно
-                            markerSprite.info = [marker["Polling_station"], marker['data14'], marker['data12'], marker['data07'], marker['data06']];
+                            markerSprite.info = [marker["Polling_station"], marker['data06'], marker['data07'], marker['data12'], marker['data14'],  marker['data19'] ];
                             markerSprite.rotation -= radians
 
                         });
@@ -191,36 +197,49 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
 
-        function changeData() {
+        function changeData(n) {
                 markerSprites.forEach(function(p, i){
+
 
                     var markerSprite = markerSprites[i];
 
-                    var proEuropePercentage = markerSprite.info[3];
 
-                    //Кут для проєвропейських
-                    var radians = Math.PI / 100 * proEuropePercentage;
 
-                    if (radians < Math.PI / 2) {
-                        markerSprite.setTexture(textures[1]);
+                    var proEuropePercentage = markerSprite.info[n];
+                    if(proEuropePercentage != undefined){
+                        markerSprite.alpha = 1;
+                        //Кут для проєвропейських
+                        var radians = Math.PI / 100 * proEuropePercentage;
+
+                        if (radians < Math.PI / 2) {
+                            markerSprite.texture = textures[1];
+                        }
+                        else {
+                            markerSprite.texture = textures[0];
+                        }
+
+                        // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
+                        // markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
+                        var tint = d3.color(colorScale(Math.random() * 100)).rgb();
+                        markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
+                        markerSprite.rotation =  0;
+                        markerSprite.rotation -= radians;
+                    } else {
+                        markerSprite.alpha = 0;
+                        console.log(markerSprite);
                     }
-                    else {
-                        markerSprite.setTexture(textures[0]);
-                    }
 
-                    // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
-                    // markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
-                    var tint = d3.color(colorScale(Math.random() * 100)).rgb();
-                    markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
-                    markerSprite.rotation =  0;
-                    markerSprite.rotation -= radians;
+
                 })
         }
 
 
-        document.getElementById("change").addEventListener("click", function(){
-            changeData()
-        })
+        document.getElementById("e_2006").addEventListener("click", function(){  changeData(1) });
+        document.getElementById("e_2007").addEventListener("click", function(){  changeData(2) });
+        document.getElementById("e_2012").addEventListener("click", function(){  changeData(3) });
+        document.getElementById("e_2014").addEventListener("click", function(){  changeData(4) });
+        document.getElementById("e_2019").addEventListener("click", function(){  changeData(5) });
+
 
 
 
