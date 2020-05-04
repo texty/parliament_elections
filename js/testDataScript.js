@@ -36,7 +36,7 @@ loader
 
 var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 9);
 
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+L.tileLayer('//tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
     subdomains: 'abcd',
     minZoom: 5,
     maxZoom: 18
