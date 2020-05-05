@@ -5,9 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/leaflet.css"/>
+
+	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/example.min.js"></script>
 	<script src="js/bezier-easing.js"></script>
 	<script src="js/tools.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
 </head>
@@ -17,25 +20,27 @@
 		background: -webkit-linear-gradient(top, #DD4B39, #D14836);
 		background: -moz-linear-gradient(top, #DD4B39, #D14836);
 		background: -ms-linear-gradient(top, #DD4B39, #D14836);
-		border: 1px solid #DD4B39;
+		border-width: 0;
 		color: white;
-		text-shadow: 0 1px 0 #C04131;
 		margin-right: 5px;
+		outline: none;
+	}
+
+	button.active {
+		background: -webkit-linear-gradient(top, #939393, grey);
+		background: -moz-linear-gradient(top, #939393, grey);
+		background: -ms-linear-gradient(top, #939393, grey);
+		outline: none;
 	}
 
 	button:hover {
-		background: -webkit-linear-gradient(top, #DD4B39, #C53727);
-		background: -moz-linear-gradient(top, #DD4B39, #C53727);
-		background: -ms-linear-gradient(top, #DD4B39, #C53727);
-		border: 1px solid #AF301F;
+		background: -webkit-linear-gradient(top, #939393, grey);
+		background: -moz-linear-gradient(top, #939393, grey);
+		background: -ms-linear-gradient(top, #939393, grey);
+		outline: none;
+		/*border: 1px solid #AF301F;*/
 	}
 
-	button:active {
-		box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-		background: -webkit-linear-gradient(top, grey, #AD2719);
-		background: -moz-linear-gradient(top, #D74736, #AD2719);
-		background: -ms-linear-gradient(top, #D74736, #AD2719);
-	}
 
 </style>
 <body style="height: 100%; margin: 0; overflow: hidden;">
@@ -58,7 +63,12 @@
 <!--<script src="js/changeData.js"></script>-->
 <script src="js/testDataScript.js"></script>
 
-
+<script>
+	$("button").on("click", function(){
+		$("button").removeClass("active");
+		$(this).addClass("active")
+	})
+</script>
 
 
 </body>

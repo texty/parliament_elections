@@ -27,12 +27,6 @@ function getJSON(url, successHandler, errorHandler) {
 
 
 
-var loader = new PIXI.loaders.Loader();
-
-loader
-    .add('blue', 'img/right-arrow_green.png')
-    .add('red', 'img/right-arrow(1).png');
-
 
 var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 7);
 
@@ -44,6 +38,40 @@ L.tileLayer('//tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
 
 map.attributionControl.setPosition('bottomleft');
 map.zoomControl.setPosition('bottomright');
+
+var loader = new PIXI.loaders.Loader();
+
+loader
+    .add('blue', 'img/right-arrow_green.png')
+    .add('red', 'img/right-arrow(1).png');
+
+
+// var geojson = new L.GeoJSON.ajax("data/ukraine.geojson");
+
+
+
+
+
+
+
+// Define a style
+var myStyle = {
+    fillColor: 'transparent',
+    weight: 1,
+    opacity: 1,
+    color: 'grey',  //Outline color
+    fillOpacity: 0.7
+};
+
+// Add the style to your layer
+var geojson = new L.GeoJSON.AJAX("data/ukr_shape.geojson",{
+    style:myStyle});
+
+ geojson.addTo(map);
+
+
+
+
 
 var markerSprites = [];
 
@@ -226,7 +254,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         markerSprite.rotation -= radians;
                     } else {
                         markerSprite.alpha = 0;
-                        console.log(markerSprite);
                     }
 
 
