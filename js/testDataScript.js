@@ -33,7 +33,9 @@ var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 7);
 L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
     subdomains: 'abcd',
     minZoom: 5,
-    maxZoom: 18
+    maxZoom: 18,  
+    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+
 }).addTo(map);
 
 map.attributionControl.setPosition('bottomleft');
