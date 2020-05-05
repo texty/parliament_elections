@@ -50,7 +50,11 @@ loader
 
 // var geojson = new L.GeoJSON.ajax("data/ukraine.geojson");
 
-
+onMapReady(map: L.Map) {
+    setTimeout(() => {
+        map.invalidateSize();
+}, 0);
+}
 
 
 
