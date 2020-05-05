@@ -30,11 +30,11 @@ function getJSON(url, successHandler, errorHandler) {
 var loader = new PIXI.loaders.Loader();
 
 loader
-    .add('blue', 'img/right-arrow.png')
+    .add('blue', 'img/right-arrow_green.png')
     .add('red', 'img/right-arrow(1).png');
 
 
-var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 9);
+var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 7);
 
 L.tileLayer('//tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
     subdomains: 'abcd',
@@ -104,8 +104,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             markerSprite.y = coords.y;
                             markerSprite.anchor.set(0.5, 0.5);
                             markerSprite.scale.set(invScale);
-                            var tint = d3.color(colorScale(Math.random() * 100)).rgb();
-                            markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
+                            // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
+                            // markerSprite.tint = 230 * (tint.r * 230 + tint.g) + tint.b;
                             container.addChild(markerSprite);
                             markerSprites.push(markerSprite);
 
@@ -220,8 +220,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
                         // markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
-                        var tint = d3.color(colorScale(Math.random() * 100)).rgb();
-                        markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
+                        // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
+                        // markerSprite.tint = 256 * (tint.r * 256 + tint.g) + tint.b;
                         markerSprite.rotation =  0;
                         markerSprite.rotation -= radians;
                     } else {
