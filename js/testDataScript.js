@@ -317,7 +317,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 })
         }
 
-
         document.getElementById("e_2006").addEventListener("click", function(){  changeData(1); greenMarkersContainer.alpha = 0; });
         document.getElementById("e_2007").addEventListener("click", function(){  changeData(2); greenMarkersContainer.alpha = 0; });
         document.getElementById("e_2012").addEventListener("click", function(){  changeData(3); greenMarkersContainer.alpha = 0; });
