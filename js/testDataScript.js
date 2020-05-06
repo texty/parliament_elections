@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     var proEuropePercentage = markerSprite.info[n];
 
                     if (proEuropePercentage != undefined){
-                        markerSprite.alpha =  markerSprite.info[n]/100;
+                        markerSprite.alpha =  1;
                         var radians = Math.PI / 100 * proEuropePercentage;
                         radians < Math.PI / 2 ? markerSprite.texture = textures[1] :  markerSprite.texture = textures[0];
                         markerSprite.rotation = 0;
