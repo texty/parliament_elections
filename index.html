@@ -15,6 +15,11 @@
 	<script src="js/leaflet-providers.js"></script>
 </head>
 <style>
+	body {
+		height: 200vh;
+	}
+
+
 	/* Red Google Button as seen on drive.google.com */
 	button {
 		background: -webkit-linear-gradient(top, #DD4B39, #D14836);
@@ -43,16 +48,16 @@
 
 
 </style>
-<body style="height: 100%; margin: 0; overflow: hidden;">
+<body>
 
 <div class="change" style="position:absolute; top:50px; left:50px; z-index:1000000; display: flex">
-	<button  id="e_2006" style="font-size:18px; background-color:red">2006</button>
-	<button  id="e_2007" style="font-size:18px; background-color:red">2007</button>
-	<button  id="e_2012" style="font-size:18px; background-color:red">2012</button>
-	<button  id="e_2014" style="font-size:18px; background-color:red">2014</button>
-	<button  id="e_2019" style="font-size:18px; background-color:red">2019</button>
+	<button id="e_2006" style="font-size:18px; background-color:red">2006</button>
+	<button id="e_2007" style="font-size:18px; background-color:red">2007</button>
+	<button id="e_2012" style="font-size:18px; background-color:red">2012</button>
+	<button id="e_2014" style="font-size:18px; background-color:red">2014</button>
+	<button id="e_2019" style="font-size:18px; background-color:red">2019</button>
 </div>
-<div id="map" style="height: 100%; width: 100%; " class="cartes">
+<div id="map" style="display: block; height: 100vh; width: 100%; margin: auto;" class="cartes">
 	<div class="legend geometry top center hide">
 		<div class="wrapper">
 			<div class="content"></div>

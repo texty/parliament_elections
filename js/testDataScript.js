@@ -25,38 +25,67 @@ function getJSON(url, successHandler, errorHandler) {
     xhr.send();
 }
 
-var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 7);
+var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 6);
+map.scrollWheelZoom.disable();
 
+// CTRL + scroll
+$("#map").bind('mousewheel DOMMouseScroll', function (event) {
+    event.stopPropagation();
+    if (event.ctrlKey == true) {
+        event.preventDefault();
+        map.scrollWheelZoom.enable();
+        $('#map').removeClass('map-scroll');
+        setTimeout(function(){
+            map.scrollWheelZoom.disable();
+        }, 1000);
+    } else {
+        map.scrollWheelZoom.disable();
+        $('#map').addClass('map-scroll');
+    }
+
+});
+
+$(window).bind('mousewheel DOMMouseScroll', function (event) {
+    $('#map').removeClass('map-scroll');
+});
+
+
+// додаємо тайли
 L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', { minZoom: 5, maxZoom: 18,
     attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+
+// додаємо шейп України
 new L.GeoJSON.AJAX("data/ukr_shape.geojson",{
     style: {
         fillColor: 'transparent',
         weight: 1,
         opacity: 1,
-        color: 'grey',  //Outline color
+        color: 'grey',  // stroke color
         fillOpacity: 0.7
     }
 }).addTo(map);
 
+//контроли у правий ніжній кут
 map.attributionControl.setPosition('bottomleft');
 map.zoomControl.setPosition('bottomright');
 
-
+//шейпи спрайтів
 var loader = new PIXI.loaders.Loader();
 loader
     .add('blue', 'img/blue.png')
     .add('red', 'img/red.png')
     .add('green', 'img/green.png');
 
-var markerSprites = [];
-var markerSprites_slugi = [];
-var pixiContainer = new PIXI.Container();
-var greenMarkersContainer = new PIXI.Container();
 
+var markerSprites = [];
+var pixiContainer = new PIXI.Container();
 var zoomChangeTs = null;
+
+//слуги окремо, щоб їх можна було прибирати та повертати
+var greenMarkersContainer = new PIXI.Container();
+var markerSprites_slugi = [];
 var tempLayer = new L.LayerGroup();
 var slugiLayer;
 
@@ -106,11 +135,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             markerSprite.x = coords.x;
                             markerSprite.y = coords.y;
                             markerSprite.anchor.set(0.5, 0.5);
-                            // if(invScale > 5){
-                                markerSprite.scale.set(2);
-                            // } else {
-                            //     markerSprite.scale.set(invScale);
-                            // }
+                            markerSprite.scale.set(invScale);
+
                             // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
                             // markerSprite.tint = 230 * (tint.r * 230 + tint.g) + tint.b;
                             container.addChild(markerSprite);
@@ -214,11 +240,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             markerSprite.x = coords.x;
                             markerSprite.y = coords.y;
                             markerSprite.anchor.set(0.5, 0.5);
-                            if(invScale > 5){
-                                markerSprite.scale.set(5);
-                            } else {
-                                markerSprite.scale.set(invScale);
-                            }
+                            markerSprite.scale.set(invScale);
+
 
                             container.addChild(markerSprite);
                             markerSprites_slugi.push(markerSprite);
@@ -283,21 +306,12 @@ document.addEventListener("DOMContentLoaded", function() {
                     if (proEuropePercentage != undefined){
                         markerSprite.alpha = 1;
                         var radians = Math.PI / 100 * proEuropePercentage;
-
-                        if (radians < Math.PI / 2) {
-                             markerSprite.texture = textures[1];
-                        }
-                        else {
-                            markerSprite.texture = textures[0];
-                        }
-
-                        markerSprite.rotation =  0;
+                        radians < Math.PI / 2 ? markerSprite.texture = textures[1] :  markerSprite.texture = textures[0];
+                        markerSprite.rotation = 0;
                         markerSprite.rotation -= radians;
                     } else {
                         markerSprite.alpha = 0;
                     }
-
-
                 })
         }
 
