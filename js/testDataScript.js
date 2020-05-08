@@ -62,7 +62,7 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.pn
 new L.GeoJSON.AJAX("data/ukr_shape.geojson",{
     style: {
         fillColor: 'transparent',
-        weight: 1,
+        weight: 0.5,
         opacity: 1,
         color: 'grey',  // stroke color
         fillOpacity: 0.7
@@ -76,9 +76,9 @@ map.zoomControl.setPosition('bottomright');
 //шейпи спрайтів
 var loader = new PIXI.loaders.Loader();
 loader
-    .add('blue', 'img/blue.png')
-    .add('red', 'img/red.png')
-    .add('green', 'img/green.png');
+    .add('blue', 'img/blue-line.png')
+    .add('red', 'img/red-line.png')
+    .add('green', 'img/green-line.png');
 
 
 var markerSprites = [];
@@ -116,23 +116,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     if (event.type === 'add') {
                         markers.forEach(function (marker) {
-                            var proEuropePercentage = +marker['data06'];
-
-                            //Кут для проєвропейських
-                            var radians = Math.PI / 100 * proEuropePercentage;
+                            var radians = Math.PI / 100 * 30;
+                            var texture_value = +marker['data06'];
                             var markerSprite;
 
-                            // змінити колір стрілки (замінити текстуру, якщо кут більший чи менший за половину)
-                            if (radians < Math.PI / 2) {
-                                markerSprite = new PIXI.Sprite(textures[1]);
-                                markerSprite.textureIndex = 1;
+                            if (texture_value != undefined){
+                                markerSprite = new PIXI.Sprite(textures[texture_value]);
+                                markerSprite.textureIndex = texture_value;
+                            } else {
+                                markerSprite = new PIXI.Sprite(textures[texture_value]);
+                                markerSprite.alpha = 0;
                             }
-                            else {
-                                markerSprite = new PIXI.Sprite(textures[0]);
-                                markerSprite.textureIndex = 0;
-
-                            }
-
+                            
                             var coords = project([marker.Latitude, marker.Longitude]);
                             markerSprite.x = coords.x;
                             markerSprite.y = coords.y;
@@ -200,100 +195,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-        getJSON('data/slugi_2019.json', function (markers) {
-
-            markers.forEach(function(d){
-                d.Latitude = +d.Latitude;
-                d.Longitude = +d.Longitude
-            });
-
-            slugiLayer = function () {
-                return L.pixiOverlay(function (utils, event) {
-                    var zoom = utils.getMap().getZoom();
-                    var container = utils.getContainer();
-                    var renderer = utils.getRenderer();
-                    var project = utils.latLngToLayerPoint;
-                    var getScale = utils.getScale;
-                    var invScale = 0.8 / getScale();
-
-                    if (event.type === 'add') {
-                        markers.forEach(function (marker) {
-                            var proEuropePercentage = +marker['data19'];
-
-                            //Кут для проєвропейських
-                            var radians = Math.PI / 100 * 50;
-                            var markerSprite;
-
-
-                            markerSprite = new PIXI.Sprite(textures[2]);
-
-                            if (proEuropePercentage != undefined){
-                                markerSprite.alpha = 1;
-                                markerSprite.texture = textures[2];
-                                markerSprite.rotation = 0;
-                            } else {
-                                markerSprite.alpha = 0;
-                            }
-
-                            markerSprite.textureIndex = 2;
-
-
-                            var coords = project([marker.Latitude, marker.Longitude]);
-                            markerSprite.x = coords.x;
-                            markerSprite.y = coords.y;
-                            markerSprite.anchor.set(0.5, 0.5);
-                            markerSprite.scale.set(invScale);
-
-
-                            container.addChild(markerSprite);
-                            markerSprites_slugi.push(markerSprite);
-
-                            // Тут можна в спрайт упакувати ті дані, що потрібно
-                            markerSprite.info = [marker["Polling_station"], marker['data19'] ];
-                            markerSprite.rotation -= radians
-                        });
-                    }
-                    if (event.type === 'redraw') {
-                        var delta = event.delta;
-                        if (zoomChangeTs !== null) {
-                            var duration = 17;
-                            zoomChangeTs += delta;
-                            var lambda = zoomChangeTs / duration;
-                            if (lambda > 1) {
-                                lambda = 1;
-                                zoomChangeTs = null;
-                            }
-                            lambda = easing(lambda);
-                            markerSprites_slugi.forEach(function (markerSprite) {
-                                markerSprite.scale.set(markerSprite.currentScale + lambda * (markerSprite.targetScale - markerSprite.currentScale));
-                            });
-                        }
-                        else {
-                            markerSprites_slugi.forEach(function (markerSprite) {
-                                markerSprite.scale.set(invScale);
-                            });
-                        }
-                    }
-                renderer.render(container);
-                }, greenMarkersContainer, {
-                    // doubleBuffering: doubleBuffering,
-                    destroyInteractionManager: true
-                });
-            } ();
-
-
-            slugiLayer.addTo(tempLayer);
-
-            var ticker = new PIXI.ticker.Ticker();
-
-            ticker.add(function (delta) {
-                slugiLayer.redraw({type: 'redraw', delta: delta});
-            });
-
-            ticker.start();
-            map.on('zoomanim', slugiLayer.redraw, slugiLayer);
-        });
-
 
 
 
@@ -303,25 +204,28 @@ document.addEventListener("DOMContentLoaded", function() {
         function changeData(n) {
                 markerSprites.forEach(function(p, i){
                     var markerSprite = markerSprites[i];
-                    var proEuropePercentage = markerSprite.info[n];
+                    let texture_value = markerSprite.info[n];
+                    // console.log(markerSprite.info[n]);
+                    // var proEuropePercentage = markerSprite.info[n];
 
-                    if (proEuropePercentage != undefined){
+                    if (markerSprite.info[n] != undefined){
                         markerSprite.alpha =  1;
-                        var radians = Math.PI / 100 * proEuropePercentage;
-                        radians < Math.PI / 2 ? markerSprite.texture = textures[1] :  markerSprite.texture = textures[0];
-                        markerSprite.rotation = 0;
-                        markerSprite.rotation -= radians;
+                        // var radians = Math.PI / 100 * proEuropePercentage;
+                        // radians < Math.PI / 2 ? markerSprite.texture = textures[1] :  markerSprite.texture = textures[0];
+                        markerSprite.texture = textures[texture_value];
+                        // markerSprite.rotation = 0;
+                        // markerSprite.rotation -= radians;
                     } else {
                         markerSprite.alpha = 0;
                     }
                 })
         }
 
-        document.getElementById("e_2006").addEventListener("click", function(){  changeData(1); greenMarkersContainer.alpha = 0; });
-        document.getElementById("e_2007").addEventListener("click", function(){  changeData(2); greenMarkersContainer.alpha = 0; });
-        document.getElementById("e_2012").addEventListener("click", function(){  changeData(3); greenMarkersContainer.alpha = 0; });
-        document.getElementById("e_2014").addEventListener("click", function(){  changeData(4); greenMarkersContainer.alpha = 0; });
-        document.getElementById("e_2019").addEventListener("click", function(){  changeData(5); tempLayer.addTo(map); greenMarkersContainer.alpha = 1; });
+        document.getElementById("e_2006").addEventListener("click", function(){  changeData(1); });
+        document.getElementById("e_2007").addEventListener("click", function(){  changeData(2); });
+        document.getElementById("e_2012").addEventListener("click", function(){  changeData(3); });
+        document.getElementById("e_2014").addEventListener("click", function(){  changeData(4); });
+        document.getElementById("e_2019").addEventListener("click", function(){  changeData(5); });
 
 
 
