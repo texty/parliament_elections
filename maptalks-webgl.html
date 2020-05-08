@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>maptalks-deckgl test</title>
+<style type="text/css">
+    html,
+    body {
+        margin: 0px;
+        height: 100%;
+        width: 100%
+    }
+
+    .container {
+        width: 100%;
+        height: 100%
+    }
+
+    #tooltip:empty {
+        display: none;
+    }
+
+    #tooltip {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 11px;
+        position: absolute;
+        padding: 4px;
+        margin: 8px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        max-width: 300px;
+        z-index: 9;
+        pointer-events: none;
+    }
+</style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/deck.gl@7.1.11/dist.min.js"></script>
+<script type="text/javascript" src="lib/maptalks-deckgllayer.js"></script>
+
+
+<!---->
+<body>
+
+<div id="map" class="container"></div>
+<div id="tooltip"></div>
+
+<div class="change" style="position:absolute; top:50px; left:50px; z-index:1000000; display: flex">
+    <button id="2006" style="font-size:18px; background-color:red">2006</button>
+    <button id="2007" style="font-size:18px; background-color:red">2007</button>
+    <button id="2012" style="font-size:18px; background-color:red">2012</button>
+    <button id="2014" style="font-size:18px; background-color:red">2014</button>
+    <button id="2019" style="font-size:18px; background-color:red">2019</button>
+</div>
+
+
+<script>
+    var map = new maptalks.Map('map', {
+        center: [35, 48],
+        zoom: 6,
+        baseLayer: new maptalks.TileLayer('base', {
+            urlTemplate: 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
+            subdomains: ['a', 'b', 'c', 'd'],
+            attribution: '&copy; <a href="http://osm.org">OpenStreetMap</a> contributors, &copy; <a href="https://mapbox.com/">mapbox</a>'
+        }),
+        maxZoom: 11,
+        maxPitch: 70,
+        pitch: 50
+    });
+
+    const deckglLayer = new maptalks.DeckGLLayer('kkkk', {});
+    map.addLayer(deckglLayer);
+
+    function getMax(points) {
+        return points.reduce((max, p) => Number(p.percent) > max ? Number(p.percent) : max, -Infinity);
+    }
+
+
+    // map.setCenter([-116.71849765758043, 32.911171005023874]);
+    map.setZoom(8);
+    renderLayer("2006");
+
+    const LIGHT_SETTINGS = {
+        lightsPosition: [-0.144528, 49.739968, 8000, -3.807751, 54.104682, 8000],
+        ambientRatio: 0.4,
+        diffuseRatio: 0.6,
+        specularRatio: 0.2,
+        lightsStrength: [0.8, 0.0, 0.8, 0.0],
+        numberOfLights: 2
+    };
+    const options = {
+        radius: 3000,
+        coverage: 1,
+        upperPercentile: 100
+    };
+
+    const COLOR_RANGE = [
+        [255, 255, 204],
+        [255, 237, 160],
+        [254, 217, 118],
+        [254, 178, 76],
+        [253, 141, 60],
+        [252, 78, 42],
+        [227, 26, 28],
+        [189, 0, 38],
+        [128, 0, 38]
+//        [1, 152, 189],
+//        [73, 227, 206],
+//        [216, 254, 181],
+//        [254, 237, 177],
+//        [254, 173, 84],
+//        [209, 55, 78]
+    ];
+
+
+
+    d3.selectAll('button').on("click", function(){
+        console.log(this.id);
+        renderLayer(this.id)
+    });
+
+
+    function renderLayer(year) {
+        d3.csv('data/deckGL_2007.csv', function(error, response) {
+//                (error, response) => {
+
+
+        const hexagonLayer = {
+                layerType: "HexagonLayer",
+                id: 'heatmap',
+                colorRange: COLOR_RANGE,
+                data: response.filter(function(d){ return d.Year === year}),
+                elevationDomain: [1, 250],
+                elevationRange: [0, 1000],
+                elevationScale: 100,
+                getColorValue: getMax,
+//                getElevationValue: points => points.length,
+
+               getElevationValue: getMax,
+
+                extruded: true,
+                pickable: true,
+                getPosition: d => [Number(d.lng), Number(d.lat)],
+                onHover: info => { console.log(info) },
+        lightSettings: LIGHT_SETTINGS,
+                opacity: 1,
+    ...options
+    }
+        deckglLayer.setProps({
+            layers: [hexagonLayer]
+        });
+    });
+    }
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
+
+
+<script>
+
