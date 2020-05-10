@@ -49,17 +49,17 @@
 <div id="tooltip"></div>
 
 <div class="change" style="position:absolute; top:50px; left:50px; z-index:1000000; display: flex">
-    <button id="2006" style="font-size:18px; background-color:red">2006</button>
-    <button id="2007" style="font-size:18px; background-color:red">2007</button>
-    <button id="2012" style="font-size:18px; background-color:red">2012</button>
-    <button id="2014" style="font-size:18px; background-color:red">2014</button>
-    <button id="2019" style="font-size:18px; background-color:red">2019</button>
+    <button id="e_2006" style="font-size:18px; background-color:red">2006</button>
+    <button id="e_2007" style="font-size:18px; background-color:red">2007</button>
+    <button class="button" id="2012" style="font-size:18px; background-color:red">2012</button>
+    <button class="button" id="2014" style="font-size:18px; background-color:red">2014</button>
+    <button class="button" id="2019" style="font-size:18px; background-color:red">2019</button>
 </div>
 
 
 <script>
     var map = new maptalks.Map('map', {
-        center: [35, 48],
+        center: [33, 49],
         zoom: 6,
         baseLayer: new maptalks.TileLayer('base', {
             urlTemplate: 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
@@ -67,21 +67,31 @@
             attribution: '&copy; <a href="http://osm.org">OpenStreetMap</a> contributors, &copy; <a href="https://mapbox.com/">mapbox</a>'
         }),
         maxZoom: 11,
-        maxPitch: 70,
-        pitch: 50
+        maxPitch: 60,
+        pitch: 0
     });
 
     const deckglLayer = new maptalks.DeckGLLayer('kkkk', {});
     map.addLayer(deckglLayer);
 
-    function getMax(points) {
-        return points.reduce((max, p) => Number(p.percent) > max ? Number(p.percent) : max, -Infinity);
+
+    function getAvgPercent(points) {
+        var maxValue = points.reduce((max, p) => Number(p.percent) > max ? Number(p.percent) : max, -Infinity);
+        let sumValue = points.reduce(function(sum, elem) { return sum + Number(elem.percent); }, 0);
+        return sumValue/points.length;
+    }
+
+    function getAvgVoices(points) {
+        let sumValue = points.reduce(function(sum, elem) { return sum + Number(elem.voices); }, 0);
+        return sumValue/points.length;
     }
 
 
+
     // map.setCenter([-116.71849765758043, 32.911171005023874]);
-    map.setZoom(8);
-    renderLayer("2006");
+    map.setZoom(6);
+    renderLayer("2006", "ua");
+
 
     const LIGHT_SETTINGS = {
         lightsPosition: [-0.144528, 49.739968, 8000, -3.807751, 54.104682, 8000],
@@ -92,38 +102,82 @@
         numberOfLights: 2
     };
     const options = {
-        radius: 3000,
+        radius: 2000,
         coverage: 1,
         upperPercentile: 100
     };
 
-    const COLOR_RANGE = [
-        [255, 255, 204],
-        [255, 237, 160],
-        [254, 217, 118],
-        [254, 178, 76],
-        [253, 141, 60],
-        [252, 78, 42],
-        [227, 26, 28],
-        [189, 0, 38],
-        [128, 0, 38]
-//        [1, 152, 189],
-//        [73, 227, 206],
-//        [216, 254, 181],
-//        [254, 237, 177],
-//        [254, 173, 84],
-//        [209, 55, 78]
+    const COLOR_RANGE_ru = [
+        [255,255,178],
+        [254,217,118],
+        [254,178,76],
+        [253,141,60],
+        [240,59,32],
+        [189,0,38]
+    ];
+
+    const COLOR_RANGE_ua = [
+        [255,255,204],
+        [199,233,180],
+        [127,205,187],
+        [65,182,196],
+        [44,127,184],
+        [37,52,148]
     ];
 
 
 
-    d3.selectAll('button').on("click", function(){
+    d3.selectAll('.button').on("click", function(){
         console.log(this.id);
-        renderLayer(this.id)
+        map.animateTo({
+            center: [33, 49],
+            zoom: 6,
+            pitch: 40,
+            bearing: 0
+        }, {
+            duration: 5000
+        });
+        renderLayer(this.id.replace("e_", ""), "ua");
+//        changeView();
+    });
+
+    d3.selectAll('button#e_2007').on("click", function(){
+        renderLayer("2007", "ru");
+        setTimeout(changeView, 1000);
+    });
+
+    d3.selectAll('button#e_2006').on("click", function(){
+        renderLayer("2006", "ua");
+        setTimeout(goToWest, 1000);
     });
 
 
-    function renderLayer(year) {
+    function changeView() {
+        map.animateTo({
+            center: [38, 48],
+            zoom: 8,
+            pitch: 40,
+            bearing: 0
+        }, {
+            duration: 5000
+        });
+    }
+
+
+    function goToWest(){
+            map.animateTo({
+                center: [28, 50],
+                zoom: 8,
+                pitch: 40,
+                bearing: 0
+            }, {
+                duration: 7000
+            });
+
+    }
+
+
+    function renderLayer(year, orientation) {
         d3.csv('data/deckGL_2007.csv', function(error, response) {
 //                (error, response) => {
 
@@ -131,18 +185,18 @@
         const hexagonLayer = {
                 layerType: "HexagonLayer",
                 id: 'heatmap',
-                colorRange: COLOR_RANGE,
-                data: response.filter(function(d){ return d.Year === year}),
-                elevationDomain: [1, 250],
-                elevationRange: [0, 1000],
-                elevationScale: 100,
-                getColorValue: getMax,
+                colorRange: orientation === "ru"? COLOR_RANGE_ru : COLOR_RANGE_ua,
+                data: response.filter(function(d){ return d.Year === year && d.orientation === orientation}),
+                elevationDomain: [1, 100],
+                elevationRange: [1, 1000],
+                elevationScale: 50,
+                getColorValue: getAvgPercent,
 //                getElevationValue: points => points.length,
 
-               getElevationValue: getMax,
+               getElevationValue: getAvgVoices,
 
                 extruded: true,
-                pickable: true,
+                //pickable: true,
                 getPosition: d => [Number(d.lng), Number(d.lat)],
                 onHover: info => { console.log(info) },
         lightSettings: LIGHT_SETTINGS,
@@ -153,6 +207,7 @@
             layers: [hexagonLayer]
         });
     });
+
     }
 
 
