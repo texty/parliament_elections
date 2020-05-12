@@ -42,7 +42,6 @@
 <script type="text/javascript" src="lib/maptalks-deckgllayer.js"></script>
 
 
-<!---->
 <body>
 
 <div id="map" class="container"></div>
@@ -72,21 +71,11 @@
         pitch: 0
     });
 
-    const deckglLayer = new maptalks.DeckGLLayer('kkkk', {});
-    map.addLayer(deckglLayer);
+    map.setZoom(6);
 
 
-    function getAvgPercent(points) {
-        var maxValue = points.reduce((max, p) => Number(p.percent) > max ? Number(p.percent) : max, -Infinity);
-        let sumValue = points.reduce(function(sum, elem) { return sum + Number(elem.percent); }, 0);
-        return sumValue/points.length;
-    }
 
-    function getAvgVoices(points) {
-        let sumValue = points.reduce(function(sum, elem) { return sum + Number(elem.voices); }, 0);
-        return sumValue/points.length;
-    }
-
+//   дрібний дощик
     const texture0 = 'img/blue-line.png';
     const texture1 = 'img/red-line.png';
     const texture2 = 'img/green-line.png';
@@ -136,15 +125,26 @@
 
 
 
+// 3D карта
+    const deckglLayer = new maptalks.DeckGLLayer('kkkk', {});
+    map.addLayer(deckglLayer);
 
 
+    function getAvgPercent(points) {
+        var maxValue = points.reduce((max, p) => Number(p.percent) > max ? Number(p.percent) : max, -Infinity);
+        let sumValue = points.reduce(function(sum, elem) { return sum + Number(elem.percent); }, 0);
+        return sumValue/points.length;
+    }
 
+    function getAvgVoices(points) {
+        let sumValue = points.reduce(function(sum, elem) { return sum + Number(elem.voices); }, 0);
+        return sumValue/points.length;
+    }
 
 
 
     // map.setCenter([-116.71849765758043, 32.911171005023874]);
-    map.setZoom(6);
-//    renderLayer("2006", "ua");
+    //    renderLayer("2006", "ua");
 
 
     const LIGHT_SETTINGS = {
@@ -276,5 +276,5 @@
 </html>
 
 
-<script>
+
 
