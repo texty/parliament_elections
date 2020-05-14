@@ -28,6 +28,22 @@ function getJSON(url, successHandler, errorHandler) {
 var map = L.map('map').setView([49.49229399862877, 29.94335937500001], 6);
 map.scrollWheelZoom.disable();
 
+map.createPane('left');
+map.createPane('right');
+
+var overlay1  =  new L.LayerGroup({
+    pane: 'left'
+});
+
+var overlay2  =  new L.LayerGroup({
+    pane: 'right'
+});
+
+
+
+
+// L.control.sideBySide(stamenLayer, osmLayer).addTo(map);
+
 // CTRL + scroll
 $("#map").bind('mousewheel DOMMouseScroll', function (event) {
     event.stopPropagation();
@@ -51,7 +67,7 @@ $(window).bind('mousewheel DOMMouseScroll', function (event) {
 
 
 // додаємо тайли
-L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
     minZoom: 5,
     maxZoom: 18,
     attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -59,15 +75,15 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.pn
 
 
 // додаємо шейп України
-new L.GeoJSON.AJAX("data/ukr_shape.geojson",{
+new L.GeoJSON.AJAX("data/adm1.geojson",{
     style: {
         fillColor: 'transparent',
-        weight: 0.5,
-        opacity: 1,
-        color: 'grey',  // stroke color
-        fillOpacity: 0.7
+        weight: 4,
+        opacity: 0.7,
+        color: 'black',  // stroke color
+        fillOpacity: 0.5
     }
-}).addTo(map);
+}).addTo(overlay1);
 
 //контроли у правий ніжній кут
 map.attributionControl.setPosition('bottomleft');
@@ -178,7 +194,8 @@ document.addEventListener("DOMContentLoaded", function() {
             } ();
 
 
-            pixiLayer.addTo(map);
+            pixiLayer.addTo(overlay1);
+
 
             var ticker = new PIXI.ticker.Ticker();
 
@@ -233,6 +250,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 });
+
+
+L.control.sideBySide(overlay1, overlay2).addTo(map);
 
 
 //
