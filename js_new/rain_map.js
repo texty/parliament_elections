@@ -117,7 +117,7 @@ Promise.all([
 
 
     /* scrollama section */
-    function to_Dnipro(){ map.animateTo({ center: [34.5, 48.4],  zoom: 10 }, {  duration: 2000 });
+    function to_Dnipro(){ map.animateTo({ center: [35.01, 48.4],  zoom: 10 }, {  duration: 2000 });
     }
 
     function to_Nikopol(){

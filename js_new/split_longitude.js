@@ -60,7 +60,7 @@ Promise.all([
 
     var myColor = d3.scaleOrdinal()
         .domain(ideology_groups)
-        .range(["#4b97fb", "#f1483e", "green"]);
+        .range(["#4b97fb", "#f1483e", "#00A56C"]);
 
     var xScale = d3.scaleLinear()
         .domain([0, d3.max(data[1], function (d) { return d.group })])
@@ -135,9 +135,11 @@ Promise.all([
                     .tickSize(- (wrapper_height)));
 
         multiple.selectAll(".y.axis")
+                .style("stroke-dasharray", ("3, 5"))
                 .call(d3.axisLeft()
-                .scale(yScale)
-                .tickFormat(d3.format('.2s')));
+                    .scale(yScale)
+                    .tickFormat(d3.format('.2s'))
+                );
 
 
         var glines = multiple.selectAll(".line-group")
@@ -250,6 +252,7 @@ Promise.all([
             .attr("stroke", function (d) {
                 return myColor(d.key)
             })
+            .attr("stroke-width", "3px")
             ;
 
 
@@ -268,6 +271,7 @@ Promise.all([
             .attr("fill", function (d) {
                 return myColor(d.key)
             })
+            .attr("stroke-width", "3px")
         ;
 
         lines
