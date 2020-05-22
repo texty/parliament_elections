@@ -4,6 +4,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Arial", sans-serif;
+  line-height: 1.6;
   /*background-color: #2a2a2a;*/
   /*color: white;*/
 }
@@ -155,3 +156,23 @@ path.domain {
     font-size: 10px;
   }
 }
+
+
+section.text {
+  width: 50%;
+  margin: auto;
+  @media(max-width:800px){
+    width:90%;
+  }
+}
+
+.swoopy-2 path {
+  fill: none;
+  stroke: black;
+}
+
+.swoopy-2 text {
+ font-size: 12px;
+  color: grey;
+}
+

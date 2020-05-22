@@ -17,33 +17,33 @@ Promise.all([
         .projection(projection);
 
 
-    const split_map = d3.select("#split-map")
-        .append('svg')
-        .attr("id", "split-map")
-        .attr("viewBox", "0 0 500 350")
-        .attr("width", "100%")
-        .append("g");
-
-    split_map.selectAll("path")
-        .data(data[0].features)
-        .enter()
-        .append("path")
-        .attr("class", "tip")
-        .attr("d", path)
-        .attr("stroke", "grey")
-        .attr("stroke-width", "1px")
-        .attr("fill", "lightgrey")
-    ;
-
-    grid.forEach(function(value, i){
-        split_map.append("line")
-            .attr("x1", projection([value])[0])
-            .attr("y1", 0)
-            .attr("x2", projection([value])[0])
-            .attr("y2", height)
-            .style("stroke", "grey")
-            .style("stroke-dasharray", ("3, 5"));
-    });
+    // const split_map = d3.select("#split-map")
+    //     .append('svg')
+    //     .attr("id", "split-map")
+    //     .attr("viewBox", "0 0 500 350")
+    //     .attr("width", "100%")
+    //     .append("g");
+    //
+    // split_map.selectAll("path")
+    //     .data(data[0].features)
+    //     .enter()
+    //     .append("path")
+    //     .attr("class", "tip")
+    //     .attr("d", path)
+    //     .attr("stroke", "grey")
+    //     .attr("stroke-width", "1px")
+    //     .attr("fill", "lightgrey")
+    // ;
+    //
+    // grid.forEach(function(value, i){
+    //     split_map.append("line")
+    //         .attr("x1", projection([value])[0])
+    //         .attr("y1", 0)
+    //         .attr("x2", projection([value])[0])
+    //         .attr("y2", height)
+    //         .style("stroke", "grey")
+    //         .style("stroke-dasharray", ("3, 5"));
+    // });
 
     data[1].forEach(function(d){
         d.voices_per_group = +d.voices_per_group;
@@ -70,11 +70,11 @@ Promise.all([
         .domain([0, max_voices])
         .range([wrapper_height, 0]);
 
-    var line = d3.area()
+    var line = d3.line()
         .x(function(d, i) { return xScale(d.group - 0.5); })
-        // .y(function(d) { return yScale(d.voices_per_group); })
-        .y0(function(d) { return yScale(d.voices_per_group); })
-        .y1( wrapper_height )
+        .y(function(d) { return yScale(d.voices_per_group); })
+        // .y0(function(d) { return yScale(d.voices_per_group); })
+        // .y1( wrapper_height )
         ;
 
 
@@ -245,10 +245,10 @@ Promise.all([
                     return a.group - b.group
                 }))
             })
-            .attr("fill", function (d) {
-                return myColor(d.key)
-            })
-            // .attr("fill", "none")
+            // .attr("fill", function (d) {
+            //     return myColor(d.key)
+            // })
+            .attr("fill", "none")
             .attr("stroke", function (d) {
                 return myColor(d.key)
             })
@@ -264,13 +264,13 @@ Promise.all([
                     return a.group - b.group
                 }))
             })
-            // .attr("fill", "none")
+            .attr("fill", "none")
             .attr("stroke", function (d) {
                 return myColor(d.key)
             })
-            .attr("fill", function (d) {
-                return myColor(d.key)
-            })
+            // .attr("fill", function (d) {
+            //     return myColor(d.key)
+            // })
             .attr("stroke-width", "3px")
         ;
 
