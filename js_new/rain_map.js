@@ -10,10 +10,13 @@ function save() {
     });
 }
 
+var default_zoom = window.innerWidth > 800 ? 6.5 : 5;
+var marker_size  = window.innerWidth > 800 ? 20 : 10;
+
 
 var map = new maptalks.Map('map', {
     center: [31, 49],
-    zoom: 6,
+    zoom: default_zoom,
     zoomControl: {
         'position': 'top-left',
         'slider': false,
@@ -24,14 +27,14 @@ var map = new maptalks.Map('map', {
         subdomains: ['a', 'b', 'c', 'd'],
         attribution: '&copy; <a href="http://osm.org">OpenStreetMap</a> contributors, &copy; <a href="https://mapbox.com/">mapbox</a>'
     }),
-    minZoom: 6,
-    maxZoom: 11,
+    minZoom: default_zoom,
+    maxZoom: 10,
     maxPitch: 0,
     pitch: 0,
     scrollWheelZoom : false
 });
 
-map.setZoom(6);
+map.setZoom(default_zoom);
 
 var center = map.getCenter();
 
@@ -79,8 +82,8 @@ Promise.all([
                 {
                     'symbol' : {
                         'markerFile'   : texture,
-                        'markerWidth'  : 20,
-                        'markerHeight' : 20,
+                        'markerWidth'  : marker_size,
+                        'markerHeight' : marker_size,
                         'markerDx'     : 0,
                         'markerDy'     : 0,
                         'markerOpacity': 1,
@@ -112,31 +115,36 @@ Promise.all([
     }
 
     //переключалка по роках
-    d3.selectAll(".pane").on("click", function(){  updateFill(this.id);  });
+    d3.selectAll(".pane").on("click", function(){       
+        d3.selectAll(".pane").style("font-size", "25px");
+        d3.select(this).style("font-size", "40px");       
+        updateFill(this.id);  
+    });
 
     function start(){
-        map.animateTo({ center: [31, 49],  zoom: 6  }, { duration: 2000 });
+        map.animateTo({ center: [31, 49],  zoom: default_zoom }, { duration: 2000 });
     }
 
     /* scrollama section */
     function to_Poltavska_Cherkaska_2007(){
-        map.animateTo({ center: [31, 49],  zoom: 8  }, { duration: 2000 });
+        // map.animateTo({ center: [31, 49],  zoom: 8  }, { duration: 2000 });
     }
 
     function to_Dnipro_Nikopol_2012(){
-        map.animateTo({ center: [32.5, 47.5],  zoom: 8 }, {  duration: 2000 });
+        map.animateTo({ center: [32.5, 47.5],  zoom: default_zoom + 1.5 }, {  duration: 2000 });
     }
 
     function to_Vinnitska_Khmelnitska(){
-        map.animateTo({ center: [28, 49],  zoom: 7 }, { duration: 2000 });
+        map.animateTo({ center: [31, 49],  zoom: default_zoom  }, { duration: 2000 });
+        // map.animateTo({ center: [28, 49],  zoom: 7 }, { duration: 2000 });
     }
 
     function to_common() {
-        map.animateTo({ center: [31, 49],  zoom: 6.5 }, { duration: 2000 });
+        map.animateTo({ center: [31, 49],  zoom: default_zoom }, { duration: 2000 });
     }
 
     function to_Volyn() {
-        map.animateTo({ center: [25, 52],  zoom: 7 }, { duration: 2000 });
+        // map.animateTo({ center: [25, 52],  zoom: 7 }, { duration: 2000 });
     }
 
 
@@ -181,17 +189,25 @@ Promise.all([
 
         if(r.index === 0 && r.direction === "up") {
             start();
-            updateFill('data12');
+            updateFill('data06');
+            d3.selectAll(".pane").style("font-size", "25px");
+            d3.select("#data06").style("font-size", "40px");
+
+
         }
 
         if(r.index === 1) {
             to_Poltavska_Cherkaska_2007();
             updateFill('data07');
+            d3.selectAll(".pane").style("font-size", "25px");
+            d3.select("#data07").style("font-size", "40px");
         }
 
         if(r.index === 2 && r.direction === "down") {
             to_Dnipro_Nikopol_2012();
             updateFill('data12');
+            d3.selectAll(".pane").style("font-size", "25px");
+            d3.select("#data12").style("font-size", "40px");
         }
 
         if(r.index === 2 && r.direction === "up") {
@@ -204,13 +220,18 @@ Promise.all([
 
         if(r.index === 3 && r.direction === "up") {
             updateFill('data12');
-            to_Vinnitska_Khmelnitska()
+            to_Vinnitska_Khmelnitska();
+            d3.selectAll(".pane").style("font-size", "25px");
+            d3.select("#data12").style("font-size", "40px");
+
         }
 
 
         if(r.index === 4) {
             to_common();
             updateFill('data14');
+            d3.selectAll(".pane").style("font-size", "25px");
+            d3.select("#data14").style("font-size", "40px");
         }
 
         if(r.index === 5 && r.direction === "down") {
@@ -220,19 +241,19 @@ Promise.all([
         if(r.index === 5 && r.direction === "up") {
             to_Volyn();
             updateFill('data14');
+            d3.selectAll(".pane").style("font-size", "25px");
+            d3.select("#data14").style("font-size", "40px");
         }
 
         if(r.index === 6) {
             updateFill('data19');
             to_common();
+            d3.selectAll(".pane").style("font-size", "25px");
+            d3.select("#data19").style("font-size", "40px");
 
         }
 
         if(r.index === 7) {}
-
-
-
-
     }
 
 

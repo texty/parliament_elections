@@ -310,7 +310,7 @@ Promise.all([
     };
 
 
-    updateScatter(["2006","2019"]);
+    updateScatter(["2006", "2014", "2019"]);
 
     // var target_years = [2012, 2019];
 
