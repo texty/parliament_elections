@@ -16,6 +16,8 @@ Promise.all([
 
     const ideology_groups = ["ua", "ru", "undefined"];
 
+
+
     const myColor = d3.scaleOrdinal()
         .domain(ideology_groups)
         .range(["#4b97fb", "#f1483e", "#00A56C"]);
@@ -44,7 +46,7 @@ Promise.all([
         .y(function(d) { return yScale(d.prorus); });
 
 
-    const wrapper = d3.select("#scatter-plot");
+
 
     const nested_grey = d3.nest()
         .key(function (d) {
@@ -56,7 +58,9 @@ Promise.all([
         .entries(data[0]);
 
 
-    const multiple = wrapper
+    console.log(nested_grey);
+
+    const wrapper = d3.select("#scatter-plot")
         .selectAll(".multiple")
         .data(nested_grey)
         .enter()
@@ -64,9 +68,34 @@ Promise.all([
         .attr("viewBox", "0 0 " + 300 + " 350")
         .attr("width", "300")
         .attr("class", "multiple")
-        .attr("height", "350")
+        .attr("height", "350");
+
+    const multiple = wrapper
         .append("g")
         .attr("transform", "translate(" + 50 + "," + 50 + ")");
+
+    multiple.append("g")
+        .attr("class", "x axis")
+        .style("stroke-dasharray", ("3, 5"))
+        .attr("transform", "translate(0," + width + ")");
+
+    multiple.append("g")
+        .attr("class", "y axis")
+        .style("stroke-dasharray", ("3, 5"));
+
+    const xAxis = multiple.selectAll(".x.axis")
+        .call(d3.axisBottom()
+            .scale(xScale)
+            .ticks(5)
+            .tickSize(-width)
+        );
+
+    const yAxis = multiple.selectAll(".y.axis")
+        .call(d3.axisLeft()
+            .scale(yScale)
+            .ticks(5)
+            .tickSize(-width)
+        );
 
 
     const defs = multiple.append("svg:defs");
@@ -96,28 +125,7 @@ Promise.all([
         .style("fill", "#808080");
 
 
-    multiple.append("g")
-        .attr("class", "x axis")
-        .style("stroke-dasharray", ("3, 5"))
-        .attr("transform", "translate(0," + width + ")");
 
-    multiple.append("g")
-        .attr("class", "y axis")
-        .style("stroke-dasharray", ("3, 5"));
-
-    multiple.selectAll(".x.axis")
-        .call(d3.axisBottom()
-            .scale(xScale)
-            .ticks(5)
-            .tickSize(-width)
-        );
-
-    multiple.selectAll(".y.axis")
-        .call(d3.axisLeft()
-            .scale(yScale)
-            .ticks(5)
-            .tickSize(-width)
-        );
 
     multiple.append("text")
         .text(function (d) {
@@ -126,7 +134,7 @@ Promise.all([
         .attr("transform", "translate(0," + -10 + ")")
         .attr("x", width / 2)
         .attr("text-anchor", "middle")
-        .style("font-weight", "bold")
+        .style("font-weight", "600")
         .style("font-size", "20px")
         .style("fill", "grey");
 
@@ -137,7 +145,7 @@ Promise.all([
         .attr("x", width)
         .style("text-anchor", "end")
         .style("fill", "grey")
-        .style("font-size", "14px")
+        .style("font-size", "13px")
         .text("націонал-демократичні, %");
 
 
@@ -148,7 +156,7 @@ Promise.all([
         .attr("x", 0)
         // .attr("dy", "1em")
         .style("fill", "grey")
-        .style("font-size", "14px")
+        .style("font-size", "13px")
         .style("text-anchor", "end")
         .text("комуністичні та проросійські, %");
 
@@ -287,10 +295,7 @@ Promise.all([
                 lines.each(function(line){
                     if (!line.key.match(re)) {
                         d3.select(this).style("visibility", "hidden");
-                    } else {
-                        console.log(re);
-                        console.log(line);
-                        console.log(this);
+                    } else {                        
                         d3.select(this).style("visibility", "visible");
                     }
                     i++

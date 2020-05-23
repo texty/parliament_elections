@@ -3,7 +3,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   /*background-color: #2a2a2a;*/
   /*color: white;*/
@@ -15,7 +15,7 @@ p {
 
 header {
   display: flex;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 h1 {
@@ -141,7 +141,7 @@ path.domain {
   stroke: grey;
 }
 
-#scatter-plot {
+.multiple {
   position: relative;
 
   path.domain {
@@ -176,3 +176,16 @@ section.text {
   color: grey;
 }
 
+.example {
+  max-width: max-content;
+  margin: auto;
+}
+
+.note {
+  width: 80%;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  color: grey;
+  margin: 0 auto 50px auto;
+}

@@ -3,7 +3,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   /*background-color: #2a2a2a;*/
   /*color: white;*/ }
@@ -13,7 +13,7 @@ p {
 
 header {
   display: flex;
-  height: 50vh; }
+  min-height: 50vh; }
 
 h1 {
   /*color: #2a2a2a;*/
@@ -117,13 +117,13 @@ h1 {
 path.domain {
   stroke: grey; }
 
-#scatter-plot {
+.multiple {
   position: relative; }
-  #scatter-plot path.domain {
+  .multiple path.domain {
     display: none; }
-  #scatter-plot .y.axis line, #scatter-plot .x.axis line {
+  .multiple .y.axis line, .multiple .x.axis line {
     stroke: lightgrey; }
-  #scatter-plot .y.axis text, #scatter-plot .x.axis text {
+  .multiple .y.axis text, .multiple .x.axis text {
     font-size: 10px; }
 
 section.text {
@@ -140,5 +140,17 @@ section.text {
 .swoopy-2 text {
   font-size: 12px;
   color: grey; }
+
+.example {
+  max-width: max-content;
+  margin: auto; }
+
+.note {
+  width: 80%;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  color: grey;
+  margin: 0 auto 50px auto; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -114,19 +114,31 @@ Promise.all([
     //переключалка по роках
     d3.selectAll(".pane").on("click", function(){  updateFill(this.id);  });
 
-
+    function start(){
+        map.animateTo({ center: [31, 49],  zoom: 6  }, { duration: 2000 });
+    }
 
     /* scrollama section */
-    function to_Dnipro(){ map.animateTo({ center: [35.01, 48.4],  zoom: 10 }, {  duration: 2000 });
+    function to_Poltavska_Cherkaska_2007(){
+        map.animateTo({ center: [31, 49],  zoom: 8  }, { duration: 2000 });
     }
 
-    function to_Nikopol(){
-        map.animateTo({ center: [34.1, 47.6],  zoom: 10 }, { duration: 2000 });
+    function to_Dnipro_Nikopol_2012(){
+        map.animateTo({ center: [32.5, 47.5],  zoom: 8 }, {  duration: 2000 });
     }
 
-    function to_Kremenchuk(){
-        map.animateTo({ center: [33, 49],  zoom: 10  }, { duration: 2000 });
+    function to_Vinnitska_Khmelnitska(){
+        map.animateTo({ center: [28, 49],  zoom: 7 }, { duration: 2000 });
     }
+
+    function to_common() {
+        map.animateTo({ center: [31, 49],  zoom: 6.5 }, { duration: 2000 });
+    }
+
+    function to_Volyn() {
+        map.animateTo({ center: [25, 52],  zoom: 7 }, { duration: 2000 });
+    }
+
 
 
 
@@ -163,49 +175,62 @@ Promise.all([
     function handleStepEnter(r) {
 
         //scroll down
-        if(r.index === 0 ){   }
+        if(r.index === 0 && r.direction === "down") {
 
-        if(r.index === 1 ) {
-            map.setZoom(6);
+        }
+
+        if(r.index === 0 && r.direction === "up") {
+            start();
+            updateFill('data12');
+        }
+
+        if(r.index === 1) {
+            to_Poltavska_Cherkaska_2007();
+            updateFill('data07');
         }
 
         if(r.index === 2 && r.direction === "down") {
-            updateFill('data06');
-            to_Kremenchuk();
+            to_Dnipro_Nikopol_2012();
+            updateFill('data12');
+        }
+
+        if(r.index === 2 && r.direction === "up") {
+            to_Dnipro_Nikopol_2012();
         }
 
         if(r.index === 3 && r.direction === "down") {
-            updateFill('data12');
-        }
-
-        if(r.index === 4 && r.direction === "down") {
-            updateFill('data06');
-            to_Dnipro();
-        }
-
-        if(r.index === 5 && r.direction === "down") {
-            updateFill('data12');
-        }
-
-
-        //scroll up
-        if(r.index === 2 && r.direction === "up") {
-            updateFill('data06');
+            to_Vinnitska_Khmelnitska()
         }
 
         if(r.index === 3 && r.direction === "up") {
-            to_Kremenchuk();
             updateFill('data12');
+            to_Vinnitska_Khmelnitska()
         }
 
-        if(r.index === 4 && r.direction === "up") {
-            updateFill('data06');
+
+        if(r.index === 4) {
+            to_common();
+            updateFill('data14');
+        }
+
+        if(r.index === 5 && r.direction === "down") {
+            to_Volyn();
         }
 
         if(r.index === 5 && r.direction === "up") {
-            updateFill('data12');
-            to_Dnipro();
+            to_Volyn();
+            updateFill('data14');
         }
+
+        if(r.index === 6) {
+            updateFill('data19');
+            to_common();
+
+        }
+
+        if(r.index === 7) {}
+
+
 
 
     }
