@@ -240,7 +240,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         function start(){
-            map.flyTo([49, 31], default_zoom);
+            map.flyTo([49, 31], default_zoom, {
+                animate: true,
+                duration: 2,
+                easeLinearity: 0.25
+            });
         }
 
         /* scrollama section */
@@ -269,7 +273,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         function to_common() {
-            map.flyTo([49, 31], default_zoom);
+            map.flyTo([49, 31], default_zoom, {
+                animate: true,
+                duration: 2,
+                easeLinearity: 0.25
+            });
         }
 
         function to_Volyn() {

@@ -160,7 +160,7 @@ d3.csv("data/dataset_2020_long.csv").then(function(input) {
 
 
         const markers = svg
-            .selectAll(".circle")
+            .selectAll(".example_circle")
             .data(function (d) {
                 return d.values
             });
@@ -169,7 +169,7 @@ d3.csv("data/dataset_2020_long.csv").then(function(input) {
         markers
             .enter()
             .append("path")
-            .attr("class", "circle tip")
+            .attr("class", "example_circle tip")
             .attr('d', arc)
             .attr("fill", function (d) {
                 return red_points.includes(d.rayon) ? "red" : "grey";

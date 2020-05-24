@@ -34,7 +34,7 @@ Promise.all([
         "Черкаська область",
         "Чернівецька область",
         "Чернігівська область",
-        "АР Крим, Севастополь",
+        "АР Крим, Севастополь"
         ];
 
     const margin = { top: 50, right: 20, bottom: 50, left: 50},
@@ -200,6 +200,7 @@ Promise.all([
                 .append("path")
                 .attr("class", "circle tip")
                 .attr('d', arc)
+                .attr("key", function(d){ return d.key })
                 .attr("fill", function(d) { return cities.includes(d.key) ? "#ff0000": "#808080";})
                 .attr("opacity", "0")
                 .transition()
@@ -323,10 +324,21 @@ Promise.all([
                         d3.select(this).style("visibility", "visible");
                     }
                     i++
+                });
 
+                var circles = d3.selectAll(".circle");
+                circles.each(function(circle){
+                    console.log(circle.key);
+                    if (!circle.key.match(re)) {
+                        d3.select(this).style("visibility", "hidden");
+                    } else {
+                        d3.select(this).style("visibility", "visible");
+                    }
+                    i++
                 });
             } else {
                 group.style("visibility", "visible");
+                markers.style("visibility", "visible");
             }
         }).keyup();
 
