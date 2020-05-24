@@ -7,20 +7,32 @@
 
     <!-- Links -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.css"/>-->
     <link rel="stylesheet" href="css/styles.css"/>
 
     <!-- Scripts-->
     <script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="lib/d3v5.min.js"></script>
-    <script type="text/javascript" src="lib/maptalks.min.js"></script>
+    <!--<script type="text/javascript" src="lib/maptalks.min.js"></script>-->
     <script type="text/javascript" src="lib/deck.gl.7.1.11.dist.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/deck.gl@7.1.11/dist.min.js"></script>-->
-    <script type="text/javascript" src="lib/maptalks-deckgllayer.js"></script>
+    <!--<script type="text/javascript" src="lib/maptalks-deckgllayer.js"></script>-->
     <script type="text/javascript" src='lib/scrollama.min.js'></script>
     <script src="lib/swoopy-drag.js"></script>
+
+    <script src="lib/jquery-3.3.1.js"></script>
+    <script src="lib/example.min.js"></script>
+    <script src="lib/bezier-easing.js"></script>
+    <script src="lib/tools.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="lib/leaflet-providers.js"></script>
+    <script src="lib/leaflet-side-by-side.js"></script>
 </head>
 
 <body>
@@ -41,19 +53,19 @@
         <!--<button class="pane" style="position:absolute; bottom:50px; right:50px; z-index:1000000; display: block"><a onclick="save()">Export as image</a></button>-->
         <div class="change" style="position: absolute; top:50px; right:20px; z-index:1000000; display: block;">
             <div>
-                <p id="data06" class="pane">2006</p>
+                <p id="data06" data="1" class="pane">2006</p>
             </div>
             <div>
-                <p id="data07" class="pane">2007</p>
+                <p id="data07" data="2" class="pane">2007</p>
             </div>
             <div>
-                <p id="data12" class="pane">2012</p>
+                <p id="data12" data="3" class="pane">2012</p>
             </div>
             <div>
-                <p id="data14" class="pane">2014</p>
+                <p id="data14" data="4" class="pane">2014</p>
             </div>
             <div>
-                <p id="data19" class="pane">2019</p>
+                <p id="data19" data="5" class="pane">2019</p>
             </div>
         </div>
 
@@ -253,7 +265,8 @@
 
 
 
-<script src="js_new/rain_map.js"></script>
+<!--<script src="js_new/rain_map.js"></script>-->
+<script src="js_new/leaflet_and_pixi.js"></script>
 <script src="js_new/split_longitude.js"></script>
 <script src="js_new/by_oblast2.js"></script>
 <script src="js_new/examples.js"></script>
