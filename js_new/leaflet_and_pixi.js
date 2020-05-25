@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 easeLinearity: 0.25
             });
 
-            new L.GeoJSON.AJAX("data/high-light/Dnipro_Nikopol.geojson",{
+            new L.GeoJSON.AJAX("data/high-light/Dnipro_Nikopol.json",{
                 style: {
                     fillColor: 'blue',
                     // weight: 1,
