@@ -149,6 +149,19 @@ Promise.all([
         .attr("d", "M0,-5L10,0L0,5")
         .style("fill", "#808080");
 
+    defs.append("svg:marker")
+        .attr("id", "black")
+        .attr("viewBox", "0 -5 10 10")
+        .attr("refX", 5)
+        .attr("refY", 0)
+        .attr("markerWidth", 9)
+        .attr("markerHeight", 9)
+        .attr("orient", "auto")
+        .attr("markerUnits", "userSpaceOnUse")
+        .append("svg:path")
+        .attr("d", "M0,-5L10,0L0,5")
+        .style("fill", "black");
+
 
 
     multiple.append("text")
@@ -188,7 +201,7 @@ Promise.all([
 
     var updateScatter = function(target_years) {
 
-        const arc = d3.symbol().size(30).type(d3.symbolTriangle);
+        const arc = d3.symbol().size(40).type(d3.symbolTriangle);
 
         const markers = multiple
             .selectAll(".circle")
@@ -203,6 +216,12 @@ Promise.all([
                 .attr("key", function(d){ return d.key })
                 .attr("fill", function(d) { return cities.includes(d.key) ? "#ff0000": "#808080";})
                 .attr("opacity", "0")
+                .on("mouseover", function(d){
+                    d3.select(this).style("stroke-width", "2px").style("stroke", "black")
+                })
+                .on("mouseleave", function(d){
+                    d3.select(this).style("stroke-width", "0")
+                })
                 .transition()
                 .duration(0)
                 .attr("transform", function (k) {
@@ -210,7 +229,7 @@ Promise.all([
                     var point = k.values.filter(function (p) { return last_year.includes(p["year"])  });
                     return point.length > 0 ? "translate(" + xScale(point[0].dem) + "," + yScale(point[0].prorus) + ")" :  "translate(" + xScale(-5) + "," + yScale(-5) + ")";
                 })
-                .attr("opacity", "0.8")
+                .attr("opacity", "0.5")
                 .attr("data-tippy-content", function (d) {
                     return d.key
                 });
@@ -252,6 +271,13 @@ Promise.all([
             .attr("key", function(d){ return d.key })
             .attr("fill", "none")
             .attr("opacity", "0.5")
+            .on("mouseover", function(d){
+                d3.select(this).attr("marker-end",  "url(#black)").style("stroke-width", "3px").style("stroke", "black")
+            })
+            .on("mouseleave", function(d){
+                let current_color = cities.includes(d.key) ? "#ff0000": "#808080";
+                d3.select(this).attr("marker-end",  "url(" + current_color + ")").style("stroke-width", function(d){ return cities.includes(d.key)? "3px": "1px"}).style("stroke", function(d){ return cities.includes(d.key)? "#ff0000": "#808080"})
+            })
             .transition()
             .duration(750)
             .attr("d", function (k) {
@@ -288,7 +314,8 @@ Promise.all([
             })
             .attr("data-tippy-content", function (d) {
                 return d.key
-            });
+            })
+            ;
 
 
         group

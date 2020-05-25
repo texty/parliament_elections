@@ -35,7 +35,7 @@ map.scrollWheelZoom.disable();
 // додаємо тайли
 L.tileLayer('https://api.mapbox.com/styles/v1/evgeshadrozdova/cjsqjh1to30c81ftn8jnuikgj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNqMjZuaGpkYTAwMXAzMm5zdGVvZ2c0OHYifQ.s8MMs2wW15ZyUfDhTS_cdQ', {
     minZoom: 5,
-    maxZoom: 9,
+    maxZoom: 10,
     attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
@@ -63,18 +63,20 @@ $(window).bind('mousewheel DOMMouseScroll', function (event) {
     $('#map').removeClass('map-scroll');
 });
 
+var bounds = [[49.559322, 33.767822], [48.51210604, 31.5021240]];
+
 
 
 
 // додаємо шейп України
-new L.GeoJSON.AJAX("data/ukr_adm1_lite.json",{
-    style: {
-        fillColor: 'transparent',
-        weight: 1,
-        opacity: 0.4,
-        color: 'white'  // stroke color
-    }
-}).addTo(map);
+// new L.GeoJSON.AJAX("data/ukr_adm1_lite.json",{
+//     style: {
+//         fillColor: 'transparent',
+//         weight: 1,
+//         opacity: 0.4,
+//         color: 'white'  // stroke color
+//     }
+// }).addTo(map);
 
 //контроли у правий ніжній кут
 map.attributionControl.setPosition('bottomleft');
@@ -254,6 +256,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 duration: 2,
                 easeLinearity: 0.25
             });
+
+            new L.GeoJSON.AJAX("data/high-light/to_Poltavska_Cherkaska.json",{
+                style: {
+                    fillColor: 'blue',
+                    opacity: 0.4,
+                    className: "auto_hide_1"
+                }}).addTo(map);
+
+            setTimeout(function(){
+                $(".auto_hide_1").animate({ opacity: 0 }, 500, function() {
+                    // Animation complete.
+                });
+            }, 3000);
         }
 
         function to_Dnipro_Nikopol_2012(){
@@ -262,14 +277,49 @@ document.addEventListener("DOMContentLoaded", function() {
                 duration: 2,
                 easeLinearity: 0.25
             });
+
+            new L.GeoJSON.AJAX("data/high-light/Dnipro_Nikopol.geojson",{
+                style: {
+                    fillColor: 'blue',
+                    // weight: 1,
+                    opacity: 0.4,
+                    className: "auto_hide_2"
+                    // color: 'white'  // stroke color
+                }
+            }).addTo(map);
+
+            setTimeout(function(){
+                $(".auto_hide_2").animate({ opacity: 0 }, 2000, function() {
+                    // Animation complete.
+                });
+            }, 3000);
+
+
         }
 
         function to_Vinnitska_Khmelnitska(){
-            map.flyTo([49.5, 29], default_zoom + 2, {
+            map.flyTo([49.5, 27], default_zoom + 2, {
                 animate: true,
                 duration: 2,
                 easeLinearity: 0.25
             });
+
+            new L.GeoJSON.AJAX("data/high-light/to_Vinnitska_Khmelnitska.json",{
+                style: {
+                    fillColor: 'blue',
+                    // weight: 1,
+                    opacity: 0.4,
+                    className: "auto_hide_3"
+                    // color: 'white'  // stroke color
+                }
+            }).addTo(map);
+
+            setTimeout(function(){
+                $(".auto_hide_3").animate({ opacity: 0 }, 500, function() {
+                    // Animation complete.
+                });
+            }, 3000);
+
         }
 
         function to_common() {
@@ -281,11 +331,27 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         function to_Volyn() {
-            map.flyTo([52, 25], default_zoom + 1, {
+            map.flyTo([52, 25], default_zoom + 2, {
                 animate: true,
                 duration: 2,
                 easeLinearity: 0.25
             });
+
+            new L.GeoJSON.AJAX("data/high-light/Lubashevsky.geojson",{
+                style: {
+                    fillColor: 'white',
+                    // weight: 1,
+                    opacity: 0.4,
+                    className: "auto_hide_5"
+                    // color: 'white'  // stroke color
+                }
+            }).addTo(map);
+
+            setTimeout(function(){
+                $(".auto_hide_5").animate({ opacity: 0 }, 2000, function() {
+                    // Animation complete.
+                });
+            }, 3000);
         }
 
 
@@ -369,6 +435,24 @@ document.addEventListener("DOMContentLoaded", function() {
                 changeData(4);
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data14").classed("active", true);
+
+                new L.GeoJSON.AJAX("data/high-light/Odesa_Donbas_Kharkiv.json",{
+                    style: {
+                        fillColor: 'blue',
+                        opacity: 0.4,
+                        className: "auto_hide_6",
+                        strokeOpacity: 0.4
+
+                    }
+                }).addTo(map);
+
+                setTimeout(function(){
+                    $(".auto_hide_6").animate({ opacity: 0 }, 500, function() {
+                        // Animation complete.
+                    });
+                }, 3000);
+
+
             }
 
             if(r.index === 5 && r.direction === "down") {
@@ -378,6 +462,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(r.index === 5 && r.direction === "up") {
                 to_Volyn();
                 changeData(4);
+
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data14").classed("active", true);
             }

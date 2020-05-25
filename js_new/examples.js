@@ -102,6 +102,19 @@ d3.csv("data/dataset_2020_long.csv").then(function(input) {
             .attr("d", "M0,-5L10,0L0,5")
             .style("fill", "#808080");
 
+        svg.append("svg:defs").append("svg:marker")
+            .attr("id", "black")
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 5)
+            .attr("refY", 0)
+            .attr("markerWidth", 9)
+            .attr("markerHeight", 9)
+            .attr("orient", "auto")
+            .attr("markerUnits", "userSpaceOnUse")
+            .append("svg:path")
+            .attr("d", "M0,-5L10,0L0,5")
+            .style("fill", "#black");
+
         svg.append("g")
             .attr("class", "x axis")
             .style("stroke-dasharray", ("3, 5"))
@@ -180,6 +193,12 @@ d3.csv("data/dataset_2020_long.csv").then(function(input) {
             .attr("opacity", "0.6")
             .attr("data-tippy-content", function (d) {
                 return d.rayon
+            })
+            .on("mouseover", function(d){
+                d3.select(this).style("stroke-width", "2px").style("stroke", "black")
+            })
+            .on("mouseleave", function(d){
+                d3.select(this).style("stroke-width", "0")
             });
 
         svg.each(function (d) {
@@ -357,12 +376,15 @@ d3.csv("data/dataset_2020_long.csv").then(function(input) {
             })
             .attr("stroke",  "#808080")
             .attr("stroke-width", "1px")
-            .attr("marker-end", function(d) {
-                // let current_color = cities.includes(d.key) ? "#ff0000": "#808080";
-                return "url(" + '#808080' + ")"
-            })
+            .attr("marker-end",  "url(#808080)")
             .attr("data-tippy-content", function (d) {
                 return d.key
+            })
+            .on("mouseover", function(d){
+                d3.select(this).attr("marker-end",  "url(#black)").style("stroke-width", "3px").style("stroke", "black")
+            })
+            .on("mouseleave", function(d){
+                d3.select(this).attr("marker-end",  "url(#808080)").style("stroke-width", "1px").style("stroke", "grey")
             });
 
         tippy('.example4-line', {
