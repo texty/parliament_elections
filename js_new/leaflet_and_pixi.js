@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }}).addTo(map);
 
             setTimeout(function(){
-                $(".auto_hide_1").animate({ opacity: 0 }, 500, function() {
+                $(".auto_hide_1").animate({ opacity: 0 }, 1500, function() {
                     // Animation complete.
                 });
             }, 3000);
@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
             setTimeout(function(){
-                $(".auto_hide_3").animate({ opacity: 0 }, 500, function() {
+                $(".auto_hide_3").animate({ opacity: 0 }, 1500, function() {
                     // Animation complete.
                 });
             }, 3000);
@@ -341,7 +341,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }).addTo(map);
 
             setTimeout(function(){
-                $(".auto_hide_5").animate({ opacity: 0 }, 1000, function() {
+                $(".auto_hide_5").animate({ opacity: 0 }, 1500, function() {
                     // Animation complete.
                 });
             }, 2000);
