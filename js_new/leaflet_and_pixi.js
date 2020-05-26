@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 $(".auto_hide_2").animate({ opacity: 0 }, 2000, function() {
                     // Animation complete.
                 });
-            }, 3000);
+            }, 2000);
 
 
         }
@@ -304,6 +304,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     // color: 'white'  // stroke color
                 }
             }).addTo(map);
+
+
 
             setTimeout(function(){
                 $(".auto_hide_3").animate({ opacity: 0 }, 500, function() {
@@ -339,10 +341,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }).addTo(map);
 
             setTimeout(function(){
-                $(".auto_hide_5").animate({ opacity: 0 }, 2000, function() {
+                $(".auto_hide_5").animate({ opacity: 0 }, 1000, function() {
                     // Animation complete.
                 });
-            }, 3000);
+            }, 2000);
         }
 
 
