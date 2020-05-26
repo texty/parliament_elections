@@ -63,21 +63,6 @@ $(window).bind('mousewheel DOMMouseScroll', function (event) {
     $('#map').removeClass('map-scroll');
 });
 
-var bounds = [[49.559322, 33.767822], [48.51210604, 31.5021240]];
-
-
-
-
-// додаємо шейп України
-// new L.GeoJSON.AJAX("data/ukr_adm1_lite.json",{
-//     style: {
-//         fillColor: 'transparent',
-//         weight: 1,
-//         opacity: 0.4,
-//         color: 'white'  // stroke color
-//     }
-// }).addTo(map);
-
 //контроли у правий ніжній кут
 map.attributionControl.setPosition('bottomleft');
 map.zoomControl.setPosition('bottomright');
@@ -87,8 +72,14 @@ var loader = new PIXI.loaders.Loader();
 loader
     .add('blue', 'img/blue-line.png')
     .add('red', 'img/red-line.png')
-    .add('green', 'img/green-line.png');
+    .add('green', 'img/green-line.png')
+    .add('grey', 'img/grey-line.png');
 
+
+map.on('click', function(ev){
+    var latlng = map.mouseEventToLatLng(ev.originalEvent);
+    console.log(latlng.lat + ', ' + latlng.lng);
+});
 
 var markerSprites = [];
 var pixiContainer = new PIXI.Container();
@@ -105,9 +96,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     loader.load(function(loader, resources) {
 
-        var textures = [resources.blue.texture, resources.red.texture, resources.green.texture];
+        var textures = [resources.blue.texture, resources.red.texture, resources.green.texture, resources.grey.texture];
 
-        getJSON('data/fucking_end.json', function (markers) {
+        getJSON('data/map_data.json', function (markers) {
 
             markers.forEach(function(d){
                 d.Latitude = +d.Latitude;
