@@ -116,32 +116,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     if (event.type === 'add') {
                         markers.forEach(function (marker) {
-                            var radians = Math.PI / 100 * 30;
-                            var texture_value = +marker['data06'];
-                            var markerSprite;
+                            if (marker['data06'] != undefined) {
+                                var radians = Math.PI / 100 * 30;
+                                var texture_value = +marker['data06'];
+                                var markerSprite;
 
-                            if (texture_value != undefined){
-                                markerSprite = new PIXI.Sprite(textures[texture_value]);
-                                markerSprite.textureIndex = texture_value;
+                                if (texture_value != undefined) {
+                                    markerSprite = new PIXI.Sprite(textures[texture_value]);
+                                    markerSprite.textureIndex = texture_value;
+                                } else {
+                                    markerSprite = new PIXI.Sprite(textures[texture_value]);
+                                    markerSprite.alpha = 0;
+                                }
+
+                                var coords = project([marker.Latitude, marker.Longitude]);
+                                markerSprite.x = coords.x;
+                                markerSprite.y = coords.y;
+                                markerSprite.anchor.set(0.5, 0.5);
+                                markerSprite.scale.set(invScale);
+
+                                // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
+                                // markerSprite.tint = 230 * (tint.r * 230 + tint.g) + tint.b;
+                                container.addChild(markerSprite);
+                                markerSprites.push(markerSprite);
+
+                                // Тут можна в спрайт упакувати ті дані, що потрібно
+                                markerSprite.info = [marker["Polling_station"], marker['data06'], marker['data07'], marker['data12'], marker['data14'], marker['data19']];
+                                markerSprite.rotation -= radians
                             } else {
-                                markerSprite = new PIXI.Sprite(textures[texture_value]);
-                                markerSprite.alpha = 0;
+                                marker.alpha = 0;
                             }
-                            
-                            var coords = project([marker.Latitude, marker.Longitude]);
-                            markerSprite.x = coords.x;
-                            markerSprite.y = coords.y;
-                            markerSprite.anchor.set(0.5, 0.5);
-                            markerSprite.scale.set(invScale);
-
-                            // var tint = d3.color(colorScale(Math.random() * 100)).rgb();
-                            // markerSprite.tint = 230 * (tint.r * 230 + tint.g) + tint.b;
-                            container.addChild(markerSprite);
-                            markerSprites.push(markerSprite);
-
-                            // Тут можна в спрайт упакувати ті дані, що потрібно
-                            markerSprite.info = [marker["Polling_station"], marker['data06'], marker['data07'], marker['data12'], marker['data14'],  marker['data19'] ];
-                            markerSprite.rotation -= radians
                         });
                     }
 
@@ -195,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //////////////////////////////////////////////////////////////////////////
 
 
-
+        // changeData(1);
 
 
 
@@ -233,6 +237,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         function start(){
+            changeData(1);
             map.flyTo([49, 31], default_zoom, {
                 animate: true,
                 duration: 2,
