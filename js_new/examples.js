@@ -3,9 +3,7 @@
  */
 d3.csv("data/dataset_2020_long.csv").then(function(input) {
 
-// d3.csv("data/dataset_2020_long.csv").then(function(input) {
-
-    const arc = d3.symbol().size(40).type(d3.symbolTriangle);
+   const arc = d3.symbol().size(40).type(d3.symbolTriangle);
     
     const margin = { top: 50, right: 20, bottom: 35, left: 50},
         width = 300 - margin.left - margin.right,
