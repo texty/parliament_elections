@@ -105,8 +105,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                 var line = new PIXI.Graphics();
 
                                 line.clear();
-                                let x = marker["x_2007"];
-                                let y = marker["y_2007"];
+                                let x = marker["x_2006"];
+                                let y = marker["y_2006"];
 
                                 var from_x = 0;
                                 var from_y = 0;
@@ -136,8 +136,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                                 line.interactive = true;
                                 line.scale.set(invScale);
-                                container.addChild(line);
-                                markerSprites.push(line);
 
                                 // Тут можна в спрайт упакувати ті дані, що потрібно
                                 line.info = [{
@@ -149,6 +147,11 @@ document.addEventListener("DOMContentLoaded", function() {
                                     "2019": [marker["x_2019"], marker["y_2019"]]
 
                                 }];
+
+                                container.addChild(line);
+                                markerSprites.push(line);
+
+
                                 line.rotation = 0;
                                 //line.rotation -= radians
                             } else {
@@ -182,6 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
 
                     renderer.render(container);
+
 
                 }, pixiContainer, {
                     // doubleBuffering: doubleBuffering,

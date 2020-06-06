@@ -5,6 +5,10 @@
 
 /** актуальний файл для ternary-plots */
 
+const green = '#009601';
+const red = '#FF2121';
+const blue = '#0887FF';
+
 d3.csv("data/ternary_data.csv").then(function(data) {
 
     const years_arr = ["2006", "2007", "2012", "2014", "2019"];
@@ -107,20 +111,20 @@ d3.csv("data/ternary_data.csv").then(function(data) {
         //triangle
         var chartBackground = wrapper.append("g")
             .attr("id", "grid")
-            .attr("transform", "translate(20,50)");
+            .attr("transform", "translate(20,100)");
 
         //points
         var svg = wrapper
             .append("g")
             .attr("data", function(d){ return d.key })
-            .attr("transform", "translate(20,50)");
+            .attr("transform", "translate(20,100)");
 
         //facet labels
         svg.append("text")
             .text(function (d) {
                 return d.key.replace("область", "обл.")
             })
-            .attr("transform", "translate(-20," + -10 + ")")
+            .attr("transform", "translate(-20," + -20 + ")")
             .attr("x", opt.width / 2)
             .attr("text-anchor", "middle")
             .style("font-weight", "600")
@@ -128,20 +132,22 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             .style("fill", "grey");
 
 
-        // //axis name
-        // svg.append("g")
-        //     .attr("font-size", 16)
-        //     .selectAll(".labels")
-        //     .data([
-        //         { label: "Популісти", pos: [280, 140], rot: 60 },
-        //         { label: "Проукраїнські", pos: [80, 140], rot: -60 },
-        //         { label: "Проросійські", pos: [170, 315], rot: 0 }
-        //     ])
-        //     .enter().append("text")
-        //     .attr("transform", function(d){ return `translate(${d.pos[0]}, ${d.pos[1]}) rotate(${d.rot})`})
-        //     .attr("text-anchor", "middle")
-        //     .text(function(d){ return d.label})
-        //     .style("fill", "grey");
+        //axis name
+        svg.append("g")
+            .attr("font-size", 16)
+            .selectAll(".labels")
+            .data([
+                { label: "проросійські", pos: [290, 170], rot: -60, color: red },
+                { label: "популісти", pos: [65, 170], rot: 60, color: green },
+                { label: "проукраїнські", pos: [170, 10], rot: 0, color: blue }
+            ])
+            .enter().append("text")
+            .attr("transform", function(d){ return `translate(${d.pos[0]}, ${d.pos[1]}) rotate(${d.rot})`})
+            .attr("text-anchor", "middle")
+            .text(function(d){ return d.label})
+            .style("fill", function(d) {
+                return d.color
+            });
 
 
         //ticks
@@ -185,7 +191,6 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 })
                 .append("text")
                 .attr('text-anchor', 'end')
-                // .attr('transform', 'rotate(-120)')
                 .text(function (d) {
                     return v;
                 })
@@ -367,7 +372,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             "y": opt.margin/2 + maxDistanceToCentre
         };
 
-        let colourArr = ['#009601', '#FF2121', '#0887FF']; // *
+        let colourArr = [green, red, blue]; // *
 
         let colourScale = chroma.scale() // *
             .mode('lab')
@@ -492,22 +497,18 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             let x = Math.abs(dx - centre.x);
             let y = Math.abs(dy - centre.y);
 
-
             if (dy < centre.y && dx > centre.x) {
                 d.angle = 180 - (angleTan(x,y) * (180 / Math.PI))
-            }
-
-            else if (dy <= centre.y && dx <= centre.x) {
+            } else if (dy <= centre.y && dx <= centre.x) {
                 d.angle = 220 + (angleTan(x,y) * (180 / Math.PI))
-            }
-
-            else if (dy > centre.y && dx < centre.x) {
-                d.angle =  (angleTan(x,y) * (180 / Math.PI))
-            }
-
-            else if (dy >= centre.y && dx >= centre.x) {
+            } else if (dy >= centre.y && dx >= centre.x) {
                 d.angle =  360 - (angleTan(x,y) * (180 / Math.PI))
             }
+
+            // хз для чого це, воно ні на що візуально не впливає?
+            // else if (dy > centre.y && dx < centre.x) {
+            //     d.angle =  (angleTan(x,y) * (180 / Math.PI))
+            // }
 
             if (d.angle < 60 || d.angle > 300 ) {
                 x = Math.abs(dx - corners.top.x);
@@ -529,16 +530,6 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             d.sat = 0.6 - (d.distance / 2);
             d.lum =  0.2 + (d.distance * 0.8);
 
-            //варіант 1 - жодного впливу на колір, але все прекрасно!
-            // let hslColor = d3.hsl(d.hAngle, d.sat, d.lum);
-
-            //варіант 2 - chroma(colour)
-            // let colour = colourScale(d.angle);
-            // let hslColor = chroma(colour)
-            //     .luminance(d.lum, 'hsl');
-
-
-            // //варіант 3 - colourScale(angle)
             let hslColor = colourScale(d.angle)
                 .luminance(d.lum, 'lab')
                 .saturate(0.1);
