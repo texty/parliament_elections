@@ -534,8 +534,6 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 .luminance(d.lum, 'lab')
                 .saturate(0.1);
 
-            console.log(hslColor);
-
             return hslColor
         }
 

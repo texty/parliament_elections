@@ -355,13 +355,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// initialize the scrollama
+        // initialize the scrollama
         var container = d3.select('#scroll');
         var graphic = container.select('.scroll__graphic');
         var chart = graphic.select('#map');
         var text = container.select('.scroll__text');
-        var step = text.selectAll('.step');
-        var scroller = scrollama();
+        var step = text.selectAll('.step2');
+        var scroller2 = scrollama();
 
 
 
@@ -381,46 +381,48 @@ document.addEventListener("DOMContentLoaded", function() {
             var chartWidth = graphic.node().offsetWidth - chartMargin;
 
             // 3. tell scrollama to update new element dimensions
-            scroller.resize();
+            scroller2.resize();
         }
 
         // scrollama event handlers
         function handleStepEnter(r) {
 
+            console.log(r);
+
             //scroll down
-            if(r.index === 0 && r.direction === "down") {
+            if(r.index === 15 && r.direction === "down") {
 
             }
 
-            if(r.index === 0 && r.direction === "up") {
+            if(r.index === 15 && r.direction === "up") {
                 start();
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data06").classed("active", true);
             }
 
-            if(r.index === 1) {
+            if(r.index === 16) {
                 to_Poltavska_Cherkaska_2007();
                 changeData(2);
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data07").classed("active", true);
             }
 
-            if(r.index === 2 && r.direction === "down") {
+            if(r.index === 17 && r.direction === "down") {
                 to_Dnipro_Nikopol_2012();
                 changeData(3);
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data12").classed("active", true);
             }
 
-            if(r.index === 2 && r.direction === "up") {
+            if(r.index === 17 && r.direction === "up") {
                 to_Dnipro_Nikopol_2012();
             }
 
-            if(r.index === 3 && r.direction === "down") {
+            if(r.index === 18 && r.direction === "down") {
                 to_Vinnitska_Khmelnitska()
             }
 
-            if(r.index === 3 && r.direction === "up") {
+            if(r.index === 18 && r.direction === "up") {
                 changeData(3);
                 to_Vinnitska_Khmelnitska();
                 d3.selectAll(".pane").classed("active", false);
@@ -428,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
 
-            if(r.index === 4) {
+            if(r.index === 19) {
                 to_common();
                 changeData(4);
                 d3.selectAll(".pane").classed("active", false);
@@ -453,11 +455,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             }
 
-            if(r.index === 5 && r.direction === "down") {
+            if(r.index === 20 && r.direction === "down") {
                 to_Volyn();
             }
 
-            if(r.index === 5 && r.direction === "up") {
+            if(r.index === 20 && r.direction === "up") {
                 to_Volyn();
                 changeData(4);
 
@@ -465,7 +467,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 d3.select("#data14").classed("active", true);
             }
 
-            if(r.index === 6) {
+            if(r.index === 21) {
                 changeData(5);
                 to_common();
                 d3.selectAll(".pane").classed("active", false);
@@ -473,7 +475,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             }
 
-            if(r.index === 7) {}
+            if(r.index === 22) {}
         }
 
 
@@ -487,9 +489,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-        function init() {
+        function init1() {
             handleResize();
-            scroller.setup({
+            scroller2.setup({
                 container: '#scroll',
                 graphic: '.scroll__graphic',
                 text: '.scroll__text',
@@ -504,7 +506,7 @@ document.addEventListener("DOMContentLoaded", function() {
             window.addEventListener('resize', handleResize);
         }
 
-        init();
+        init1();
 
    });
 

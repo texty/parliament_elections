@@ -3,7 +3,7 @@
  */
 
 var easing = BezierEasing(0, 0, 0.25, 1);
-var default_zoom = window.innerWidth > 800 ? 6 : 5;
+var default_zoom = window.innerWidth > 800 ? 7 : 6;
 
 function getJSON(url, successHandler, errorHandler) {
     var xhr = typeof XMLHttpRequest != 'undefined'
