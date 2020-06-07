@@ -534,6 +534,8 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 .luminance(d.lum, 'lab')
                 .saturate(0.1);
 
+            console.log(hslColor);
+
             return hslColor
         }
 
@@ -565,7 +567,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
         tp.data_l(target_years, 'key');
     }
 
-    next_L(["2006", "2007", "2012"]);
+    // next_L(["2006", "2007", "2012"]);
     next_P("2019");
 
 

@@ -7,21 +7,59 @@
 // const red = '#FF2121';
 // const blue = '#0887FF';
 
-const target = [
+//однорідні області
+const smooth = ["Львівська область", "Івано-Франківська область", "Тернопільська область", "Донецька область", "Луганська область"];
+
+//строкаті області
+const unsmooth = ["Житомирська область", "Закарпатська область", "Чернівецька область", "Сумська область", "Чернігівська область", "Полтавська область"];
+
+
+//Точки в Закарпатській, Чернівецькій та Сумській обл., про які йде мова в тексті і які треба підсвітити
+const scale_points = [
+
+    //Закарпатська
     "місто Берегове",
     "Берегівський район",
-    "Ужгородський район",
     "Виноградівський район",
+
+    //Чернівецька
     "Герцаївський район",
     "Глибоцький район",
     "Сторожинецький район",
     "Новоселицький район",
+
+    //Сумська
     "Середино-Будський район",
-    "Великописарівський район"
+    "Великописарівський район",
+
+    //Тернопільська
+    "Шумський район",
+    "Лановецький район",
+    "Кременецький район",
+    "Збаразький район",
+
+    //Житомирська область
+    "місто Коростень"
 ];
 
-const smooth = ["Львівська область", "Івано-Франківська область", "Тернопільська область", "Донецька область", "Луганська область"];
-const unsmooth = ["Житомирська область", "Закарпатська область", "Чернівецька область", "Сумська область", "Чернігівська область", "Полтавська область"];
+
+//райони в Чернівецькій області, що були у складі Російської імперії, які теж треба підсвітити по тексту
+const chernivetska = [
+    "Сокирянський район",
+    "Хотинський район",
+    "Кельменецький район",
+    "Новоселицький район"
+];
+
+
+//точки для пояснювального блоку
+const instructions = [
+    {"vector": "ru", "pos": [5, 90, 5], "fill": "#FF2121"},
+    {"vector": "ua", "pos": [90, 5, 5], "fill": "#0887FF"},
+    {"vector": "pop", "pos": [5, 5, 90], "fill": "#009601"},
+    {"vector": "center", "pos": [33, 33, 33], "fill": "white"}
+];
+
 
 
 d3.csv("data/ternary_big.csv").then(function(data) {
@@ -51,10 +89,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     });
 
-    const filtered = data.filter(function(d){
-        return target.includes(d.rayon)
-    });
-
 
     var plot = {
         dataset: []
@@ -62,7 +96,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     var opt = {
         width: 900,
-        height: 900,
+        height: 800,
         side: 800,
         margin: 50,
         axis_labels: ['A', 'B', 'C'],
@@ -70,11 +104,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         tickLabelMargin: 10,
         axisLabelMargin: 40
     };
-
-    // for (var o in userOpt) {
-    //     opt[o] = userOpt[o];
-    // }
-
 
     var w = opt.side;
     var h = Math.sqrt(opt.side * opt.side - (opt.side / 2) * (opt.side / 2));
@@ -110,6 +139,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
 
     let stage = new PIXI.Container();
+
     let renderer = PIXI.autoDetectRenderer(opt.width, opt.height,
         {antialias: !0, transparent: !0, resolution: 1});
 
@@ -148,12 +178,11 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     var rows = 3 ; // *
     var rotateHSL = 180; //*
 
-    var classGrid = "triangle-grid"; //*
     var maxDistanceToCentre = Math.ceil(2 * (h / 3)); //*
 
     var centre = {
         "x": (w / 2) + opt.margin,
-        "y": opt.margin/2 + maxDistanceToCentre
+        "y": opt.margin + maxDistanceToCentre
     };
 
     let colourArr = [green, red, blue]; // *
@@ -181,6 +210,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         let rgb_value = [r, g, b];
         let fillcolor =  "0x" + hex(rgb_value[0]) + hex(rgb_value[1]) + hex(rgb_value[2]);
 
+
         var poly = new PIXI.Graphics();
         poly.clear();
         poly.lineStyle(1, 0x000000, 1);
@@ -195,92 +225,13 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
 
 
-    //////////////////////////////////////////////
-    // Add Points
+
     var points_all = [];
     var lines_all = [];
-
-
-    function draw_all_points() {
-        data.forEach(function(d){
-
-            const point = new PIXI.Graphics();
-
-            if(!isNaN(d.ua_2006) ){
-                //draw point
-                let x = coord([d.ua_2006, d.ru_2006, d.pop_2006]).x;
-                let y = coord([d.ua_2006, d.ru_2006, d.pop_2006]).y;
-
-                let r = ternaryFill(x, y)._rgb[0];
-                let g = ternaryFill(x, y)._rgb[1];
-                let b = ternaryFill(x, y)._rgb[2];
-
-                let rgb_value = [r, g, b];
-                let fillcolor =  "0x" + hex(rgb_value[0]) + hex(rgb_value[1]) + hex(rgb_value[2]);
-
-                point.lineStyle(1, 0x000000, 1);
-                point.beginFill(fillcolor, 1);
-                point.drawCircle(0, 0, 5);
-                point.endFill();
-
-                point.position.x = x;
-                point.position.y = y;
-            }
-
-
-            const tooltipStyle = new PIXI.TextStyle({ fontSize: 14,  fill: "#333" });
-            var message = new PIXI.Text(d.rayon, tooltipStyle);
-
-            point.on('mouseover', function(event) {
-                console.log(point);
-                message.x = 10;
-                message.y = -10;
-                point.message = message;
-                point.addChild(message);
-                stage.removeChild(point);
-                stage.addChild(point);
-            });
-
-            point.on("mouseout", function(event) {
-                point.removeChild(point.message);
-            });
-
-            point.info = [{
-                "rayon": d.rayon,
-                "oblast": d.oblast,
-                "2006": coord([d.ua_2006, d.ru_2006, d.pop_2006]),
-                "2007": coord([d.ua_2007, d.ru_2007, d.pop_2007]),
-                "2012": coord([d.ua_2012, d.ru_2012, d.pop_2012]),
-                "2014": coord([d.ua_2014, d.ru_2014, d.pop_2014]),
-                "2019": coord([d.ua_2019, d.ru_2019, d.pop_2019])
-            }];
-
-            point.interactive = true;
-
-            stage.addChild(point);
-            points_all.push(point);
-
-
-            //прибираємо точки-інструкції
-            instructions.forEach(function(d, i){
-                var current_p = instruction_points[i];
-                stage.removeChild(current_p);
-
-            })
-
-        });
-    }
-
-    const instructions = [
-        {"vector": "ru", "pos": [5, 90, 5], "fill": "#FF2121"},
-        {"vector": "ua", "pos": [90, 5, 5], "fill": "#0887FF"},
-        {"vector": "pop", "pos": [5, 5, 90], "fill": "#009601"},
-        {"vector": "center", "pos": [33, 33, 33], "fill": "white"}
-    ];
-
-
     var instruction_points = [];
 
+    //////////////////////////////////////////////
+    // Точки інструкції
     instructions.forEach(function(d){
         var p = new PIXI.Graphics();
 
@@ -327,71 +278,180 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                 TweenMax.to(current_p, 0, {  pixi: { fillColor: "white" }  })
 
             }
-
         })
     }
 
 
 
+    //////////////////////////////////////////////
+    // Додати всі точки
+    function draw_all_points(df, scale_array, tip_array) {
+        points_all = [];
+
+        df.forEach(function(d){
+
+            var radius = scale_array.includes(d.rayon) ? 10 : 5;
+
+            const point = new PIXI.Graphics();
+            point.clear();
+            
+            if(!isNaN(d.ua_2012) ){
+                //draw point
+                let x = coord([d.ua_2012, d.ru_2012, d.pop_2012]).x;
+                let y = coord([d.ua_2012, d.ru_2012, d.pop_2012]).y;
+
+                let r = ternaryFill(x, y)._rgb[0];
+                let g = ternaryFill(x, y)._rgb[1];
+                let b = ternaryFill(x, y)._rgb[2];
+
+                let rgb_value = [r, g, b];
+                let fillcolor =  "0x" + hex(rgb_value[0]) + hex(rgb_value[1]) + hex(rgb_value[2]);
+
+                point.lineStyle(1, 0x000000, 1);
+                point.beginFill(fillcolor, 1);
+                point.drawCircle(0, 0, radius);
+                point.endFill();
+
+                point.position.x = x;
+                point.position.y = y;
+            }
+
+            const tooltipStyle = new PIXI.TextStyle({
+                fontSize: '16px',
+                fill: "#333",
+                align: "center"
+            });
+
+            //create tooltip
+            var message = new PIXI.Text(d.rayon, tooltipStyle);
+
+            //create white rect behind tip
+            const txtBG = new PIXI.Sprite(PIXI.Texture.WHITE);
+            txtBG.width = message.width, txtBG.height = message.height;
+
+            if(tip_array.includes(d.rayon)) {
+                message.x = radius * 1.5;
+                message.y = -10;
+                txtBG.x = radius * 1.5;
+                txtBG.y = -10;
+                point.message = message;
+                point.background = txtBG;
+                point.addChild(txtBG);
+                point.addChild(message);
+                //можливо закинути їх в окремий array і вмнести наверх, коли всі точки буде додано
+
+            }
+
+            point.on('mouseover', function(event) {
+                message.x = radius * 1.5;
+                message.y = -10;
+                txtBG.x = radius * 1.5;
+                txtBG.y = -10;
+                point.message = message;
+                point.background = txtBG;
+                point.addChild(txtBG);
+                point.addChild(message);
+                stage.removeChild(point);
+                stage.addChild(point);
+            });
+
+            point.on("mouseout", function(event) {
+                point.removeChild(point.message);
+                point.removeChild(point.background);
+            });
+
+            point.info = [{
+                "rayon": d.rayon,
+                "oblast": d.oblast,
+                "2006": coord([d.ua_2006, d.ru_2006, d.pop_2006]),
+                "2007": coord([d.ua_2007, d.ru_2007, d.pop_2007]),
+                "2012": coord([d.ua_2012, d.ru_2012, d.pop_2012]),
+                "2014": coord([d.ua_2014, d.ru_2014, d.pop_2014]),
+                "2019": coord([d.ua_2019, d.ru_2019, d.pop_2019])
+            }];
+
+            point.interactive = true;
+            points_all.push(point);
+
+            point.alpha = 0;
+            stage.addChild(point);
+
+            TweenMax.to(point, 2, {
+                pixi: { alpha: 1 }
+            });
+
+
+            //прибираємо точки-інструкції
+            instructions.forEach(function(d, i){
+                var current_p = instruction_points[i];
+                stage.removeChild(current_p);
+
+            })
+
+        });
+    }
+
+
+    //////////////////////////////////////////////
+    // Додати лінії
+    function drawLines(oblast, years){
+
+
+
+        const filtered = data.filter(function(d){
+            return oblast.includes(d.oblast)
+        });
 
 
 
 
+        filtered.forEach(function(d){
 
-    //
-    // filtered.forEach(function(d){
-    //     const line_06 =  new PIXI.Graphics();
-    //     const line_07 =  new PIXI.Graphics();
-    //     const line_12 =  new PIXI.Graphics();
-    //     const line_14 =  new PIXI.Graphics();
-    //
-    //     //draw line
-    //     line_06.clear();
-    //     line_07.clear();
-    //     line_12.clear();
-    //     line_14.clear();
-    //
-    //     let coord_06 = coord([d.ua_2006, d.ru_2006, d.pop_2006]);
-    //     let coord_07 = coord([d.ua_2007, d.ru_2007, d.pop_2007]);
-    //     let coord_12 = coord([d.ua_2012, d.ru_2012, d.pop_2012]);
-    //     let coord_14 = coord([d.ua_2014, d.ru_2014, d.pop_2014]);
-    //     let coord_19 = coord([d.ua_2019, d.ru_2019, d.pop_2019]);
-    //
-    //     line_06
-    //         .lineStyle(1, 0xDCDCDC , 1)
-    //         .moveTo(coord_06.x, coord_06.y)
-    //         .lineTo(coord_07.x, coord_07.y);
-    //
-    //     line_07
-    //         .lineStyle(1, 0xD3D3D3 , 1)
-    //         .moveTo(coord_07.x, coord_07.y)
-    //         .lineTo(coord_12.x, coord_12.y);
-    //
-    //     line_12
-    //         .lineStyle(1, 0xC0C0C0 , 1)
-    //         .moveTo(coord_12.x, coord_12.y)
-    //         .lineTo(coord_14.x, coord_14.y);
-    //
-    //     line_14
-    //         .lineStyle(1, 0x808080 , 1)
-    //         .moveTo(coord_14.x, coord_14.y)
-    //         .lineTo(coord_19.x, coord_19.y);
-    //
-    //
-    //
-    //     stage.addChild(line_06);
-    //     stage.addChild(line_07);
-    //     stage.addChild(line_12);
-    //     stage.addChild(line_14);
-    //
-    //     lines_all.push(line_06);
-    // });
+            var segment_fill = d.oblast === "Рівненська область" ?  0xFF2121 : 0x808080;
+
+            const line = new PIXI.Graphics();
+            line.info = [{
+                "rayon": d.rayon,
+                "oblast": d.oblast,
+                "2006": coord([d.ua_2006, d.ru_2006, d.pop_2006]),
+                "2007": coord([d.ua_2007, d.ru_2007, d.pop_2007]),
+                "2012": coord([d.ua_2012, d.ru_2012, d.pop_2012]),
+                "2014": coord([d.ua_2014, d.ru_2014, d.pop_2014]),
+                "2019": coord([d.ua_2019, d.ru_2019, d.pop_2019])
+            }];
+
+            years.forEach(function(year, i){
+                if( i < years.length - 1){
+
+                    const segment = new PIXI.Graphics();
+                    segment.clear();
+
+                    let current_year = years[i];
+                    let next_year = years[i+1];
+
+                    let opacity_value = (i * (1/(years.length-1))) + 0.2;
+
+                    segment
+                        .lineStyle(1, segment_fill, opacity_value)
+                        .moveTo(line.info[0][current_year].x, line.info[0][current_year].y)
+                        .lineTo(line.info[0][next_year].x, line.info[0][next_year].y);
+
+                    lines_all.push(segment);
+                    stage.addChild(segment);
+
+                }
+
+            });
+
+        });
+
+    }
 
 
 
-
+    //////////////////////////////////////////////
+    // Поміняти рік
     function change_data(year){
-        console.log(points_all[1]);
         points_all.forEach(function(p, i) {
             var point = points_all[i];
 
@@ -418,13 +478,14 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                     pixi: { fillColor: newFill }
                 })
             } else {
-                point.alpha = 0;
+                 point.alpha = 0;
             }
         });
     }
 
 
-
+    //////////////////////////////////////////////
+    // Однорідні області
     var show_smooth = function(){
         points_all.forEach(function(p, i) {
             var point = points_all[i];
@@ -439,46 +500,72 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     };
 
-
-
-
-    function filter_data(oblast){
+    //////////////////////////////////////////////
+    // Неоднорідні області
+    var show_unsmooth = function(){
         points_all.forEach(function(p, i) {
             var point = points_all[i];
             point.alpha = 1;
 
-            if(! target.includes(point.info[0].rayon)) {
-                console.log("includes");
+            if(!unsmooth.includes(point.info[0].oblast)) {
                 TweenMax.to(point, 0.5, {
-                    pixi: {alpha: 0.3 }
+                    pixi: {alpha: 0.2 }
                 })
             }
-
-            if(point.info[0].oblast != oblast) {
-                TweenMax.to(point, 0.5, {
-                    pixi: { alpha: 0 }
-                })
-            }
-
-            if(target.includes(point.info[0].rayon)) {
-                console.log("includes");
-                TweenMax.to(point, 0.5, {
-                    pixi: { lineWidth: 2 }
-                })
-            }
-
-
-
         });
+
+    };
+
+    /////////////////////////////////////////////
+    // Показати конкретну область
+    // function filter_data(oblast, array){
+    //     points_all.forEach(function(p, i) {
+    //         var point = points_all[i];
+    //         point.alpha = 1;
+    //
+    //
+    //         if(!array.includes(point.info[0].rayon)) {
+    //             TweenMax.to(point, 0.5, {
+    //                 pixi: {alpha: 1, scale: 1 }
+    //             })
+    //         }
+    //
+    //         if(point.info[0].oblast != oblast) {
+    //             TweenMax.to(point, 0.5, {
+    //                 pixi: { alpha: 0 }
+    //             })
+    //         }
+    //
+    //         if(array.includes(point.info[0].rayon)) {
+    //             TweenMax.to(point, 0.5, {
+    //                 pixi: { lineWidth: 2, scale: 1.5 }
+    //             });
+    //         }
+    //     });
+    //
+    //
+    //     lines_all.forEach(function(p, i) {
+    //         stage.removeChild(lines_all[i])
+    //     })
+    // }
+
+
+    function filter_data(oblast, scale_array, tip_array){
+
+        points_all.forEach(function(p, i) {
+            stage.removeChild(points_all[i]);
+        });
+
+        points_all = [];
+
+        let input = data.filter(function(d){  return oblast.includes(d.oblast)  });
+
+        draw_all_points(input,  scale_array, tip_array);
+
+        lines_all.forEach(function(p, i) {
+            stage.removeChild(lines_all[i])
+        })
     }
-
-
-
-
-
-
-
-
 
 
     animate();
@@ -632,6 +719,13 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                 .luminance(d.lum, 'lab')
                 .saturate(0.1);
 
+            //костиль для світло-зеленої зони,  яка шлючить
+            if(hslColor._rgb[0] === 255 && hslColor._rgb[1] === 255 && hslColor._rgb[2] === 255){
+                hslColor._rgb[0] = 202;
+                hslColor._rgb[1] = 230;
+                hslColor._rgb[2] = 193;
+            }
+
             return hslColor
         }
 
@@ -649,24 +743,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     function rgbToHex(r, g, b) {
         return "0x" + componentToHex(r) + componentToHex(g) + componentToHex(b);
     }
-
-
-//ACTIVATE!
-    var plot_opts = {
-        side: 700,
-        margin: 50,
-        // axis_labels: ['націонал-демократичні', 'проросійські', 'популістичні'],
-        axis_ticks: d3.range(0, 101, 20),
-        minor_axis_ticks: d3.range(0, 101, 5)
-    };
-
-    // var tp = ternaryPlot('#scatter-plot', plot_opts);
-
-    // function next_P(year) {
-    //     tp.data_p(year, 'rayon');
-    // }
-
-    // next_P("2019");
 
 
     // initialize the scrollama
@@ -715,28 +791,68 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             run_instruction("pop");
         }
 
-        if(r.index === 3) {
-            draw_all_points();
+        if(r.index === 3 && r.direction === "down") {
+            d3.selectAll(".test_big").style("display", "block");
+            draw_all_points(data, [], []);
+        }
+
+        if(r.index === 3 && r.direction === "up") {
+            d3.selectAll(".test_big").style("display", "block");
+            points_all.forEach(function(p, i) {
+                points_all[i].alpha = 1;
+            })
         }
 
 
         if(r.index === 4) {
+            change_data("2012");
             show_smooth();
         }
 
-        if(r.index === 5 && r.direction === "down") {
-
-        }
-
-        if(r.index === 5 && r.direction === "up") {
-
+        if(r.index === 5) {
+            show_unsmooth()
         }
 
         if(r.index === 6) {
+            change_data("2012");
+            filter_data("Закарпатська область", scale_points, scale_points)
+        }
+
+
+        if(r.index === 7) {
+            // drawLines(["Закарпатська область"], ["2012", "2014", "2019"]);
+            change_data("2019");
+        }
+
+
+        if(r.index === 8) {
+            change_data("2012");
+            filter_data("Чернівецька область", scale_points, scale_points)
+        }
+
+        if(r.index === 9) {
 
         }
 
-        if(r.index === 7) {}
+        if(r.index === 10) {
+            filter_data("Чернівецька область", chernivetska, ["Кельменецький район", "Сокирянський район"])
+        }
+        
+        if(r.index === 11) {
+            filter_data("Тернопільська область", scale_points, ["Шумський район", "Лановецький район", "Збаразький район"])
+        }
+
+        if(r.index === 12) {
+            // drawLines(["Волинська область", "Рівненська область"], ["2006", "2007", "2012"]);
+        }
+
+        if(r.index === 12) {
+            filter_data("Сумська область", scale_points, scale_points)
+        }
+
+        if(r.index === 13) {
+            filter_data("Житомирська область", scale_points, scale_points)
+        }
     }
 
 
@@ -769,41 +885,10 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     init();
 
-
-
-
-
-
-
-
-
-
-
-
-    d3.selectAll('.test_big').on('click', function (e) {
-        let year = d3.select(this).attr("id").replace("test_", '');
+    d3.selectAll(".test_big").on("click", function(d){
+        let year = d3.select(this).attr("id").replace("show_", "");
         change_data(year);
-        
-    });
-
-    d3.selectAll('#test_scrolly').on('click', function(e){
-        filter_data("Закарпатська область")
-    });
-
-    d3.select("#show_point_ru").on('click', function (e) {
-        run_instruction("ru")
-    });
-
-    d3.select("#show_point_ua").on('click', function (e) {
-        run_instruction("ua")
-    });
-
-    d3.select("#show_point_pop").on('click', function (e) {
-        run_instruction("pop")
-    });
-
-    d3.select("#show_point_center").on('click', function (e) {
-        run_instruction("center")
     })
+
 
 });

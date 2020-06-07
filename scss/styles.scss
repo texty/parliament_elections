@@ -81,12 +81,25 @@ canvas {
   width: 100%;
 }
 
+.test_big {
+  margin-right: 10px;
+  display: none;
+}
+
 #scroll, #scroll_t {
   position: relative;
   width: 100%;
   margin: 100px 0 0 auto;
   display: grid;
   grid-template-columns: 40% auto;
+
+  .buttons {
+    min-height: 30px;
+    margin: 10px auto;
+    max-width: max-content;
+    width: auto;
+    display: flex;
+  }
 }
 
 .scroll__graphic {
