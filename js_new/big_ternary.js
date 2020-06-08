@@ -777,26 +777,13 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     // scrollama event handlers
     function handleStepEnter(r) {
 
-        //scroll down
-        if(r.index === 0) {
-            run_instruction("center")
-        }
 
-        if(r.index === 1) {
-            run_instruction("ru")
-        }
-
-        if(r.index === 2 && r.direction === "down") {
-            run_instruction("ua");
-            run_instruction("pop");
-        }
-
-        if(r.index === 3 && r.direction === "down") {
+        if(r.index === 8 && r.direction === "down") {
             d3.selectAll(".test_big").style("display", "block");
             draw_all_points(data, [], []);
         }
 
-        if(r.index === 3 && r.direction === "up") {
+        if(r.index === 8 && r.direction === "up") {
             d3.selectAll(".test_big").style("display", "block");
             points_all.forEach(function(p, i) {
                 points_all[i].alpha = 1;
@@ -804,53 +791,49 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         }
 
 
-        if(r.index === 4) {
+        if(r.index === 9) {
             change_data("2012");
             show_smooth();
         }
 
-        if(r.index === 5) {
+        if(r.index === 10) {
             show_unsmooth()
         }
 
-        if(r.index === 6) {
+        if(r.index === 11) {
             change_data("2012");
             filter_data("Закарпатська область", scale_points, scale_points)
         }
 
 
-        if(r.index === 7) {
+        if(r.index === 12) {
             // drawLines(["Закарпатська область"], ["2012", "2014", "2019"]);
             change_data("2019");
         }
 
 
-        if(r.index === 8) {
+        if(r.index === 13) {
             change_data("2012");
             filter_data("Чернівецька область", scale_points, scale_points)
         }
 
-        if(r.index === 9) {
+        if(r.index === 14) {
 
         }
 
-        if(r.index === 10) {
+        if(r.index === 15) {
             filter_data("Чернівецька область", chernivetska, ["Кельменецький район", "Сокирянський район"])
         }
         
-        if(r.index === 11) {
+        if(r.index === 16) {
             filter_data("Тернопільська область", scale_points, ["Шумський район", "Лановецький район", "Збаразький район"])
         }
 
-        if(r.index === 12) {
-            // drawLines(["Волинська область", "Рівненська область"], ["2006", "2007", "2012"]);
-        }
-
-        if(r.index === 12) {
+        if(r.index === 17) {
             filter_data("Сумська область", scale_points, scale_points)
         }
 
-        if(r.index === 13) {
+        if(r.index === 18) {
             filter_data("Житомирська область", scale_points, scale_points)
         }
     }
