@@ -24,10 +24,10 @@ var map = new mapboxgl.Map({
             tiles: ["https://texty.github.io/parliament_elections/tiles/lines_06/{z}/{x}/{y}.pbf"]
         });
 
-        map.addSource('arrows_06', {
-            type: 'vector',
-            tiles: ["https://texty.github.io/parliament_elections/tiles/arrows_06/{z}/{x}/{y}.pbf"]
-        });
+        // map.addSource('arrows_06', {
+        //     type: 'vector',
+        //     tiles: ["https://texty.github.io/parliament_elections/tiles/arrows_06/{z}/{x}/{y}.pbf"]
+        // });
 
         var red_url = 'img/headarrow.png';
 
