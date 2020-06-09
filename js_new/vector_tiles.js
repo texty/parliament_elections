@@ -14,9 +14,6 @@ var map = new mapboxgl.Map({
 });
 
 
-    let zelenskiColor = "#4e9a69";
-    let poroshenkoColor = "#790a4f";
-    let closeResultColor = "#4D7794";
 
     // map.scrollZoom.disable();
 
@@ -64,14 +61,17 @@ var map = new mapboxgl.Map({
                 'source': 'election_districts',
                 "source-layer": "example_4326",
                 'layout': {
-                    'symbol-placement': 'point',
+                    'symbol-placement': "point",
                     'symbol-spacing': 1,
                     'icon-allow-overlap': true,
-                    'icon-ignore-placement': true,
+                    //'icon-ignore-placement': true,
                     'icon-image': 'arrow',
                     'icon-size': 0.5,
-                    'visibility': 'visible',
-                    'icon-rotate': "lineBearing"
+                    'visibility': 'visible'
+                     // "icon-rotate": {
+                     //     "property": "Latitude",
+                     //     "type": "identity"
+                     // }
 
                 }
             });
