@@ -15,7 +15,7 @@ var map = new mapboxgl.Map({
 
 
 
-    // map.scrollZoom.disable();
+    map.scrollZoom.disable();
 
     map.on('load', function () {
 
