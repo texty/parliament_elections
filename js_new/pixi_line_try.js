@@ -79,7 +79,7 @@ var zoomChangeTs = null;
 
 document.addEventListener("DOMContentLoaded", function() {
 
-        getJSON('data/new_map_data.json', function (markers) {
+        getJSON('https://raw.githubusercontent.com/texty/parliament_elections/master/data/new_map_data.json', function (markers) {
 
            markers.forEach(function(d){
                 d.Latitude = +d.Latitude;
@@ -185,6 +185,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
 
                     renderer.render(container);
+
+
+                    // capture immediately
+                    // var data = renderer.view.toDataURL("image/png", 1);
+                    // $('img#render').attr('src', data);
 
 
                 }, pixiContainer, {

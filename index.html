@@ -15,13 +15,23 @@
     <script type="text/javascript" src="lib/d3v5.min.js"></script>
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.1.6/d3.min.js"></script>-->
-    <script src="https://unpkg.com/d3-interpolate-path/build/d3-interpolate-path.min.js"></script>
+    <!--<script src="https://unpkg.com/d3-interpolate-path/build/d3-interpolate-path.min.js"></script>-->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script type="text/javascript" src='lib/scrollama.min.js'></script>
     <script type="text/javascript" src="lib/chroma.js"></script>
     <script type="text/javascript" src="lib/jscolor.js"></script>
     <!--<script src="lib/swoopy-drag.js"></script>-->
+
+
+
+    <!-- mapbox.gl -->
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css" rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
 
 
     <!--&lt;!&ndash;Maptalks gl_deck gl&ndash;&gt;-->
@@ -38,16 +48,13 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
           integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
           crossorigin=""/>
-    <script src="lib/jquery-3.3.1.js"></script>
+    <!--<script src="lib/jquery-3.3.1.js"></script>-->
     <script src="lib/example.min.js"></script>
     <script src="lib/bezier-easing.js"></script>
     <script src="lib/tools.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/PixiPlugin.min.js?v=1.2-"></script>
-
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.0.2/pixi.min.js"></script>-->
     <script src="lib/leaflet-providers.js"></script>
 
 
@@ -86,7 +93,6 @@
 
 
 
-
 <!--<section>-->
 <!--<div id="split-map"></div>-->
 <!--<div style="display: block; width: max-content; margin: 10px auto;">-->
@@ -108,12 +114,17 @@
 
 
 </section>
+<img style="width: 100%;" id="render"/>
+
 
 <section id='scroll'>
     <!--  graphic container  -->
     <div class='scroll__graphic sticky'>
 
-        <div id="map" class="container"></div>
+        <div id="map" class="container">
+
+
+        </div>
         <div class="change" style="">
             <div>
                 <p id="data06" data="2006" class="pane active">2006</p>
@@ -329,8 +340,6 @@
 
     <p>Це не всі приклади, які ви можете віднайти на графіку і які випадають з класичної схеми поділу на Схід та Захід, лінія між якими хоча й кристалізувалася на електоральних мапах, але є проникною. А якщо дивитися на рівні виборчих дільниць, то ще більш проникною ніж на рівні районів та міст.</p>
 
-    <p>Можна піти далі і представити кожну дільницю у вигляді символічного трикутника. Що далі </p>
-
 
     <!--<p>Тут хотілося б повернутись до ідеї, про яку було сказано на початку, про те, зо другі вибори поспіль траєкторії голосування для всіх регіонів України є схожими.</p>-->
     <!--<p>На графіку нижче траєкторії голосування за 2006, 2014 та 2019 рр. Обирайте ті роки, які цікаві і порівнюйте області і райони між собою</p>-->
@@ -482,7 +491,9 @@
 <!--<script src="js_new/ternary_points_update.js"></script>-->
 
 
-<script src="js_new/pixi_line_try.js"></script>
+<!--<script src="js_new/pixi_line_try.js"></script>-->
+<!--<script src="js_new/imageOvarlay.js"></script>-->
+<script src="js_new/vector_tiles.js"></script>
 <script src="js_new/ternary_points_turn_over_try.js"></script>
 <script src="js_new/big_ternary.js"></script>
 
