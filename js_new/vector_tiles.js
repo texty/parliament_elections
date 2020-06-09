@@ -5,9 +5,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZHJpbWFjdXMxODIiLCJhIjoiWGQ5TFJuayJ9.6sQHpjf_
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'style3.json',
-    minZoom: 6, //restrict map zoom
+    minZoom: 5, //restrict map zoom
     maxZoom: 10,
-    zoom: 6,
+    zoom: 5,
     center: [32.259271, 48.518688],
     hash: false,
     tap: false
@@ -29,22 +29,21 @@ var map = new mapboxgl.Map({
             tiles: ["https://texty.github.io/parliament_elections/tiles/arrows_06/{z}/{x}/{y}.pbf"]
         });
 
-        var url = 'img/headarrow.png';
+        var red_url = 'img/headarrow.png';
 
-        map.loadImage(url, function(err, image) {
+        map.loadImage(red_url, function(err, red) {
             if (err) {
                 console.error('err image', err);
                 return;
             }
 
-
-            map.addImage('arrow', image);
+        map.addImage('red_arrow', red);
 
         var results_layer = map.addLayer({
             "id": "election_data",
             'type': 'line',
             "source": "election_districts",
-            "source-layer": "example_4326",
+            "source-layer": "lines_4326",
             'layout': {
 
                 'line-join': 'round',
@@ -63,14 +62,14 @@ var map = new mapboxgl.Map({
             map.addLayer({
                 'id': 'arrow-layer',
                 'type': 'symbol',
-                'source': 'election_districts',
-                "source-layer": "example_4326",
+                'source': 'arrows_06',
+                "source-layer": "arrows_4326",
                 'layout': {
                     'symbol-placement': "point",
                     'symbol-spacing': 1,
                     'icon-allow-overlap': true,
                     // 'icon-ignore-placement': true,
-                    'icon-image': 'arrow',
+                    'icon-image': 'red_arrow',
                     'icon-size': 0.5,
                     'visibility': 'visible',
                      "icon-rotate": {
