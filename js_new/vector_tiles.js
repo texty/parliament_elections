@@ -24,6 +24,11 @@ var map = new mapboxgl.Map({
             tiles: ["https://texty.github.io/parliament_elections/source_06/{z}/{x}/{y}.pbf"]
         });
 
+        map.addSource('arrows_06', {
+            type: 'vector',
+            tiles: ["https://texty.github.io/parliament_elections/tiles/arrows_06/{z}/{x}/{y}.pbf"]
+        });
+
         var url = 'img/headarrow.png';
 
         map.loadImage(url, function(err, image) {
@@ -64,14 +69,14 @@ var map = new mapboxgl.Map({
                     'symbol-placement': "point",
                     'symbol-spacing': 1,
                     'icon-allow-overlap': true,
-                    //'icon-ignore-placement': true,
+                    // 'icon-ignore-placement': true,
                     'icon-image': 'arrow',
                     'icon-size': 0.5,
-                    'visibility': 'visible'
-                     // "icon-rotate": {
-                     //     "property": "Latitude",
-                     //     "type": "identity"
-                     // }
+                    'visibility': 'visible',
+                     "icon-rotate": {
+                         "property": "angle",
+                         "type": "identity"
+                     }
 
                 }
             });
