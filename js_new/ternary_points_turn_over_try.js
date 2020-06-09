@@ -305,6 +305,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
         // Add Points
         plot.data_p = function (year, bindBy) {
 
+            var circles;
             svg.each(function(){
                 let obl = d3.select(this).attr("data");
 
@@ -314,7 +315,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
 
                 plot.dataset = points_data;
 
-                var circles = d3.select(this).selectAll("circle")
+                circles = d3.select(this).selectAll("circle")
                     .data(points_data.map(function (d) {
                         return {"coord": coord([d.ua, d.ru, d.pop]), "rayon": d.rayon, "ua": d.ua, "ru": d.ru, "pop": d.pop };
                     }), function (d, i) {
@@ -324,7 +325,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 circles
                     .enter()
                     .append("circle")
-                    .attr('class', "tip")
+                    .attr('class', "circle-tip")
                     .transition().duration(500)
                     .attr("cx", function (d) { return d.coord.x; })
                     .attr("cy", function (d) { return d.coord.y; })
@@ -334,7 +335,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
 
                 circles
                     .transition().duration(500)
-                    .attr('class', "tip")
+                    .attr('class', "circle-tip")
                     .attr("cx", function (d) { return d.coord.x; })
                     .attr("cy", function (d) { return d.coord.y; })
                     .style("fill", function(d) { return ternaryFill(d.coord.x, d.coord.y) })
@@ -347,8 +348,30 @@ d3.csv("data/ternary_data.csv").then(function(data) {
 
             });
 
+            //функція пошуку по точках
+            $("#filter").keyup(function () {
+                var value = $(this).val();
+                if (value) {
+                    var i = 0; var re = new RegExp(value, "i");
 
-            tippy('.tip', {
+
+                    var points = d3.selectAll(".circle-tip");
+                    points.each(function(circle){
+                        console.log(circle.rayon);
+                        if (!circle.rayon.match(re)) {
+                            d3.select(this).style("visibility", "hidden");
+                        } else {
+                            d3.select(this).style("visibility", "visible");
+                        }
+                        i++
+                    });
+                } else {
+                    circles.style("visibility", "visible");
+                }
+            }).keyup();
+
+
+            tippy('.circle-tip', {
                 arrow: false,
                 arrowType: 'round',
                 allowHTML: true,
@@ -592,6 +615,10 @@ d3.csv("data/ternary_data.csv").then(function(data) {
         // next_L(seleted_years);
         d3.event.preventDefault();
     });
+
+
+
+
 
 
     // d3.selectAll('.update').on('click', function (e) {

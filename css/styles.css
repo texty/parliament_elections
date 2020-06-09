@@ -447,7 +447,7 @@ section.text {
   stroke: #6d6d6d;
   opacity: 0.2; }
 
-circle.tip {
+circle.circle-tip {
   opacity: 1;
   stroke: grey; }
 
