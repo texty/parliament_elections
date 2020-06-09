@@ -39,6 +39,27 @@ var map = new mapboxgl.Map({
 
         map.addImage('red_arrow', red);
 
+            map.addLayer({
+                'id': 'arrow-layer',
+                'type': 'symbol',
+                'source': 'election_districts',
+                "source-layer": "lines_4326",
+                'layout': {
+                    'symbol-placement': "point",
+                    'symbol-spacing': 1,
+                    'icon-allow-overlap': true,
+                    // 'icon-ignore-placement': true,
+                    'icon-image': 'red_arrow',
+                    'icon-size': 0.3,
+                    'visibility': 'visible',
+                    "icon-rotate": {
+                        "property": "angle",
+                        "type": "identity"
+                    }
+
+                }
+            });
+
         var results_layer = map.addLayer({
             "id": "election_data",
             'type': 'line',
@@ -53,32 +74,13 @@ var map = new mapboxgl.Map({
             },
             "paint": {
                 'line-color': ["get",  "color_2006"],
-                'line-width': 2
+                'line-width': 1
             }
         }, 'place_other');
 
 
 
-            map.addLayer({
-                'id': 'arrow-layer',
-                'type': 'symbol',
-                'source': 'arrows_06',
-                "source-layer": "arrows_4326",
-                'layout': {
-                    'symbol-placement': "point",
-                    'symbol-spacing': 1,
-                    'icon-allow-overlap': true,
-                    // 'icon-ignore-placement': true,
-                    'icon-image': 'red_arrow',
-                    'icon-size': 0.5,
-                    'visibility': 'visible',
-                     "icon-rotate": {
-                         "property": "angle",
-                         "type": "identity"
-                     }
 
-                }
-            });
 
 
         });
