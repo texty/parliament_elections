@@ -63,7 +63,7 @@ var map = new mapboxgl.Map({
 
 
 
-                    'icon-size': 0.25,
+                    'icon-size': 0.20,
                     'visibility': 'visible',
                     "icon-rotate": {
                         "property": "angle",
@@ -108,7 +108,7 @@ var map = new mapboxgl.Map({
 
 
 
-                'icon-size': 0.25,
+                'icon-size': 0.20,
                 'visibility': 'visible',
                 "icon-rotate": {
                     "property": "angle",
@@ -152,7 +152,7 @@ var map = new mapboxgl.Map({
 
 
 
-                    'icon-size': 0.25,
+                    'icon-size': 0.20,
                     'visibility': 'visible',
                     "icon-rotate": {
                         "property": "angle",
