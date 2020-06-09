@@ -781,23 +781,24 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         if(r.index === 8 && r.direction === "down") {
             d3.selectAll(".test_big").style("display", "block");
             draw_all_points(data, [], []);
+            show_smooth();
         }
 
         if(r.index === 8 && r.direction === "up") {
             d3.selectAll(".test_big").style("display", "block");
-            points_all.forEach(function(p, i) {
-                points_all[i].alpha = 1;
-            })
         }
 
 
         if(r.index === 9) {
             change_data("2012");
-            show_smooth();
+            show_unsmooth()
         }
 
         if(r.index === 10) {
-            show_unsmooth()
+            points_all.forEach(function(p, i) {
+                points_all[i].alpha = 1;
+            });
+
         }
 
         if(r.index === 11) {
