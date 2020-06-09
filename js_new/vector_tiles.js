@@ -24,7 +24,7 @@ var map = new mapboxgl.Map({
 
         map.addSource('election_districts', {
             type: 'vector',
-            tiles: ["https://texty.github.io/parliament_elections/tiles/{z}/{x}/{y}.pbf"]
+            tiles: ["https://texty.github.io/parliament_elections/source_06/{z}/{x}/{y}.pbf"]
         });
 
         var results_layer = map.addLayer({
