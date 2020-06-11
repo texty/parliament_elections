@@ -43,6 +43,7 @@ const scale_points = [
 ];
 
 
+
 //райони в Чернівецькій області, що були у складі Російської імперії, які теж треба підсвітити по тексту
 const chernivetska = [
     "Сокирянський район",
@@ -59,6 +60,8 @@ const instructions = [
     {"vector": "pop", "pos": [5, 5, 90], "fill": "#009601"},
     {"vector": "center", "pos": [33, 33, 33], "fill": "white"}
 ];
+
+
 
 
 
@@ -97,9 +100,9 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     var opt = {
         width: 900,
         height: 800,
-        side: 800,
-        margin: 50,
-        axis_labels: ['A', 'B', 'C'],
+        side: 700,
+        margin: 100,
+        axis_labels: ['проукраїнські', 'проросійські', 'популістські'],
         axis_ticks: [0, 20, 40, 60, 80, 100],
         tickLabelMargin: 10,
         axisLabelMargin: 40
@@ -144,6 +147,26 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         {antialias: !0, transparent: !0, resolution: 1});
 
     document.getElementById("big_ternary").appendChild(renderer.view);
+
+
+
+    const tick_labels = [
+        { label: "проросійські", pos: [0, 55, 100 - 55], rot: -45, color: red, transform: 80 },
+        { label: "популісти", pos: [100 - 35, 0, 35], rot: 45, color: green, transform: 80 },
+        { label: "проукраїнські", pos: [55, 100 - 55, 0], rot: 0, color: blue, transform: -60 }
+    ];
+
+    tick_labels.forEach(function (v) {
+        const style_labels = new PIXI.TextStyle({ fontSize: 18,  fill: v.color, anchor: (0.5, 0.5) });
+        var tick_label = new PIXI.Text(v.label, style_labels);
+        tick_label.position.x = coord(v.pos).x;
+        tick_label.position.y = coord(v.pos).y + v.transform;
+        tick_label.rotation = v.rot;
+        stage.addChild(tick_label);
+
+
+    });
+
 
     opt.axis_ticks.forEach(function (v) {
         var coord1 = coord([v, 100 - v, 0]);

@@ -124,7 +124,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             .text(function (d) {
                 return d.key.replace("область", "обл.")
             })
-            .attr("transform", "translate(-20," + -20 + ")")
+            .attr("transform", "translate(-20," + -40 + ")")
             .attr("x", opt.width / 2)
             .attr("text-anchor", "middle")
             .style("font-weight", "600")
