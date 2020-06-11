@@ -438,7 +438,8 @@ section.text {
 #scatter-plot .c-axis.tick-text {
   fill: #009601; }
 #scatter-plot .tick-text {
-  font-size: 12px; }
+  font-size: 12px;
+  opacity: 0.7; }
 #scatter-plot path.tip {
   fill: none;
   opacity: 1;

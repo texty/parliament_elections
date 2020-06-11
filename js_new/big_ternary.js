@@ -100,8 +100,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     var opt = {
         width: 900,
         height: 800,
-        side: 700,
-        margin: 100,
+        side: 600,
+        margin: 150,
         axis_labels: ['проукраїнські', 'проросійські', 'популістські'],
         axis_ticks: [0, 20, 40, 60, 80, 100],
         tickLabelMargin: 10,
@@ -151,13 +151,13 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
 
     const tick_labels = [
-        { label: "проросійські", pos: [0, 55, 100 - 55], rot: -45, color: red, transform: 80 },
-        { label: "популісти", pos: [100 - 35, 0, 35], rot: 45, color: green, transform: 80 },
-        { label: "проукраїнські", pos: [55, 100 - 55, 0], rot: 0, color: blue, transform: -60 }
+        { label: "проросійських", pos: [0, 55, 100 - 55], rot: -45, color: red, transform: 80 },
+        { label: "популістських", pos: [100 - 35, 0, 35], rot: 45, color: green, transform: 80 },
+        { label: "рівень підтримки проукраїнських сил", pos: [75, 100 - 75, 0], rot: 0, color: blue, transform: -60 }
     ];
 
     tick_labels.forEach(function (v) {
-        const style_labels = new PIXI.TextStyle({ fontSize: 18,  fill: v.color, anchor: (0.5, 0.5) });
+        const style_labels = new PIXI.TextStyle({ fontSize: 18,  fill: v.color, anchor: (0.5, 0.5), letterSpacing: 0.5 });
         var tick_label = new PIXI.Text(v.label, style_labels);
         tick_label.position.x = coord(v.pos).x;
         tick_label.position.y = coord(v.pos).y + v.transform;
@@ -801,28 +801,29 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     function handleStepEnter(r) {
 
 
-        if(r.index === 8 && r.direction === "down") {
+        if(r.index === 8) {
             d3.selectAll(".test_big").style("display", "block");
+            points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
             draw_all_points(data, [], []);
             show_smooth();
         }
-
-        if(r.index === 8 && r.direction === "up") {
-            d3.selectAll(".test_big").style("display", "block");
-        }
-
 
         if(r.index === 9) {
             change_data("2012");
             show_unsmooth()
         }
 
-        if(r.index === 10) {
+        if(r.index === 10 && r.direction === "down") {
             points_all.forEach(function(p, i) {
                 points_all[i].alpha = 1;
             });
-
         }
+
+        if(r.index === 10 && r.direction === "up") {
+            points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
+            draw_all_points(data, [], []);
+        }
+
 
         if(r.index === 11) {
             change_data("2012");

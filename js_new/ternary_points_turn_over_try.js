@@ -124,7 +124,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             .text(function (d) {
                 return d.key.replace("область", "обл.")
             })
-            .attr("transform", "translate(-20," + -40 + ")")
+            .attr("transform", "translate(-20," + -20 + ")")
             .attr("x", opt.width / 2)
             .attr("text-anchor", "middle")
             .style("font-weight", "600")
@@ -132,29 +132,29 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             .style("fill", "grey");
 
 
-        //axis name
-        svg.append("g")
-            .attr("font-size", 16)
-            .selectAll(".labels")
-            .data([
-                { label: "проросійські", pos: [290, 170], rot: -60, color: red },
-                { label: "популісти", pos: [65, 170], rot: 60, color: green },
-                { label: "проукраїнські", pos: [170, 10], rot: 0, color: blue }
-            ])
-            .enter().append("text")
-            .attr("transform", function(d){ return `translate(${d.pos[0]}, ${d.pos[1]}) rotate(${d.rot})`})
-            .attr("text-anchor", "middle")
-            .text(function(d){ return d.label})
-            .style("fill", function(d) {
-                return d.color
-            });
+        // //axis name
+        // svg.append("g")
+        //     .attr("font-size", 16)
+        //     .selectAll(".labels")
+        //     .data([
+        //         { label: "проросійські", pos: [290, 170], rot: -60, color: red },
+        //         { label: "популісти", pos: [65, 170], rot: 60, color: green },
+        //         { label: "проукраїнські", pos: [170, 10], rot: 0, color: blue }
+        //     ])
+        //     .enter().append("text")
+        //     .attr("transform", function(d){ return `translate(${d.pos[0]}, ${d.pos[1]}) rotate(${d.rot})`})
+        //     .attr("text-anchor", "middle")
+        //     .text(function(d){ return d.label})
+        //     .style("fill", function(d) {
+        //         return d.color
+        //     });
 
 
         //ticks
         var axes = svg.append('g').attr('class', 'axes');
         opt.axis_ticks.forEach(function (v) {
-            var coord4 = coord([v, 0, 100 - v]);
-            var coord1 = coord([v, 100 - v, 0]);
+            var coord4 = coord([v, 20, 100 - v]);
+            var coord1 = coord([v, 100 - v, -8]);
             var coord2= coord([0, 100 - v, v]);
             var coord3 = coord([100 - v, 0, v]);
 
@@ -164,9 +164,9 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                     return 'translate(' + coord1.x + ',' + coord1.y + ')'
                 })
                 .append("text")
-                .attr('transform', 'rotate(60)')
+                // .attr('transform', 'rotate(60)')
                 .attr('text-anchor', 'end')
-                .attr('x', -opt.tickLabelMargin)
+                .attr('x', 0)
                 .text(function (d) {
                     return v;
                 })

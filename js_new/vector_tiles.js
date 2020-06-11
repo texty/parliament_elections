@@ -51,145 +51,180 @@ map.on('load', function () {
             tiles: ["https://texty.github.io/parliament_elections/tiles/lines_06/{z}/{x}/{y}.pbf"]
         });
 
-        // map.addSource('arrows_06', {
-        //     type: 'vector',
-        //     tiles: ["https://texty.github.io/parliament_elections/tiles/arrows_06/{z}/{x}/{y}.pbf"]
-        // });
-
         var red_url = 'img/red-triangle.png';
         var blue_url = 'img/blue-triangle.png';
         var green_url = 'img/green-triangle.png';
 
-        map.loadImage(red_url, function(err, red) {
-            if (err) {
-                console.error('err image', err);
-                return;
-            }
-
-        map.addImage('red_arrow', red);
-
-            map.addLayer({
-                'id': 'arrow-layer-red',
-                'type': 'symbol',
-                'source': 'election_districts',
-                "source-layer": "lines_4326",
-                'layout': {
-                    'symbol-placement': "point",
-                    'symbol-spacing': 1,
-                    'icon-allow-overlap': true,
-                    // 'icon-ignore-placement': true,
-                    //'icon-image': 'red_arrow',
-
-                    "icon-image": [
-                        "match",
-                        ["get","color_2006"],
-                        "red",
-                        "red_arrow",
-                        ""
-                    ],
-
-
-
-                    'icon-size': 0.20,
-                    'visibility': 'visible',
-                    "icon-rotate": {
-                        "property": "angle",
-                        "type": "identity"
-                    }
-
+        function add_year(source, source_layer) {
+            map.loadImage(red_url, function (err, red) {
+                if (err) {
+                    console.error('err image', err);
+                    return;
                 }
+
+                map.addImage('red_arrow', red);
+
+                map.addLayer({
+                    'id': 'arrow-layer-red',
+                    'type': 'symbol',
+                    'source': source,
+                    "source-layer": source_layer,
+                    'layout': {
+                        'symbol-placement': "point",
+                        'symbol-spacing': 1,
+                        'icon-allow-overlap': true,
+                        "icon-image": [
+                            "match",
+                            ["get", "color_2006"],
+                            "red",
+                            "red_arrow",
+                            ""
+                        ],
+
+
+                        'icon-size': 0.20,
+                        'visibility': 'visible',
+                        "icon-rotate": {
+                            "property": "angle",
+                            "type": "identity"
+                        }
+
+                    }
+                });
+
             });
 
-        });
+
+            //2
+            map.loadImage(blue_url, function (err, blue) {
+                if (err) {
+                    console.error('err image', err);
+                    return;
+                }
+
+                map.addImage('blue_arrow', blue);
+
+                map.addLayer({
+                    'id': 'arrow-layer-blue',
+                    'type': 'symbol',
+                    'source': source,
+                    "source-layer": source_layer,
+                    'layout': {
+                        'symbol-placement': "point",
+                        'symbol-spacing': 1,
+                        'icon-allow-overlap': true,
+                        "icon-image": [
+                            "match",
+                            ["get", "color_2006"],
+                            "blue",
+                            "blue_arrow",
+                            ""
+                        ],
 
 
+                        'icon-size': 0.20,
+                        'visibility': 'visible',
+                        "icon-rotate": {
+                            "property": "angle",
+                            "type": "identity"
+                        }
+                    }
+                });
 
-        //2
-        map.loadImage(blue_url, function(err, blue) {
-        if (err) {
-            console.error('err image', err);
-            return;
+            });
+
+
+            //2
+            map.loadImage(green_url, function (err, green) {
+                if (err) {
+                    console.error('err image', err);
+                    return;
+                }
+
+                map.addImage('green_arrow', green);
+
+                map.addLayer({
+                    'id': 'arrow-layer-green',
+                    'type': 'symbol',
+                    'source': source,
+                    "source-layer": source_layer,
+                    'layout': {
+                        'symbol-placement': "point",
+                        'symbol-spacing': 1,
+                        'icon-allow-overlap': true,
+                        "icon-image": [
+                            "match",
+                            ["get", "color_2006"],
+                            "green",
+                            "green_arrow",
+                            ""
+                        ],
+
+                        'icon-size': 0.20,
+                        'visibility': 'visible',
+                        "icon-rotate": {
+                            "property": "angle",
+                            "type": "identity"
+                        }
+
+                    }
+                });
+
+
+                map.addLayer({
+                    "id": "election_data",
+                    'type': 'line',
+                    'source': source,
+                    "source-layer": source_layer,
+                    'layout': {
+
+                        'line-join': 'round',
+                        'line-cap': 'round'
+
+
+                    },
+                    "paint": {
+                        'line-color': ["get", "color_2006"],
+                        'line-width': 1
+                    }
+                });
+
+            });
         }
 
-        map.addImage('blue_arrow', blue);
 
-        map.addLayer({
-            'id': 'arrow-layer-blue',
-            'type': 'symbol',
-            'source': 'election_districts',
-            "source-layer": "lines_4326",
-            'layout': {
-                'symbol-placement': "point",
-                'symbol-spacing': 1,
-                'icon-allow-overlap': true,
-                // 'icon-ignore-placement': true,
-                //'icon-image': 'red_arrow',
+        add_year("election_districts", "lines_4326");
 
-                "icon-image": [
-                    "match",
-                    ["get","color_2006"],
-                    "blue",
-                    "blue_arrow",
-                    ""
-                ],
+        var nav = new mapboxgl.NavigationControl();
+        map.addControl(nav, 'top-left');
 
+        d3.selectAll("#data07").on("click", function(){
+            d3.selectAll(".pane").classed("active", false);
+            d3.select(this).classed("active", true);
 
+            map.removeLayer('arrow-layer-green');
+            map.removeLayer('arrow-layer-red');
+            map.removeLayer('arrow-layer-blue');
+            map.removeLayer('election_data');
+            add_year("election_districts", "lines_4326");
 
-                'icon-size': 0.20,
-                'visibility': 'visible',
-                "icon-rotate": {
-                    "property": "angle",
-                    "type": "identity"
-                }
-
-            }
+            // let year = d3.select(this).attr("data");
+            // changeData(year);
         });
 
-    });
+        d3.selectAll("#data12").on("click", function(){
+            d3.selectAll(".pane").classed("active", false);
+            d3.select(this).classed("active", true);
 
+            add_year("election_districts", "lines_4326");
 
-        //2
-        map.loadImage(green_url, function(err, green) {
-            if (err) {
-                console.error('err image', err);
-                return;
-            }
-
-            map.addImage('green_arrow', green);
-
-            map.addLayer({
-                'id': 'arrow-layer-green',
-                'type': 'symbol',
-                'source': 'election_districts',
-                "source-layer": "lines_4326",
-                'layout': {
-                    'symbol-placement': "point",
-                    'symbol-spacing': 1,
-                    'icon-allow-overlap': true,
-                    // 'icon-ignore-placement': true,
-                    //'icon-image': 'red_arrow',
-
-                    "icon-image": [
-                        "match",
-                        ["get","color_2006"],
-                        "green",
-                        "green_arrow",
-                        ""
-                    ],
-
-
-
-                    'icon-size': 0.20,
-                    'visibility': 'visible',
-                    "icon-rotate": {
-                        "property": "angle",
-                        "type": "identity"
-                    }
-
-                }
-            });
-
+            // let year = d3.select(this).attr("data");
+            // changeData(year);
         });
+
+
+
+
 
 
         //
@@ -205,32 +240,10 @@ map.on('load', function () {
 
 
 
-        var results_layer = map.addLayer({
-            "id": "election_data",
-            'type': 'line',
-            "source": "election_districts",
-            "source-layer": "lines_4326",
-            'layout': {
-
-                'line-join': 'round',
-                'line-cap': 'round'
-
-
-            },
-            "paint": {
-                'line-color': ["get",  "color_2006"],
-                'line-width': 1
-            }
-        });
-
-
-    var nav = new mapboxgl.NavigationControl();
-    map.addControl(nav, 'top-left');
 
 
 
-
-        });
+});
 
 
 
@@ -247,4 +260,3 @@ map.on('load', function () {
 
 
 
-    // });
