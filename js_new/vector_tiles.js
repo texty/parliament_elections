@@ -46,157 +46,190 @@ var map = new mapboxgl.Map({
 
 map.on('load', function () {
 
-        map.addSource('election_districts', {
-            type: 'vector',
-            tiles: ["https://texty.github.io/parliament_elections/tiles/lines_06/{z}/{x}/{y}.pbf"]
+    map.addSource('elections_06', {
+        type: 'vector',
+        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_06/{z}/{x}/{y}.pbf"]
+    });
+
+    map.addSource('elections_07', {
+        type: 'vector',
+        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_07/{z}/{x}/{y}.pbf"]
+    });
+
+    map.addSource('elections_12', {
+        type: 'vector',
+        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_12/{z}/{x}/{y}.pbf"]
+    });
+
+    map.addSource('elections_14', {
+        type: 'vector',
+        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_14/{z}/{x}/{y}.pbf"]
+    });
+
+    map.addSource('elections_19', {
+        type: 'vector',
+        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_19/{z}/{x}/{y}.pbf"]
+    });
+
+    var red_url = 'img/red-triangle.png';
+    var blue_url = 'img/blue-triangle.png';
+    var green_url = 'img/green-triangle.png';
+
+    function add_year(source, source_layer) {
+        map.loadImage(red_url, function (err, red) {
+            if (err) {
+                console.error('err image', err);
+                return;
+            }
+
+            map.addImage('red_arrow', red);
+
+            map.addLayer({
+                'id': 'arrow-layer-red',
+                'type': 'symbol',
+                'source': source,
+                "source-layer": source_layer,
+                'layout': {
+                    'symbol-placement': "point",
+                    'symbol-spacing': 1,
+                    'icon-allow-overlap': true,
+                    "icon-image": [
+                        "match",
+                        ["get", "color"],
+                        "red",
+                        "red_arrow",
+                        ""
+                    ],
+
+
+                    'icon-size': 0.20,
+                    'visibility': 'visible',
+                    "icon-rotate": {
+                        "property": "angle",
+                        "type": "identity"
+                    }
+
+                }
+            });
+
         });
 
-        var red_url = 'img/red-triangle.png';
-        var blue_url = 'img/blue-triangle.png';
-        var green_url = 'img/green-triangle.png';
-
-        function add_year(source, source_layer) {
-            map.loadImage(red_url, function (err, red) {
-                if (err) {
-                    console.error('err image', err);
-                    return;
-                }
-
-                map.addImage('red_arrow', red);
-
-                map.addLayer({
-                    'id': 'arrow-layer-red',
-                    'type': 'symbol',
-                    'source': source,
-                    "source-layer": source_layer,
-                    'layout': {
-                        'symbol-placement': "point",
-                        'symbol-spacing': 1,
-                        'icon-allow-overlap': true,
-                        "icon-image": [
-                            "match",
-                            ["get", "color_2006"],
-                            "red",
-                            "red_arrow",
-                            ""
-                        ],
 
 
-                        'icon-size': 0.20,
-                        'visibility': 'visible',
-                        "icon-rotate": {
-                            "property": "angle",
-                            "type": "identity"
-                        }
+        map.loadImage(blue_url, function (err, blue) {
+            if (err) {
+                console.error('err image', err);
+                return;
+            }
 
+            map.addImage('blue_arrow', blue);
+
+            map.addLayer({
+                'id': 'arrow-layer-blue',
+                'type': 'symbol',
+                'source': source,
+                "source-layer": source_layer,
+                'layout': {
+                    'symbol-placement': "point",
+                    'symbol-spacing': 1,
+                    'icon-allow-overlap': true,
+                    "icon-image": [
+                        "match",
+                        ["get", "color"],
+                        "blue",
+                        "blue_arrow",
+                        ""
+                    ],
+
+
+                    'icon-size': 0.20,
+                    'visibility': 'visible',
+                    "icon-rotate": {
+                        "property": "angle",
+                        "type": "identity"
                     }
-                });
-
+                }
             });
 
-
-            //2
-            map.loadImage(blue_url, function (err, blue) {
-                if (err) {
-                    console.error('err image', err);
-                    return;
-                }
-
-                map.addImage('blue_arrow', blue);
-
-                map.addLayer({
-                    'id': 'arrow-layer-blue',
-                    'type': 'symbol',
-                    'source': source,
-                    "source-layer": source_layer,
-                    'layout': {
-                        'symbol-placement': "point",
-                        'symbol-spacing': 1,
-                        'icon-allow-overlap': true,
-                        "icon-image": [
-                            "match",
-                            ["get", "color_2006"],
-                            "blue",
-                            "blue_arrow",
-                            ""
-                        ],
+        });
 
 
-                        'icon-size': 0.20,
-                        'visibility': 'visible',
-                        "icon-rotate": {
-                            "property": "angle",
-                            "type": "identity"
-                        }
+
+        map.loadImage(green_url, function (err, green) {
+            if (err) {
+                console.error('err image', err);
+                return;
+            }
+
+            map.addImage('green_arrow', green);
+
+            map.addLayer({
+                'id': 'arrow-layer-green',
+                'type': 'symbol',
+                'source': source,
+                "source-layer": source_layer,
+                'layout': {
+                    'symbol-placement': "point",
+                    'symbol-spacing': 1,
+                    'icon-allow-overlap': true,
+                    "icon-image": [
+                        "match",
+                        ["get", "color"],
+                        "green",
+                        "green_arrow",
+                        ""
+                    ],
+
+                    'icon-size': 0.20,
+                    'visibility': 'visible',
+                    "icon-rotate": {
+                        "property": "angle",
+                        "type": "identity"
                     }
-                });
-
+        
+                }
             });
 
+        });
 
-            //2
-            map.loadImage(green_url, function (err, green) {
-                if (err) {
-                    console.error('err image', err);
-                    return;
-                }
+        map.addLayer({
+            "id": "election_data",
+            'type': 'line',
+            'source': source,
+            "source-layer": source_layer,
+            'layout': {
 
-                map.addImage('green_arrow', green);
-
-                map.addLayer({
-                    'id': 'arrow-layer-green',
-                    'type': 'symbol',
-                    'source': source,
-                    "source-layer": source_layer,
-                    'layout': {
-                        'symbol-placement': "point",
-                        'symbol-spacing': 1,
-                        'icon-allow-overlap': true,
-                        "icon-image": [
-                            "match",
-                            ["get", "color_2006"],
-                            "green",
-                            "green_arrow",
-                            ""
-                        ],
-
-                        'icon-size': 0.20,
-                        'visibility': 'visible',
-                        "icon-rotate": {
-                            "property": "angle",
-                            "type": "identity"
-                        }
-
-                    }
-                });
+                'line-join': 'round',
+                'line-cap': 'round'
 
 
-                map.addLayer({
-                    "id": "election_data",
-                    'type': 'line',
-                    'source': source,
-                    "source-layer": source_layer,
-                    'layout': {
-
-                        'line-join': 'round',
-                        'line-cap': 'round'
+            },
+            "paint": {
+                'line-color': ["get", "color"],
+                'line-width': 1
+            }
+        })
+    }
 
 
-                    },
-                    "paint": {
-                        'line-color': ["get", "color_2006"],
-                        'line-width': 1
-                    }
-                });
-
-            });
-        }
-
-
-        add_year("election_districts", "lines_4326");
+        add_year("elections_06", "lines_06_4326");
 
         var nav = new mapboxgl.NavigationControl();
         map.addControl(nav, 'top-left');
+
+        d3.selectAll("#data06").on("click", function(){
+            d3.selectAll(".pane").classed("active", false);
+            d3.select(this).classed("active", true);
+
+            map.removeLayer('arrow-layer-green');
+            map.removeLayer('arrow-layer-red');
+            map.removeLayer('arrow-layer-blue');
+            map.removeLayer('election_data');
+            add_year("elections_06", "lines_06_4326");
+
+            // let year = d3.select(this).attr("data");
+            // changeData(year);
+        });
 
         d3.selectAll("#data07").on("click", function(){
             d3.selectAll(".pane").classed("active", false);
@@ -206,7 +239,7 @@ map.on('load', function () {
             map.removeLayer('arrow-layer-red');
             map.removeLayer('arrow-layer-blue');
             map.removeLayer('election_data');
-            add_year("election_districts", "lines_4326");
+            add_year("elections_07", "lines_07_4326");
 
             // let year = d3.select(this).attr("data");
             // changeData(year);
@@ -215,8 +248,40 @@ map.on('load', function () {
         d3.selectAll("#data12").on("click", function(){
             d3.selectAll(".pane").classed("active", false);
             d3.select(this).classed("active", true);
+            map.removeLayer('arrow-layer-green');
+            map.removeLayer('arrow-layer-red');
+            map.removeLayer('arrow-layer-blue');
+            map.removeLayer('election_data');
 
-            add_year("election_districts", "lines_4326");
+            add_year("elections_12", "lines_12_4326");
+
+            // let year = d3.select(this).attr("data");
+            // changeData(year);
+        });
+
+        d3.selectAll("#data14").on("click", function(){
+            d3.selectAll(".pane").classed("active", false);
+            d3.select(this).classed("active", true);
+            map.removeLayer('arrow-layer-green');
+            map.removeLayer('arrow-layer-red');
+            map.removeLayer('arrow-layer-blue');
+            map.removeLayer('election_data');
+
+            add_year("elections_14", "lines_14_4326");
+
+            // let year = d3.select(this).attr("data");
+            // changeData(year);
+        });
+
+        d3.selectAll("#data19").on("click", function(){
+            d3.selectAll(".pane").classed("active", false);
+            d3.select(this).classed("active", true);
+            map.removeLayer('arrow-layer-green');
+            map.removeLayer('arrow-layer-red');
+            map.removeLayer('arrow-layer-blue');
+            map.removeLayer('election_data');
+
+            add_year("elections_19", "lines_19_4326");
 
             // let year = d3.select(this).attr("data");
             // changeData(year);
@@ -227,7 +292,8 @@ map.on('load', function () {
 
 
 
-        //
+
+    //
         // map.loadImage(green_url, function(err, green) {
         //     if (err) {
         //         console.error('err image', err);
