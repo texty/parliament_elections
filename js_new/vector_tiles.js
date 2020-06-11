@@ -1,11 +1,13 @@
 /**
  * Created by yevheniia on 09.06.20.
  */
+var default_zoom = window.innerWidth > 800 ? 5 : 4;
+var min_zoom =  window.innerWidth > 800 ? 5 : 4;
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHJpbWFjdXMxODIiLCJhIjoiWGQ5TFJuayJ9.6sQHpjf_UDLXtEsz8MnjXw';
 var map = new mapboxgl.Map({
     container: 'map',
     // style: 'style3.json',
-    minZoom: 4, //restrict map zoom
+    minZoom: min_zoom, //restrict map zoom
     maxZoom: 10,
     // zoom: 5,
     // center: [32.259271, 48.518688],
@@ -36,12 +38,12 @@ var map = new mapboxgl.Map({
         ]
     },
     center: [32.259271, 48.518688],
-    zoom: 5 // starting zoom
+    zoom: default_zoom // starting zoom
 });
 
 
 
-    map.scrollZoom.disable();
+map.scrollZoom.disable();
 
 
 map.on('load', function () {
@@ -74,6 +76,7 @@ map.on('load', function () {
     var red_url = 'img/red-triangle.png';
     var blue_url = 'img/blue-triangle.png';
     var green_url = 'img/green-triangle.png';
+
 
     function add_year(source, source_layer) {
         map.loadImage(red_url, function (err, red) {
@@ -287,29 +290,167 @@ map.on('load', function () {
             // changeData(year);
         });
 
+        // initialize the scrollama
+        var container = d3.select('#scroll');
+        var graphic = container.select('.scroll__graphic');
+        var chart = graphic.select('#map');
+        var text = container.select('.scroll__text');
+        var step = text.selectAll('.step');
+        var scroller = scrollama();
 
 
 
+        // generic window resize listener event
+        function handleResize() {
+            // 1. update height of step elements
+            var stepHeight = Math.floor(window.innerHeight * 0.5);
+            step.style('height', stepHeight + 'px');
+
+            // 2. update width/height of graphic element
+            var bodyWidth = d3.select('body').node().offsetWidth;
+            var textWidth = text.node().offsetWidth;
+
+            var graphicWidth = bodyWidth - textWidth;
+
+            var chartMargin = 32;
+            var chartWidth = graphic.node().offsetWidth - chartMargin;
+
+            // 3. tell scrollama to update new element dimensions
+            scroller.resize();
+        }
+
+        // scrollama event handlers
+        function handleStepEnter(r) {
+
+            //scroll down
+            if(r.index === 0 && r.direction === "down") {
+
+            }
+
+            if(r.index === 0 && r.direction === "up") {
+                 d3.selectAll(".pane").classed("active", false);
+                d3.select("#data06").classed("active", true);
+                map.flyTo({
+                    center: [
+                        32,
+                        48
+                    ],
+                    zoom: default_zoom,
+                    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+                });
+            }
+
+            if(r.index === 1) {
+                // by up to 5 degrees.
+                map.removeLayer('arrow-layer-green');
+                map.removeLayer('arrow-layer-red');
+                map.removeLayer('arrow-layer-blue');
+                map.removeLayer('election_data');
+
+                add_year("elections_19", "lines_19_4326");
+                map.flyTo({
+                    center: [
+                        31,
+                        49
+                    ],
+                    zoom: 8,
+                    speed: 0.5, // make the flying slow
+                    curve: 1, // change the speed at which it zooms out
+                    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+                });
+
+                d3.selectAll(".pane").classed("active", false);
+                d3.select("#data07").classed("active", true);
+            }
+
+            if(r.index === 2 && r.direction === "down") {
+                d3.selectAll(".pane").classed("active", false);
+                d3.select("#data12").classed("active", true);
+            }
+
+            if(r.index === 2 && r.direction === "up") {
+            }
+
+            if(r.index === 3 && r.direction === "down") {
+            }
+
+            if(r.index === 3 && r.direction === "up") {
+
+                d3.selectAll(".pane").classed("active", false);
+                d3.select("#data12").classed("active", true);
+            }
+
+
+            if(r.index === 4) {
+
+                d3.selectAll(".pane").classed("active", false);
+                d3.select("#data14").classed("active", true);
 
 
 
-    //
-        // map.loadImage(green_url, function(err, green) {
-        //     if (err) {
-        //         console.error('err image', err);
-        //         return;
-        //     }
-        // });
-        //
-        // map.addImage('blue_arrow', blue);
-        // map.addImage('green_arrow', green);
+            }
 
+            if(r.index === 5 && r.direction === "down") {
+            }
+
+            if(r.index === 5 && r.direction === "up") {
+
+
+                d3.selectAll(".pane").classed("active", false);
+                d3.select("#data14").classed("active", true);
+            }
+
+            if(r.index === 6) {
+
+                d3.selectAll(".pane").classed("active", false);
+                d3.select("#data19").classed("active", true);
+
+            }
+
+            if(r.index === 7) {}
+        }
+
+
+        function handleContainerEnter(response) {
+            // response = { direction }
+        }
+
+        function handleContainerExit(response) {
+            // response = { direction }
+        }
+
+
+
+        function init() {
+            handleResize();
+            scroller.setup({
+                container: '#scroll',
+                graphic: '.scroll__graphic',
+                text: '.scroll__text',
+                step: '.scroll__text .step',
+                offset: 0.9,
+                debug: false
+            })
+                .onStepEnter(handleStepEnter)
+                .onContainerEnter(handleContainerEnter)
+                .onContainerExit(handleContainerExit);
+
+            window.addEventListener('resize', handleResize);
+        }
+
+        init();
 
 
 
 
 
 });
+
+
+
+
+
+
 
 
 
