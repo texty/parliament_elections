@@ -104,24 +104,24 @@ canvas {
   }
 }
 
-.desktop-only {
-  @media(max-width: 812px) {
-    display: none !important;
-  }
-}
-
-.mobile-only {
-  display: none;
-  @media(max-width: 812px) {
-    display: block !important;
-  }
-}
-
-#instead_of_map {
-  img {
-    max-width: 100%;
-  }
-}
+//.desktop-only {
+//  @media(max-width: 812px) {
+//    display: none !important;
+//  }
+//}
+//
+//.mobile-only {
+//  display: none;
+//  @media(max-width: 812px) {
+//    display: block !important;
+//  }
+//}
+//
+//#instead_of_map {
+//  img {
+//    max-width: 100%;
+//  }
+//}
 
 .scroll__graphic {
   grid-column: 1/3;
