@@ -1,8 +1,8 @@
 /**
  * Created by yevheniia on 09.06.20.
  */
-var default_zoom = window.innerWidth > 800 ? 5.5 : 4.5;
-var min_zoom =  window.innerWidth > 800 ? 5.5 : 4.5;
+var default_zoom = window.innerWidth > 800 ? 5.5 : 4;
+var min_zoom =  window.innerWidth > 800 ? 5.5 : 4;
 var enlarged_zoom = window.innerWidth > 800 ? 7 : 5;
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHJpbWFjdXMxODIiLCJhIjoiWGQ5TFJuayJ9.6sQHpjf_UDLXtEsz8MnjXw';
