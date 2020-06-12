@@ -78,16 +78,34 @@ map.on('load', function () {
     var green_url = 'img/green-triangle.png';
 
 
+    map.loadImage(red_url, function (err, red) {
+        if (err) {
+            console.error('err image', err);
+            return;
+        }
+        map.addImage('red_arrow', red);
+    });
+
+    map.loadImage(blue_url, function (err, blue) {
+        if (err) {
+            console.error('err image', err);
+            return;
+        }
+        map.addImage('blue_arrow', blue);
+    });
+
+
+    map.loadImage(green_url, function (err, green) {
+        if (err) {
+            console.error('err image', err);
+            return;
+        }
+
+        map.addImage('green_arrow', green);
+    });
+
     function add_year(source, source_layer) {
-        map.loadImage(red_url, function (err, red) {
-            if (err) {
-                console.error('err image', err);
-                return;
-            }
-
-            map.addImage('red_arrow', red);
-
-            map.addLayer({
+           map.addLayer({
                 'id': 'arrow-layer-red',
                 'type': 'symbol',
                 'source': source,
@@ -114,18 +132,6 @@ map.on('load', function () {
 
                 }
             });
-
-        });
-
-
-
-        map.loadImage(blue_url, function (err, blue) {
-            if (err) {
-                console.error('err image', err);
-                return;
-            }
-
-            map.addImage('blue_arrow', blue);
 
             map.addLayer({
                 'id': 'arrow-layer-blue',
@@ -154,18 +160,6 @@ map.on('load', function () {
                 }
             });
 
-        });
-
-
-
-        map.loadImage(green_url, function (err, green) {
-            if (err) {
-                console.error('err image', err);
-                return;
-            }
-
-            map.addImage('green_arrow', green);
-
             map.addLayer({
                 'id': 'arrow-layer-green',
                 'type': 'symbol',
@@ -189,12 +183,10 @@ map.on('load', function () {
                         "property": "angle",
                         "type": "identity"
                     }
-        
+
                 }
             });
-
-        });
-
+ 
         map.addLayer({
             "id": "election_data",
             'type': 'line',
@@ -328,7 +320,7 @@ map.on('load', function () {
             }
 
             if(r.index === 0 && r.direction === "up") {
-                 d3.selectAll(".pane").classed("active", false);
+                d3.selectAll(".pane").classed("active", false);
                 d3.select("#data06").classed("active", true);
                 map.flyTo({
                     center: [
@@ -339,6 +331,8 @@ map.on('load', function () {
                     essential: true // this animation is considered essential with respect to prefers-reduced-motion
                 });
             }
+
+
 
             if(r.index === 1) {
                 // by up to 5 degrees.
