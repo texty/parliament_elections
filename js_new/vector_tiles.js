@@ -1,13 +1,15 @@
 /**
  * Created by yevheniia on 09.06.20.
  */
-var default_zoom = window.innerWidth > 800 ? 5.5 : 5;
-var min_zoom =  window.innerWidth > 800 ? 5.5 : 5;
+var default_zoom = window.innerWidth > 800 ? 5.5 : 4.5;
+var min_zoom =  window.innerWidth > 800 ? 5.5 : 4.5;
+var enlarged_zoom = window.innerWidth > 800 ? 7 : 5;
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHJpbWFjdXMxODIiLCJhIjoiWGQ5TFJuayJ9.6sQHpjf_UDLXtEsz8MnjXw';
 var map = new mapboxgl.Map({
     container: 'map',
     // style: 'style3.json',
-    minZoom: min_zoom, //restrict map zoom
+    minZoom: 4, //restrict map zoom
     maxZoom: 9,
     // zoom: 5,
     // center: [32.259271, 48.518688],
@@ -32,7 +34,7 @@ var map = new mapboxgl.Map({
                 'id': 'simple-tiles',
                 'type': 'raster',
                 'source': 'raster-tiles',
-                'minzoom': 5,
+                'minzoom': 4,
                 'maxzoom': 10
             }
         ]
@@ -219,7 +221,7 @@ map.on('load', function () {
             }
         });
 
-        map.flyTo({ center: [ 25, 52 ], zoom: 8, speed: 0.5, curve: 1,  essential: true });
+        // map.flyTo({ center: [ 25, 52 ], zoom: default_zoom, speed: 0.5, curve: 1,  essential: true });
     }
 
 
@@ -424,7 +426,7 @@ map.on('load', function () {
             if(r.index === 1) {
                 removeTiles();
                 add_year("elections_07", "lines_07_4326");
-                map.flyTo({ center: [ 31, 49 ], zoom: 6, speed: 0.9, curve: 1,  essential: true });
+                // map.flyTo({ center: [ 31, 49 ], zoom: enlarged_zoom, speed: 0.9, curve: 1,  essential: true });
                 add_po_ch();
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data07").classed("active", true);
@@ -443,7 +445,7 @@ map.on('load', function () {
             if(r.index === 3 && r.direction === "down") {
                 removeLayer("vi-kh-layer");
                 removeTiles();
-                map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
+                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 add_year("elections_14", "lines_14_4326");
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data14").classed("active", true);
@@ -452,7 +454,7 @@ map.on('load', function () {
 
 
             if(r.index === 4) {
-                map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
+                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 add_od_do_kh();
             }
 
@@ -467,7 +469,7 @@ map.on('load', function () {
                 removeLayer("lubash-layer");
                 removeTiles();
                 add_year("elections_19", "lines_19_4326");
-                map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
+                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data19").classed("active", true);
 
@@ -480,7 +482,7 @@ map.on('load', function () {
             if(r.index === 0 && r.direction === "up") {
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data06").classed("active", true);
-                map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
+                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 removeLayer("po-ch-layer");
                 removeTiles();
                 add_year("elections_06", "lines_06_4326");
@@ -499,7 +501,7 @@ map.on('load', function () {
 
             if(r.index === 4 && r.direction === "up") {
                 removeLayer("lubash-layer");
-                map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
+                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 add_od_do_kh();
             }
 
