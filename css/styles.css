@@ -275,7 +275,7 @@ canvas {
   @media (max-width: 825px) and (orientation: portrait) {
     .scroll__graphic {
       height: 50vh;
-      top: 30px; } }
+      top: 50px; } }
   .scroll__graphic .change {
     position: absolute;
     top: 50px;
