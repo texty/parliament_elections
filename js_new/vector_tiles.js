@@ -8,7 +8,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     // style: 'style3.json',
     minZoom: min_zoom, //restrict map zoom
-    maxZoom: 10,
+    maxZoom: 9,
     // zoom: 5,
     // center: [32.259271, 48.518688],
     hash: false,
