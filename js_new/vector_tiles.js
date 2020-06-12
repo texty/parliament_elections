@@ -345,15 +345,17 @@ map.on('load', function () {
 
 
 
-    function sourceCallback() {
-        // assuming 'map' is defined globally, or you can use 'this'
-        if (map.getSource('elections_06') && map.isSourceLoaded('elections_06')) {
-            console.log('source loaded!');
-            d3.select("#spinner").remove();
+        function sourceCallback() {
+            if (map.getSource('elections_06') && map.isSourceLoaded('elections_06') && map.isStyleLoaded()) {
+                console.log('source loaded!');
+                d3.select("#spinner").remove();
+            }
         }
-    }
+    
+        map.on('sourcedata', sourceCallback);
 
-    map.on('sourcedata', sourceCallback);
+
+  
 
 
 
