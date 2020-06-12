@@ -39,13 +39,15 @@ var map = new mapboxgl.Map({
             }
         ]
     },
-    center: [32.259271, 48.518688],
+    center: [31.5, 48.5],
     zoom: default_zoom // starting zoom
 });
 
 
 
 map.scrollZoom.disable();
+
+
 
 
 map.on('load', function () {
@@ -237,6 +239,8 @@ map.on('load', function () {
         map.removeLayer('election_data');
     }
 
+
+
     function add_year(source, source_layer) {
            map.addLayer({
                 'id': 'arrow-layer-red',
@@ -341,7 +345,15 @@ map.on('load', function () {
 
 
 
+    function sourceCallback() {
+        // assuming 'map' is defined globally, or you can use 'this'
+        if (map.getSource('elections_06') && map.isSourceLoaded('elections_06')) {
+            console.log('source loaded!');
+            d3.select("#spinner").remove();
+        }
+    }
 
+    map.on('sourcedata', sourceCallback);
 
 
 
@@ -387,6 +399,10 @@ map.on('load', function () {
             removeTiles();
             add_year("elections_19", "lines_19_4326");
         });
+
+    d3.select("#center_ukraine").on("click", function(d){
+        map.flyTo({ center: [  32,   48 ], zoom: default_zoom  });
+    });
 
         // initialize the scrollama
         var container = d3.select('#scroll');

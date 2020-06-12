@@ -243,11 +243,36 @@ h1 {
     .container {
       height: 110%; } }
 
+#center_ukraine {
+  display: none;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  padding: 3px;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 812px) {
+    #center_ukraine {
+      display: block; } }
+
+#spinner {
+  background-image: url("img/loading.gif");
+  width: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%; }
+
 canvas {
   width: 100%; }
 
 .test_big {
-  margin-right: 10px; }
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.test_big:hover {
+  background-color: #f59894; }
 
 #scroll, #scroll_t {
   position: relative;
@@ -374,7 +399,7 @@ path.domain {
 
 section.text {
   width: 50%;
-  margin: auto; }
+  margin: 50px auto; }
   @media (max-width: 800px) {
     section.text {
       width: 90%; } }

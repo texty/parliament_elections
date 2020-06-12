@@ -806,11 +806,15 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
             draw_all_points(data, [], []);
             show_smooth();
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
         }
 
         if(r.index === 9) {
             change_data("2012");
             show_unsmooth()
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
         }
 
         if(r.index === 10 && r.direction === "down") {
@@ -821,23 +825,31 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         if(r.index === 10 && r.direction === "up") {
             points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
             draw_all_points(data, [], []);
         }
 
 
         if(r.index === 11) {
             change_data("2012");
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Закарпатська область", scale_points, scale_points)
         }
 
 
         if(r.index === 12) {
             // drawLines(["Закарпатська область"], ["2012", "2014", "2019"]);
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2019").style("background-color", "#f59894");
             change_data("2019");
         }
 
 
         if(r.index === 13) {
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
             change_data("2012");
             filter_data("Чернівецька область", scale_points, scale_points)
         }
@@ -847,18 +859,26 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         }
 
         if(r.index === 15) {
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Чернівецька область", chernivetska, ["Кельменецький район", "Сокирянський район"])
         }
         
         if(r.index === 16) {
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Тернопільська область", scale_points, ["Шумський район", "Лановецький район", "Збаразький район"])
         }
 
         if(r.index === 17) {
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Сумська область", scale_points, scale_points)
         }
 
         if(r.index === 18) {
+            d3.selectAll(".test_big").style("background-color", "lightgrey");
+            d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Житомирська область", scale_points, scale_points)
         }
     }
@@ -894,6 +914,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     init();
 
     d3.selectAll(".test_big").on("click", function(d){
+        d3.selectAll(".test_big").style("background-color", "lightgrey");
+        d3.select(this).style("background-color", "#f59894");
         let year = d3.select(this).attr("id").replace("show_", "");
         change_data(year);
     })
