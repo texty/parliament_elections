@@ -67,10 +67,10 @@ d3.csv("data/ternary_data.csv").then(function(data) {
         };
 
         var opt = {
-            width: 400,
-            height: 400,
+            width: 350,
+            height: 380,
             side: 250,
-            margin: 50,
+            margin: 30,
             axis_labels: ['A', 'B', 'C'],
             axis_ticks: [0, 20, 40, 60, 80, 100],
             tickLabelMargin: 10,
@@ -111,20 +111,20 @@ d3.csv("data/ternary_data.csv").then(function(data) {
         //triangle
         var chartBackground = wrapper.append("g")
             .attr("id", "grid")
-            .attr("transform", "translate(20,100)");
+            .attr("transform", "translate(0,100)");
 
         //points
         var svg = wrapper
             .append("g")
             .attr("data", function(d){ return d.key })
-            .attr("transform", "translate(20,100)");
+            .attr("transform", "translate(0,100)");
 
         //facet labels
         svg.append("text")
             .text(function (d) {
                 return d.key.replace("область", "обл.")
             })
-            .attr("transform", "translate(-20," + -20 + ")")
+            .attr("transform", "translate(0," + -20 + ")")
             .attr("x", opt.width / 2)
             .attr("text-anchor", "middle")
             .style("font-weight", "600")
@@ -248,18 +248,8 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 lines
                     .enter()
                     .append("path")
-                    .attr('class', "tip")
-                    .on("mouseover", function(){
-                        d3.select(this)
-                            .style("stroke-width", "3px")
-                            .style( "stroke", "black")
-                    })
-                    .on("mouseleave", function(){
-                        d3.select(this)
-                            .style("stroke-width", "1px")
-                            .style( "stroke", "lightgrey")
-                    })
-                    .transition().duration(500)
+                    .attr('class', "trail-line")
+                    .transition().duration(1000)
                     .attr("d", function (d) {
                         var sample = d.values
                             .sort(function (a, b) {  return a.year - b.year  })
@@ -267,19 +257,20 @@ d3.csv("data/ternary_data.csv").then(function(data) {
 
                         return line(sample);
                     })
-                    .attr("data-tippy-content", function (d) {  return d.key  });
+                    // .attr("data-tippy-content", function (d) {  return d.key  })
+                ;
 
                 lines
-                    .transition().duration(500)
-                    .attr('class', "tip")
+                    .transition().duration(1000)
+                    .attr('class', "trail-line")
                     .attr("d", function (d) {
                         var sample = d.values
                             .sort(function (a, b) {  return a.year - b.year  })
                             .filter(function(p) { return target_years.includes(p["year"]) });
 
                         return line(sample);
-                    })
-                    .attr("data-tippy-content", function (d) { return d.key });
+                    });
+                    // .attr("data-tippy-content", function (d) { return d.key });
 
                 lines
                     .exit().remove();
@@ -326,7 +317,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                     .enter()
                     .append("circle")
                     .attr('class', "circle-tip")
-                    .transition().duration(500)
+                    .transition().duration(1000)
                     .attr("cx", function (d) { return d.coord.x; })
                     .attr("cy", function (d) { return d.coord.y; })
                     .attr("r", 5)
@@ -334,7 +325,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                     .attr("data-tippy-content", function (d) {  return d.rayon });
 
                 circles
-                    .transition().duration(500)
+                    .transition().duration(1000)
                     .attr('class', "circle-tip")
                     .attr("cx", function (d) { return d.coord.x; })
                     .attr("cy", function (d) { return d.coord.y; })
@@ -588,18 +579,18 @@ d3.csv("data/ternary_data.csv").then(function(data) {
         tp.data_l(target_years, 'key');
     }
 
-    // next_L(["2006", "2007", "2012"]);
+    next_L(["2006"]);
     next_P("2019");
 
 
-    d3.select("#update-scatter").on("click", function(d){
-        var seleted_years = [];
-        $("#select-years input:checkbox:checked").map(function(){
-            seleted_years.push($(this).val());
-        });
-        next_L(seleted_years);
-        d3.event.preventDefault();
-    });
+    // d3.select("#update-scatter").on("click", function(d){
+    //     var seleted_years = [];
+    //     $("#select-years input:checkbox:checked").map(function(){
+    //         seleted_years.push($(this).val());
+    //     });
+    //     next_L(seleted_years);
+    //     d3.event.preventDefault();
+    // });
 
     d3.selectAll('.update').on('click', function (e) {
         var seleted_years = [];
@@ -612,7 +603,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
         }
 
         next_P(the_year);
-        // next_L(seleted_years);
+        next_L(seleted_years);
         d3.event.preventDefault();
     });
 

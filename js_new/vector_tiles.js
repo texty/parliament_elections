@@ -242,87 +242,87 @@ map.on('load', function () {
 
 
     function add_year(source, source_layer) {
-           map.addLayer({
-                'id': 'arrow-layer-red',
-                'type': 'symbol',
-                'source': source,
-                "source-layer": source_layer,
-                'layout': {
-                    'symbol-placement': "point",
-                    'symbol-spacing': 1,
-                    'icon-allow-overlap': true,
-                    "icon-image": [
-                        "match",
-                        ["get", "color"],
-                        "red",
-                        "red_arrow",
-                        ""
-                    ],
-
-
-                    'icon-size': 0.20,
-                    'visibility': 'visible',
-                    "icon-rotate": {
-                        "property": "angle",
-                        "type": "identity"
-                    }
-
-                }
-            });
-
-            map.addLayer({
-                'id': 'arrow-layer-blue',
-                'type': 'symbol',
-                'source': source,
-                "source-layer": source_layer,
-                'layout': {
-                    'symbol-placement': "point",
-                    'symbol-spacing': 1,
-                    'icon-allow-overlap': true,
-                    "icon-image": [
-                        "match",
-                        ["get", "color"],
-                        "blue",
-                        "blue_arrow",
-                        ""
-                    ],
-
-
-                    'icon-size': 0.20,
-                    'visibility': 'visible',
-                    "icon-rotate": {
-                        "property": "angle",
-                        "type": "identity"
-                    }
-                }
-            });
-
-            map.addLayer({
-                'id': 'arrow-layer-green',
-                'type': 'symbol',
-                'source': source,
-                "source-layer": source_layer,
-                'layout': {
-                    'symbol-placement': "point",
-                    'symbol-spacing': 1,
-                    'icon-allow-overlap': true,
-                    "icon-image": [
-                        "match",
-                        ["get", "color"],
-                        "green",
-                        "green_arrow",
-                        ""
-                    ],
-
-                    'icon-size': 0.20,
-                    'visibility': 'visible',
-                    "icon-rotate": {
-                        "property": "angle",
-                        "type": "identity"
-                    }
-
-                }
-            });
+           // map.addLayer({
+           //      'id': 'arrow-layer-red',
+           //      'type': 'symbol',
+           //      'source': source,
+           //      "source-layer": source_layer,
+           //      'layout': {
+           //          'symbol-placement': "point",
+           //          'symbol-spacing': 1,
+           //          'icon-allow-overlap': true,
+           //          "icon-image": [
+           //              "match",
+           //              ["get", "color"],
+           //              "red",
+           //              "red_arrow",
+           //              ""
+           //          ],
+           //
+           //
+           //          'icon-size': 0.2,
+           //          'visibility': 'visible',
+           //          "icon-rotate": {
+           //              "property": "angle",
+           //              "type": "identity"
+           //          }
+           //
+           //      }
+           //  });
+           //
+           //  map.addLayer({
+           //      'id': 'arrow-layer-blue',
+           //      'type': 'symbol',
+           //      'source': source,
+           //      "source-layer": source_layer,
+           //      'layout': {
+           //          'symbol-placement': "point",
+           //          'symbol-spacing': 1,
+           //          'icon-allow-overlap': true,
+           //          "icon-image": [
+           //              "match",
+           //              ["get", "color"],
+           //              "blue",
+           //              "blue_arrow",
+           //              ""
+           //          ],
+           //
+           //
+           //          'icon-size': 0.2,
+           //          'visibility': 'visible',
+           //          "icon-rotate": {
+           //              "property": "angle",
+           //              "type": "identity"
+           //          }
+           //      }
+           //  });
+           //
+           //  map.addLayer({
+           //      'id': 'arrow-layer-green',
+           //      'type': 'symbol',
+           //      'source': source,
+           //      "source-layer": source_layer,
+           //      'layout': {
+           //          'symbol-placement': "point",
+           //          'symbol-spacing': 1,
+           //          'icon-allow-overlap': true,
+           //          "icon-image": [
+           //              "match",
+           //              ["get", "color"],
+           //              "green",
+           //              "green_arrow",
+           //              ""
+           //          ],
+           //
+           //          'icon-size': 0.2,
+           //          'visibility': 'visible',
+           //          "icon-rotate": {
+           //              "property": "angle",
+           //              "type": "identity"
+           //          }
+           //
+           //      }
+           //  });
 
         map.addLayer({
             "id": "election_data",
@@ -406,6 +406,7 @@ map.on('load', function () {
         map.flyTo({ center: [  32,   48 ], zoom: default_zoom  });
     });
 
+
         // initialize the scrollama
         var container = d3.select('#scroll');
         var graphic = container.select('.scroll__graphic');
@@ -413,7 +414,6 @@ map.on('load', function () {
         var text = container.select('.scroll__text');
         var step = text.selectAll('.step');
         var scroller = scrollama();
-
 
 
         // generic window resize listener event

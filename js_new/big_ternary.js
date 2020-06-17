@@ -67,9 +67,12 @@ const instructions = [
 
 d3.csv("data/ternary_big.csv").then(function(data) {
 
+    const years_arr = ["2006", "2007", "2012", "2014", "2019"];
+
+
     const green = '#009601';
-    const red = '#FF2121';
-    const blue = '#0887FF';
+    const red = '#EE7B7F';
+    const blue = '#8CB4E6';
 
     data.forEach(function (d) {
         d.ua_2006 = +d.ua_2006 * 100;
@@ -149,25 +152,59 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     document.getElementById("big_ternary").appendChild(renderer.view);
 
 
-
+    // підписи ло вісей
     const tick_labels = [
-        { label: "проросійських", pos: [0, 55, 100 - 55], rot: -45, color: red, transform: 80 },
-        { label: "популістських", pos: [100 - 35, 0, 35], rot: 45, color: green, transform: 80 },
-        { label: "рівень підтримки проукраїнських сил", pos: [75, 100 - 75, 0], rot: 0, color: blue, transform: -60 }
+        { label: "проросійських", pos: [0, 0, 100], rot: -45, color: red, yShift: 20, xShift: 40 },
+        { label: "популістських", pos: [100, 0, 0], rot: 45, color: green, yShift: 0, xShift: -40},
+        { label: "рівень підтримки проукраїнських сил", pos: [52, 100-52, 0], rot: 0, color: blue, yShift: -60, xShift: 0 }
     ];
 
     tick_labels.forEach(function (v) {
-        const style_labels = new PIXI.TextStyle({ fontSize: 18,  fill: v.color, anchor: (0.5, 0.5), letterSpacing: 0.5 });
+        const style_labels = new PIXI.TextStyle({ fontSize: 18,  fill: v.color, anchor: (1, 1), letterSpacing: 0.5 });
         var tick_label = new PIXI.Text(v.label, style_labels);
-        tick_label.position.x = coord(v.pos).x;
-        tick_label.position.y = coord(v.pos).y + v.transform;
+        tick_label.position.x = coord(v.pos).x + v.xShift;
+        tick_label.position.y = coord(v.pos).y + v.yShift;
         tick_label.rotation = v.rot;
         stage.addChild(tick_label);
+    });
+
+    // стрілки вісів
+    const tick_lines = [
+        { label: "проросійських", posFrom: [0, 22, 100-22], posTo: [0, 100, 0], rot: -45, color: 0xEE7B7F, yShift: 20, xShift: 55 },
+        { label: "популістських", posFrom: [100-24, 0, 24], posTo: [0, 0, 100],  rot: 45, color: 0x009601, yShift: 0, xShift: -50 },
+        { label: "рівень підтримки проукраїнських сил", posFrom: [53, 100-53, 0], posTo: [100, 0, 0],  rot: 0, color: 0x8CB4E6, yShift: -45, xShift: 0 }
+    ];
+
+    tick_lines.forEach(function (v) {
+
+       var tick_line = new PIXI.Graphics();
+
+        var from_x = coord(v.posFrom).x + v.xShift;
+        var from_y = coord(v.posFrom).y + v.yShift ;
+        var to_x = coord(v.posTo).x + v.xShift;
+        var to_y = coord(v.posTo).y + v.yShift ;
+
+        console.log(from_x);
+        console.log(from_y);
+
+        var headlen = 10;
+        var angle = Math.atan2(to_y - from_y, to_x - from_x);
+
+        tick_line
+            .lineStyle(2, v.color, 1)
+            .moveTo(from_x, from_y)
+            .lineTo(to_x, to_y)
+            .lineTo(to_x - headlen * Math.cos(angle - Math.PI / 6), to_y - headlen * Math.sin(angle - Math.PI / 6))
+            .moveTo(to_x, to_y)
+            .lineTo(to_x - headlen * Math.cos(angle + Math.PI / 6), to_y - headlen * Math.sin(angle + Math.PI / 6));
+
+        stage.addChild(tick_line);
 
 
     });
 
 
+    // ticks
     opt.axis_ticks.forEach(function (v) {
         var coord1 = coord([v, 100 - v, 0]);
         var coord2= coord([0, 100 - v, v]);
@@ -305,7 +342,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     }
 
 
-
     //////////////////////////////////////////////
     // Додати всі точки
     function draw_all_points(df, scale_array, tip_array) {
@@ -417,20 +453,21 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     //////////////////////////////////////////////
     // Додати лінії
-    function drawLines(oblast, years){
+    var region_for_lines = "";
+    function drawLines(years){
 
-
-
-        const filtered = data.filter(function(d){
-            return oblast.includes(d.oblast)
-        });
-
-
-
+        var filtered;
+        if(region_for_lines != "") {
+            filtered = data.filter(function(d){
+                return region_for_lines.includes(d.oblast)
+            });
+        } else {
+            filtered = data
+        }
 
         filtered.forEach(function(d){
 
-            var segment_fill = d.oblast === "Рівненська область" ?  0xFF2121 : 0x808080;
+            var segment_fill = 0xD1D1D1;
 
             const line = new PIXI.Graphics();
             line.info = [{
@@ -455,7 +492,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                     let opacity_value = (i * (1/(years.length-1))) + 0.2;
 
                     segment
-                        .lineStyle(1, segment_fill, opacity_value)
+                        .lineStyle(1, segment_fill, 1)
                         .moveTo(line.info[0][current_year].x, line.info[0][current_year].y)
                         .lineTo(line.info[0][next_year].x, line.info[0][next_year].y);
 
@@ -503,7 +540,12 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             } else {
                  point.alpha = 0;
             }
+
+            stage.removeChild(point);
+            stage.addChild(point);
         });
+
+
     }
 
 
@@ -585,9 +627,9 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         draw_all_points(input,  scale_array, tip_array);
 
-        lines_all.forEach(function(p, i) {
-            stage.removeChild(lines_all[i])
-        })
+        // lines_all.forEach(function(p, i) {
+        //     stage.removeChild(lines_all[i])
+        // })
     }
 
 
@@ -596,6 +638,20 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     function animate() {
         renderer.render(stage);
         requestAnimationFrame( animate );
+    }
+
+
+    function redrawLines(years){
+        lines_all.forEach(function(p, i) {
+            stage.removeChild(lines_all[i])
+        });
+
+        lines_all = [];
+
+        if(region_for_lines != '') {
+            drawLines(years)
+        }
+
     }
 
 
@@ -797,11 +853,15 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         scroller.resize();
     }
 
+
+
     // scrollama event handlers
     function handleStepEnter(r) {
 
 
         if(r.index === 8) {
+            region_for_lines = "";
+            // redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("display", "block");
             points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
             draw_all_points(data, [], []);
@@ -811,19 +871,24 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         }
 
         if(r.index === 9) {
+            region_for_lines = "";
+            // redrawLines(["2007", "2012"]);
             change_data("2012");
-            show_unsmooth()
+            show_unsmooth();
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
         }
 
         if(r.index === 10 && r.direction === "down") {
+            region_for_lines = "";
             points_all.forEach(function(p, i) {
                 points_all[i].alpha = 1;
             });
         }
 
         if(r.index === 10 && r.direction === "up") {
+            // redrawLines(["2007", "2012"]);
+            region_for_lines = "";
             points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
@@ -832,6 +897,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
 
         if(r.index === 11) {
+            region_for_lines = "Закарпатська область";
+            redrawLines(["2007", "2012"]);
             change_data("2012");
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
@@ -840,7 +907,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
 
         if(r.index === 12) {
-            // drawLines(["Закарпатська область"], ["2012", "2014", "2019"]);
+            region_for_lines = "Закарпатська область";
+            redrawLines(["2014", "2019"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2019").style("background-color", "#f59894");
             change_data("2019");
@@ -848,6 +916,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
 
         if(r.index === 13) {
+            region_for_lines = "Чернівецька область";
+            redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             change_data("2012");
@@ -855,28 +925,37 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         }
 
         if(r.index === 14) {
+            region_for_lines = "Чернівецька область";
 
         }
 
         if(r.index === 15) {
+            region_for_lines = "Чернівецька область";
+            redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Чернівецька область", chernivetska, ["Кельменецький район", "Сокирянський район"])
         }
         
         if(r.index === 16) {
+            region_for_lines = "Тернопільська область";
+            redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Тернопільська область", scale_points, ["Шумський район", "Лановецький район", "Збаразький район"])
         }
 
         if(r.index === 17) {
+            region_for_lines = "Сумська область";
+            redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Сумська область", scale_points, scale_points)
         }
 
         if(r.index === 18) {
+            region_for_lines = "Житомирська область";
+            redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Житомирська область", scale_points, scale_points)
@@ -914,10 +993,19 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     init();
 
     d3.selectAll(".test_big").on("click", function(d){
+        var seleted_years = [];
         d3.selectAll(".test_big").style("background-color", "lightgrey");
         d3.select(this).style("background-color", "#f59894");
         let year = d3.select(this).attr("id").replace("show_", "");
+        let index = years_arr.indexOf(year);
+        seleted_years.push(years_arr[index]);
+        if(year !="2006") {
+            seleted_years.push(years_arr[index-1]);
+        }
+
+        redrawLines(seleted_years);
         change_data(year);
+
     })
 
 
