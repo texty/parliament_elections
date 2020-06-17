@@ -626,10 +626,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         let input = data.filter(function(d){  return oblast.includes(d.oblast)  });
 
         draw_all_points(input,  scale_array, tip_array);
-
-        // lines_all.forEach(function(p, i) {
-        //     stage.removeChild(lines_all[i])
-        // })
     }
 
 
