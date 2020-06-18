@@ -111,7 +111,7 @@ map.on('load', function () {
     //векторні тайли
     map.addSource('elections_06', {
         type: 'vector',
-        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_06/{z}/{x}/{y}.pbf"]
+        tiles: ["https://texty.github.io/parliament_elections/tiles/triangles_06/{z}/{x}/{y}.pbf"]
     });
 
     map.addSource('elections_07', {
@@ -326,19 +326,19 @@ map.on('load', function () {
 
         map.addLayer({
             "id": "election_data",
-            'type': 'line',
+            'type': 'fill',
             'source': source,
             "source-layer": source_layer,
             'layout': {
 
-                'line-join': 'round',
-                'line-cap': 'round'
+                // 'line-join': 'round',
+                // 'line-cap': 'round'
 
 
             },
             "paint": {
-                'line-color': ["get", "color"],
-                'line-width': 1
+                'fill-color': ["get", "color"]
+                // 'line-width': 1
             }
         })
     }
@@ -359,7 +359,7 @@ map.on('load', function () {
 
 
 
-        add_year("elections_06", "lines_06_4326");
+        add_year("elections_06", "triangles_06_4326");
 
         var nav = new mapboxgl.NavigationControl();
         map.addControl(nav, 'top-left');
@@ -368,7 +368,7 @@ map.on('load', function () {
             d3.selectAll(".pane").classed("active", false);
             d3.select(this).classed("active", true);
             removeTiles();
-            add_year("elections_06", "lines_06_4326");
+            add_year("elections_06", "triangles_06_4326");
 
         });
 
