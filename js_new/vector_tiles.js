@@ -1,8 +1,8 @@
 /**
  * Created by yevheniia on 09.06.20.
  */
-var default_zoom = window.innerWidth > 800 ? 5.5 : 4;
-var min_zoom =  window.innerWidth > 800 ? 5.5 : 4;
+var default_zoom = window.innerWidth > 800 ? 6 : 4;
+var min_zoom =  window.innerWidth > 800 ? 6 : 4;
 var enlarged_zoom = window.innerWidth > 800 ? 7 : 5;
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHJpbWFjdXMxODIiLCJhIjoiWGQ5TFJuayJ9.6sQHpjf_UDLXtEsz8MnjXw';
@@ -236,7 +236,7 @@ map.on('load', function () {
 
     function removeTiles(){
         map.removeLayer('arrow-layer-big');
-        map.removeLayer('arrow-layer-small');
+        // map.removeLayer('arrow-layer-small');
         map.removeLayer('arrow-layer-mid');
         map.removeLayer('election_data');
     }
@@ -278,39 +278,39 @@ map.on('load', function () {
                 }
             });
 
-        map.addLayer({
-            'id': 'arrow-layer-small',
-            'minzoom': 4,
-            'maxzoom': 6,
-            'type': 'symbol',
-            'source': source,
-            "source-layer": source_layer,
-            'layout': {
-                'symbol-placement': "point",
-                'symbol-spacing': 1,
-                'icon-allow-overlap': true,
-                "icon-image": [
-                    "match",
-                    ["get", "color"],
-                    "red",
-                    "red_arrow",
-                    "blue",
-                    "blue_arrow",
-                    "green",
-                    "green_arrow",
-                    ""
-                ],
-
-
-                'icon-size': 0.1,
-                'visibility': 'visible',
-                "icon-rotate": {
-                    "property": "angle",
-                    "type": "identity"
-                }
-
-            }
-        });
+        // map.addLayer({
+        //     'id': 'arrow-layer-small',
+        //     'minzoom': 4,
+        //     'maxzoom': 6,
+        //     'type': 'symbol',
+        //     'source': source,
+        //     "source-layer": source_layer,
+        //     'layout': {
+        //         'symbol-placement': "point",
+        //         'symbol-spacing': 1,
+        //         'icon-allow-overlap': true,
+        //         "icon-image": [
+        //             "match",
+        //             ["get", "color"],
+        //             "red",
+        //             "red_arrow",
+        //             "blue",
+        //             "blue_arrow",
+        //             "green",
+        //             "green_arrow",
+        //             ""
+        //         ],
+        //
+        //
+        //         'icon-size': 0.0,
+        //         'visibility': 'visible',
+        //         "icon-rotate": {
+        //             "property": "angle",
+        //             "type": "identity"
+        //         }
+        //
+        //     }
+        // });
 
         map.addLayer({
             'id': 'arrow-layer-mid',
