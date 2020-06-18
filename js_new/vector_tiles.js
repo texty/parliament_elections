@@ -246,7 +246,7 @@ map.on('load', function () {
     function add_year(source, source_layer) {
            map.addLayer({
                 'id': 'arrow-layer-big',
-               'minzoom': 7,
+               'minzoom': 8,
                'maxzoom': 10,
                 'type': 'symbol',
                 'source': source,
@@ -315,7 +315,7 @@ map.on('load', function () {
         map.addLayer({
             'id': 'arrow-layer-mid',
             'minzoom': 6,
-            'maxzoom': 7,
+            'maxzoom': 8,
             'type': 'symbol',
             'source': source,
             "source-layer": source_layer,
