@@ -37,6 +37,8 @@ var map = new mapboxgl.Map({
                 'minzoom': 4,
                 'maxzoom': 10
             }
+
+
         ]
     },
     center: [31.5, 48.5],
@@ -233,96 +235,117 @@ map.on('load', function () {
     }
 
     function removeTiles(){
-        map.removeLayer('arrow-layer-green');
-        map.removeLayer('arrow-layer-red');
-        map.removeLayer('arrow-layer-blue');
+        map.removeLayer('arrow-layer-big');
+        map.removeLayer('arrow-layer-small');
+        map.removeLayer('arrow-layer-mid');
         map.removeLayer('election_data');
     }
 
 
 
     function add_year(source, source_layer) {
-           // map.addLayer({
-           //      'id': 'arrow-layer-red',
-           //      'type': 'symbol',
-           //      'source': source,
-           //      "source-layer": source_layer,
-           //      'layout': {
-           //          'symbol-placement': "point",
-           //          'symbol-spacing': 1,
-           //          'icon-allow-overlap': true,
-           //          "icon-image": [
-           //              "match",
-           //              ["get", "color"],
-           //              "red",
-           //              "red_arrow",
-           //              ""
-           //          ],
-           //
-           //
-           //          'icon-size': 0.2,
-           //          'visibility': 'visible',
-           //          "icon-rotate": {
-           //              "property": "angle",
-           //              "type": "identity"
-           //          }
-           //
-           //      }
-           //  });
-           //
-           //  map.addLayer({
-           //      'id': 'arrow-layer-blue',
-           //      'type': 'symbol',
-           //      'source': source,
-           //      "source-layer": source_layer,
-           //      'layout': {
-           //          'symbol-placement': "point",
-           //          'symbol-spacing': 1,
-           //          'icon-allow-overlap': true,
-           //          "icon-image": [
-           //              "match",
-           //              ["get", "color"],
-           //              "blue",
-           //              "blue_arrow",
-           //              ""
-           //          ],
-           //
-           //
-           //          'icon-size': 0.2,
-           //          'visibility': 'visible',
-           //          "icon-rotate": {
-           //              "property": "angle",
-           //              "type": "identity"
-           //          }
-           //      }
-           //  });
-           //
-           //  map.addLayer({
-           //      'id': 'arrow-layer-green',
-           //      'type': 'symbol',
-           //      'source': source,
-           //      "source-layer": source_layer,
-           //      'layout': {
-           //          'symbol-placement': "point",
-           //          'symbol-spacing': 1,
-           //          'icon-allow-overlap': true,
-           //          "icon-image": [
-           //              "match",
-           //              ["get", "color"],
-           //              "green",
-           //              "green_arrow",
-           //              ""
-           //          ],
-           //
-           //          'icon-size': 0.2,
-           //          'visibility': 'visible',
-           //          "icon-rotate": {
-           //              "property": "angle",
-           //              "type": "identity"
-           //          }
-           //
-           //      }
-           //  });
+           map.addLayer({
+                'id': 'arrow-layer-big',
+               'minzoom': 7,
+               'maxzoom': 10,
+                'type': 'symbol',
+                'source': source,
+                "source-layer": source_layer,
+                'layout': {
+                    'symbol-placement': "point",
+                    'symbol-spacing': 1,
+                    'icon-allow-overlap': true,
+                    "icon-image": [
+                        "match",
+                        ["get", "color"],
+                        "red",
+                        "red_arrow",
+                        "blue",
+                        "blue_arrow",
+                        "green",
+                        "green_arrow",
+                        ""
+                    ],
+
+
+                    'icon-size': 0.3,
+                    'visibility': 'visible',
+                    "icon-rotate": {
+                        "property": "angle",
+                        "type": "identity"
+                    }
+
+                }
+            });
+
+        map.addLayer({
+            'id': 'arrow-layer-small',
+            'minzoom': 4,
+            'maxzoom': 6,
+            'type': 'symbol',
+            'source': source,
+            "source-layer": source_layer,
+            'layout': {
+                'symbol-placement': "point",
+                'symbol-spacing': 1,
+                'icon-allow-overlap': true,
+                "icon-image": [
+                    "match",
+                    ["get", "color"],
+                    "red",
+                    "red_arrow",
+                    "blue",
+                    "blue_arrow",
+                    "green",
+                    "green_arrow",
+                    ""
+                ],
+
+
+                'icon-size': 0.1,
+                'visibility': 'visible',
+                "icon-rotate": {
+                    "property": "angle",
+                    "type": "identity"
+                }
+
+            }
+        });
+
+        map.addLayer({
+            'id': 'arrow-layer-mid',
+            'minzoom': 6,
+            'maxzoom': 7,
+            'type': 'symbol',
+            'source': source,
+            "source-layer": source_layer,
+            'layout': {
+                'symbol-placement': "point",
+                'symbol-spacing': 1,
+                'icon-allow-overlap': true,
+                "icon-image": [
+                    "match",
+                    ["get", "color"],
+                    "red",
+                    "red_arrow",
+                    "blue",
+                    "blue_arrow",
+                    "green",
+                    "green_arrow",
+                    ""
+                ],
+
+
+                'icon-size': 0.2,
+                'visibility': 'visible',
+                "icon-rotate": {
+                    "property": "angle",
+                    "type": "identity"
+                }
+
+            }
+        });
+
 
         map.addLayer({
             "id": "election_data",
@@ -330,12 +353,8 @@ map.on('load', function () {
             'source': source,
             "source-layer": source_layer,
             'layout': {
-
-
                 // 'line-join': 'round',
                 // 'line-cap': 'round'
-
-
             },
             "paint": {
 
