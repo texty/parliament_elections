@@ -331,13 +331,24 @@ map.on('load', function () {
             "source-layer": source_layer,
             'layout': {
 
+
                 // 'line-join': 'round',
                 // 'line-cap': 'round'
 
 
             },
             "paint": {
-                'fill-color': ["get", "color"]
+
+                'fill-color': [
+                    'match',
+                    ['get', 'color'],
+                    '#93F164', '#93F164',
+                    '#F47874', '#F47874',
+                    '#5B95FF', '#5B95FF',
+                    'green', '#93F164',
+                    'red', '#F47874',
+                    '#5B95FF'
+                ]
                 // 'line-width': 1
             }
         })
