@@ -9,7 +9,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZHJpbWFjdXMxODIiLCJhIjoiWGQ5TFJuayJ9.6sQHpjf_
 var map = new mapboxgl.Map({
     container: 'map',
     // style: 'style3.json',
-    minZoom: 4, //restrict map zoom
+    minZoom: min_zoom,
     maxZoom: 9,
     // zoom: 5,
     // center: [32.259271, 48.518688],
@@ -336,7 +336,7 @@ map.on('load', function () {
                 ],
 
 
-                'icon-size': 0.2,
+                'icon-size': 0.15,
                 'visibility': 'visible',
                 "icon-rotate": {
                     "property": "angle",
