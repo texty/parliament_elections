@@ -44,23 +44,7 @@
         "background-color": "#333"
       }
     },
-    {
-      "id": "park",
-      "type": "fill",
-      "source": "openmaptiles",
-      "source-layer": "park",
-      "filter": [
-        "==",
-        "$type",
-        "Polygon"
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": "rgb(230, 233, 229)"
-      }
-    },
+
     {
       "id": "water",
       "type": "fill",
@@ -1488,7 +1472,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgb(230, 204, 207)",
+        "line-color": "lightgrey",
         "line-width": {
           "base": 1.1,
           "stops": [
@@ -1546,7 +1530,6 @@
       ],
       "layout": {
         "text-size": 10,
-        "text-transform": "uppercase",
         "text-font": [
           "Metropolis Regular",
           "Klokantech Noto Sans Regular",
@@ -1592,7 +1575,6 @@
       ],
       "layout": {
         "text-size": 10,
-        "text-transform": "uppercase",
         "text-font": [
           "Metropolis Regular",
           "Klokantech Noto Sans Regular",
@@ -1638,7 +1620,6 @@
       ],
       "layout": {
         "text-size": 10,
-        "text-transform": "uppercase",
         "text-font": [
           "Metropolis Regular",
           "Klokantech Noto Sans Regular",
@@ -1699,7 +1680,6 @@
             ]
           ]
         },
-        "text-transform": "uppercase",
         "text-font": [
           "Metropolis Regular",
           "Klokantech Noto Sans Regular",
@@ -1785,7 +1765,7 @@
             ]
           ]
         },
-        "text-transform": "uppercase",
+
         "text-font": [
           "Metropolis Regular",
           "Klokantech Noto Sans Regular",
@@ -1866,7 +1846,7 @@
             ]
           ]
         },
-        "text-transform": "uppercase",
+
         "text-font": [
           "Metropolis Regular",
           "Klokantech Noto Sans Regular",
@@ -2011,14 +1991,13 @@
         ]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "text-field": "{name}",
         "text-font": [
           "Metropolis Regular",
           "Klokantech Noto Sans Regular",
           "Klokantech Noto Sans CJK Regular"
         ],
-        "text-transform": "uppercase",
         "text-size": 10
       },
       "paint": {
@@ -2130,7 +2109,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "text-field": "{name}",
         "text-font": [
           "Metropolis Regular",
@@ -2191,7 +2170,7 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": "rgb(230, 204, 207)",
