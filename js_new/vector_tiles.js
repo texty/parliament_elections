@@ -113,7 +113,7 @@ map.on('load', function () {
     //векторні тайли
     map.addSource('elections_06', {
         type: 'vector',
-        tiles: ["https://texty.github.io/parliament_elections/tiles/triangles_06/{z}/{x}/{y}.pbf"]
+        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_06/{z}/{x}/{y}.pbf"]
     });
 
     map.addSource('elections_07', {
@@ -237,7 +237,7 @@ map.on('load', function () {
     function removeTiles(){
         map.removeLayer('arrow-layer-big');
         // map.removeLayer('arrow-layer-small');
-        map.removeLayer('arrow-layer-mid');
+        // map.removeLayer('arrow-layer-mid');
         map.removeLayer('election_data');
     }
 
@@ -312,39 +312,39 @@ map.on('load', function () {
         //     }
         // });
 
-        map.addLayer({
-            'id': 'arrow-layer-mid',
-            'minzoom': 6,
-            'maxzoom': 8,
-            'type': 'symbol',
-            'source': source,
-            "source-layer": source_layer,
-            'layout': {
-                'symbol-placement': "point",
-                'symbol-spacing': 1,
-                'icon-allow-overlap': true,
-                "icon-image": [
-                    "match",
-                    ["get", "color"],
-                    "red",
-                    "red_arrow",
-                    "blue",
-                    "blue_arrow",
-                    "green",
-                    "green_arrow",
-                    ""
-                ],
-
-
-                'icon-size': 0.15,
-                'visibility': 'visible',
-                "icon-rotate": {
-                    "property": "angle",
-                    "type": "identity"
-                }
-
-            }
-        });
+        // map.addLayer({
+        //     'id': 'arrow-layer-mid',
+        //     'minzoom': 6,
+        //     'maxzoom': 8,
+        //     'type': 'symbol',
+        //     'source': source,
+        //     "source-layer": source_layer,
+        //     'layout': {
+        //         'symbol-placement': "point",
+        //         'symbol-spacing': 1,
+        //         'icon-allow-overlap': true,
+        //         "icon-image": [
+        //             "match",
+        //             ["get", "color"],
+        //             "red",
+        //             "red_arrow",
+        //             "blue",
+        //             "blue_arrow",
+        //             "green",
+        //             "green_arrow",
+        //             ""
+        //         ],
+        //
+        //
+        //         'icon-size': 0.15,
+        //         'visibility': 'visible',
+        //         "icon-rotate": {
+        //             "property": "angle",
+        //             "type": "identity"
+        //         }
+        //
+        //     }
+        // });
 
 
         map.addLayer({
@@ -389,7 +389,7 @@ map.on('load', function () {
 
 
 
-        add_year("elections_06", "triangles_06_4326");
+        add_year("elections_06", "lines_06_4326");
 
         var nav = new mapboxgl.NavigationControl();
         map.addControl(nav, 'top-left');
@@ -398,7 +398,7 @@ map.on('load', function () {
             d3.selectAll(".pane").classed("active", false);
             d3.select(this).classed("active", true);
             removeTiles();
-            add_year("elections_06", "triangles_06_4326");
+            add_year("elections_06", "lines_06_4326");
 
         });
 
