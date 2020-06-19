@@ -1,8 +1,8 @@
 /**
  * Created by yevheniia on 09.06.20.
  */
-var default_zoom = window.innerWidth > 800 ? 6 : 4;
-var min_zoom =  window.innerWidth > 800 ? 6 : 4;
+var default_zoom = window.innerWidth > 800 ? 5.5 : 4;
+var min_zoom =  window.innerWidth > 800 ? 5 : 4;
 var enlarged_zoom = window.innerWidth > 800 ? 7 : 5;
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHJpbWFjdXMxODIiLCJhIjoiWGQ5TFJuayJ9.6sQHpjf_UDLXtEsz8MnjXw';
@@ -53,6 +53,15 @@ map.scrollZoom.disable();
 
 
 map.on('load', function () {
+
+    var layers = map.getStyle().layers;
+    var firstSymbolId;
+    for (var i = 0; i < layers.length; i++) {
+        if (layers[i].type === 'symbol') {
+            firstSymbolId = layers[i].id;
+            break;
+        }
+    }
 
 
     //geojson полігони областей
@@ -171,12 +180,15 @@ map.on('load', function () {
     function add_po_ch(){
         map.addLayer({
             "id": "po-ch-layer",
-            'type': 'fill',
+            'type': 'line',
             "source": "po_ch",
             'paint': {
-                "fill-outline-color": "black",
-                'fill-color': 'white',
-                'fill-opacity': 0.3
+                // "fill-outline-color": "black",
+                // 'fill-color': 'white',
+                // 'fill-opacity': 0.3
+                'line-color': 'white',
+                'line-width': 1,
+                'line-opacity': 0.8
             }
         });
     }
@@ -185,13 +197,17 @@ map.on('load', function () {
     function add_vi_kh(){
         map.addLayer({
         "id": "vi-kh-layer",
-            'type': 'fill',
+            'type': 'line',
             "source": "vi_kh",
             // "fill-antialias": true,
             'paint': {
-            "fill-outline-color": "black",
-                'fill-color': 'white',
-                'fill-opacity': 0.3
+            // "fill-outline-color": "black",
+                // 'fill-color': 'white',
+                // 'fill-opacity': 0.3
+
+                'line-color': 'white',
+                'line-width': 1,
+                'line-opacity': 0.8
             }
         });
     }
@@ -200,13 +216,17 @@ map.on('load', function () {
     function add_od_do_kh(){
         map.addLayer({
             "id": "od-do-kh-layer",
-            'type': 'fill',
+            'type': 'line',
             "source": "od_do_kh",
             // "fill-antialias": true,
             'paint': {
-                "fill-outline-color": "black",
-                'fill-color': 'white',
-                'fill-opacity': 0.3
+                // "fill-outline-color": "black",
+                // 'fill-color': 'white',
+                // 'fill-opacity': 0.3
+
+                'line-color': 'white',
+                'line-width': 1,
+                'line-opacity': 0.8
             }
         });
     }
@@ -215,13 +235,17 @@ map.on('load', function () {
     function add_lubash(){
         map.addLayer({
             "id": "lubash-layer",
-            'type': 'fill',
+            'type': 'line',
             "source": "lubash",
             // "fill-antialias": true,
             'paint': {
-                "fill-outline-color": "black",
-                'fill-color': 'white',
-                'fill-opacity': 0.3
+                // "fill-outline-color": "black",
+                // 'fill-color': 'white',
+                // 'fill-opacity': 0.3
+
+                'line-color': 'white',
+                'line-width': 1,
+                'line-opacity': 0.8
             }
         });
 
@@ -276,7 +300,7 @@ map.on('load', function () {
                     }
 
                 }
-            });
+            }, firstSymbolId);
 
         // map.addLayer({
         //     'id': 'arrow-layer-small',
@@ -349,28 +373,29 @@ map.on('load', function () {
 
         map.addLayer({
             "id": "election_data",
-            'type': 'fill',
+            'type': 'line',
             'source': source,
             "source-layer": source_layer,
             'layout': {
-                // 'line-join': 'round',
-                // 'line-cap': 'round'
+                'line-join': 'round',
+                'line-cap': 'round'
+
             },
             "paint": {
 
-                'fill-color': [
+                'line-color': [
                     'match',
                     ['get', 'color'],
-                    '#93F164', '#93F164',
-                    '#F47874', '#F47874',
-                    '#5B95FF', '#5B95FF',
+                    // '#93F164', '#93F164',
+                    // '#F47874', '#F47874',
+                    // '#5B95FF', '#5B95FF',
                     'green', '#93F164',
                     'red', '#F47874',
                     '#5B95FF'
-                ]
-                // 'line-width': 1
+                ],
+                'line-width': 1
             }
-        })
+        }, firstSymbolId)
     }
 
 

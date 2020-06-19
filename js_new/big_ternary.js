@@ -854,8 +854,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     // scrollama event handlers
     function handleStepEnter(r) {
 
-        console.log(r)
-
 
         if(r.index === 8) {
             region_for_lines = "";
