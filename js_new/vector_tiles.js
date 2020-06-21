@@ -190,8 +190,8 @@ map.on('load', function () {
                 // "fill-outline-color": "black",
                 // 'fill-color': 'white',
                 // 'fill-opacity': 0.3
-                'line-color': 'white',
-                'line-width': 1,
+                'line-color': 'lightgrey',
+                'line-width': 2,
                 'line-opacity': 0.8
             }
         });
@@ -209,8 +209,8 @@ map.on('load', function () {
                 // 'fill-color': 'white',
                 // 'fill-opacity': 0.3
 
-                'line-color': 'white',
-                'line-width': 1,
+                'line-color': 'lightgrey',
+                'line-width': 2,
                 'line-opacity': 0.8
             }
         });
@@ -228,8 +228,8 @@ map.on('load', function () {
                 // 'fill-color': 'white',
                 // 'fill-opacity': 0.3
 
-                'line-color': 'white',
-                'line-width': 1,
+                'line-color': 'lightgrey',
+                'line-width': 2,
                 'line-opacity': 0.8
             }
         });
@@ -247,8 +247,8 @@ map.on('load', function () {
                 // 'fill-color': 'white',
                 // 'fill-opacity': 0.3
 
-                'line-color': 'white',
-                'line-width': 1,
+                'line-color': 'lightgrey',
+                'line-width': 2,
                 'line-opacity': 0.8
             }
         });

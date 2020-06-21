@@ -70,9 +70,9 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     const years_arr = ["2006", "2007", "2012", "2014", "2019"];
 
 
-    const green = '#009601';
-    const red = '#EE7B7F';
-    const blue = '#8CB4E6';
+    const green = '#79c951';
+    const red = '#F47874';
+    const blue = '#5B95FF';
 
     data.forEach(function (d) {
         d.ua_2006 = +d.ua_2006 * 100;
@@ -170,9 +170,9 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     // стрілки вісів
     const tick_lines = [
-        { label: "проросійських", posFrom: [0, 22, 100-22], posTo: [0, 100, 0], rot: -45, color: 0xEE7B7F, yShift: 20, xShift: 55 },
-        { label: "популістських", posFrom: [100-24, 0, 24], posTo: [0, 0, 100],  rot: 45, color: 0x009601, yShift: 0, xShift: -50 },
-        { label: "рівень підтримки проукраїнських сил", posFrom: [53, 100-53, 0], posTo: [100, 0, 0],  rot: 0, color: 0x8CB4E6, yShift: -45, xShift: 0 }
+        { label: "проросійських", posFrom: [0, 22, 100-22], posTo: [0, 100, 0], rot: -45, color: 0xF47874, yShift: 20, xShift: 55 },
+        { label: "популістських", posFrom: [100-24, 0, 24], posTo: [0, 0, 100],  rot: 45, color: 0x79c951, yShift: 0, xShift: -50 },
+        { label: "рівень підтримки проукраїнських сил", posFrom: [53, 100-53, 0], posTo: [100, 0, 0],  rot: 0, color: 0x5B95FF, yShift: -45, xShift: 0 }
     ];
 
     tick_lines.forEach(function (v) {
