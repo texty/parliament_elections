@@ -20,22 +20,17 @@ var map = new mapboxgl.Map({
     style: 'dark_matter.json',
     // style: {
     //     'version': 8,
-    //     'sources': {
-    //         'raster-tiles': {
-    //             'type': 'raster',
-    //             'tiles': [
-    //                 'https://api.mapbox.com/styles/v1/evgeshadrozdova/cjsqjh1to30c81ftn8jnuikgj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNqMjZuaGpkYTAwMXAzMm5zdGVvZ2c0OHYifQ.s8MMs2wW15ZyUfDhTS_cdQ'
-    //             ],
-    //             'tileSize': 256,
-    //             'attribution':
-    //                 'Map tiles by <a target="_top" rel="noopener" href="http://stamen.com">Stamen Design</a>, under <a target="_top" rel="noopener" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>, under <a target="_top" rel="noopener" href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
-    //         }
-    //     },
+    //     'sources': 'https://api.maptiler.com/tiles/v3/tiles.json?key=x6rAwsstZPh1FO6HjN5r',
+    //
     //     'layers': [
     //         {
-    //             'id': 'simple-tiles',
-    //             'type': 'raster',
-    //             'source': 'raster-tiles',
+    //         //     'id': 'simple-tiles',
+    //         //     'type': 'vector',
+    //         //     'source': 'Dark Matter',
+    //             "filter": [
+    //                 "all",
+    //                 ["match", ["get", "iso_3166_1"], ["UA"], true, false]
+    //             ],
     //             'minzoom': 4,
     //             'maxzoom': 10
     //         }

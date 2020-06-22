@@ -102,8 +102,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     var opt = {
         width: 900,
-        height: 800,
-        side: 600,
+        height: 650,
+        side: 500,
         margin: 150,
         axis_labels: ['проукраїнські', 'проросійські', 'популістські'],
         axis_ticks: [0, 20, 40, 60, 80, 100],
