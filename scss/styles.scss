@@ -408,7 +408,34 @@ section.text {
   opacity: 0.4;
 }
 
+
 #scatter-plot {
+
+  #nav-wrapper {
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    z-index: 10000;
+    @media(max-width:800px){
+      display: block;
+    }
+  }
+
+
+  #filter {
+    min-width: 200px;
+    margin-left: 20px;
+    @media(max-width:800px){
+      display: block;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+
 
   line.axis {
     stroke-width: 2;

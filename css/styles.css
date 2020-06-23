@@ -484,6 +484,26 @@ section.text {
 #update_wow {
   opacity: 0.4; }
 
+#scatter-plot #nav-wrapper {
+  position: sticky;
+  top: 0px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  z-index: 10000; }
+  @media (max-width: 800px) {
+    #scatter-plot #nav-wrapper {
+      display: block; } }
+#scatter-plot #filter {
+  min-width: 200px;
+  margin-left: 20px; }
+  @media (max-width: 800px) {
+    #scatter-plot #filter {
+      display: block;
+      margin-left: 0;
+      margin-bottom: 10px; } }
 #scatter-plot line.axis {
   stroke-width: 2;
   stroke: #363636; }

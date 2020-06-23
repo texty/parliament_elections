@@ -170,8 +170,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     // стрілки вісів
     const tick_lines = [
-        { label: "проросійських", posFrom: [0, 22, 100-22], posTo: [0, 100, 0], rot: -45, color: 0xF47874, yShift: 20, xShift: 55 },
-        { label: "популістських", posFrom: [100-24, 0, 24], posTo: [0, 0, 100],  rot: 45, color: 0x79c951, yShift: 0, xShift: -50 },
+        { label: "проросійських", posFrom: [0, 25, 100-25], posTo: [0, 100, 0], rot: -45, color: 0xF47874, yShift: 20, xShift: 55 },
+        { label: "популістських", posFrom: [100-28, 0, 28], posTo: [0, 0, 110],  rot: 45, color: 0x79c951, yShift: 0, xShift: -50 },
         { label: "рівень підтримки проукраїнських сил", posFrom: [53, 100-53, 0], posTo: [100, 0, 0],  rot: 0, color: 0x5B95FF, yShift: -45, xShift: 0 }
     ];
 

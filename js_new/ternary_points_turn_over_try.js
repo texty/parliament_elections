@@ -323,7 +323,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                     .attr("cy", function (d) { return d.coord.y; })
                     .attr("r", 5)
                     .style("fill", function(d) { return ternaryFill(d.coord.x, d.coord.y) })
-                    .attr("data-tippy-content", function (d) {  return d.rayon });
+                    .attr("data-tippy-content", function (d) {  return d.rayon + ",  ua: " + d.ua.toFixed(1) + ",  pop: " + d.pop.toFixed(1) + ",  ru " + d.ru.toFixed(1) });
 
                 circles
                     .transition().duration(1000)
@@ -331,7 +331,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                     .attr("cx", function (d) { return d.coord.x; })
                     .attr("cy", function (d) { return d.coord.y; })
                     .style("fill", function(d) { return ternaryFill(d.coord.x, d.coord.y) })
-                    .attr("data-tippy-content", function (d) {  return d.rayon });
+                    .attr("data-tippy-content", function (d) {  return d.rayon + ",  ua: " + d.ua.toFixed(1) + ",  pop: " + d.pop.toFixed(1) + ",  ru " + d.ru.toFixed(1) });
 
                 circles
                     .exit().remove();
