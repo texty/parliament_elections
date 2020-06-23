@@ -17,7 +17,7 @@ var map = new mapboxgl.Map({
     hash: false,
     tap: false,
     attributionControl: false,
-    style: 'dark_matter.json',
+    style: 'dark_matter2.json',
     // style: {
     //     'version': 8,
     //     'sources': 'https://api.maptiler.com/tiles/v3/tiles.json?key=x6rAwsstZPh1FO6HjN5r',
