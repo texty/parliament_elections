@@ -17,7 +17,7 @@ var map = new mapboxgl.Map({
     hash: false,
     tap: false,
     attributionControl: false,
-    style: 'dark_matter2.json',
+    style: 'dark_matter.json',
     // style: {
     //     'version': 8,
     //     'sources': 'https://api.maptiler.com/tiles/v3/tiles.json?key=x6rAwsstZPh1FO6HjN5r',
@@ -258,9 +258,9 @@ map.on('load', function () {
     }
 
     function removeTiles(){
-        map.removeLayer('arrow-layer-big');
-        // map.removeLayer('arrow-layer-small');
+        map.removeLayer('arrow-layer-small');
         map.removeLayer('arrow-layer-mid');
+        map.removeLayer('arrow-layer-big');
         // map.removeLayer('triangle_data');
         map.removeLayer('election_data');
     }
@@ -268,42 +268,8 @@ map.on('load', function () {
 
 
     function add_year(source, source_layer) {
-           map.addLayer({
-                'id': 'arrow-layer-big',
-               'minzoom': 7,
-               'maxzoom': 10,
-                'type': 'symbol',
-                'source': source,
-                "source-layer": source_layer,
-                'layout': {
-                    'symbol-placement': "point",
-                    'symbol-spacing': 1,
-                    'icon-allow-overlap': true,
-                    "icon-image": [
-                        "match",
-                        ["get", "color"],
-                        "red",
-                        "red_arrow",
-                        "blue",
-                        "blue_arrow",
-                        "green",
-                        "green_arrow",
-                        ""
-                    ],
-
-
-                    'icon-size': 0.3,
-                    'visibility': 'visible',
-                    "icon-rotate": {
-                        "property": "angle",
-                        "type": "identity"
-                    }
-
-                }
-            }, firstSymbolId);
-
         map.addLayer({
-            'id': 'arrow-layer-mid',
+            'id': 'arrow-layer-small',
             'minzoom': 6,
             'maxzoom': 7,
             'type': 'symbol',
@@ -335,6 +301,77 @@ map.on('load', function () {
 
             }
         }, firstSymbolId);
+
+
+        map.addLayer({
+            'id': 'arrow-layer-mid',
+            'minzoom': 7,
+            'maxzoom': 8,
+            'type': 'symbol',
+            'source': source,
+            "source-layer": source_layer,
+            'layout': {
+                'symbol-placement': "point",
+                'symbol-spacing': 1,
+                'icon-allow-overlap': true,
+                "icon-image": [
+                    "match",
+                    ["get", "color"],
+                    "red",
+                    "red_arrow",
+                    "blue",
+                    "blue_arrow",
+                    "green",
+                    "green_arrow",
+                    ""
+                ],
+
+
+                'icon-size': 0.2,
+                'visibility': 'visible',
+                "icon-rotate": {
+                    "property": "angle",
+                    "type": "identity"
+                }
+
+            }
+        }, firstSymbolId);
+
+         map.addLayer({
+                'id': 'arrow-layer-big',
+               'minzoom': 8,
+               'maxzoom': 10,
+                'type': 'symbol',
+                'source': source,
+                "source-layer": source_layer,
+                'layout': {
+                    'symbol-placement': "point",
+                    'symbol-spacing': 1,
+                    'icon-allow-overlap': true,
+                    "icon-image": [
+                        "match",
+                        ["get", "color"],
+                        "red",
+                        "red_arrow",
+                        "blue",
+                        "blue_arrow",
+                        "green",
+                        "green_arrow",
+                        ""
+                    ],
+
+
+                    'icon-size': 0.3,
+                    'visibility': 'visible',
+                    "icon-rotate": {
+                        "property": "angle",
+                        "type": "identity"
+                    }
+
+                }
+            }, firstSymbolId);
+
+
 
 
         map.addLayer({

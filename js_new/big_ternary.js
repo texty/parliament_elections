@@ -490,19 +490,20 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                     let next_year = years[i+1];
 
                     let opacity_value = (i * (1/(years.length-1))) + 0.2;
+                    // setTimeout(function(){
+                        segment
+                            .lineStyle(1, segment_fill, 1)
+                            .moveTo(line.info[0][current_year].x, line.info[0][current_year].y)
+                            .lineTo(line.info[0][next_year].x, line.info[0][next_year].y);
 
-                    segment
-                        .lineStyle(1, segment_fill, 1)
-                        .moveTo(line.info[0][current_year].x, line.info[0][current_year].y)
-                        .lineTo(line.info[0][next_year].x, line.info[0][next_year].y);
+                        lines_all.push(segment);
+                        stage.addChild(segment);
 
-                    lines_all.push(segment);
-                    stage.addChild(segment);
 
+                    // }, 1000)
                 }
 
             });
-
         });
 
     }
@@ -855,36 +856,40 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     function handleStepEnter(r) {
 
 
-        if(r.index === 8) {
+        // if(r.index === 8) {
+        //     region_for_lines = "";
+        //     // redrawLines(["2007", "2012"]);
+        //     d3.selectAll(".test_big").style("display", "block");
+        //     points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
+        //     draw_all_points(data, [], []);
+        //     show_smooth();
+        //     d3.selectAll(".test_big").style("background-color", "lightgrey");
+        //     d3.select("#show_2012").style("background-color", "#f59894");
+        // }
+        //
+        // if(r.index === 9) {
+        //     region_for_lines = "";
+        //     // redrawLines(["2007", "2012"]);
+        //     change_data("2012");
+        //     show_unsmooth();
+        //     d3.selectAll(".test_big").style("background-color", "lightgrey");
+        //     d3.select("#show_2012").style("background-color", "#f59894");
+        // }
+
+        if(r.index === 8 && r.direction === "down") {
+            d3.select("#show_2012").style("background-color", "#f59894");
             region_for_lines = "";
-            // redrawLines(["2007", "2012"]);
-            d3.selectAll(".test_big").style("display", "block");
             points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
             draw_all_points(data, [], []);
-            show_smooth();
-            d3.selectAll(".test_big").style("background-color", "lightgrey");
-            d3.select("#show_2012").style("background-color", "#f59894");
-        }
-
-        if(r.index === 9) {
-            region_for_lines = "";
-            // redrawLines(["2007", "2012"]);
-            change_data("2012");
-            show_unsmooth();
-            d3.selectAll(".test_big").style("background-color", "lightgrey");
-            d3.select("#show_2012").style("background-color", "#f59894");
-        }
-
-        if(r.index === 10 && r.direction === "down") {
-            region_for_lines = "";
             points_all.forEach(function(p, i) {
                 points_all[i].alpha = 1;
             });
         }
 
-        if(r.index === 10 && r.direction === "up") {
+        if(r.index === 8 && r.direction === "up") {
             // redrawLines(["2007", "2012"]);
             region_for_lines = "";
+            lines_all.forEach(function(p, i) { stage.removeChild(lines_all[i]); });
             points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
@@ -892,9 +897,10 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         }
 
 
-        if(r.index === 11) {
+        if(r.index === 9) {
             region_for_lines = "Закарпатська область";
             redrawLines(["2007", "2012"]);
+
             change_data("2012");
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
@@ -902,16 +908,16 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         }
 
 
-        if(r.index === 12 ) {
-            region_for_lines = "Закарпатська область";
-            redrawLines(["2014", "2019"]);
-            d3.selectAll(".test_big").style("background-color", "lightgrey");
-            d3.select("#show_2019").style("background-color", "#f59894");
-            change_data("2019");
-        }
+        // if(r.index === 10 ) {
+        //     region_for_lines = "Закарпатська область";
+        //     redrawLines(["2014", "2019"]);
+        //     d3.selectAll(".test_big").style("background-color", "lightgrey");
+        //     d3.select("#show_2019").style("background-color", "#f59894");
+        //     change_data("2019");
+        // }
 
 
-        if(r.index === 13 && r.direction === "down") {
+        if(r.index === 10 && r.direction === "down") {
             region_for_lines = "Чернівецька область";
             redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
@@ -920,7 +926,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             filter_data("Чернівецька область", scale_points, scale_points)
         }
 
-        if(r.index === 13 && r.direction === "up") {
+        if(r.index === 10 && r.direction === "up") {
             region_for_lines = "Закарпатська область";
             redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
@@ -930,12 +936,12 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         }
 
 
-        if(r.index === 14) {
+        if(r.index === 11) {
             region_for_lines = "Чернівецька область";
 
         }
 
-        if(r.index === 15) {
+        if(r.index === 12) {
             region_for_lines = "Чернівецька область";
             redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
@@ -943,7 +949,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             filter_data("Чернівецька область", chernivetska, ["Кельменецький район", "Сокирянський район"])
         }
         
-        if(r.index === 16) {
+        if(r.index === 13) {
             region_for_lines = "Тернопільська область";
             redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
@@ -951,7 +957,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             filter_data("Тернопільська область", scale_points, ["Шумський район", "Лановецький район", "Збаразький район"])
         }
 
-        if(r.index === 17) {
+        if(r.index === 14) {
             region_for_lines = "Сумська область";
             redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
@@ -959,7 +965,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             filter_data("Сумська область", scale_points, scale_points)
         }
 
-        if(r.index === 18) {
+        if(r.index === 15) {
             region_for_lines = "Житомирська область";
             redrawLines(["2007", "2012"]);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
@@ -1008,6 +1014,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         if(year !="2006") {
             seleted_years.push(years_arr[index-1]);
         }
+
 
         redrawLines(seleted_years);
         change_data(year);

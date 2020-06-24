@@ -795,11 +795,6 @@
       "source-layer": "place",
       "minzoom": 7,
       "maxzoom": 15,
-      "filter": [
-        "all",
-        ["==", "$type", "Point"],
-        ["==", "class", "town"]
-      ],
       "layout": {
         "icon-image": {"base": 1, "stops": [[0, "circle-11"], [9, ""]]},
         "icon-size": 0.4,
