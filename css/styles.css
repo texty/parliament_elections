@@ -328,6 +328,9 @@ canvas {
   grid-column: 1/3;
   grid-row: 1/2;
   height: 100vh; }
+  @media (max-width: 800px) {
+    #scroll > .scroll__graphic {
+      height: 50vh; } }
 
 #scroll > .scroll__text {
   grid-column: 1/3;

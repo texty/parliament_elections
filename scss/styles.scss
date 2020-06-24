@@ -191,6 +191,10 @@ canvas {
   grid-column: 1/3;
   grid-row: 1/2;
   height: 100vh;
+  @media(max-width: 800px){
+    height: 50vh;
+  }
+
 }
 
 #scroll > .scroll__text {
@@ -212,7 +216,6 @@ canvas {
     height: max-content;
     top: 0;
     background-color: white;
-
   }
 }
 
