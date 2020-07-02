@@ -384,7 +384,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
             //create white rect behind tip
             const txtBG = new PIXI.Sprite(PIXI.Texture.WHITE);
-            txtBG.width = message.width, txtBG.height = message.height;
+                txtBG.width = message.width;
+                txtBG.height = message.height;
 
             if(tip_array.includes(d.rayon)) {
                 message.x = radius * 1.5;
@@ -395,8 +396,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                 point.background = txtBG;
                 point.addChild(txtBG);
                 point.addChild(message);
-                //можливо закинути їх в окремий array і вмнести наверх, коли всі точки буде додано
-
             }
 
             point.on('mouseover', function(event) {
@@ -427,13 +426,13 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                 "2019": coord([d.ua_2019, d.ru_2019, d.pop_2019])
             }];
 
-            point.interactive = true;
+            //point.interactive = true;
             points_all.push(point);
 
-            point.alpha = 0;
+            //point.alpha = 0;
             stage.addChild(point);
 
-            TweenMax.to(point, 2, {
+            TweenMax.to(point, 1, {
                 pixi: { alpha: 1 }
             });
 
