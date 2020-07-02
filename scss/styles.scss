@@ -174,12 +174,24 @@ canvas {
   width: 60%;
   margin: auto;
   grid-row: 1/2;
-  color: #e0e0e0;
   z-index: 1000;
   pointer-events: none;
   @media(max-width: 800px){
     width: 90%;
     margin: auto;
+  }
+
+  .step {
+    margin-top: 100vh;
+
+
+    p {
+      font-size: 18px;
+      @media(max-width: 812px){
+        font-size: 16px;
+      }
+    }
+
   }
 }
 
@@ -202,6 +214,13 @@ canvas {
   grid-row: 1/2;
   width: 60%;
   margin: auto;
+  color: #e0e0e0;
+
+  .step div {
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #222222;
+  }
 }
 
 
@@ -226,10 +245,18 @@ canvas {
   grid-row: 1/2;
   width: 90%;
   z-index: 100;
+  color: #222222;
+
   margin: auto 0 auto 10%;
   @media(max-width: 800px){
     grid-column: 1/3;
     margin: auto;
+  }
+
+  .step div {
+    padding: 20px;
+    line-height: 1.6;
+    background-color: white;
   }
 }
 
@@ -244,25 +271,7 @@ canvas {
   top: 0;
 }
 
-.step {
-  margin-top: 100vh;
 
-
-  p {
-    font-size: 18px;
-    @media(max-width: 812px){
-      font-size: 16px;
-    }
-  }
-
-}
-
-.step div {
-  padding: 20px;
-  line-height: 1.6;
-  background-color: #222222;
-
-}
 
 #tooltip:empty {
   display: none;
@@ -522,10 +531,6 @@ section.text {
     opacity: 1;
     stroke: #dcdcdc;
   }
-
-
-
-
 }
 
 .triangle-grid {
@@ -544,4 +549,16 @@ circle.circle-tip {
   @media(max-width: 812px){
     display: block;
   }
+}
+
+button.update {
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  //display: none;
+}
+
+button.update:hover {
+  background-color: #f59894;
 }

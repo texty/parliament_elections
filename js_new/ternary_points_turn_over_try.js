@@ -366,6 +366,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             tippy('.circle-tip', {
                 arrow: false,
                 arrowType: 'round',
+                theme: 'light',
                 allowHTML: true,
                 onShow(tip) {
                     tip.setContent(tip.reference.getAttribute('data-tippy-content'))
@@ -565,7 +566,6 @@ d3.csv("data/ternary_data.csv").then(function(data) {
     var plot_opts = {
         side: 250,
         margin: 50,
-        // axis_labels: ['націонал-демократичні', 'проросійські', 'популістичні'],
         axis_ticks: d3.range(0, 101, 20),
         minor_axis_ticks: d3.range(0, 101, 5)
     };
@@ -594,6 +594,8 @@ d3.csv("data/ternary_data.csv").then(function(data) {
     // });
 
     d3.selectAll('.update').on('click', function (e) {
+        d3.selectAll('.update').style("background-color", "lightgrey");
+        d3.select(this).style("background-color", "#f59894");
         var seleted_years = [];
         let the_year = d3.select(this).attr("id").replace("update_", "");
 
@@ -609,15 +611,5 @@ d3.csv("data/ternary_data.csv").then(function(data) {
     });
 
 
-
-
-
-
-    // d3.selectAll('.update').on('click', function (e) {
-    //     let the_year = d3.select(this).attr("id").replace("update_", "");
-    //     // next_L(target_years);
-    //     next_P(the_year);
-    //
-    // });
 
 });

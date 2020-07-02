@@ -184,8 +184,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         var to_x = coord(v.posTo).x + v.xShift;
         var to_y = coord(v.posTo).y + v.yShift ;
 
-        console.log(from_x);
-        console.log(from_y);
 
         var headlen = 10;
         var angle = Math.atan2(to_y - from_y, to_x - from_x);
@@ -490,7 +488,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                     let next_year = years[i+1];
 
                     let opacity_value = (i * (1/(years.length-1))) + 0.2;
-                    // setTimeout(function(){
+                    setTimeout(function(){
                         segment
                             .lineStyle(1, segment_fill, 1)
                             .moveTo(line.info[0][current_year].x, line.info[0][current_year].y)
@@ -498,9 +496,15 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
                         lines_all.push(segment);
                         stage.addChild(segment);
+                        points_all.forEach(function(d, i){
+                            let point = points_all[i];
+                            stage.removeChild(point);
+                            stage.addChild(point);
+                        })
+                     }, 1000);
 
 
-                    // }, 1000)
+
                 }
 
             });
@@ -1014,8 +1018,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         if(year !="2006") {
             seleted_years.push(years_arr[index-1]);
         }
-
-
         redrawLines(seleted_years);
         change_data(year);
 
