@@ -444,6 +444,7 @@ section.text {
 
 
   #filter {
+    height: 30px;
     min-width: 200px;
     margin-left: 20px;
     @media(max-width:800px){
@@ -552,7 +553,9 @@ circle.circle-tip {
 }
 
 button.update {
-  margin-right: 10px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
   outline: none;
   border: none;
   cursor: pointer;
