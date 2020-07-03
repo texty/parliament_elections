@@ -438,14 +438,17 @@ map.on('load', function () {
 
         function sourceCallback() {
             if (map.getSource('elections_06') && map.isSourceLoaded('elections_06') && map.isStyleLoaded()) {
-                console.log('source loaded!');
                 d3.select("#spinner").remove();
             }
         }
     
-        map.on('sourcedata', sourceCallback);
+    map.on('sourcedata', sourceCallback);
 
+    map.on('click', 'arrow-layer-big', function(e) {
+        console.log("hey");
+        console.log(e.features[0].properties.X2012_Polling_station);
 
+    });
   
 
 

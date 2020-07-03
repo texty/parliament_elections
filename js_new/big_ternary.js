@@ -106,7 +106,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         side: 500,
         margin: 150,
         axis_labels: ['проукраїнські', 'проросійські', 'популістські'],
-        axis_ticks: [0, 20, 40, 60, 80, 100],
+        axis_ticks: [0, 33, 66, 100],
+        ticks_line: [0, 33, 66, 100],
         tickLabelMargin: 10,
         axisLabelMargin: 40
     };
@@ -205,10 +206,9 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     // ticks
     opt.axis_ticks.forEach(function (v) {
         var coord1 = coord([v, 100 - v, 0]);
-        var coord2= coord([0, 100 - v, v]);
+        var coord2 = coord([0, v, 100 - v]);
         var coord3 = coord([100 - v, 0, v]);
-        var coord4 = coord([v, 0, 100 - v]);
-        var coord5 = coord([0, v, 100 - v]);
+
 
         const style_a = new PIXI.TextStyle({ fontSize: 14,  fill: blue });
         var tick_a = new PIXI.Text(v, style_a);
@@ -218,8 +218,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         const style_b = new PIXI.TextStyle({ fontSize: 14,  fill: red });
         var tick_b = new PIXI.Text(v, style_b);
-        tick_b.position.x = coord5.x + 20;
-        tick_b.position.y = coord5.y;
+        tick_b.position.x = coord2.x + 20;
+        tick_b.position.y = coord2.y;
         stage.addChild(tick_b);
 
         const style_c = new PIXI.TextStyle({ fontSize: 14,  fill: green });
@@ -227,6 +227,66 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         tick_c.position.x = coord3.x-20;
         tick_c.position.y = coord3.y;
         stage.addChild(tick_c);
+
+
+
+
+    });
+
+    opt.ticks_line.forEach(function (v) {
+        var coord1 = coord([v, 100 - v, 0]);
+        var coord2 = coord([0, v, 100 - v]);
+        var coord3 = coord([0, 100 - v, v]);
+        var coord4= coord([v, 0, 100 - v]);
+
+        if(v !== 0 && v !== 100){
+            let tick_a_line = new PIXI.Graphics();
+            tick_a_line
+                .lineStyle(1, 0x5B95FF, 1)
+                .moveTo(coord1.x, coord1.y)
+                .lineTo(coord4.x, coord4.y);
+            stage.addChild(tick_a_line);
+
+
+            let tick_b_line = new PIXI.Graphics();
+            tick_b_line
+                .lineStyle(1, 0x79c951, 1)
+                .moveTo(coord4.x, coord4.y)
+                .lineTo(coord2.x, coord2.y);
+            stage.addChild(tick_b_line);
+
+            let tick_c_line = new PIXI.Graphics();
+            tick_c_line
+                .lineStyle(1, 0xF47874, 1)
+                .moveTo(coord1.x, coord1.y)
+                .lineTo(coord3.x, coord3.y);
+            stage.addChild(tick_c_line);
+        }
+
+        if(v === 0 || v === 100){
+            let tick_a_line = new PIXI.Graphics();
+            tick_a_line
+                .lineStyle(1, 0x808080, 1)
+                .moveTo(coord1.x, coord1.y)
+                .lineTo(coord4.x, coord4.y);
+            stage.addChild(tick_a_line);
+
+
+            let tick_b_line = new PIXI.Graphics();
+            tick_b_line
+                .lineStyle(1, 0x808080, 1)
+                .moveTo(coord4.x, coord4.y)
+                .lineTo(coord2.x, coord2.y);
+            stage.addChild(tick_b_line);
+
+            let tick_c_line = new PIXI.Graphics();
+            tick_c_line
+                .lineStyle(1, 0x808080, 1)
+                .moveTo(coord1.x, coord1.y)
+                .lineTo(coord3.x, coord3.y);
+            stage.addChild(tick_c_line);
+        }
+
 
     });
 
@@ -271,7 +331,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         var poly = new PIXI.Graphics();
         poly.clear();
-        poly.lineStyle(1, 0x000000, 1);
+        //poly.lineStyle(1, 0x000000, 1);
+        poly.lineStyle(1, fillcolor, 1);
         poly.beginFill(fillcolor);
         poly.drawPolygon(this.polyPts);
         poly.endFill();

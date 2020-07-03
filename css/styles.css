@@ -516,23 +516,17 @@ section.text {
   stroke-width: 2;
   stroke: #363636; }
 #scatter-plot line.tick {
-  stroke-width: 1;
-  stroke: #c3c3c3; }
-#scatter-plot .a-axis.tick {
-  stroke: none;
-  opacity: 0.3; }
+  stroke-width: 1; }
 #scatter-plot .a-axis.tick-text {
   fill: #0887FF; }
-#scatter-plot .b-axis.tick {
-  opacity: 0.3; }
+#scatter-plot .tick line {
+  opacity: 0.5; }
 #scatter-plot .b-axis.tick-text {
   fill: #FF2121; }
-#scatter-plot .c-axis.tick {
-  opacity: 0.3; }
 #scatter-plot .c-axis.tick-text {
   fill: #009601; }
 #scatter-plot .tick-text {
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0.7; }
 #scatter-plot path.trail-line {
   fill: none;

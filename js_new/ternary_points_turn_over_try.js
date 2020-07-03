@@ -73,7 +73,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             side: 250,
             margin: 30,
             axis_labels: ['A', 'B', 'C'],
-            axis_ticks: [0, 20, 40, 60, 80, 100],
+            axis_ticks: [0, 33, 66, 100],
             tickLabelMargin: 10,
             axisLabelMargin: 40
         };
@@ -153,6 +153,8 @@ d3.csv("data/ternary_data.csv").then(function(data) {
 
         //ticks
         var axes = svg.append('g').attr('class', 'axes');
+
+        console.log(opt.axis_ticks);
         opt.axis_ticks.forEach(function (v) {
             var coord4 = coord([v, 20, 100 - v]);
             var coord1 = coord([v, 100 - v, -8]);
@@ -165,9 +167,19 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                     return 'translate(' + coord1.x + ',' + coord1.y + ')'
                 })
                 .append("text")
-                // .attr('transform', 'rotate(60)')
                 .attr('text-anchor', 'end')
-                .attr('x', 0)
+                .attr('x', function(){
+                    var xShift;
+                    if(v === 0 ){
+                        xShift = -10
+                    } else if( v === 100 ){
+                        xShift = 30
+                    } else {
+                        xShift = 10
+                    }
+                    return xShift
+                })
+                .attr('y', 10)
                 .text(function (d) {
                     return v;
                 })
@@ -181,8 +193,9 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 .attr('transform', 'rotate(0)')
                 .attr('text-anchor', 'start')
                 .attr('x', opt.tickLabelMargin)
+                .attr('y', 10)
                 .text(function (d) {
-                    return (100 - v);
+                    return v === 33 || v === 66 ? (100 - (v + 1)) : (100 - v);
                 })
                 .classed('b-axis tick-text', true);
 
@@ -196,12 +209,52 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                     return v;
                 })
                 .attr('x', -opt.tickLabelMargin)
+                .attr('y', 10)
                 .classed('c-axis tick-text', true);
 
         });
 
 
-        //функція, що переводить три значення у X та Y координати на трикутнику
+        opt.axis_ticks.forEach(function(v) {
+            var coord1 = coord([v, 100 - v, 0]);
+            var coord2= coord([0, 100 - v, v]);
+            var coord3 = coord([100 - v, 0, v]);
+            var coord4 = coord([100 - v, v, 0]);
+
+            axes.append("line")
+                .attr("x1", coord1.x)
+                .attr("y1", coord1.y)
+                .attr("x2", coord2.x)
+                .attr("y2", coord2.y)
+                .attr("stroke", function(){ return v !== 0 && v !== 100 ? red : "grey"})
+                .attr("stroke-width", "1")
+                .style("opacity", 0.3)
+                .classed('a-axis tick', true);
+
+            axes.append("line")
+                .attr("x1", coord2.x)
+                .attr("y1", coord2.y)
+                .attr("x2", coord3.x)
+                .attr("y2", coord3.y)
+                .attr("stroke", function(){ return v !== 0 && v !== 100  ? green : "grey"})
+                .attr("stroke-width", "1")
+                .style("opacity", 0.3)
+                .classed('b-axis tick', true);
+
+            axes.append("line")
+                .attr("x1", coord3.x)
+                .attr("y1", coord3.y)
+                .attr("x2", coord4.x)
+                .attr("y2", coord4.y)
+                .attr("stroke", function(){ return v !== 0 && v !== 100 ? blue : "grey"})
+                .attr("stroke-width", "1")
+                .style("opacity", 0.3)
+                .classed('c-axis tick', true);
+        });
+
+
+
+            //функція, що переводить три значення у X та Y координати на трикутнику
         function coord(arr) {
             var a = arr[0], b = arr[1], c = arr[2];
             var sum, pos = [0, 0];
@@ -566,7 +619,8 @@ d3.csv("data/ternary_data.csv").then(function(data) {
     var plot_opts = {
         side: 250,
         margin: 50,
-        axis_ticks: d3.range(0, 101, 20),
+        axis_ticks: [0, 33, 66, 100],
+        //axis_ticks: d3.range(0, 101, 20),
         minor_axis_ticks: d3.range(0, 101, 5)
     };
 
