@@ -136,7 +136,7 @@ map.on('load', function () {
 
     map.addSource('elections_14', {
         type: 'vector',
-        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_14/{z}/{x}/{y}.pbf"]
+        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_14_new/{z}/{x}/{y}.pbf"]
     });
 
     map.addSource('elections_19', {
@@ -485,7 +485,7 @@ map.on('load', function () {
             d3.selectAll(".pane").classed("active", false);
             d3.select(this).classed("active", true);
             removeTiles();
-            add_year("elections_14", "lines_14_4326");
+            add_year("elections_14", "lines_14_4326_new");
 
         });
 
@@ -558,7 +558,7 @@ map.on('load', function () {
                 removeLayer("vi-kh-layer");
                 removeTiles();
                 // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
-                add_year("elections_14", "lines_14_4326");
+                add_year("elections_14", "lines_14_4326_new");
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data14").classed("active", true);
 
