@@ -486,7 +486,10 @@ section.text {
   //  fill: #000000;
   //}
 
-
+  .ternary-tick-line {
+    opacity: 0.4;
+    stroke-width: 1.5px;
+  }
 
   .a-axis.tick-text {
     fill: #0887FF;

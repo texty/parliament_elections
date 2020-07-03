@@ -1,11 +1,12 @@
-/**
- * Created by yevheniia on 04.06.20.
+/* based on
+ - Tom Pearson's Ternary plot example:  http://bl.ocks.org/tomgp/7674234
+ - Tom Shanley’s Ternary color grid https://bl.ocks.org/tomshanley/db1ac0efe50844239f20aa3762dd1729
+ - Marielle Lange’s Rapid implementation of a ternary plot with d3js http://bl.ocks.org/widged/5780720
  */
-/** актуальний файл для ternary-plots */
 
-// const green = '#009601';
-// const red = '#FF2121';
-// const blue = '#0887FF';
+
+const delay_r = 0;
+const delay_anim = 1000;
 
 //однорідні області
 const smooth = ["Львівська область", "Івано-Франківська область", "Тернопільська область", "Донецька область", "Луганська область"];
@@ -53,13 +54,13 @@ const chernivetska = [
 ];
 
 
-//точки для пояснювального блоку
-const instructions = [
-    {"vector": "ru", "pos": [5, 90, 5], "fill": "#FF2121"},
-    {"vector": "ua", "pos": [90, 5, 5], "fill": "#0887FF"},
-    {"vector": "pop", "pos": [5, 5, 90], "fill": "#009601"},
-    {"vector": "center", "pos": [33, 33, 33], "fill": "white"}
-];
+// //точки для пояснювального блоку
+// const instructions = [
+//     {"vector": "ru", "pos": [5, 90, 5], "fill": "#FF2121"},
+//     {"vector": "ua", "pos": [90, 5, 5], "fill": "#0887FF"},
+//     {"vector": "pop", "pos": [5, 5, 90], "fill": "#009601"},
+//     {"vector": "center", "pos": [33, 33, 33], "fill": "white"}
+// ];
 
 
 
@@ -242,7 +243,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         if(v !== 0 && v !== 100){
             let tick_a_line = new PIXI.Graphics();
             tick_a_line
-                .lineStyle(1, 0x5B95FF, 1)
+                .lineStyle(2, 0x5B95FF, 0.5)
                 .moveTo(coord1.x, coord1.y)
                 .lineTo(coord4.x, coord4.y);
             stage.addChild(tick_a_line);
@@ -250,14 +251,14 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
             let tick_b_line = new PIXI.Graphics();
             tick_b_line
-                .lineStyle(1, 0x79c951, 1)
+                .lineStyle(2, 0x79c951, 0.5)
                 .moveTo(coord4.x, coord4.y)
                 .lineTo(coord2.x, coord2.y);
             stage.addChild(tick_b_line);
 
             let tick_c_line = new PIXI.Graphics();
             tick_c_line
-                .lineStyle(1, 0xF47874, 1)
+                .lineStyle(2, 0xF47874, 0.5)
                 .moveTo(coord1.x, coord1.y)
                 .lineTo(coord3.x, coord3.y);
             stage.addChild(tick_c_line);
@@ -347,58 +348,58 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     var points_all = [];
     var lines_all = [];
-    var instruction_points = [];
+    // var instruction_points = [];
 
-    //////////////////////////////////////////////
-    // Точки інструкції
-    instructions.forEach(function(d){
-        var p = new PIXI.Graphics();
+    // //////////////////////////////////////////////
+    // // Точки інструкції
+    // instructions.forEach(function(d){
+    //     var p = new PIXI.Graphics();
+    //
+    //     let x = coord([33, 33, 33]).x;
+    //     let y = coord([33, 33, 33]).y;
+    //
+    //     p.lineStyle(1, 0x000000, 1);
+    //     p.beginFill(0xffffff, 1);
+    //     p.drawCircle(0, 0, 8);
+    //     p.endFill();
+    //
+    //     p.position.x = x;
+    //     p.position.y = y;
+    //
+    //     p.info = [{
+    //         "title": d.vector,
+    //         "coord": d.pos,
+    //         "fill": d.fill
+    //     }];
+    //
+    //     instruction_points.push(p);
+    //     stage.addChild(p);
+    //
+    // });
 
-        let x = coord([33, 33, 33]).x;
-        let y = coord([33, 33, 33]).y;
-
-        p.lineStyle(1, 0x000000, 1);
-        p.beginFill(0xffffff, 1);
-        p.drawCircle(0, 0, 8);
-        p.endFill();
-
-        p.position.x = x;
-        p.position.y = y;
-
-        p.info = [{
-            "title": d.vector,
-            "coord": d.pos,
-            "fill": d.fill
-        }];
-
-        instruction_points.push(p);
-        stage.addChild(p);
-
-    });
-
-    function run_instruction(vector){
-        instruction_points.forEach(function(d,i){
-            var current_p = instruction_points[i];
-
-            if(current_p.info[0].title === vector && vector != "center"){
-
-                let xpos = coord(current_p.info[0].coord).x;
-                let ypos = coord(current_p.info[0].coord).y;
-                let fill = current_p.info[0].fill;
-
-                TweenMax.to(current_p, 1, { x: xpos, y: ypos  });
-                TweenMax.to(current_p, 0, {  pixi: { fillColor: fill }  })
-            }
-
-            if(vector === "center"){
-                let pos =  coord([33, 33, 33]);
-
-                TweenMax.to(current_p, 1, { x: pos.x, y: pos.y  });
-                TweenMax.to(current_p, 0, {  pixi: { fillColor: "white" }  })
-
-            }
-        })
-    }
+    // function run_instruction(vector){
+    //     instruction_points.forEach(function(d,i){
+    //         var current_p = instruction_points[i];
+    //
+    //         if(current_p.info[0].title === vector && vector != "center"){
+    //
+    //             let xpos = coord(current_p.info[0].coord).x;
+    //             let ypos = coord(current_p.info[0].coord).y;
+    //             let fill = current_p.info[0].fill;
+    //
+    //             TweenMax.to(current_p, 1, { x: xpos, y: ypos  });
+    //             TweenMax.to(current_p, 0, {  pixi: { fillColor: fill }  })
+    //         }
+    //
+    //         if(vector === "center"){
+    //             let pos =  coord([33, 33, 33]);
+    //
+    //             TweenMax.to(current_p, 1, { x: pos.x, y: pos.y  });
+    //             TweenMax.to(current_p, 0, {  pixi: { fillColor: "white" }  })
+    //
+    //         }
+    //     })
+    // }
 
 
     //////////////////////////////////////////////
@@ -498,12 +499,12 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             });
 
 
-            //прибираємо точки-інструкції
-            instructions.forEach(function(d, i){
-                var current_p = instruction_points[i];
-                stage.removeChild(current_p);
-
-            })
+            // //прибираємо точки-інструкції
+            // instructions.forEach(function(d, i){
+            //     var current_p = instruction_points[i];
+            //     stage.removeChild(current_p);
+            //
+            // })
 
         });
     }
@@ -512,7 +513,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     //////////////////////////////////////////////
     // Додати лінії
     var region_for_lines = "";
-    function drawLines(years){
+    function drawLines(years, delay){
 
         var filtered;
         if(region_for_lines != "") {
@@ -561,7 +562,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                             stage.removeChild(point);
                             stage.addChild(point);
                         })
-                     }, 1000);
+                     }, delay);
 
 
 
@@ -702,7 +703,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     }
 
 
-    function redrawLines(years){
+    function redrawLines(years, delay){
         lines_all.forEach(function(p, i) {
             stage.removeChild(lines_all[i])
         });
@@ -710,7 +711,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         lines_all = [];
 
         if(region_for_lines != '') {
-            drawLines(years)
+            drawLines(years, delay)
         }
 
     }
@@ -963,7 +964,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         if(r.index === 9) {
             region_for_lines = "Закарпатська область";
-            redrawLines(["2007", "2012"]);
+            redrawLines(["2007", "2012"], delay_r);
 
             change_data("2012");
             d3.selectAll(".test_big").style("background-color", "lightgrey");
@@ -983,7 +984,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         if(r.index === 10 && r.direction === "down") {
             region_for_lines = "Чернівецька область";
-            redrawLines(["2007", "2012"]);
+            redrawLines(["2007", "2012"], delay_r);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             change_data("2012");
@@ -992,7 +993,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         if(r.index === 10 && r.direction === "up") {
             region_for_lines = "Закарпатська область";
-            redrawLines(["2007", "2012"]);
+            redrawLines(["2007", "2012"], delay_r);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             change_data("2012");
@@ -1007,7 +1008,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         if(r.index === 12) {
             region_for_lines = "Чернівецька область";
-            redrawLines(["2007", "2012"]);
+            redrawLines(["2007", "2012"], delay_r);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Чернівецька область", chernivetska, ["Кельменецький район", "Сокирянський район"])
@@ -1015,7 +1016,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         
         if(r.index === 13) {
             region_for_lines = "Тернопільська область";
-            redrawLines(["2007", "2012"]);
+            redrawLines(["2007", "2012"], delay_r);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Тернопільська область", scale_points, ["Шумський район", "Лановецький район", "Збаразький район"])
@@ -1023,7 +1024,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         if(r.index === 14) {
             region_for_lines = "Сумська область";
-            redrawLines(["2007", "2012"]);
+            redrawLines(["2007", "2012"], delay_r);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Сумська область", scale_points, scale_points)
@@ -1031,7 +1032,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
         if(r.index === 15) {
             region_for_lines = "Житомирська область";
-            redrawLines(["2007", "2012"]);
+            redrawLines(["2007", "2012"], delay_r);
             d3.selectAll(".test_big").style("background-color", "lightgrey");
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Житомирська область", scale_points, scale_points)
@@ -1078,7 +1079,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         if(year !="2006") {
             seleted_years.push(years_arr[index-1]);
         }
-        redrawLines(seleted_years);
+        redrawLines(seleted_years, delay_anim);
         change_data(year);
 
     })

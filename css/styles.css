@@ -517,6 +517,9 @@ section.text {
   stroke: #363636; }
 #scatter-plot line.tick {
   stroke-width: 1; }
+#scatter-plot .ternary-tick-line {
+  opacity: 0.4;
+  stroke-width: 1.5px; }
 #scatter-plot .a-axis.tick-text {
   fill: #0887FF; }
 #scatter-plot .tick line {

@@ -1,11 +1,12 @@
-/* base code is taken from
+/* based on
  - Tom Pearson's Ternary plot example:  http://bl.ocks.org/tomgp/7674234
  - Tom Shanley’s Ternary color grid https://bl.ocks.org/tomshanley/db1ac0efe50844239f20aa3762dd1729
+ - Marielle Lange’s Rapid implementation of a ternary plot with d3js http://bl.ocks.org/widged/5780720
  */
 
 /** актуальний файл для ternary-plots */
 
-const green = '#009601';
+const green = '#79c951';
 const red = '#FF2121';
 const blue = '#0887FF';
 
@@ -133,28 +134,10 @@ d3.csv("data/ternary_data.csv").then(function(data) {
             .style("fill", "grey");
 
 
-        // //axis name
-        // svg.append("g")
-        //     .attr("font-size", 16)
-        //     .selectAll(".labels")
-        //     .data([
-        //         { label: "проросійські", pos: [290, 170], rot: -60, color: red },
-        //         { label: "популісти", pos: [65, 170], rot: 60, color: green },
-        //         { label: "проукраїнські", pos: [170, 10], rot: 0, color: blue }
-        //     ])
-        //     .enter().append("text")
-        //     .attr("transform", function(d){ return `translate(${d.pos[0]}, ${d.pos[1]}) rotate(${d.rot})`})
-        //     .attr("text-anchor", "middle")
-        //     .text(function(d){ return d.label})
-        //     .style("fill", function(d) {
-        //         return d.color
-        //     });
-
-
         //ticks
         var axes = svg.append('g').attr('class', 'axes');
 
-        console.log(opt.axis_ticks);
+        //ticks labels (0,33,66, 100)
         opt.axis_ticks.forEach(function (v) {
             var coord4 = coord([v, 20, 100 - v]);
             var coord1 = coord([v, 100 - v, -8]);
@@ -169,52 +152,38 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 .append("text")
                 .attr('text-anchor', 'end')
                 .attr('x', function(){
-                    var xShift;
-                    if(v === 0 ){
-                        xShift = -10
-                    } else if( v === 100 ){
-                        xShift = 30
-                    } else {
-                        xShift = 10
-                    }
-                    return xShift
+                    return v === 0 ? -10 : v=== 100 ? 30 : 10;
                 })
                 .attr('y', 10)
-                .text(function (d) {
+                .text(function () {
                     return v;
                 })
                 .classed('a-axis tick-text', true);
 
             axes.append('g')
-                .attr('transform', function (d) {
-                    return 'translate(' + coord2.x + ',' + coord2.y + ')'
-                })
+                .attr('transform', function (d) { return 'translate(' + coord2.x + ',' + coord2.y + ')' })
                 .append("text")
                 .attr('transform', 'rotate(0)')
                 .attr('text-anchor', 'start')
                 .attr('x', opt.tickLabelMargin)
                 .attr('y', 10)
-                .text(function (d) {
+                .text(function () {
                     return v === 33 || v === 66 ? (100 - (v + 1)) : (100 - v);
                 })
                 .classed('b-axis tick-text', true);
 
             axes.append('g')
-                .attr('transform', function (d) {
-                    return 'translate(' + coord3.x + ',' + coord3.y + ')'
-                })
+                .attr('transform', function (d) { return 'translate(' + coord3.x + ',' + coord3.y + ')' })
                 .append("text")
                 .attr('text-anchor', 'end')
-                .text(function (d) {
-                    return v;
-                })
+                .text(function () { return v;  })
                 .attr('x', -opt.tickLabelMargin)
                 .attr('y', 10)
                 .classed('c-axis tick-text', true);
-
         });
 
 
+        //ticks color lines for best understanding
         opt.axis_ticks.forEach(function(v) {
             var coord1 = coord([v, 100 - v, 0]);
             var coord2= coord([0, 100 - v, v]);
@@ -227,9 +196,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 .attr("x2", coord2.x)
                 .attr("y2", coord2.y)
                 .attr("stroke", function(){ return v !== 0 && v !== 100 ? red : "grey"})
-                .attr("stroke-width", "1")
-                .style("opacity", 0.3)
-                .classed('a-axis tick', true);
+                .classed('ternary-tick-line', true);
 
             axes.append("line")
                 .attr("x1", coord2.x)
@@ -237,9 +204,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 .attr("x2", coord3.x)
                 .attr("y2", coord3.y)
                 .attr("stroke", function(){ return v !== 0 && v !== 100  ? green : "grey"})
-                .attr("stroke-width", "1")
-                .style("opacity", 0.3)
-                .classed('b-axis tick', true);
+                .classed('ternary-tick-line', true);
 
             axes.append("line")
                 .attr("x1", coord3.x)
@@ -247,14 +212,40 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 .attr("x2", coord4.x)
                 .attr("y2", coord4.y)
                 .attr("stroke", function(){ return v !== 0 && v !== 100 ? blue : "grey"})
-                .attr("stroke-width", "1")
-                .style("opacity", 0.3)
-                .classed('c-axis tick', true);
+                .classed('ternary-tick-line', true);
         });
 
 
+       axes.append("polygon")
+            .attr("points",
+                coord([0,0,100]).x + "," + coord([0,0,100]).y + " " +
+                coord([0,4,96]).x + "," + coord([0,4,96]).y + " " +
+                coord([4,0,96]).x + "," + coord([4,0,96]).y )
+           .attr("fill", green)
+           .style("opacity", 0.5);
 
-            //функція, що переводить три значення у X та Y координати на трикутнику
+        axes.append("polygon")
+            .attr("points",
+                coord([0,100,0]).x + "," + coord([0,100,0]).y + " " +
+                coord([0,96,4]).x + "," + coord([0,96,4]).y + " " +
+                coord([4,96,0]).x + "," + coord([4,96,0]).y )
+            .attr("fill", red)
+            .style("opacity", 0.5);
+
+        axes.append("polygon")
+            .attr("points",
+                coord([100,0,0]).x + "," + coord([100,0,0]).y + " " +
+                coord([96,0,4]).x + "," + coord([96,0,4]).y + " " +
+                coord([96,4,0]).x + "," + coord([96,4,0]).y )
+            .attr("fill", blue)
+            .style("opacity", 0.5);
+
+
+
+
+
+
+        //функція, що переводить три значення у X та Y координати на трикутнику
         function coord(arr) {
             var a = arr[0], b = arr[1], c = arr[2];
             var sum, pos = [0, 0];
