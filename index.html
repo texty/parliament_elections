@@ -48,13 +48,10 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
     <script src="lib/example.min.js"></script>
-    <!--<script src="lib/bezier-easing.js"></script>-->
-    <!--<script src="lib/tools.min.js"></script>-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>-->
 
+    <!-- pixi scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/PixiPlugin.min.js?v=1.2-"></script>
-    <!--<script src="lib/leaflet-providers.js"></script>-->
 
 </head>
 <body>
@@ -256,18 +253,6 @@
 
     <div class='scroll__text'>
 
-        <!--<div class='step' data-step='8' data-scrollama-index="8">-->
-        <!--<div>-->
-        <!--<p> Протягом 2006-2019 рр. три галицькі області (Львівська, Івано-Франківська та Тернопільська) і дві донбаські (Донецька та Луганська) мали найменші внутрішні відмінності у підтримці партій. </p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class='step' data-step='9' data-scrollama-index="9">-->
-        <!--<div>-->
-        <!--<p>Водночас Житомирська, Закарпатська, Чернівецька, Сумська та Чернігівська області в 2006-2012 рр. мали більші відмінності в електоральних уподобаннях між їх районами ніж окремі області між собою.</p>-->
-        <!--</div>-->
-        <!--</div>-->
-
-
         <div class='step' data-step='8' data-scrollama-index="8">
             <div>
                 <p>Ось так виглядають на трикутнику політичні вподобання районів та найбільших міст України.
@@ -291,12 +276,6 @@
                     мишею на точку, аби подивитись назву району чи міста. </p>
             </div>
         </div>
-
-        <!--<div class='step' data-step='10' data-scrollama-index="10">-->
-        <!--<div>-->
-        <!--<p>Навіть у 2019 році після проукраїнської хвилі 2014 року, в зазначених районах проросійські сили все рівно набрали найбільше</p>-->
-        <!--</div>-->
-        <!--</div>-->
 
         <div class='step' data-step='10' data-scrollama-index="10">
             <div>
@@ -415,16 +394,6 @@
 <section id="scatter-plot" style="width: 98%; margin: auto;">
 
     <div id="nav-wrapper">
-        <!--<div id="select-years" style="display: flex;">-->
-        <!--<input type="checkbox" value="2006" checked>2006</input><br>-->
-        <!--<input type="checkbox" value="2007">2007</input><br>-->
-        <!--<input type="checkbox" value="2012">2012</input><br>-->
-        <!--<input type="checkbox" value="2014" checked>2014</input><br>-->
-        <!--<input type="checkbox" value="2019" checked>2019</input><br>-->
-        <!--</div>-->
-
-        <!--<button id="update-scatter" style="margin-left: 10px;">Показати</button>-->
-
         <input id="filter" style="" type="text" class="form-control" placeholder="шукати район/місто/назва">
         <button id="update_2006" class="update active">2006</button>
         <button id="update_2007" class="update">2007</button>
@@ -545,23 +514,9 @@
 </footer>
 
 
-<!--<script src="js_new/rain_map.js"></script>-->
-<!--<script src="js_new/leaflet_and_pixi.js"></script>-->
-<!--<script src="js_new/split_longitude.js"></script>-->
-<!--<script src="js_new/by_oblast2.js"></script>-->
-<!--<script src="js_new/examples.js"></script>-->
-<!--<script src="js_new/example_wow.js"></script>-->
-<!--<script src="js_new/wow2.js"></script>-->
-<!--<script src="js_new/pixi_arrows_rotate_map.js"></script>-->
-<!--<script src="js_new/ternary_lines.js"></script>-->
-<!--<script src="js_new/ternary_points_update.js"></script>-->
-
-
-<!--<script src="js_new/pixi_line_try.js"></script>-->
-<!--<script src="js_new/imageOvarlay.js"></script>-->
-<script src="js_new/vector_tiles.js"></script>
-<script src="js_new/ternary_points_turn_over_try.js"></script>
-<script src="js_new/big_ternary.js"></script>
+<script src="js/vector_tiles.js"></script>
+<script src="js/ternary_points_turn_over_try.js"></script>
+<script src="js/big_ternary.js"></script>
 
 
 <script type="text/javascript">
