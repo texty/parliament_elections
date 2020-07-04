@@ -613,7 +613,6 @@ map.on('load', function () {
 
             if(r.index === 4 && r.direction === "up") {
                 removeLayer("lubash-layer");
-                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 add_od_do_kh();
             }
 
@@ -621,7 +620,7 @@ map.on('load', function () {
 
             if(r.index === 5 && r.direction === "up") {
                 removeTiles();
-                add_year("elections_14", "lines_14_4326");
+                add_year("elections_14", "lines_14_4326_new");
                 add_lubash();
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data14").classed("active", true);
