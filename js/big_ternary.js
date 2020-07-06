@@ -63,9 +63,6 @@ const chernivetska = [
 // ];
 
 
-
-
-
 d3.csv("data/ternary_big.csv").then(function(data) {
 
     const years_arr = ["2006", "2007", "2012", "2014", "2019"];
@@ -149,7 +146,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     let stage = new PIXI.Container();
 
     let renderer = PIXI.autoDetectRenderer(opt.width, opt.height,
-        {antialias: !0, transparent: !0, resolution: 1});
+        { antialias: true, transparent: !0, resolution: window.devicePixelRatio });
 
     document.getElementById("big_ternary").appendChild(renderer.view);
 
