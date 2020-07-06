@@ -332,6 +332,10 @@ h1 {
       margin: auto; } }
 
 /*  поведінка для кожної скролами */
+#scroll_t {
+  max-width: 1600px;
+  margin: auto; }
+
 #scroll > .scroll__graphic {
   grid-column: 1/3;
   grid-row: 1/2;
