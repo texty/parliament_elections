@@ -141,7 +141,7 @@ map.on('load', function () {
 
     map.addSource('elections_19', {
         type: 'vector',
-        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_19/{z}/{x}/{y}.pbf"]
+        tiles: ["https://texty.github.io/parliament_elections/tiles/lines_19_new/{z}/{x}/{y}.pbf"]
     });
 
     var red_url = 'img/red-triangle.png';

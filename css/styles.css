@@ -538,8 +538,7 @@ button.update:hover {
 
 /* rad-next */
 .read-next {
-  border-top: 3px solid black;
-  padding-top: 20px; }
+  border-top: 3px solid black; }
 
 .read-next-title {
   text-transform: uppercase;
