@@ -348,10 +348,10 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     var points_all = [];
     var lines_all = [];
-    // var instruction_points = [];
+    var instruction_points = [];
 
-    // //////////////////////////////////////////////
-    // // Точки інструкції
+    //////////////////////////////////////////////
+    // Точки інструкції
     // instructions.forEach(function(d){
     //     var p = new PIXI.Graphics();
     //
@@ -376,7 +376,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     //     stage.addChild(p);
     //
     // });
-
+    //
     // function run_instruction(vector){
     //     instruction_points.forEach(function(d,i){
     //         var current_p = instruction_points[i];
@@ -488,7 +488,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                 "2019": coord([d.ua_2019, d.ru_2019, d.pop_2019])
             }];
 
-            //point.interactive = true;
+            point.interactive = true;
             points_all.push(point);
 
             //point.alpha = 0;
@@ -561,7 +561,7 @@ d3.csv("data/ternary_big.csv").then(function(data) {
                             let point = points_all[i];
                             stage.removeChild(point);
                             stage.addChild(point);
-                        })
+                        });
                      }, delay);
 
 

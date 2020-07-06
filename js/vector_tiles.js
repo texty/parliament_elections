@@ -496,7 +496,7 @@ map.on('load', function () {
             add_year("elections_19", "lines_19_4326");
         });
 
-    d3.select("#center_ukraine").on("click", function(d){
+    d3.select("#center_ukraine").on("click", function(){
         map.flyTo({ center: [  32,   48 ], zoom: default_zoom  });
     });
 
