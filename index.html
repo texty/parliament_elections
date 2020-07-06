@@ -3,56 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Як голосували міста та райони</title>
+
+    <title> Історія голосувань з 2006 року</title>
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="fb:app_id" content="329250623807149"/>
+    <meta property="og:site_name" content="ТЕКСТИ.ORG.UA"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="Як популізм накрив Україну. Історія голосувань з 2006 року"/>
+    <meta property="og:image" content="https://texty.org.ua/d/2020/elections_history/img/cover.png"/>
+    <meta property="og:description"
+          content="Часто електоральну географію України звужують лише до відмінностей між декількома регіонами, наприклад Сходом і Заходом. Таке спрощення проводить штучні кордони – справжня картина значно цікавіша."/>
+    <meta property="og:url" content="https://texty.org.ua/d/2020/elections_history/"/>
+
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:site" content="@textyorgua"/>
+    <meta property="twitter:account_id" content="49572937"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content="https://texty.org.ua/d/2020/elections_history/">
+    <meta name="twitter:title"
+          content="Як популізм накрив Україну. Історія голосувань з 2006 року"/>
+    <meta name="twitter:description"
+          content="Часто електоральну географію України звужують лише до відмінностей між декількома регіонами, наприклад Сходом і Заходом. Таке спрощення проводить штучні кордони – справжня картина значно цікавіша."/>
+    <meta name="twitter:image:src" content="https://texty.org.ua/d/2020/elections_history/img/cover.png"/>
+    <meta name="twitter:image:width" content="1200"/>
+    <meta name="twitter:image:height" content="630"/>
+
+
+    <!-- Other Meta Tags -->
+    <meta name="title" content="Як популізм накрив Україну. Історія голосувань з 2006 року">
+    <meta name="description" content="Часто електоральну географію України звужують лише до відмінностей між декількома регіонами, наприклад Сходом і Заходом. Таке спрощення проводить штучні кордони – справжня картина значно цікавіша.">
+
 
     <!-- Links -->
-    <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
-          rel="stylesheet">
-
-    <!-- tippy css themes -->
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"/>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@5.2.1/dist/backdrop.css"/>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@5.2.1/dist/tippy.css"/>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@5.2.1/themes/light.css"/>
-
-    <!-- main css file-->
+    <link rel='stylesheet' href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css'  type='text/css'/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
     <link rel="stylesheet" href="css/styles.css"/>
 
-    <!-- mapbox gl styles-->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel='stylesheet'/>
-    <link rel='stylesheet'
-          href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css'
-          type='text/css'/>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-          crossorigin=""/>
 
     <!-- Scripts-->
     <script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="lib/d3v5.min.js"></script>
-
-    <!-- tippy js -->
-    <script src="https://unpkg.com/popper.js@1"></script>
-    <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
-
-
-    <script type="text/javascript" src='lib/scrollama.min.js'></script>
-
-    <!-- for ternary plots -->
+    <script type="text/javascript" src="https://unpkg.com/popper.js@1"></script> <!-- tippy js -->
+    <script type="text/javascript" src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script> <!-- tippy js -->
+    <script type="text/javascript" src="lib/scrollama.min.js"></script>
     <script type="text/javascript" src="lib/chroma.js"></script>
     <script type="text/javascript" src="lib/jscolor.js"></script>
-
-    <!-- mapbox gl scripts-->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
-    <script src="lib/example.min.js"></script>
-
-    <!-- pixi scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/PixiPlugin.min.js?v=1.2-"></script>
-
+    <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js"></script>
+    <script type="text/javascript" src="lib/example.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/PixiPlugin.min.js?v=1.2-"></script>
 </head>
 <body>
 
@@ -69,9 +80,9 @@
     </nav>
 
     <div class="soc">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="share-btn">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2020/elections_history/" target="_blank" class="share-btn">
             <i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com/intent/tweet?text=" target="_blank" class="share-btn">
+        <a href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2020/elections_history/" target="_blank" class="share-btn">
             <i class="fab fa-twitter-square"></i></a>
     </div>
 </header>
@@ -423,39 +434,6 @@
 
 <section class="text">
 
-
-    <h2>Методологія</h2>
-    
-    <p>Ми прирівняли виборчі дільниці 2006-2007 року до уніфікованих номерів, які запровадили на виборах 2012 року, за
-        адресою та охопленою територією. Більшість роботи була проведена вручну, за допомогою наших невтомних інтернів. В результаті ми
-        встановили відповідники для понад 90% виборчих дільниць, що дає змогу порівняти результати голосування по роках
-        для майже 30 тис. дільниць</p>
-    
-    <p>Більшість партій в Україні важко назвати ідеологічними. Класифікація на основі програм партій ненадійна, бо вони
-        задеклароване у них часто відрізняється від їх дій; а своїми загальними формулюваннями вони не дуже відрізняються одна від одної.
-        Часто про-російськість партії проявляється лише з часом, під час голосування за важливі законопроєкти, як от
-        продовження Чорноморської бази в Криму, мовні питання тощо.
-    </p>
-
-    <p>За нашою грубою оцінкою, партії можна розбити на три групи:</p>
-
-    <p>Національно-демократичні: "Наша Україна", Блок "Наша Україна – Народна Самооборона, Український Народний
-        Блок Костенка і Плюща, "Громадянський блок ПОРА-ПРП", УДАР, ВО "Свобода", Народний Фронт, Блок Петра Порошенка,
-        "Самопоміч", Громадянська позиція Гриценко, Заступ, Правий сектор, Європейська солідарність, Голос, Українська
-        стратегія Гройсмана.
-    </p>
-
-    <p>Проросійські або комуністичні: Партія регіонів, Соціалістична партія України, Комуністична партія України, Блок
-        Наталії Вітренко "Народна опозиція", "Народний блок Литвина", Партія "Віче", "Опозиційний блок НЕ ТАК!", "Блок
-        Литвина", Прогресивна соціалістична партія України, Партія Наталії Королевської "Україна – Вперед!", Опозиційний
-        блок, "Сильна Україна" Сергія Тігіпка, Опозиційна платформа – ЗА ЖИТТЯ, Опозиційний блок, Партія
-        Шарія.
-    </p>
-
-    <p>Популістські: "Блок Юлії Тимошенко", "Батьківщина", Радикальна Партія Олега Ляшка, "Слуга народу", "Сила і честь"
-    </p>
-
-
     <div class="donate-us">
         <a class="donate-button"
            href="https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTc2NjUwNTYyODI3IiwiYW1vdW50IjoiMTUwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCf0L7QttC10YDRgtCy0LAiLCJ0eXBlIjoiZG9uYXRlIiwibGFuZ3VhZ2UiOiJ1ayJ9&signature=tTFrEUyI4WV5l3N7G%2BYg5keUaXU%3D"
@@ -465,6 +443,57 @@
             потрібна ваша підтримка.
             <a href="https://texty.org.ua/support/#subscription">Також ви можете зробити пожертву щомісячною</a>.</p>
     </div>
+
+    <h2> Методологія </h2>
+
+
+    <div class="show_hidden hidden">
+        <div class="overlay fadeout"></div>
+
+
+        <p>Ми прирівняли виборчі дільниці 2006-2007 року до уніфікованих номерів, які запровадили на виборах 2012 року, за
+            адресою та охопленою територією. Більшість роботи була проведена вручну, за допомогою наших невтомних інтернів. В результаті ми
+            встановили відповідники для понад 90% виборчих дільниць, що дає змогу порівняти результати голосування по роках
+            для майже 30 тис. дільниць</p>
+
+        <p>Більшість партій в Україні важко назвати ідеологічними. Класифікація на основі програм партій ненадійна, бо вони
+            задеклароване у них часто відрізняється від їх дій; а своїми загальними формулюваннями вони не дуже відрізняються одна від одної.
+            Часто про-російськість партії проявляється лише з часом, під час голосування за важливі законопроєкти, як от
+            продовження Чорноморської бази в Криму, мовні питання тощо.
+        </p>
+
+        <p>За нашою грубою оцінкою, партії можна розбити на три групи:</p>
+
+        <p>Національно-демократичні: "Наша Україна", Блок "Наша Україна – Народна Самооборона, Український Народний
+            Блок Костенка і Плюща, "Громадянський блок ПОРА-ПРП", УДАР, ВО "Свобода", Народний Фронт, Блок Петра Порошенка,
+            "Самопоміч", Громадянська позиція Гриценко, Заступ, Правий сектор, Європейська солідарність, Голос, Українська
+            стратегія Гройсмана.
+        </p>
+
+        <p>Проросійські або комуністичні: Партія регіонів, Соціалістична партія України, Комуністична партія України, Блок
+            Наталії Вітренко "Народна опозиція", "Народний блок Литвина", Партія "Віче", "Опозиційний блок НЕ ТАК!", "Блок
+            Литвина", Прогресивна соціалістична партія України, Партія Наталії Королевської "Україна – Вперед!", Опозиційний
+            блок, "Сильна Україна" Сергія Тігіпка, Опозиційна платформа – ЗА ЖИТТЯ, Опозиційний блок, Партія
+            Шарія.
+        </p>
+
+        <p>Популістські: "Блок Юлії Тимошенко", "Батьківщина", Радикальна Партія Олега Ляшка, "Слуга народу", "Сила і честь"
+        </p>
+
+    </div>
+    <p id="methodology"><span></span></p>
+
+
+
+
+    <div class="read-next">
+        <p class="read-next-title"> Що читати далі</p>
+        <p class="read-next-item"><a href="https://texty.org.ua/d/2018/mnews/" target="_blank"> У нас погані новини. Рейтинг маніпулятивних сайтів</a></p>
+        <p class="read-next-item"><a href="https://fgz.texty.org/" target="_blank">Фейкогриз. Розширення для браузерів та телеграм-бот, що попереджає про фейки і маніпуляції</a></p>
+        <p class="read-next-item"><a href="https://texty.org.ua/d/2019/verhovna-rada/" target="_blank">Три етапи Ради. Як фракції і депутати парламенту восьмого скликання голосували за реформи</a></p>
+
+    </div>
+
 </section>
 
 
@@ -534,6 +563,15 @@
 <script src="js/vector_tiles.js"></script>
 <script src="js/ternary_points_turn_over_try.js"></script>
 <script src="js/big_ternary.js"></script>
+
+<script>
+    $("#methodology").on("click", function(d){
+        $(".show_hidden").toggleClass("hidden");
+        $(".overlay").toggleClass("fadeout");
+        $("#methodology span").toggleClass("visible");
+    })
+
+</script>
 
 
 <script type="text/javascript">
