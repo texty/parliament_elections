@@ -75,6 +75,9 @@ header {
     position: fixed;
     top: 5px;
     right: 25px; }
+    @media (max-width: 825px) {
+      header .soc {
+        position: absolute; } }
 
 @font-face {
   font-family: 'ProximaNova';
@@ -255,7 +258,7 @@ h1 {
   height: 100%; }
   @media (max-width: 825px) and (orientation: landscape) {
     .container {
-      width: 90%;
+      width: 84%;
       margin: auto; } }
 
 /* кнопка поверення карти для моб.екрану*/
@@ -313,6 +316,9 @@ h1 {
       .scroll__graphic .change {
         top: 0;
         right: 5px; } }
+    @media (max-width: 825px) and (orientation: landscape) {
+      .scroll__graphic .change {
+        right: 10%; } }
 
 .scroll__text {
   grid-column: 1/3;

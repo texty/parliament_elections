@@ -80,6 +80,9 @@ header {
     position: fixed;
     top: 5px;
     right: 25px;
+    @media(max-width: 825px) {
+      position: absolute;
+    }
   }
 
 }
