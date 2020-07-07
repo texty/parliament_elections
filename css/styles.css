@@ -219,7 +219,7 @@ p {
     margin: auto; }
     #project-title div p {
       margin: 20px auto;
-      font-size: 14px;
+      font-size: 15px;
       text-align: center; }
 
 h1 {
@@ -228,17 +228,22 @@ h1 {
   font-size: calc(35px + 1vw);
   text-align: center;
   margin: auto; }
+  @media (max-width: 825px) and (orientation: portrait) {
+    h1 {
+      font-size: calc(28px + 1vw); } }
 
 #credits {
   font-size: 16px;
   font-weight: 400; }
-  #credits a {
-    text-decoration: none;
-    color: inherit;
-    border-bottom: 1px solid #ed6746;
-    padding-bottom: 1px; }
-  #credits a:hover {
-    color: #ed6746; }
+
+a.underlined {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #ed6746;
+  padding-bottom: 1px; }
+
+a.underlined:hover {
+  color: #ed6746; }
 
 .expl-pic {
   display: block;
@@ -532,13 +537,15 @@ button.update:hover {
   #methodology span {
     padding-bottom: 2px;
     cursor: pointer;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #ed6746;
     color: grey;
     font-style: italic; }
   #methodology span::after {
     content: "Більше"; }
   #methodology span.visible::after {
     content: "Менше"; }
+  #methodology span:hover {
+    color: #ed6746; }
 
 .show_hidden {
   position: relative; }
@@ -571,5 +578,7 @@ button.update:hover {
   .read-next-item a {
     text-decoration: none;
     color: inherit; }
+  .read-next-item a:hover {
+    color: #ed6746; }
 
 /*# sourceMappingURL=styles.css.map */
