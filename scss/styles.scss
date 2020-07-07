@@ -295,6 +295,14 @@ section.text {
     min-height: max-content;
   }
 
+  .ternary-first-step {
+    @media(max-width: 825px) and (orientation: portrait) {
+      min-height: max-content;
+      margin-top: 80vh;
+      margin-bottom: 20vh;
+    }
+  }
+
   .step div {
     padding: 20px;
     line-height: 1.6;

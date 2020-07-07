@@ -381,8 +381,8 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
             //create white rect behind tip
             const txtBG = new PIXI.Sprite(PIXI.Texture.WHITE);
-                txtBG.width = message.width;
-                txtBG.height = message.height;
+            txtBG.width = message.width;
+            txtBG.height = message.height;
 
             if(tip_array.includes(d.rayon)) {
                 message.x = radius * 1.5;

@@ -442,6 +442,11 @@ section.text {
   #scroll_t > .scroll__text .ternary-last-step {
     margin-bottom: 25vh;
     min-height: max-content; }
+  @media (max-width: 825px) and (orientation: portrait) {
+    #scroll_t > .scroll__text .ternary-first-step {
+      min-height: max-content;
+      margin-top: 80vh;
+      margin-bottom: 20vh; } }
   #scroll_t > .scroll__text .step div {
     padding: 20px;
     line-height: 1.6;
