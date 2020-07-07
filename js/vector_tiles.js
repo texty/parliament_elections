@@ -8,36 +8,12 @@ var enlarged_zoom = window.innerWidth > 800 ? 7 : 5;
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHJpbWFjdXMxODIiLCJhIjoiWGQ5TFJuayJ9.6sQHpjf_UDLXtEsz8MnjXw';
 var map = new mapboxgl.Map({
     container: 'map',
-    //style: 'style3.json',
-    // style: 'mapbox://styles/evgeshadrozdova/cjsqjh1to30c81ftn8jnuikgj',
     minZoom: min_zoom,
     maxZoom: 9,
-    // zoom: 5,
-    // center: [32.259271, 48.518688],
     hash: false,
     tap: false,
     attributionControl: false,
     style: 'dark_matter.json',
-    // style: {
-    //     'version': 8,
-    //     'sources': 'https://api.maptiler.com/tiles/v3/tiles.json?key=x6rAwsstZPh1FO6HjN5r',
-    //
-    //     'layers': [
-    //         {
-    //         //     'id': 'simple-tiles',
-    //         //     'type': 'vector',
-    //         //     'source': 'Dark Matter',
-    //             "filter": [
-    //                 "all",
-    //                 ["match", ["get", "iso_3166_1"], ["UA"], true, false]
-    //             ],
-    //             'minzoom': 4,
-    //             'maxzoom': 10
-    //         }
-    //
-    //
-    //     ]
-    // },
     center: [31.5, 48.5],
     zoom: default_zoom // starting zoom
 });
@@ -116,14 +92,6 @@ map.on('load', function () {
         tiles: ["https://texty.github.io/parliament_elections/tiles/lines_06/{z}/{x}/{y}.pbf"]
     });
 
-    //векторні тайли
-    map.addSource('triangles_06', {
-        type: 'vector',
-        tiles: ["https://texty.github.io/parliament_elections/tiles/triangles_06/{z}/{x}/{y}.pbf"]
-    });
-
-
-
     map.addSource('elections_07', {
         type: 'vector',
         tiles: ["https://texty.github.io/parliament_elections/tiles/lines_07/{z}/{x}/{y}.pbf"]
@@ -182,9 +150,6 @@ map.on('load', function () {
             'type': 'line',
             "source": "po_ch",
             'paint': {
-                // "fill-outline-color": "black",
-                // 'fill-color': 'white',
-                // 'fill-opacity': 0.3
                 'line-color': 'lightgrey',
                 'line-width': 2,
                 'line-opacity': 0.8
@@ -198,12 +163,7 @@ map.on('load', function () {
         "id": "vi-kh-layer",
             'type': 'line',
             "source": "vi_kh",
-            // "fill-antialias": true,
             'paint': {
-            // "fill-outline-color": "black",
-                // 'fill-color': 'white',
-                // 'fill-opacity': 0.3
-
                 'line-color': 'lightgrey',
                 'line-width': 2,
                 'line-opacity': 0.8
@@ -217,12 +177,7 @@ map.on('load', function () {
             "id": "od-do-kh-layer",
             'type': 'line',
             "source": "od_do_kh",
-            // "fill-antialias": true,
             'paint': {
-                // "fill-outline-color": "black",
-                // 'fill-color': 'white',
-                // 'fill-opacity': 0.3
-
                 'line-color': 'lightgrey',
                 'line-width': 2,
                 'line-opacity': 0.8
@@ -236,19 +191,12 @@ map.on('load', function () {
             "id": "lubash-layer",
             'type': 'line',
             "source": "lubash",
-            // "fill-antialias": true,
             'paint': {
-                // "fill-outline-color": "black",
-                // 'fill-color': 'white',
-                // 'fill-opacity': 0.3
-
                 'line-color': 'lightgrey',
                 'line-width': 2,
                 'line-opacity': 0.8
             }
         });
-
-        // map.flyTo({ center: [ 25, 52 ], zoom: default_zoom, speed: 0.5, curve: 1,  essential: true });
     }
 
 
@@ -261,7 +209,6 @@ map.on('load', function () {
         map.removeLayer('arrow-layer-small');
         map.removeLayer('arrow-layer-mid');
         map.removeLayer('arrow-layer-big');
-        // map.removeLayer('triangle_data');
         map.removeLayer('election_data');
     }
 
@@ -391,9 +338,6 @@ map.on('load', function () {
                 'line-color': [
                     'match',
                     ['get', 'color'],
-                    // '#93F164', '#93F164',
-                    // '#F47874', '#F47874',
-                    // '#5B95FF', '#5B95FF',
                     'green', '#93F164',
                     'red', '#F47874',
                     '#5B95FF'
@@ -402,38 +346,10 @@ map.on('load', function () {
             }
         }, firstSymbolId);
 
-
-
     }
 
 
-    // map.addLayer({
-    //     "id": "triangle_data",
-    //     'type': 'fill',
-    //     'minzoom': 4,
-    //     'maxzoom': 6,
-    //     'source': 'triangles_06',
-    //     "source-layer": 'triangles_06_4326',
-    //     'layout': {
-    //         // 'line-join': 'round',
-    //         // 'line-cap': 'round'
-    //
-    //     },
-    //     "paint": {
-    //
-    //         'fill-color': [
-    //             'match',
-    //             ['get', 'color'],
-    //             '#93F164', '#93F164',
-    //             '#F47874', '#F47874',
-    //             '#5B95FF', '#5B95FF',
-    //             'green', '#93F164',
-    //             'red', '#F47874',
-    //             '#5B95FF'
-    //         ]
-    //         // 'line-width': 1
-    //     }
-    // }, firstSymbolId);
+
 
 
         function sourceCallback() {
@@ -538,7 +454,6 @@ map.on('load', function () {
             if(r.index === 1) {
                 removeTiles();
                 add_year("elections_07", "lines_07_4326");
-                // map.flyTo({ center: [ 31, 49 ], zoom: enlarged_zoom, speed: 0.9, curve: 1,  essential: true });
                 add_po_ch();
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data07").classed("active", true);
@@ -557,7 +472,6 @@ map.on('load', function () {
             if(r.index === 3 && r.direction === "down") {
                 removeLayer("vi-kh-layer");
                 removeTiles();
-                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 add_year("elections_14", "lines_14_4326_new");
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data14").classed("active", true);
@@ -566,7 +480,6 @@ map.on('load', function () {
 
 
             if(r.index === 4) {
-                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 add_od_do_kh();
             }
 
@@ -581,7 +494,6 @@ map.on('load', function () {
                 removeLayer("lubash-layer");
                 removeTiles();
                 add_year("elections_19", "lines_19_4326");
-                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data19").classed("active", true);
 
@@ -594,7 +506,6 @@ map.on('load', function () {
             if(r.index === 0 && r.direction === "up") {
                 d3.selectAll(".pane").classed("active", false);
                 d3.select("#data06").classed("active", true);
-                // map.flyTo({ center: [  32,   48 ], zoom: default_zoom,  speed: 0.9,  essential: true  });
                 removeLayer("po-ch-layer");
                 removeTiles();
                 add_year("elections_06", "lines_06_4326");

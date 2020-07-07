@@ -455,11 +455,13 @@
 <script src="js/big_ternary.js"></script>
 
 <script>
-    $("#methodology").on("click", function(d){
-        $(".show_hidden").toggleClass("hidden");
-        $(".overlay").toggleClass("fadeout");
-        $("#methodology span").toggleClass("visible");
-    })
+    var el = document.querySelector('#methodology');
+
+    el.onclick = function() {
+        document.querySelector('.show_hidden').classList.toggle('hidden');
+        document.querySelector('.overlay').classList.toggle('fadeout');
+        document.querySelector('#methodology span').classList.toggle('visible');
+    };
 </script>
 
 

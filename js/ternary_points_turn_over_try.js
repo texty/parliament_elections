@@ -629,15 +629,6 @@ d3.csv("data/ternary_data.csv").then(function(data) {
     next_P("2019");
 
 
-    // d3.select("#update-scatter").on("click", function(d){
-    //     var seleted_years = [];
-    //     $("#select-years input:checkbox:checked").map(function(){
-    //         seleted_years.push($(this).val());
-    //     });
-    //     next_L(seleted_years);
-    //     d3.event.preventDefault();
-    // });
-
     d3.selectAll('.update').on('click', function (e) {
         d3.selectAll('.update').style("background-color", "lightgrey");
         d3.select(this).style("background-color", "#f59894");

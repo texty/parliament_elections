@@ -53,16 +53,6 @@ const chernivetska = [
     "Новоселицький район"
 ];
 
-
-// //точки для пояснювального блоку
-// const instructions = [
-//     {"vector": "ru", "pos": [5, 90, 5], "fill": "#FF2121"},
-//     {"vector": "ua", "pos": [90, 5, 5], "fill": "#0887FF"},
-//     {"vector": "pop", "pos": [5, 5, 90], "fill": "#009601"},
-//     {"vector": "center", "pos": [33, 33, 33], "fill": "white"}
-// ];
-
-
 d3.csv("data/ternary_big.csv").then(function(data) {
 
     const years_arr = ["2006", "2007", "2012", "2014", "2019"];
@@ -345,58 +335,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
 
     var points_all = [];
     var lines_all = [];
-    var instruction_points = [];
-
-    //////////////////////////////////////////////
-    // Точки інструкції
-    // instructions.forEach(function(d){
-    //     var p = new PIXI.Graphics();
-    //
-    //     let x = coord([33, 33, 33]).x;
-    //     let y = coord([33, 33, 33]).y;
-    //
-    //     p.lineStyle(1, 0x000000, 1);
-    //     p.beginFill(0xffffff, 1);
-    //     p.drawCircle(0, 0, 8);
-    //     p.endFill();
-    //
-    //     p.position.x = x;
-    //     p.position.y = y;
-    //
-    //     p.info = [{
-    //         "title": d.vector,
-    //         "coord": d.pos,
-    //         "fill": d.fill
-    //     }];
-    //
-    //     instruction_points.push(p);
-    //     stage.addChild(p);
-    //
-    // });
-    //
-    // function run_instruction(vector){
-    //     instruction_points.forEach(function(d,i){
-    //         var current_p = instruction_points[i];
-    //
-    //         if(current_p.info[0].title === vector && vector != "center"){
-    //
-    //             let xpos = coord(current_p.info[0].coord).x;
-    //             let ypos = coord(current_p.info[0].coord).y;
-    //             let fill = current_p.info[0].fill;
-    //
-    //             TweenMax.to(current_p, 1, { x: xpos, y: ypos  });
-    //             TweenMax.to(current_p, 0, {  pixi: { fillColor: fill }  })
-    //         }
-    //
-    //         if(vector === "center"){
-    //             let pos =  coord([33, 33, 33]);
-    //
-    //             TweenMax.to(current_p, 1, { x: pos.x, y: pos.y  });
-    //             TweenMax.to(current_p, 0, {  pixi: { fillColor: "white" }  })
-    //
-    //         }
-    //     })
-    // }
 
 
     //////////////////////////////////////////////
@@ -494,14 +432,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             TweenMax.to(point, 1, {
                 pixi: { alpha: 1 }
             });
-
-
-            // //прибираємо точки-інструкції
-            // instructions.forEach(function(d, i){
-            //     var current_p = instruction_points[i];
-            //     stage.removeChild(current_p);
-            //
-            // })
 
         });
     }
@@ -643,40 +573,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         });
 
     };
-
-    /////////////////////////////////////////////
-    // Показати конкретну область
-    // function filter_data(oblast, array){
-    //     points_all.forEach(function(p, i) {
-    //         var point = points_all[i];
-    //         point.alpha = 1;
-    //
-    //
-    //         if(!array.includes(point.info[0].rayon)) {
-    //             TweenMax.to(point, 0.5, {
-    //                 pixi: {alpha: 1, scale: 1 }
-    //             })
-    //         }
-    //
-    //         if(point.info[0].oblast != oblast) {
-    //             TweenMax.to(point, 0.5, {
-    //                 pixi: { alpha: 0 }
-    //             })
-    //         }
-    //
-    //         if(array.includes(point.info[0].rayon)) {
-    //             TweenMax.to(point, 0.5, {
-    //                 pixi: { lineWidth: 2, scale: 1.5 }
-    //             });
-    //         }
-    //     });
-    //
-    //
-    //     lines_all.forEach(function(p, i) {
-    //         stage.removeChild(lines_all[i])
-    //     })
-    // }
-
 
     function filter_data(oblast, scale_array, tip_array){
 
@@ -917,27 +813,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
     // scrollama event handlers
     function handleStepEnter(r) {
 
-
-        // if(r.index === 8) {
-        //     region_for_lines = "";
-        //     // redrawLines(["2007", "2012"]);
-        //     d3.selectAll(".test_big").style("display", "block");
-        //     points_all.forEach(function(p, i) { stage.removeChild(points_all[i]); });
-        //     draw_all_points(data, [], []);
-        //     show_smooth();
-        //     d3.selectAll(".test_big").style("background-color", "lightgrey");
-        //     d3.select("#show_2012").style("background-color", "#f59894");
-        // }
-        //
-        // if(r.index === 9) {
-        //     region_for_lines = "";
-        //     // redrawLines(["2007", "2012"]);
-        //     change_data("2012");
-        //     show_unsmooth();
-        //     d3.selectAll(".test_big").style("background-color", "lightgrey");
-        //     d3.select("#show_2012").style("background-color", "#f59894");
-        // }
-
         if(r.index === 8 && r.direction === "down") {
             d3.select("#show_2012").style("background-color", "#f59894");
             region_for_lines = "";
@@ -968,15 +843,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
             d3.select("#show_2012").style("background-color", "#f59894");
             filter_data("Закарпатська область", scale_points, scale_points)
         }
-
-
-        // if(r.index === 10 ) {
-        //     region_for_lines = "Закарпатська область";
-        //     redrawLines(["2014", "2019"]);
-        //     d3.selectAll(".test_big").style("background-color", "lightgrey");
-        //     d3.select("#show_2019").style("background-color", "#f59894");
-        //     change_data("2019");
-        // }
 
 
         if(r.index === 10 && r.direction === "down") {
