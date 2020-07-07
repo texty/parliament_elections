@@ -21,21 +21,43 @@ p {
   }
 }
 
-#header {
+#project-title {
   display: flex;
-  min-height: 30vh;
+  min-height: 35vh;
+
+  div {
+    margin: auto;
+
+
+    p {
+      margin: 20px auto;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
 }
 
 h1 {
   line-height: 1.4;
   max-width: 60%;
-  font-size: calc(30px + 1vw);
+  font-size: calc(35px + 1vw);
   text-align: center;
   margin: auto;
 }
 
 #credits {
   font-size: 16px;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid $texty-salmon;
+    padding-bottom: 1px;
+  }
+  a:hover {
+    color: $texty-salmon;
+  }
 }
 
 .expl-pic {

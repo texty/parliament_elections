@@ -11,7 +11,7 @@
   src: url("../font/proxima_bold/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), url("../font/proxima_bold/proxima-nova-bold.woff2") format("woff2"), url("../font/proxima_bold/proxima-nova-bold.woff") format("woff"), url("../font/proxima_bold/proxima-nova-bold.ttf") format("truetype"), url("../font/proxima_bold/proxima-nova-bold.svg#youworkforthem") format("svg");
   font-weight: 600;
   font-style: normal; }
-header {
+header, .header-grid {
   height: 40px;
   width: 100%;
   background-color: white;
@@ -20,63 +20,68 @@ header {
   grid-template-columns: [start] 2fr [logo-start] 15fr [rubrics-start] 43fr [rubrics-end] 1fr [search-start] 12fr [search-end] 1fr [end];
   align-items: center;
   z-index: 10; }
-  header .rubrics-container {
+  header .rubrics-container, .header-grid .rubrics-container {
     cursor: pointer;
     grid-column: rubrics-start/rubrics-end;
     display: grid;
     grid-template-columns: [start principals] 15fr [infographis] 16fr [burger] 12fr;
     align-items: center; }
     @media (max-width: 800px) {
-      header .rubrics-container {
+      header .rubrics-container, .header-grid .rubrics-container {
         display: block;
         grid-column: 2/3;
         grid-row: 1/2;
         padding: 0 20px; } }
-    header .rubrics-container .rubric {
+    header .rubrics-container .rubric, .header-grid .rubrics-container .rubric {
       text-transform: uppercase;
       letter-spacing: 0.5px; }
-      header .rubrics-container .rubric a {
+      header .rubrics-container .rubric a, .header-grid .rubrics-container .rubric a {
         text-decoration: none;
         color: #333; }
-    header .rubrics-container .r1 {
+    header .rubrics-container .r1, .header-grid .rubrics-container .r1 {
       grid-column: principals; }
-    header .rubrics-container .r2 {
+    header .rubrics-container .r2, .header-grid .rubrics-container .r2 {
       grid-column-start: infographis; }
-    header .rubrics-container .r3 {
+    header .rubrics-container .r3, .header-grid .rubrics-container .r3 {
       grid-column-start: burger; }
     @media (max-width: 800px) {
-      header .rubrics-container .r1, header .rubrics-container .r2, header .rubrics-container .r3 {
+      header .rubrics-container .r1, header .rubrics-container .r2, header .rubrics-container .r3, .header-grid .rubrics-container .r1, .header-grid .rubrics-container .r2, .header-grid .rubrics-container .r3 {
         display: none; } }
-  header .texty-logo {
+  header .texty-logo, .header-grid .texty-logo {
     grid-column-start: logo-start;
     width: 150px;
     display: flex;
     justify-content: center;
     align-items: center; }
     @media (max-width: 800px) {
-      header .texty-logo {
+      header .texty-logo, .header-grid .texty-logo {
         grid-column: 1/2;
         justify-content: center;
         margin-left: 1em; } }
-    header .texty-logo img {
+    header .texty-logo img, .header-grid .texty-logo img {
       min-width: 150px;
       max-width: 100%;
       max-height: 20px;
       object-fit: contain; }
-  header i {
+    header .texty-logo a#partner img, .header-grid .texty-logo a#partner img {
+      min-width: 150px;
+      max-width: 100%;
+      max-height: 70px;
+      object-fit: contain; }
+  header i, .header-grid i {
     font-size: 35px;
     color: #333;
     margin: 0 0 0 5px;
     max-height: 1em;
     transition: all 0.5s; }
-    header i:hover {
+    header i:hover, .header-grid i:hover {
       color: #ed6746; }
-  header .soc {
+  header .soc, .header-grid .soc {
     position: fixed;
     top: 5px;
     right: 25px; }
     @media (max-width: 825px) {
-      header .soc {
+      header .soc, .header-grid .soc {
         position: absolute; } }
 
 @font-face {
@@ -207,19 +212,33 @@ p {
     p {
       font-size: 16px; } }
 
-#header {
+#project-title {
   display: flex;
-  min-height: 30vh; }
+  min-height: 35vh; }
+  #project-title div {
+    margin: auto; }
+    #project-title div p {
+      margin: 20px auto;
+      font-size: 14px;
+      text-align: center; }
 
 h1 {
   line-height: 1.4;
   max-width: 60%;
-  font-size: calc(30px + 1vw);
+  font-size: calc(35px + 1vw);
   text-align: center;
   margin: auto; }
 
 #credits {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 400; }
+  #credits a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid #ed6746;
+    padding-bottom: 1px; }
+  #credits a:hover {
+    color: #ed6746; }
 
 .expl-pic {
   display: block;

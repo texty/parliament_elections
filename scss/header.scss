@@ -1,6 +1,6 @@
 @import "variables";
 
-header {
+header, .header-grid {
   height: 40px;
   width: 100%;
   background-color: white;
@@ -56,10 +56,17 @@ header {
       margin-left: 1em;
     }
 
-    img {
+     img {
       min-width: 150px;
       max-width: 100%;
       max-height: 20px;
+      object-fit: contain;
+    }
+
+    a#partner img {
+      min-width: 150px;
+      max-width: 100%;
+      max-height: 70px;
       object-fit: contain;
     }
   }
