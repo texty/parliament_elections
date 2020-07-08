@@ -28,7 +28,6 @@ map.scrollZoom.disable();
 map.on('load', function () {
 
     var layers = map.getStyle().layers;
-    console.log(layers);
     var firstSymbolId;
 
     for (var i = 0; i < layers.length; i++) {
@@ -37,7 +36,6 @@ map.on('load', function () {
             break;
         }
     }
-    console.log(firstSymbolId);
 
 
     map.addSource("admin0", {
@@ -358,13 +356,7 @@ map.on('load', function () {
             }
         }
     
-    map.on('sourcedata', sourceCallback);
-
-    map.on('click', 'arrow-layer-big', function(e) {
-        console.log("hey");
-        console.log(e.features[0].properties.X2012_Polling_station);
-
-    });
+    map.on('sourcedata', sourceCallback);    
   
 
 

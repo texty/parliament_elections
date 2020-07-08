@@ -393,7 +393,6 @@ d3.csv("data/ternary_data.csv").then(function(data) {
 
                     var points = d3.selectAll(".circle-tip");
                     points.each(function(circle){
-                        console.log(circle.rayon);
                         if (!circle.rayon.match(re)) {
                             d3.select(this).style("visibility", "hidden");
                         } else {

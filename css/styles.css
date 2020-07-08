@@ -300,7 +300,6 @@ a.underlined:hover {
 
 /* loader */
 #spinner {
-  background-image: url("img/loading.gif");
   width: 100px;
   position: absolute;
   top: 40%;
