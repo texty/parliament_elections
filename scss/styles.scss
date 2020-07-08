@@ -33,7 +33,7 @@ h1 {
   max-width: 60%;
   font-size: calc(35px + 1vw);
   text-align: center;
-  margin: auto;
+  margin: 2.5em auto 0 auto;
   @media(max-width: 825px) and (orientation: portrait) {
     font-size: calc(28px + 1vw);
   }
