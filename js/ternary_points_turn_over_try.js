@@ -389,9 +389,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 var value = $(this).val();
                 if (value) {
                     var i = 0; var re = new RegExp(value, "i");
-
-
-                    var points = d3.selectAll(".circle-tip");
+                    let points = d3.selectAll(".circle-tip");
                     points.each(function(circle){
                         if (!circle.rayon.match(re)) {
                             d3.select(this).style("visibility", "hidden");
@@ -401,7 +399,8 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                         i++
                     });
                 } else {
-                    circles.style("visibility", "visible");
+                    let points = d3.selectAll(".circle-tip");
+                    points.style("visibility", "visible");
                 }
             }).keyup();
 
