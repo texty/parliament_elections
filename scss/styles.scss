@@ -168,6 +168,7 @@ section.text {
   position: sticky;
   top: 0;
   left: 0;
+  max-height: 100vh;
   @media(max-width: 825px) and (orientation: portrait) {
     height: 50vh;
     top: 50px;
@@ -252,7 +253,7 @@ section.text {
 #scroll_t > .scroll__graphic {
   grid-column: 2/3;
   grid-row: 1/2;
-  height: max-content;
+  max-height: 100vh;
   z-index: 10000;
   @media(max-width: 825px) and (orientation: portrait) {
     grid-column: 1/3;
