@@ -471,7 +471,7 @@ map.on('load', function () {
             }
 
 
-            if(r.index === 4) {
+            if(r.index === 4  && r.direction === "down") {
                 add_od_do_kh();
             }
 
@@ -482,7 +482,7 @@ map.on('load', function () {
 
 
 
-            if(r.index === 6) {
+            if(r.index === 6 && r.direction === "down") {
                 removeLayer("lubash-layer");
                 removeTiles();
                 add_year("elections_19", "lines_19_4326");
