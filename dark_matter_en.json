@@ -717,7 +717,7 @@
       ],
       "layout": {
         "text-anchor": "center",
-        "text-field": "{name:uk}",
+        "text-field": "{name:en}",
         "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "center",
         "text-offset": [0.5, 0],
@@ -743,7 +743,7 @@
       "filter": ["all", ["==", "$type", "Point"], ["==", "class", "suburb"]],
       "layout": {
         "text-anchor": "center",
-        "text-field": "{name:uk}",
+        "text-field": "{name:en}",
         "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "center",
         "text-offset": [0.5, 0],
@@ -770,7 +770,7 @@
       "layout": {
         "icon-size": 0.4,
         "text-anchor": "left",
-        "text-field": "{name:uk}",
+        "text-field": "{name:en}",
         "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "left",
         "text-offset": [0.5, 0.2],
@@ -799,7 +799,7 @@
         "icon-image": {"base": 1, "stops": [[0, "circle-11"], [9, ""]]},
         "icon-size": 0.4,
         "text-anchor": {"base": 1, "stops": [[0, "left"], [8, "center"]]},
-        "text-field":"{name:uk}",
+        "text-field":"{name:en}",
         "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "left",
         "text-offset": [0.5, 0.2],
