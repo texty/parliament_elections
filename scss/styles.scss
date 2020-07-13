@@ -422,7 +422,7 @@ button.update:hover {
 }
 
 /* методологія */
-#methodology {
+#methodology, #methodology-en {
   cursor: pointer;
   margin: 0 auto 50px auto;
 
@@ -434,17 +434,27 @@ button.update:hover {
     font-style: italic;
   }
 
-  span::after {
-    content: "Більше";
-  }
-
-  span.visible::after {
-    content: "Менше";
-  }
-
   span:hover {
     color: $texty-salmon;
   }
+}
+
+#methodology span::after {
+    content: "Більше";
+  }
+
+#methodology  span.visible::after {
+    content: "Менше";
+  }
+
+
+
+#methodology-en span::after {
+  content: "More";
+}
+
+#methodology-en span.visible::after {
+  content: "Less";
 }
 
 .show_hidden {

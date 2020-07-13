@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Here’s how Ukraine was swept by populism.</title>
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="fb:app_id" content="329250623807149"/>
+    <meta property="og:site_name" content="ТЕКСТИ.ORG.UA"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title"
+          content="Here’s how Ukraine was swept by populism. History of voting since 2006"/>
+    <meta property="og:image" content="https://texty.org.ua/d/2020/elections_history/img/cover.jpg"/>
+    <meta property="og:description"
+          content="Often the electoral geography of Ukraine is narrowed only to the differences between several regions, for example, East and West. This simplification draws artificial boundaries. However, the real picture is much more interesting."/>
+    <meta property="og:url" content="https://texty.org.ua/d/2020/elections_history/en/"/>
+
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:site" content="@textyorgua"/>
+    <meta property="twitter:account_id" content="49572937"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content="https://texty.org.ua/d/2020/elections_history/en/">
+    <meta name="twitter:title"
+          content="Here’s how Ukraine was swept by populism. History of voting since 2006"/>
+    <meta name="twitter:description"
+          content="Often the electoral geography of Ukraine is narrowed only to the differences between several regions, for example, East and West. This simplification draws artificial boundaries. However, the real picture is much more interesting."/>
+    <meta name="twitter:image:src" content="https://texty.org.ua/d/2020/elections_history/img/cover.jpg"/>
+    <meta name="twitter:image:width" content="1200"/>
+    <meta name="twitter:image:height" content="630"/>
+
+
+    <!-- Other Meta Tags -->
+    <meta name="title" content="Here’s how Ukraine was swept by populism. History of voting since 2006">
+    <meta name="description" content="Often the electoral geography of Ukraine is narrowed only to the differences between several regions, for example, East and West. This simplification draws artificial boundaries. However, the real picture is much more interesting.">
+
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5.2.1/dist/backdrop.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5.2.1/dist/tippy.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5.2.1/themes/light.css"/>
+    <link rel='stylesheet' href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css'  type='text/css'/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+
+
+    <!-- Scripts-->
+    <script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../lib/d3v5.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/popper.js@1"></script> <!-- tippy js -->
+    <script type="text/javascript" src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script> <!-- tippy js -->
+    <script type="text/javascript" src="../lib/scrollama.min.js"></script>
+    <script type="text/javascript" src="../lib/chroma.js"></script>
+    <!--<script type="text/javascript" src="lib/jscolor.js"></script>-->
+    <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js"></script>
+    <script type="text/javascript" src="../lib/example.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/PixiPlugin.min.js?v=1.2-"></script>
+</head>
+<body>
+
+<header>
+    <a class="texty-logo" id="texty" href="https://texty.org.ua/"><img class="desktop-only" src="../img/textylogo.svg" alt="Тексти.org.ua"/></a>
+
+    <nav class="rubrics-container">
+        <div class="rubric r2"><a href=""><span></span></a></div>
+        <div class="rubric r1"><a href="https://texty.org.ua/tag/disinfomonitor/"><span>#DISINFOMONITOR</span></a></div>
+        <div class="rubric r3" style="text-transform: none; font-weight: bold"><a class="underlined" href="../" >Українською</a></div>
+    </nav>
+
+    <div class="soc">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2020/elections_history/" target="_blank" class="share-btn">
+            <i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2020/elections_history/" target="_blank" class="share-btn">
+            <i class="fab fa-twitter-square"></i></a>
+    </div>
+</header>
+
+<div id="project-title">
+    <div>
+        <h1>Here’s how Ukraine was swept by populism. History of voting since 2006</h1>
+    </div>
+</div>
+
+<section class="text">
+    <h3>Often the electoral geography of Ukraine is narrowed only to the differences between several regions, for example, East and West. This simplification draws artificial boundaries. However, the real picture is much more interesting.
+    </h3>
+
+    <p class="mobile"><i>For better experience we recommend to view project on big screen</i></p>
+
+    <p>Let's look at the details and see the behavior of voters in different regions.</p>
+
+    <p>This is what the familiar national context looks like: a traditionally high level of support for national democratic forces in the West and the Center, and support for pro-Russian and communist forces in the East and South. But is it really true?
+    </p>
+
+    <p>We divided all parties that participated in the parliamentary elections of 2006-2019 into three types: <br>
+        - national-democratic (typical examples: Nasha Ukraina, Svoboda)<br>
+        - pro-Russian or communist (Party of Regions, Communist Party of Ukraine)<br>
+        - populist (Yulia Tymoshenko Bloc, Servant of the People).</p>
+
+    <p>Imagine the political preferences of voters in the form of a triangle, where the
+        <span style="color: #5B95FF; font-weight: bold;"> blue corner indicates the national democratic forces;</span>
+        <span style="color: #F47874; font-weight: bold;"> the red corner, the pro-Russian and communist parties;</span>
+        <span style="color: #93F164; font-weight: bold;"> the green, the populist</span>.
+        Any ratio of votes for these three types of political forces can be coded by a point on this triangle.</p>
+
+    <p>For example, if voters gave each type of political force 33.3%, we get a position in the middle of the triangle (white dot in the center). This is rare: most likely, some forces will have more support, so the point will shift, respectively, in the direction of the blue, green, or red corner.</p>
+
+    <img style="display: block; width: 100%; max-width: 450px; margin: auto;" src="../img/triangle_3.png"/>
+
+    <p><b>These deviations from the "center" for each polling station in the parliamentary elections are marked on the map by arrow lines, where the beginning of the line is the center of the triangle. The higher the percentage of votes for a particular type of force, the longer and more directed to the appropriate angle is the line. For a quick look, you can simply navigate by color.</b></p>
+    <p>In general, both the slope and the color of the lines show the proportion of votes received by the parties in these three directions: the slope to the left or “to the west” and the blue arrows are the national democratic parties; the slope to the right or "to the east" and the reds are pro-Russian; leaning down, the greens are the populists. Switch between years to compare election results. You can zoom in on the map with the +/- buttons in the upper left corner of the map. <b>One line is one polling station.</b>.
+    </p>
+</section>
+
+<section id='scroll' class="desktop-only">
+    <div class='scroll__graphic sticky'>
+
+        <div id="map" class="container"></div>
+        <div id="loading-background" class=''>
+            <img id="spinner" src="../img/wait.gif" alt="Be patient..."/>
+        </div>
+        <div class="change" style="">
+            <p id="data06" data="2006" class="pane active">2006</p>
+            <p id="data07" data="2007" class="pane">2007</p>
+            <p id="data12" data="2012" class="pane">2012</p>
+            <p id="data14" data="2014" class="pane">2014</p>
+            <p id="data19" data="2019" class="pane">2019</p>
+        </div>
+        <p id="center_ukraine">Click here to back map into initial position</p>
+    </div>
+
+    <div class='scroll__text'>
+        <div class='step' data-step='0' data-scrollama-index="0">
+            <div>
+                <p>A gradual shift towards weaker support for pro-Russian and communist forces began after the Maidan of 2005. However, the constant quarrels between the “orange” forces disappointed voters, and by the time of the 2006 vote, the pro-Russian Party of Regions, led by Yanukovych, not only retained its electorate but also attracted CPU voters and received 186 seats in the parliament.</p>
+            </div>
+        </div>
+
+        <div class='step' data-step='1' data-scrollama-index="1">
+            <div>
+                <p>Tymoshenko strengthened her position in the 2007 snap elections. At this time, for the first time, the electoral turn of <b>Poltava</b> and <b>Cherkasy</b> regions became noticeable. Pro-Russian and communist forces have noticeably lost their positions here, mostly in favor of the Tymoshenko Bloc. Voters in <b>Vinnytsia, Volyn, Lviv, Khmelnytsky</b>, and <b>Ivano-Frankivsk</b> oblasts also actively supported Tymoshenko's party. Populist slogans such as "repayment of Soviet Sberbank's debts" and "a contract army by 2008" helped Yulia Tymoshenko's party get 156 seats in the parliament.
+                </p>
+
+            </div>
+        </div>
+
+        <div class='step' data-step='2' data-scrollama-index="2">
+            <div>
+                <p>In 2012, the Party of Regions returned the “one-seat majority” component of the elections. Thanks to this, the party manages to mobilize its voters from rural areas. Documents in the Manafort case show that in Central and Western Ukraine, before the 2012 elections, the Party of Regions chose a strategy to integrate local elites into its ranks. And the strategy brought some success, in particular, in <b>Vinnytsia, Khmelnytsky</b> and <b>Zakarpattia</b> regions.
+                </p>
+            </div>
+        </div>
+
+
+        <div class='step' data-step='3' data-scrollama-index="3">
+            <div>
+                <p>In the 2014 elections, following the events on the Maidan and the Russian intervention, Ukraine almost unanimously supported pro-Ukrainian forces.</p>
+            </div>
+        </div>
+
+
+        <div class='step' data-step='4' data-scrollama-index="4">
+            <div>
+                <p>The similarity of electoral support within <b>Odesa, Kharkiv</b>, and <b>Dnipropetrovsk</b> oblasts, which had previously been more consolidated around pro-Russian/communist parties, has disappeared. The same applies to the territories of <b>Donetsk</b> and <b>Luhansk</b> oblasts controlled by Ukraine. </p>
+            </div>
+
+        </div>
+
+        <div class='step' data-step='5' data-scrollama-index="5">
+            <div>
+                <p>Interesting fact: although <b>Lyubeshiv district</b>  is Volyn, this did not prevent the communists from winning there in 2006-2012. Even in 2014, after the Revolution of Dignity, one polling station favored the Communists, the one in the village where one of the party leaders (multiple Deputy Speaker of the Verkhovna Rada) Adam Martyniuk was born. However, this is not only the effect of “friends and neighbors” but also a well-thought-out election campaign. Martyniuk was a high-ranking official in 2002, but the CPU did not gain support in the area at the time.</p>
+            </div>
+        </div>
+
+
+        <div class='step' data-step='6' data-scrollama-index="6">
+            <div>
+                <p class="">Although the national democratic forces received less support in the 2019 elections than five years earlier, after 2014 there was a serious change in the electoral map of Ukraine. The division into the pro-Ukrainian West/Center and the pro-Russian East/South, imposed on Ukraine during Kuchma's rule, began to crumble. After all, in the electoral dimension, Ukraine is more than just East and West. Similarly, the analysis of election results is more than a generalization by oblast or region. </p>
+                <p>However, in 2019 the country was swept by a wave of populism. On the one hand, this is a global trend when voters become disillusioned with traditional policies and choose someone extraordinary. On the other hand, it may be a mix of war fatigue, oligarchic television narratives, the consequences of Russian disinformation, the complexity and incomprehensibility of reforms, and the love of simple solutions preached for many years by less successful Ukrainian populists than Zelensky.  </p>
+            </div>
+        </div>
+
+
+        <div class='step map-last-step' data-step='7' data-scrollama-index="7">
+            <div>
+                <p class="">
+                    Before reading on, you can take a detailed look at the maps for the Rada elections since 2006. Click on the year (on the right, in the top corner) to go to the corresponding map. It will be recalled that each arrow is a specific electoral precinct (polling station). You can zoom in on the map with the +/- buttons in the upper left corner.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="text">
+    <p>The interactive map allows you to identify districts, towns, and cities that do not vote like their regions. Sometimes these are only temporary electoral successes of one of the parties in one election, which disappears in the next. At the same time, many locations in Ukraine have long-standing features of political views.
+    </p>
+
+    <p>If we aggregate the data of polling stations to the level of cities and districts, we can make these patterns more apparent.</p>
+
+    <h2>Not only East and West</h2>
+
+    <p>During 2006-2019, three Galician oblasts (Lviv, Ivano-Frankivsk, and Ternopil oblasts) and two Donbas oblasts (Donetsk and Luhansk oblasts) had the smallest internal differences in party support.</p>
+
+    <p>At the same time, some other oblasts had greater differences in electoral preferences between districts than individual oblasts did among themselves.
+    </p>
+</section>
+
+
+<section id='scroll_t'>
+    <!--  graphic container  -->
+    <div class='scroll__graphic sticky'>
+        <div class="buttons">
+            <button id="show_2006" class="test_big">2006</button>
+            <button id="show_2007" class="test_big">2007</button>
+            <button id="show_2012" class="test_big">2012</button>
+            <button id="show_2014" class="test_big">2014</button>
+            <button id="show_2019" class="test_big">2019</button>
+        </div>
+
+        <div id="big_ternary" class="example"></div>
+    </div>
+
+    <div class='scroll__text'>
+
+        <div class='step ternary-first-step' data-step='8' data-scrollama-index="8">
+            <div>
+                <p>This is what the political preferences of the districts and the largest cities of Ukraine look like in a triangle. Some points fall out of the general picture. These are the so-called outliers (values that differ sharply): here, people vote steadily not like the rest of the region. Transcarpathian (Zakarpatiia), Chernivtsi, Chernihiv, Sumy, and Zhytomyr oblasts had the largest intra-regional deviations.</p>
+
+                <p>In the case of Chernivtsi and Zakarpattia oblasts, these are the districts with the largest share of ethnic minorities.
+                </p>
+            </div>
+        </div>
+
+        <div class='step' data-step='9' data-scrollama-index="9">
+            <div>
+                <p>Let's look, for example, at the Transcarpathian region. In the Berehove district, three quarters of the population are Hungarians, and in the town of Berehove, the Hungarian population comprises about a half. This is the place with the lowest level of support for "national democratic" forces, which in 2012 was effectively used by the Party of Regions. However, in districts such as Vynohradiv (one quarter of the population are Hungarians) or Uzhhorod (one third of the population), there are no such voting tendencies as in Berehove district. Hover over the point to see the name of the district or city. The gray line shows the voting results for the previous year.</p>
+            </div>
+        </div>
+
+        <div class='step' data-step='10' data-scrollama-index="10">
+            <div>
+                <p>A similar situation is  noticeable in the Chernivtsi region. Hertsa district, where the majority of the population are Romanian (about 90%), and Novoselytsia, where about 57% are Moldovans according to the latest census, are shifted so as to support "pro-Russian and communist forces." Whereas Hlyboka district, where Romanians comprise a little less than half of the population, or Storozhynets (a third of the population) do not show similar voting results.</p>
+            </div>
+        </div>
+
+
+        <div class='step' data-step='11' data-scrollama-index="11">
+            <div>
+                <p>It seems that it is the predominance of a national minority, and not just its significant share (even when it is 45%, as in Hlyboka district), results in changes in electoral preferences. At the same time, the influence of ethnicity itself is doubtful, without its use in the party's electoral strategy, access to administrative resources in the district, alliance with local elites or the development of the local party cell. This demonstrates the importance of local politics rather than the reaction of national minorities to what is happening at the national level.
+                </p>
+
+                <p>To denote this phenomenon, there is the term "ethno-political entrepreneurship". That is, when ethnic boundaries are used to achieve political goals. In Ukraine, it looks like political forces are negotiating with the “right people” and getting votes, and not that a particular ethnic community has its own strategy.
+                </p>
+            </div>
+        </div>
+
+
+        <div class='step' data-step='12' data-scrollama-index="12">
+            <div>
+                <p>It is worth mentioning that the territory of Chernivtsi region has long been divided between the Austrian and Russian empires. And this ancient border is still manifested on electoral maps. Electoral behavior in the Sokyriany, Khotyn, Kelmentsi, and Novoselytskia districts, which were part of the Russian Empire, shifted toward "communist and pro-Russian" forces compared to the districts that were part of the Austrian Empire. Together with ethno-political entrepreneurship, this is what makes the electoral geography of Chernivtsi region so diverse.</p>
+            </div>
+        </div>
+
+        <div class='step' data-step='13' data-scrollama-index="13">
+            <div>
+                <p>Another example of the influence of historical borders is in the northern districts of the Ternopil oblast, which were part of the Volyn province of the Russian Empire, as opposed to the other part of the oblast that belonged to the Austrian Empire. Interestingly, such a line of demarcation became apparent only in 2012, when the Party of Regions managed to achieve strategic success in these areas compared to the territories on the other side of the border, which is already physically absent but is still apparent on electoral maps.</p>
+            </div>
+        </div>
+
+        <div class='step' data-step='14' data-scrollama-index="14">
+            <div>
+                <p>In the north of Sumy oblast, the Seredyna-Buda district (raion), which consistently has the largest support for pro-Russian forces in the region, has the lowest proportion of ethnic Russians but a high proportion of Russian-speaking residents (2001 census data). At the same time, Velykopysarivskyi district, which features the second largest ethnic Russian and the third largest Russian-speaking population, does not have such electoral preferences. The same applies to Chernihiv oblast. Chernihiv has a larger Russian-speaking population than the Semenivskyi district, but support for national democratic forces in Chernihiv is higher.
+                </p>
+            </div>
+        </div>
+
+        <div class='step ternary-last-step' data-step='15' data-scrollama-index="15">
+            <div>
+                <p>On the other hand, Zhytomyr oblast (which does not have significant differences in population structure) is also one of the oblasts that show the largest intra-regional differences. The city of Korosten, for example, was a "red" fortress for 23 years, until the Communist Party was banned in Ukraine.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="text">
+    <p>Perhaps the issues of electoral preferences have to do with local political elites and the mobilization of the electorate on the grassroot level. These issues are unexplored in Ukraine.
+    </p>
+
+    <p>Linguistic, ethnic, socio-economic variables also have no explanatory force for many specific cases when we see the difference in the electoral behavior of cities and districts within one region.
+    </p>
+
+    <p>For example, in Kharkiv and Kirovohrad oblasts, more ethnic Russians and Russian-speakers live in large cities, but in the 2006-2012 elections we can see that Kropyvnytskyi and Svitlovodsk (both are in Kirovohrad oblast), as well as Kharkiv and Lyubotyn, cast more votes for pro-Ukrainian political forces than is the average in these areas. </p>
+
+    <p>If you look at the graphs by oblast, you can see that the city of Horishni Plavni (formerly Komsomolsk) in 2006-2019 did not follow the electoral turn of Poltava oblast, but was the most "pro-Party of  regions." Perhaps this is due to the fact that the city was created in Soviet times as a satellite of a large plant "Poltava Mining and Processing Plant", and there, at the request of the Soviet authorities, came many Komsomol volunteers, including from Russia. On January 6, 1961, the newspaper Komsomolskaya Pravda wrote: "There is the city of Komsomolsk-on-Amur, the city of Komsomolsk-on-Dnieper will appear," after which a campaign began to move young people to this new “construction site of the century”.</p>
+
+    <p>On the contrary, in 2006-2012 the city of Nikopol steadily showed the highest support of "national-democratic" forces in Dnipropetrovsk oblast.</p>
+
+    <p>The city of Slavutych (built for the families of Chornobyl nuclear power plant workers, ethnic composition: Ukrainians - 44.3%; Russians - 45.8%; Belarusians - 4.8%) of Kyiv oblast in 2006-2012 also fell out of the regional trend and supported the Party of Regions.</p>
+
+    <p>The city of Yuzhnoukrainsk (as in Slavutych, inhabited by the people who work at the nuclear power plant, South Ukrainian. Ethnic structure: Ukrainians - 73,9%; Russians - 21,7%; Belarusians - 0,7%;) in Mykolaiv oblast in 2006-2014 consistently shows the highest level of support for "national democratic" forces in the oblast. </p>
+
+    <p>Nedrihailiv district, where ex president Viktor Yushchenko was born, also had a record support for his “Nasha Ukraina” party in Sumy oblast in 2002-2007.</p>
+
+    <p>Below are graphs for districts and cities for each region. Switch years, look for the cities that interest you. The graphs are grouped by similarity of votes in the oblasts.</p>
+
+</section>
+
+
+<section id="scatter-plot" style="width: 98%; margin: auto;">
+
+    <div id="nav-wrapper">
+        <input id="filter" style="" type="text" class="form-control" placeholder="search (ukrainian names only)">
+        <button id="update_2006" class="update active">2006</button>
+        <button id="update_2007" class="update">2007</button>
+        <button id="update_2012" class="update">2012</button>
+        <button id="update_2014" class="update">2014</button>
+        <button id="update_2019" class="update" style="background-color: #f59894">2019</button>
+    </div>
+</section>
+
+
+<section class="text">
+
+    <div class="donate-us">
+        <a class="donate-button"
+           href="https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTc2NjUwNTYyODI3IiwiYW1vdW50IjoiMTUwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCf0L7QttC10YDRgtCy0LAiLCJ0eXBlIjoiZG9uYXRlIiwibGFuZ3VhZ2UiOiJ1ayJ9&signature=tTFrEUyI4WV5l3N7G%2BYg5keUaXU%3D"
+           target="_blank">
+            <p class="donate-p">Donate</p></a>
+        <p>TEXTY.ORG.UA — independent media without annoying advertising and paid news. We need your support to continue our work.
+            <a href="https://texty.org.ua/support/#subscription">You can support us with a monthly donation</a>.</p>
+    </div>
+
+    <h2>Methodology</h2>
+
+    <div class="show_hidden hidden">
+        <div class="overlay fadeout"></div>
+
+        <p>We equated the polling stations of 2006-2007 to the unified numbers introduced in the 2012 elections, by address and area covered. Most of the work was done manually, with the help of our tireless interns. As a result, we have established equivalents for more than 90% of polling stations, which allows us to compare voting results by year for almost 30,000 polling stations.</p>
+
+        <p>Most parties in Ukraine can hardly be called ideological. Classification based on party programs is unreliable because what is declared in the programs often differs from the parties’ actions; also, by their general formulations parties do not differ much from each other. Often the pro-Russian nature of the party is manifested only over time, when voting for important bills, such as the continuation of the Russian Black Sea Fleet's base agreement in the Crimea, language issues, and so on.
+        </p>
+
+        <p>According to our rough estimates, the parties can be divided into three groups:</p>
+
+        <p>National Democratic: Nasha Ukraina, Nasha Ukraine - People's Self-Defense (Narodna Samooborona) Bloc, Ukrainian People's Bloc of Kostenko and Pliushch, Civic Bloc PORA-PRP, UDAR, VO Svoboda, Popular Front (Narodny Front), Petro Poroshenko Bloc, Samopomich , Hrytsenko 's Civic Position (Hromadianska Pozytsiya), Zastup, Right Sector, European Solidarity, Voice (Holos), Groysman' s Ukrainian Strategy.</p>
+
+        <p>Pro-Russian or Communist: Party of Regions, Socialist Party of Ukraine, Communist Party of Ukraine, Natalia Vitrenko Bloc "People's Opposition", "Lytvyn People's Bloc", "Viche" Party, "Opposition Bloc NOT SO!" (NE TAK!), "Lytvyn Bloc", Progressive Socialist Party Of Ukraine, Natalia Korolevska's Party "Ukraine - Forward!", Opposition Bloc, Serhiy Tihipko's "Strong Ukraine", Opposition Platform - FOR LIFE, Opposition Bloc, Shariy’s Party. </p>
+
+        <p>Populist: Yulia Tymoshenko Bloc, Batkivshchyna, Oleh Lyashko's Radical Party, Servant of the People, Strength and Honor. </p>
+    </div>
+
+    <p id="methodology-en"><span></span></p>
+
+
+    <h5 id="credits"><b>Authors: </b>Mykola Dobysh, <a class="underlined"  href="https://texty.org.ua/author/anatolij-bondarenko/" target="_blank">Anatoliy Bondarenko</a>, <a class="underlined"  href="https://texty.org.ua/author/yevhenija-drozdova/" target="_blank">Yevheniia Drozdova</a>, <a class="underlined"  href="https://texty.org.ua/author/nadja-kelm/" target="_blank">Nadja Kelm</a>, а також Yelyzaveta Dorontseva, Hanna Arhirova, Natalia Kindrativ, Alina Dziubko, Yana Yarmak, Anastasiia Opryshchenko, Yaroslav Andriienko.
+    </h5>
+
+    <div class="read-next">
+        <p class="read-next-title"> What to read next</p>
+        <p class="read-next-item"><a href="https://texty.org.ua/d/2018/mnews/eng/" target="_blank"> We’ve got bad news! The ranking of manipulative websites compiled by deep learning algorithm</a></p>
+        <p class="read-next-item"><a href="https://topic-radar.texty.org/#/" target="_blank">Hot disinfo from Russia. Winner of Sigma Awards-2020 as the «Best news application»</a></p>
+        <p class="read-next-item"><a href="https://texty.org.ua/d/2018/amber_eng/" target="_blank">Leprosy of the land</a></p>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <div id="logo-copyright">
+        <a class="texty-logo" href="/">
+            <img class="desktop-only" src="../img/white_logo.svg" alt="Тексти.org.ua"/>
+
+        </a>
+        <div class="copyright">
+            <p>&copy; 2010—2020 Texty.org.ua</p>
+        </div>
+
+        <p id="license">Матеріали ТЕКСТИ.org.ua можна використовувати згідно ліцензії <a
+                href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons із зазначенням
+            авторства, CC BY</a> (переклад ліцензії <a href="https://creativecommons.org/licenses/by/4.0/legalcode.uk"
+                                                       target="_blank">українською</a>). Велике прохання ставити
+            гіперпосилання в першому чи другому абзаці вашого матеріалу.</p>
+    </div>
+
+    <div id="guide-block">
+        <ul class="links1">
+            <li><a href="https://texty.org.ua/articles/">Статті</a>
+                <a href="https://texty.org.ua/articles/feed.xml">(RSS)</a>
+            </li>
+            <li><a href="https://texty.org.ua/fragments/">Фрагменти</a>
+                <a href="https://texty.org.ua/fragments/feed.xml">(RSS)</a>
+            </li>
+            <li><a href="https://texty.org.ua/projects">Журналістика даних</a></li>
+            <li><a href="https://texty.org.ua/d/socio">Фальшиві соціологи</a></li>
+        </ul>
+
+        <ul class="links2">
+            <li><a href="https://fgz.texty.org/">Фейкогриз</a></li>
+            <li><a href="https://texty.org.ua/tag/dezinformatsija/">Дезінформація</a></li>
+            <li><a href="https://texty.org.ua/tag/eng/">#English</a></li>
+            <li><a href="https://texty.org.ua/archive-books/">Архів книг</a></li>
+        </ul>
+
+        <ul class="links3">
+            <li><a href="https://texty.org.ua/support" target="_blank">Підтримай нас!</a></li>
+            <li><a href="http://texty.org.ua/donate/#/" target="_blank">Наш дата-арт</a></li>
+            <li><a href="https://texty.org.ua/tag/hrafik-dnja/">Графік Дня</a></li>
+            <li><a href="https://texty.org.ua/archive-blogs/">Архів блогів</a></li>
+        </ul>
+    </div>
+
+
+    <div id="social_buttons">
+        <p class="piece-title">Стежити:</p>
+        <a href="https://www.facebook.com/TEXTY.org.ua/" target="_blank">
+            <img src="../img/facebook.png" alt="Тексти.org.ua - Facebook">
+        </a>
+        <a href="https://www.instagram.com/texty.org.ua/" target="_blank">
+            <img src="../img/instagram.png" alt="Тексти.org.ua - Instagram">
+        </a>
+        <a href="https://telegram.me/textyorgua" target="_blank">
+            <img src="../img/telegram.png" alt="Тексти.org.ua - Telegram">
+        </a>
+        <a href="https://twitter.com/textyorgua" target="_blank">
+            <img src="../img/twitter.png" alt="Тексти.org.ua - Twitter">
+        </a>
+    </div>
+</footer>
+
+<script src="../lib/share-behavior.js"></script>
+<script src="js/vector_tiles.js"></script>
+<script src="js/ternary_points_turn_over_try.js"></script>
+<script src="js/big_ternary.js"></script>
+
+<script>
+    var el = document.querySelector('#methodology-en');
+
+    el.onclick = function() {
+        document.querySelector('.show_hidden').classList.toggle('hidden');
+        document.querySelector('.overlay').classList.toggle('fadeout');
+        document.querySelector('#methodology-en span').classList.toggle('visible');
+    };
+</script>
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18136548-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+</body>
+</html>
