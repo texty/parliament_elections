@@ -193,8 +193,8 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
                 coord([0,0,100]).x + "," + coord([0,0,100]).y + " " +
                 coord([0,4,96]).x + "," + coord([0,4,96]).y + " " +
                 coord([4,0,96]).x + "," + coord([4,0,96]).y )
-           .attr("fill", green)
-           .style("opacity", 0.5);
+           .attr("fill", "#cfd95a")
+           .style("opacity", 1);
 
         axes.append("polygon")
             .attr("points",
