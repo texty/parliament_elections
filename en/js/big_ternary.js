@@ -145,7 +145,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     // підписи ло вісей
     const tick_labels = [
         { label: "pro-Russian or communist", pos: [0, 0, 100], rot: -45, color: red, yShift: 20, xShift: 40 },
-        { label: "populist", pos: [100, 0, 0], rot: 45, color: "#baca00", yShift: 0, xShift: -40},
+        { label: "populist", pos: [100, 0, 0], rot: 45, color: "#E6F164", yShift: 0, xShift: -40},
         { label: "support of the national-democratic forces", pos: [65, 100-65, 0], rot: 0, color: blue, yShift: -60, xShift: 0 }
     ];
 
@@ -211,7 +211,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
         tick_b.position.y = coord2.y;
         stage.addChild(tick_b);
 
-        const style_c = new PIXI.TextStyle({ fontSize: 14,  fill: "#baca00" });
+        const style_c = new PIXI.TextStyle({ fontSize: 14,  fill: "#E6F164" });
         var tick_c = new PIXI.Text(v, style_c);
         tick_c.position.x = coord3.x-20;
         tick_c.position.y = coord3.y;
@@ -757,16 +757,16 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
 
             //костиль для світло-зеленої зони,  яка глючить
             if(hslColor._rgb[0] === 255 && hslColor._rgb[1] === 255 && hslColor._rgb[2] === 255){
-                hslColor._rgb[0] = 240;
-                hslColor._rgb[1] = 247;
-                hslColor._rgb[2] = 162;
+                hslColor._rgb[0] = 248;
+                hslColor._rgb[1] = 251;
+                hslColor._rgb[2] = 209;
             }
 
             //темно-зелений
             else if(Math.round(hslColor._rgb[0]) === 181 && Math.round(hslColor._rgb[1]) === 189 && Math.round(hslColor._rgb[2]) === 77) {
-                hslColor._rgb[0] = 207;
-                hslColor._rgb[1] = 217;
-                hslColor._rgb[2] = 90;
+                hslColor._rgb[0] = 230;
+                hslColor._rgb[1] = 241;
+                hslColor._rgb[2] = 100;
             }
 
 

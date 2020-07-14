@@ -221,7 +221,7 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 coord([0,0,100]).x + "," + coord([0,0,100]).y + " " +
                 coord([0,4,96]).x + "," + coord([0,4,96]).y + " " +
                 coord([4,0,96]).x + "," + coord([4,0,96]).y )
-           .attr("fill", "#baca00")
+           .attr("fill", green)
            .style("opacity", 1);
 
         axes.append("polygon")
@@ -594,15 +594,15 @@ d3.csv("data/ternary_data.csv").then(function(data) {
 
             //темно-зелений
             if(Math.round(hslColor._rgb[0]) === 180 && Math.round(hslColor._rgb[1]) === 189 && Math.round(hslColor._rgb[2]) === 77){
-                hslColor._rgb[0] = 207;
-                hslColor._rgb[1] = 217;
-                hslColor._rgb[2] = 90;
+                hslColor._rgb[0] = 230;
+                hslColor._rgb[1] = 241;
+                hslColor._rgb[2] = 100;
 
                 // світло-зелений
             } else if(Math.round(hslColor._rgb[0]) === 220 && Math.round(hslColor._rgb[1]) === 231 && Math.round(hslColor._rgb[2]) === 92){
-                hslColor._rgb[0] = 240;
-                hslColor._rgb[1] = 247;
-                hslColor._rgb[2] = 162;
+                hslColor._rgb[0] = 248;
+                hslColor._rgb[1] = 251;
+                hslColor._rgb[2] = 209;
             }
 
 
