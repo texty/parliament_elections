@@ -144,7 +144,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     // підписи ло вісей
     const tick_labels = [
         { label: "pro-Russian or communist", pos: [0, 0, 100], rot: -45, color: red, yShift: 20, xShift: 40 },
-        { label: "populist", pos: [100, 0, 0], rot: 45, color: "#B0BD30", yShift: 0, xShift: -40},
+        { label: "populist", pos: [100, 0, 0], rot: 45, color: "#e6f164", yShift: 0, xShift: -40},
         { label: "support of the national-democratic forces", pos: [65, 100-65, 0], rot: 0, color: blue, yShift: -60, xShift: 0 }
     ];
 
@@ -160,7 +160,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     // стрілки вісів
     const tick_lines = [
         { label: "pro-Russian or communist", posFrom: [0, 45, 100-45], posTo: [0, 100, 0], rot: -45, color: 0xF47874, yShift: 20, xShift: 55 },
-        { label: "populist", posFrom: [100-17, 0, 17], posTo: [0, 0, 110],  rot: 45, color: 0xB0BD30, yShift: 0, xShift: -50 },
+        { label: "populist", posFrom: [100-17, 0, 17], posTo: [0, 0, 110],  rot: 45, color: 0xe6f164, yShift: 0, xShift: -50 },
         { label: "support level of national-democratic forces", posFrom: [70, 100-70, 0], posTo: [100, 0, 0],  rot: 0, color: 0x5B95FF, yShift: -45, xShift: 0 }
     ];
 
@@ -753,12 +753,23 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
                 .luminance(d.lum, 'lab')
                 .saturate(0.1);
 
-            //костиль для світло-зеленої зони,  яка шлючить
+            console.log(hslColor);
+
+            //костиль для світло-зеленої зони,  яка глючить
             if(hslColor._rgb[0] === 255 && hslColor._rgb[1] === 255 && hslColor._rgb[2] === 255){
-                hslColor._rgb[0] = 230;
-                hslColor._rgb[1] = 241;
-                hslColor._rgb[2] = 100;
+                hslColor._rgb[0] = 240;
+                hslColor._rgb[1] = 247;
+                hslColor._rgb[2] = 162;
             }
+
+            //темно-зелений
+            else if(Math.round(hslColor._rgb[0]) === 181 && Math.round(hslColor._rgb[1]) === 189 && Math.round(hslColor._rgb[2]) === 77) {
+                hslColor._rgb[0] = 207;
+                hslColor._rgb[1] = 217;
+                hslColor._rgb[2] = 90;
+            }
+
+
 
             return hslColor
         }
