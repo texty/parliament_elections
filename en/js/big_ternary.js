@@ -58,7 +58,8 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     const years_arr = ["2006", "2007", "2012", "2014", "2019"];
 
 
-    const green = '#E6F164';
+    const green_step = '#E6F164';
+    const green = '#cfd95a';
     const red = '#F47874';
     const blue = '#5B95FF';
 
@@ -144,7 +145,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     // підписи ло вісей
     const tick_labels = [
         { label: "pro-Russian or communist", pos: [0, 0, 100], rot: -45, color: red, yShift: 20, xShift: 40 },
-        { label: "populist", pos: [100, 0, 0], rot: 45, color: "#cfd95a", yShift: 0, xShift: -40},
+        { label: "populist", pos: [100, 0, 0], rot: 45, color: green, yShift: 0, xShift: -40},
         { label: "support of the national-democratic forces", pos: [65, 100-65, 0], rot: 0, color: blue, yShift: -60, xShift: 0 }
     ];
 
@@ -210,7 +211,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
         tick_b.position.y = coord2.y;
         stage.addChild(tick_b);
 
-        const style_c = new PIXI.TextStyle({ fontSize: 14,  fill: "#cfd95a" });
+        const style_c = new PIXI.TextStyle({ fontSize: 14,  fill: green });
         var tick_c = new PIXI.Text(v, style_c);
         tick_c.position.x = coord3.x-20;
         tick_c.position.y = coord3.y;
@@ -291,7 +292,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
         "y": opt.margin + maxDistanceToCentre
     };
 
-    let colourArr = [green, red, blue]; // *
+    let colourArr = [green_step, red, blue]; // *
 
     let colourScale = chroma.scale() // *
         .mode('lab')
