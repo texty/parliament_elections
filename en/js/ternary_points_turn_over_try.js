@@ -193,7 +193,7 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
                 coord([0,0,100]).x + "," + coord([0,0,100]).y + " " +
                 coord([0,4,96]).x + "," + coord([0,4,96]).y + " " +
                 coord([4,0,96]).x + "," + coord([4,0,96]).y )
-           .attr("fill", "#cfd95a")
+           .attr("fill", "#baca00")
            .style("opacity", 1);
 
         axes.append("polygon")
@@ -564,7 +564,6 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
                 .luminance(d.lum, 'lab')
                 .saturate(0.1);
 
-            console.log(hslColor);
 
             //темно-зелений
             if(Math.round(hslColor._rgb[0]) === 180 && Math.round(hslColor._rgb[1]) === 189 && Math.round(hslColor._rgb[2]) === 77){

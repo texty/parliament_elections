@@ -496,16 +496,18 @@ canvas {
   opacity: 0.2;
   stroke-width: 1.5px; }
 #scatter-plot .a-axis.tick-text {
-  fill: #5B95FF; }
+  fill: #5B95FF;
+  opacity: 0.7; }
 #scatter-plot .tick line {
   opacity: 0.5; }
 #scatter-plot .b-axis.tick-text {
-  fill: #F47874; }
-#scatter-plot .c-axis.tick-text {
-  fill: #cfd95a; }
-#scatter-plot .tick-text {
-  font-size: 14px;
+  fill: #F47874;
   opacity: 0.7; }
+#scatter-plot .c-axis.tick-text {
+  fill: #baca00;
+  opacity: 1; }
+#scatter-plot .tick-text {
+  font-size: 14px; }
 #scatter-plot path.trail-line {
   fill: none;
   opacity: 1;

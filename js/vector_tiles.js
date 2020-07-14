@@ -59,7 +59,7 @@ map.on('load', function () {
 
     map.addSource("od_do_kh", {
         "type": "geojson",
-        'data': "data/shapes/Odesa_Donbas_Kharkiv.json"
+        'data': "data/shapes/Odesa_Donbas_Kharkiv2.json"
 
 
     });

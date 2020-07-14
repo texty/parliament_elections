@@ -5,7 +5,7 @@
 $shadow-size: 2px;
 $red: #F47874;
 //$green: #b4bd4d;
-$green: #cfd95a;
+$green: #baca00;
 $blue: #5B95FF;
 
 html,
@@ -374,6 +374,7 @@ canvas {
 
   .a-axis.tick-text {
     fill: $blue;
+    opacity: 0.7;
   }
 
   .tick line {
@@ -382,15 +383,17 @@ canvas {
 
   .b-axis.tick-text {
     fill: $red;
+    opacity: 0.7;
   }
 
   .c-axis.tick-text {
     fill: $green;
+    opacity: 1;
   }
 
   .tick-text {
     font-size: 14px;
-    opacity: 0.7;
+
   }
 
   path.trail-line {
