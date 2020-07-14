@@ -144,7 +144,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     // підписи ло вісей
     const tick_labels = [
         { label: "pro-Russian or communist", pos: [0, 0, 100], rot: -45, color: red, yShift: 20, xShift: 40 },
-        { label: "populist", pos: [100, 0, 0], rot: 45, color: "#e6f164", yShift: 0, xShift: -40},
+        { label: "populist", pos: [100, 0, 0], rot: 45, color: "#cfd95a", yShift: 0, xShift: -40},
         { label: "support of the national-democratic forces", pos: [65, 100-65, 0], rot: 0, color: blue, yShift: -60, xShift: 0 }
     ];
 
@@ -160,7 +160,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     // стрілки вісів
     const tick_lines = [
         { label: "pro-Russian or communist", posFrom: [0, 45, 100-45], posTo: [0, 100, 0], rot: -45, color: 0xF47874, yShift: 20, xShift: 55 },
-        { label: "populist", posFrom: [100-17, 0, 17], posTo: [0, 0, 110],  rot: 45, color: 0xe6f164, yShift: 0, xShift: -50 },
+        { label: "populist", posFrom: [100-17, 0, 17], posTo: [0, 0, 110],  rot: 45, color: 0xcfd95a, yShift: 0, xShift: -50 },
         { label: "support level of national-democratic forces", posFrom: [70, 100-70, 0], posTo: [100, 0, 0],  rot: 0, color: 0x5B95FF, yShift: -45, xShift: 0 }
     ];
 
@@ -210,7 +210,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
         tick_b.position.y = coord2.y;
         stage.addChild(tick_b);
 
-        const style_c = new PIXI.TextStyle({ fontSize: 14,  fill: green });
+        const style_c = new PIXI.TextStyle({ fontSize: 14,  fill: "#cfd95a" });
         var tick_c = new PIXI.Text(v, style_c);
         tick_c.position.x = coord3.x-20;
         tick_c.position.y = coord3.y;
