@@ -58,7 +58,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     const years_arr = ["2006", "2007", "2012", "2014", "2019"];
 
 
-    const green = '#79c951';
+    const green = '#E6F164';
     const red = '#F47874';
     const blue = '#5B95FF';
 
@@ -144,7 +144,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     // підписи ло вісей
     const tick_labels = [
         { label: "pro-Russian or communist", pos: [0, 0, 100], rot: -45, color: red, yShift: 20, xShift: 40 },
-        { label: "populist", pos: [100, 0, 0], rot: 45, color: green, yShift: 0, xShift: -40},
+        { label: "populist", pos: [100, 0, 0], rot: 45, color: "#E6F164", yShift: 0, xShift: -40},
         { label: "support of the national-democratic forces", pos: [65, 100-65, 0], rot: 0, color: blue, yShift: -60, xShift: 0 }
     ];
 
@@ -160,7 +160,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
     // стрілки вісів
     const tick_lines = [
         { label: "pro-Russian or communist", posFrom: [0, 45, 100-45], posTo: [0, 100, 0], rot: -45, color: 0xF47874, yShift: 20, xShift: 55 },
-        { label: "populist", posFrom: [100-17, 0, 17], posTo: [0, 0, 110],  rot: 45, color: 0x79c951, yShift: 0, xShift: -50 },
+        { label: "populist", posFrom: [100-17, 0, 17], posTo: [0, 0, 110],  rot: 45, color: 0xE6F164, yShift: 0, xShift: -50 },
         { label: "support level of national-democratic forces", posFrom: [70, 100-70, 0], posTo: [100, 0, 0],  rot: 0, color: 0x5B95FF, yShift: -45, xShift: 0 }
     ];
 
@@ -238,7 +238,7 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
 
             let tick_b_line = new PIXI.Graphics();
             tick_b_line
-                .lineStyle(2, 0x79c951, 0.5)
+                .lineStyle(2, 0xE6F164, 0.5)
                 .moveTo(coord4.x, coord4.y)
                 .lineTo(coord2.x, coord2.y);
             stage.addChild(tick_b_line);
@@ -755,9 +755,9 @@ d3.csv("../data/ternary_big.csv").then(function(data) {
 
             //костиль для світло-зеленої зони,  яка шлючить
             if(hslColor._rgb[0] === 255 && hslColor._rgb[1] === 255 && hslColor._rgb[2] === 255){
-                hslColor._rgb[0] = 202;
-                hslColor._rgb[1] = 230;
-                hslColor._rgb[2] = 193;
+                hslColor._rgb[0] = 220;
+                hslColor._rgb[1] = 231;
+                hslColor._rgb[2] = 92;
             }
 
             return hslColor

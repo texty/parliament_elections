@@ -6,7 +6,7 @@
 
 /** актуальний файл для ternary-plots */
 
-const green = '#79c951';
+const green = '#E6F164';
 const red = '#FF2121';
 const blue = '#0887FF';
 
@@ -363,7 +363,7 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
                     var i = 0; var re = new RegExp(value, "i");
                     let points = d3.selectAll(".circle-tip");
                     points.each(function(circle){
-                        if (!circle.rayon.match(re)) {
+                        if (!circle.rayon_en.match(re)) {
                             d3.select(this).style("visibility", "hidden");
                         } else {
                             d3.select(this).style("visibility", "visible");
@@ -392,7 +392,7 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
         //////////////////////////////////////////////
         // Draw triangle color background
         var rows = 3 ; // *
-        var rotateHSL = 180; //*
+        var rotateHSL = 270; //*
 
         var classGrid = "triangle-grid"; //*
         var maxDistanceToCentre = Math.ceil(2 * (h / 3)); //*
@@ -406,7 +406,7 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
 
         let colourScale = chroma.scale() // *
             .mode('lab')
-            .domain([0, 120, 240, 360])
+            .domain([0, 180, 270, 360])
             .range([colourArr[0], colourArr[1], colourArr[2], colourArr[0]]);
 
         var triangles = createTriangleGrid(rows, w, h);
@@ -557,7 +557,7 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
             }
 
             d.hAngle = Math.floor(d.angle + rotateHSL);
-            d.sat = 0.6 - (d.distance / 2);
+            d.sat = 1 - (d.distance / 2);
             d.lum =  0.2 + (d.distance * 0.8);
 
             let hslColor = colourScale(d.angle)

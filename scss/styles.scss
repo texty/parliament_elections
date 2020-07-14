@@ -3,6 +3,10 @@
 @import "donate";
 
 $shadow-size: 2px;
+$red: #F47874;
+//$green: #b4bd4d;
+$green: #79c951;
+$blue: #5B95FF;
 
 html,
 body {
@@ -369,7 +373,7 @@ canvas {
   }
 
   .a-axis.tick-text {
-    fill: #0887FF;
+    fill: $blue;
   }
 
   .tick line {
@@ -377,11 +381,11 @@ canvas {
   }
 
   .b-axis.tick-text {
-    fill: #FF2121;
+    fill: $red;
   }
 
   .c-axis.tick-text {
-    fill: #009601;
+    fill: $green;
   }
 
   .tick-text {
@@ -483,7 +487,7 @@ button.update:hover {
 
 .read-next-title {
   text-transform: uppercase;
-  color: #ed6746;
+  color: $texty-salmon;
   font-size: 18px;
   font-weight: bold;
 }
