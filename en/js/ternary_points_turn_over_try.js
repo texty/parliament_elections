@@ -564,6 +564,18 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
                 .luminance(d.lum, 'lab')
                 .saturate(0.1);
 
+            console.log(hslColor);
+
+            if(Math.round(hslColor._rgb[0]) === 180 && Math.round(hslColor._rgb[1]) === 189 && Math.round(hslColor._rgb[2]) === 77){
+                hslColor._rgb[0] = 176;
+                hslColor._rgb[1] = 189;
+                hslColor._rgb[2] = 48;
+            } else if(Math.round(hslColor._rgb[0]) === 220 && Math.round(hslColor._rgb[1]) === 231 && Math.round(hslColor._rgb[2]) === 92){
+                hslColor._rgb[0] = 230;
+                hslColor._rgb[1] = 241;
+                hslColor._rgb[2] = 100;
+            }
+
             return hslColor
         }
 
