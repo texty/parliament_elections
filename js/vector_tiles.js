@@ -336,7 +336,7 @@ map.on('load', function () {
                 'line-color': [
                     'match',
                     ['get', 'color'],
-                    'green', '#93F164',
+                    'green', "#e6f164", //'#93F164',
                     'red', '#F47874',
                     '#5B95FF'
                 ],
