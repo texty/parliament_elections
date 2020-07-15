@@ -6,7 +6,7 @@
 
 /** актуальний файл для ternary-plots */
 
-const green = '#E6F164';
+const green = '#FFC107';
 const red = '#FF2121';
 const blue = '#0887FF';
 
@@ -151,7 +151,8 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
                 .text(function () { return v;  })
                 .attr('x', -opt.tickLabelMargin)
                 .attr('y', 10)
-                .classed('c-axis tick-text', true);
+                .classed('c-axis tick-text', true)
+                .style("fill", "#e3cd04");
         });
 
 
@@ -193,7 +194,7 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
                 coord([0,0,100]).x + "," + coord([0,0,100]).y + " " +
                 coord([0,4,96]).x + "," + coord([0,4,96]).y + " " +
                 coord([4,0,96]).x + "," + coord([4,0,96]).y )
-           .attr("fill", "#baca00")
+           .attr("fill", "#fce404")
            .style("opacity", 1);
 
         axes.append("polygon")
@@ -566,12 +567,12 @@ d3.csv("../data/ternary_data.csv").then(function(data) {
 
 
             //темно-зелений
-            if(Math.round(hslColor._rgb[0]) === 180 && Math.round(hslColor._rgb[1]) === 189 && Math.round(hslColor._rgb[2]) === 77){
-                hslColor._rgb[0] = 230;
-                hslColor._rgb[1] = 241;
-                hslColor._rgb[2] = 100;
+            if(Math.round(hslColor._rgb[0]) === 230 && Math.round(hslColor._rgb[1]) === 173 && Math.round(hslColor._rgb[2]) === 1){
+                hslColor._rgb[0] = 255;
+                hslColor._rgb[1] = 193;
+                hslColor._rgb[2] = 7;
 
-            // світло-зелений
+                // світло-зелений
             } else if(Math.round(hslColor._rgb[0]) === 220 && Math.round(hslColor._rgb[1]) === 231 && Math.round(hslColor._rgb[2]) === 92){
                 hslColor._rgb[0] = 248;
                 hslColor._rgb[1] = 251;

@@ -6,7 +6,7 @@
 
 /** актуальний файл для ternary-plots */
 
-const green = '#E6F164';
+const green = '#FFC107';
 const red = '#FF2121';
 const blue = '#0887FF';
 
@@ -593,10 +593,10 @@ d3.csv("data/ternary_data.csv").then(function(data) {
                 .saturate(0.1);
 
             //темно-зелений
-            if(Math.round(hslColor._rgb[0]) === 180 && Math.round(hslColor._rgb[1]) === 189 && Math.round(hslColor._rgb[2]) === 77){
-                hslColor._rgb[0] = 230;
-                hslColor._rgb[1] = 241;
-                hslColor._rgb[2] = 100;
+            if(Math.round(hslColor._rgb[0]) === 230 && Math.round(hslColor._rgb[1]) === 173 && Math.round(hslColor._rgb[2]) === 1){
+                hslColor._rgb[0] = 255;
+                hslColor._rgb[1] = 193;
+                hslColor._rgb[2] = 7;
 
                 // світло-зелений
             } else if(Math.round(hslColor._rgb[0]) === 220 && Math.round(hslColor._rgb[1]) === 231 && Math.round(hslColor._rgb[2]) === 92){

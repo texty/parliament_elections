@@ -504,7 +504,7 @@ canvas {
   fill: #F47874;
   opacity: 0.7; }
 #scatter-plot .c-axis.tick-text {
-  fill: #E6F164;
+  fill: #FFC107;
   opacity: 1; }
 #scatter-plot .tick-text {
   font-size: 14px; }
