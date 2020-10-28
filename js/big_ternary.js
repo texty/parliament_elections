@@ -216,10 +216,6 @@ d3.csv("data/ternary_big.csv").then(function(data) {
         tick_c.position.x = coord3.x-20;
         tick_c.position.y = coord3.y;
         stage.addChild(tick_c);
-
-
-
-
     });
 
     opt.ticks_line.forEach(function (v) {
